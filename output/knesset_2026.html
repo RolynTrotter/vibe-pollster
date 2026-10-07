@@ -1,0 +1,558 @@
+<title>Knesset 2026 Forecast</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Assistant:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column; paired charts put the consensus forecast above a comparison world on one scale. */
+:root {
+  --bg: #f5f6f8; --panel: #ffffff; --ink: #12161d; --ink-2: #4a5160; --ink-3: #6f7686;
+  --rule: #dfe2e8; --rule-strong: #c4c9d3; --track: #e8ebf0;
+  --tekhelet: #1f4f9c;            /* majority line, links, focus */
+  --s1: #2a78d6; --s2: #e0622f;   /* scenario 1 consensus, scenario 2 comparison */
+  --s1-soft: rgba(42,120,214,.16); --s2-soft: rgba(224,98,47,.16);
+  --up: #2a78d6; --down: #c2410c; /* change toward opposition / toward bloc in dynamics */
+  --heat-lo: #eef2f8; --heat-hi: #1f4f9c;
+  --font-display: "Frank Ruhl Libre", Georgia, "Times New Roman", serif;
+  --font-body: "Assistant", "Segoe UI", system-ui, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12151b; --panel: #1a1e26; --ink: #eef0f4; --ink-2: #b6bcc8; --ink-3: #8f96a5;
+    --rule: #2a303b; --rule-strong: #3a4250; --track: #252b35; --tekhelet: #8fb2ee;
+    --s1: #4a93ec; --s2: #e8743f; --s1-soft: rgba(74,147,236,.22); --s2-soft: rgba(232,116,63,.22);
+    --up: #4a93ec; --down: #f08a54; --heat-lo: #1f2530; --heat-hi: #6f9be6; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12151b; --panel: #1a1e26; --ink: #eef0f4; --ink-2: #b6bcc8; --ink-3: #8f96a5;
+  --rule: #2a303b; --rule-strong: #3a4250; --track: #252b35; --tekhelet: #8fb2ee;
+  --s1: #4a93ec; --s2: #e8743f; --s1-soft: rgba(74,147,236,.22); --s2-soft: rgba(232,116,63,.22);
+  --up: #4a93ec; --down: #f08a54; --heat-lo: #1f2530; --heat-hi: #6f9be6; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.5; }
+.wrap { max-width: 880px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; display: grid; gap: 44px; }
+h1, h2 { font-family: var(--font-display); text-wrap: balance; margin: 0; letter-spacing: -.01em; }
+h1 { font-size: clamp(2rem, 6vw, 3.1rem); font-weight: 900; line-height: 1.05; }
+h2 { font-size: 1.45rem; font-weight: 700; line-height: 1.2; }
+h3 { margin: 0; font-size: 1rem; font-weight: 700; }
+p { margin: 0; max-width: 65ch; }
+.eyebrow { font-family: var(--font-data); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.meta { color: var(--ink-2); font-size: .95rem; }
+.num { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+section { display: grid; gap: 14px; min-width: 0; }
+.lede { font-size: 1.12rem; color: var(--ink-2); }
+.note { font-size: .9rem; color: var(--ink-2); }
+a { color: var(--tekhelet); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--tekhelet); outline-offset: 2px; }
+.key { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: .95rem; }
+.key span { display: inline-flex; align-items: center; gap: 8px; }
+.sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block; flex: none; }
+.sw.s1 { background: var(--s1); } .sw.s2 { background: var(--s2); }
+
+.headline { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+@media (max-width: 600px) { .headline { grid-template-columns: 1fr; } }
+.card { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 16px; display: grid; gap: 10px; min-width: 0; align-content: start; }
+.card h3 { display: flex; align-items: center; gap: 8px; }
+.big { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; }
+.big div { display: grid; gap: 2px; align-content: start; }
+.big b { font-family: var(--font-display); font-size: 1.9rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+.big small { color: var(--ink-2); font-size: .8rem; line-height: 1.25; }
+.card .sub { font-size: .88rem; color: var(--ink-2); }
+.card .sub .num { font-weight: 600; color: var(--ink); }
+
+.findings { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; counter-reset: f; }
+.findings li { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; display: grid; gap: 2px; }
+.findings b { font-weight: 700; }
+.findings span { color: var(--ink-2); font-size: .93rem; }
+
+.paths { display: grid; gap: 14px; }
+.path { display: grid; grid-template-columns: minmax(0, 15rem) minmax(0,1fr); gap: 4px 14px; align-items: center; }
+@media (max-width: 600px) { .path { grid-template-columns: 1fr; } }
+.path .lbl { font-size: .95rem; line-height: 1.3; }
+.path .lbl small { display: block; color: var(--ink-3); font-size: .8rem; }
+.bars { display: grid; gap: 4px; }
+.bar { position: relative; height: 16px; background: var(--track); border-radius: 0 4px 4px 0; }
+.bar i { position: absolute; inset: 0 auto 0 0; border-radius: 0 4px 4px 0; display: block; }
+.bar.s1 i { background: var(--s1); } .bar.s2 i { background: var(--s2); }
+.bar em { position: absolute; top: -1px; font-style: normal; font-family: var(--font-data); font-size: .75rem; color: var(--ink); white-space: nowrap; }
+
+.chart { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 8px 6px; position: relative; overflow-x: auto; }
+.chart svg { display: block; width: 100%; height: auto; min-width: 320px; }
+.chart text { fill: var(--ink-2); font-family: var(--font-data); font-size: 11px; }
+.chart .grid { stroke: var(--rule); stroke-width: 1; }
+.chart .axis { stroke: var(--rule-strong); stroke-width: 1; }
+.chart .line61 { stroke: var(--tekhelet); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.chart .t61 { fill: var(--tekhelet); font-weight: 500; }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font-size: .8rem; line-height: 1.35; padding: 6px 8px; border-radius: 6px; white-space: nowrap; transform: translate(-50%, calc(-100% - 10px)); z-index: 2; }
+
+.tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: .92rem; }
+th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: middle; }
+th { font-family: var(--font-data); font-weight: 500; font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+tr:last-child td { border-bottom: 0; }
+td.r, th.r { text-align: right; }
+#ptable td:first-child { min-width: 11.5rem; }
+.bloc-tag { font-family: var(--font-data); font-size: .66rem; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-3); display: block; }
+.range { width: 100%; min-width: 150px; }
+.rng { position: relative; height: 30px; margin-inline: 6px; }
+.rng .tick { position: absolute; top: 2px; bottom: 2px; width: 1px; background: var(--rule); }
+.rng .seg { position: absolute; height: 4px; border-radius: 2px; margin-left: -2px; }
+.rng .dot { position: absolute; width: 10px; height: 10px; border-radius: 50%; margin-left: -5px; box-shadow: 0 0 0 2px var(--panel); }
+.pin { display: inline-flex; gap: 4px; align-items: center; font-family: var(--font-data); font-size: .8rem; }
+.risk { color: var(--ink); font-weight: 600; }
+
+/* dynamics */
+.dyn { display: grid; gap: 4px; }
+.dyn-head, .dyn-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 13rem) minmax(0, 13rem); gap: 10px; align-items: center; }
+@media (max-width: 640px) { .dyn-head, .dyn-row { grid-template-columns: minmax(0,1fr) minmax(0,1fr); } .dyn-row .lab { grid-column: 1 / -1; } .dyn-head .lab { display: none; } }
+.dyn-head { font-family: var(--font-data); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); padding-bottom: 4px; border-bottom: 1px solid var(--rule); }
+.dyn-row { padding-block: 7px; border-bottom: 1px solid var(--rule); }
+.dyn-row .lab { font-size: .93rem; line-height: 1.3; }
+.dyn-row .lab small { display: block; color: var(--ink-3); font-size: .78rem; }
+.dyn-group { font-family: var(--font-data); font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); padding-top: 14px; }
+.delta { position: relative; height: 22px; }
+.delta .mid { position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--rule-strong); }
+.delta i { position: absolute; top: 5px; height: 12px; border-radius: 2px; }
+.delta em { position: absolute; top: 2px; font-style: normal; font-family: var(--font-data); font-size: .72rem; color: var(--ink-2); white-space: nowrap; }
+
+.heat { display: grid; gap: 2px; min-width: 420px; }
+.heat .hr { display: grid; grid-template-columns: 4.2rem repeat(9, minmax(0,1fr)); gap: 2px; }
+.heat .c { font-family: var(--font-data); font-size: .74rem; text-align: center; padding: 7px 0; border-radius: 3px; font-variant-numeric: tabular-nums; }
+.heat .h { font-family: var(--font-data); font-size: .7rem; color: var(--ink-3); text-align: center; padding: 4px 0; }
+.heat .rl { font-family: var(--font-data); font-size: .74rem; color: var(--ink-2); text-align: right; padding-right: 6px; align-self: center; }
+.heat .base { outline: 2px solid var(--ink); outline-offset: -2px; }
+.seg-btns { display: inline-flex; flex-wrap: wrap; gap: 6px; }
+.seg-btns button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+.controls { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 16px; display: grid; gap: 16px; }
+.cgrid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px 24px; }
+@media (max-width: 640px) { .cgrid { grid-template-columns: 1fr; } }
+.ctl { display: grid; gap: 6px; min-width: 0; }
+.ctl label { font-weight: 600; font-size: .95rem; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.ctl label .num { font-weight: 400; color: var(--ink-2); font-size: .85rem; }
+.ctl small { color: var(--ink-3); font-size: .82rem; }
+input[type=range] { width: 100%; accent-color: var(--tekhelet); }
+select { font: inherit; font-size: .95rem; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--rule-strong); background: var(--bg); color: var(--ink); max-width: 100%; }
+.toggles { display: flex; flex-wrap: wrap; gap: 10px 20px; }
+.toggles label { display: inline-flex; gap: 8px; align-items: center; font-size: .93rem; }
+.btnrow { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+button { font: inherit; font-weight: 600; font-size: .88rem; padding: 6px 13px; border-radius: 8px; border: 1px solid var(--rule-strong); background: var(--bg); color: var(--ink); cursor: pointer; }
+button:hover { border-color: var(--ink-3); }
+.status { font-size: .85rem; color: var(--ink-3); }
+.status.live { color: var(--tekhelet); }
+
+.lean { display: grid; gap: 6px; }
+.lean-row { display: grid; grid-template-columns: 9.5rem minmax(0,1fr) 7rem; gap: 10px; align-items: center; font-size: .9rem; }
+@media (max-width: 600px) { .lean-row { grid-template-columns: 7rem minmax(0,1fr) 5.5rem; font-size: .82rem; } }
+.lean-row svg { width: 100%; height: 18px; display: block; }
+.lean-row .w { font-family: var(--font-data); font-size: .75rem; color: var(--ink-2); text-align: right; }
+
+details { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 16px; }
+details summary { cursor: pointer; font-weight: 600; }
+details[open] summary { margin-bottom: 10px; }
+.method { display: grid; gap: 10px; font-size: .95rem; color: var(--ink-2); }
+footer { font-size: .85rem; color: var(--ink-3); display: grid; gap: 6px; }
+@media (prefers-reduced-motion: no-preference) { .bar i { transition: width .35s ease; } }
+</style>
+
+<div class="wrap">
+  <header style="display:grid;gap:12px">
+    <div class="eyebrow">26th Knesset · election day <span id="eday"></span></div>
+    <h1>Who reaches 61?</h1>
+    <p class="lede">A seat forecast for Israel's election, built from every published poll, weighted the way FiveThirtyEight weights polls, with a turnout model for the groups whose turnout swings elections.</p>
+    <p class="meta" id="metaLine"></p>
+    <div class="key" id="scenKey"></div>
+  </header>
+
+  <section aria-labelledby="h-head">
+    <h2 id="h-head">The short answer</h2>
+    <div class="headline" id="headline"></div>
+  </section>
+
+  <section aria-labelledby="h-find">
+    <h2 id="h-find">What the model finds</h2>
+    <ul class="findings" id="findings"></ul>
+  </section>
+
+  <section aria-labelledby="h-paths">
+    <h2 id="h-paths">Paths to a majority</h2>
+    <p class="note">Share of simulated elections in which each group of parties wins at least 61 of 120 seats.</p>
+    <div class="paths" id="paths"></div>
+  </section>
+
+  <section aria-labelledby="h-bloc">
+    <h2 id="h-bloc">Seats for Netanyahu's bloc</h2>
+    <p class="note">Likud, Otzma Yehudit, Religious Zionism, Shas and United Torah Judaism. The dashed line is a majority.</p>
+    <div class="chart" id="blocChart"></div>
+  </section>
+
+  <section aria-labelledby="h-dyn">
+    <h2 id="h-dyn">What could change the result</h2>
+    <p class="note">Each row reruns the consensus forecast with one change, using the same random draws, so the difference comes from the change alone. Bars show the change in percentage points.</p>
+    <div class="chart" style="padding:12px 14px"><div class="dyn" id="dyn"></div></div>
+  </section>
+
+  <section aria-labelledby="h-heat">
+    <h2 id="h-heat">Arab turnout against a polling miss</h2>
+    <p class="note">Rows set Arab turnout (2022 was 53%); columns shift votes toward Netanyahu's bloc as a polling miss would, in seats. The outlined cell is the forecast.</p>
+    <div class="seg-btns" role="group" aria-label="Outcome shown">
+      <button type="button" id="hm-gov" aria-pressed="true">Bloc + Amcha reach 61</button>
+      <button type="button" id="hm-opp" aria-pressed="false">Opposition reaches 61</button>
+      <button type="button" id="hm-dead" aria-pressed="false">Neither</button>
+    </div>
+    <div class="chart" style="padding:12px"><div class="heat" id="heat"></div></div>
+  </section>
+
+  <section aria-labelledby="h-what">
+    <h2 id="h-what">Try your own assumptions</h2>
+    <p class="note">Change any setting and the page reruns 6,000 simulated elections per scenario in your browser. The published numbers use 20,000.</p>
+    <div class="controls">
+      <div class="ctl"><label for="c-cmp">Compare the consensus with</label>
+        <select id="c-cmp"><option value="ch14_world">Channel 14 and Direct Polls are right</option><option value="mainstream">Only the mainstream pollsters</option><option value="track_record">Pollsters weighted by track record</option></select></div>
+      <div class="cgrid">
+        <div class="ctl"><label for="c-arab">Arab turnout <span class="num" id="v-arab"></span></label>
+          <input type="range" id="c-arab" min="38" max="72" step="1" value="53"><small>53% in 2022; 44.6% in 2021; 64.8% in 2020.</small></div>
+        <div class="ctl"><label for="c-har">Haredi turnout change <span class="num" id="v-har"></span></label>
+          <input type="range" id="c-har" min="-15" max="15" step="1" value="0"><small>Relative to the polls' baseline.</small></div>
+        <div class="ctl"><label for="c-likud">Likud supporters who stay home <span class="num" id="v-likud"></span></label>
+          <input type="range" id="c-likud" min="0" max="20" step="1" value="0"><small>IDI: 43% of right-wing Jews say voting makes no difference.</small></div>
+        <div class="ctl"><label for="c-opp">Opposition supporters who stay home <span class="num" id="v-opp"></span></label>
+          <input type="range" id="c-opp" min="0" max="20" step="1" value="0"><small>Yashar, Together, Democrats, Yisrael Beytenu, Hendel, Gantz.</small></div>
+        <div class="ctl"><label for="c-swing">Polls miss toward Netanyahu's bloc <span class="num" id="v-swing"></span></label>
+          <input type="range" id="c-swing" min="-5" max="5" step="0.5" value="0"><small>Moves votes between the bloc and the opposition, in seats.</small></div>
+        <div class="ctl"><label for="c-unc">Size of random error <span class="num" id="v-unc"></span></label>
+          <input type="range" id="c-unc" min="0.5" max="2" step="0.1" value="1"><small>1.0× is the error measured in 2015–2022.</small></div>
+      </div>
+      <div class="toggles">
+        <label><input type="checkbox" id="c-hfix" checked> Correct for haredi underpolling</label>
+        <label><input type="checkbox" id="c-pair" checked> Assume a Shas–UTJ surplus deal</label>
+      </div>
+      <div class="btnrow"><button type="button" id="reset">Reset to published model</button><span class="status" id="status">Showing the published run.</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-parties">
+    <h2 id="h-parties">Party by party</h2>
+    <p class="note">Bars span the middle 80% of simulated outcomes; the dot is the median. The last column is the chance each list clears the 3.25% threshold (about four seats).</p>
+    <div class="tbl-wrap"><table id="ptable"></table></div>
+  </section>
+
+  <section aria-labelledby="h-polls">
+    <h2 id="h-polls">The polls since the lists were set</h2>
+    <p class="note">Each dot is one poll's seat total for Netanyahu's bloc. The two camps of pollsters barely overlap.</p>
+    <div class="chart" id="pollChart"></div>
+  </section>
+
+  <section aria-labelledby="h-lean">
+    <h2 id="h-lean">How far each pollster leans</h2>
+    <p class="note">Each house's estimated lean on the Netanyahu bloc, in seats, against the consensus average, with its weight in the consensus and track-record averages. Direct Polls and Channel 14 share methods, so they share one vote.</p>
+    <div class="chart" style="padding:14px 14px 10px"><div class="lean" id="lean"></div></div>
+  </section>
+
+  <section aria-labelledby="h-seg">
+    <h2 id="h-seg">Who votes for whom</h2>
+    <p class="note">The turnout model splits the electorate into groups using 2022 ballot-box results, then fits that split to today's polls. A turnout change in one group moves every party in proportion to its votes there.</p>
+    <div class="tbl-wrap"><table id="segtable"></table></div>
+  </section>
+
+  <section aria-labelledby="h-method">
+    <h2 id="h-method">How it works</h2>
+    <details open><summary>Method</summary><div class="method" id="method"></div></details>
+    <details><summary>Pollster track record, 2015–2022</summary><div class="method" id="track"></div></details>
+  </section>
+
+  <footer>
+    <div>Code and data: <a href="https://github.com/RolynTrotter/vibe-pollster" target="_blank" rel="noopener">github.com/RolynTrotter/vibe-pollster</a>. Polls: <a href="https://israelvote.meforum.org/polls/" target="_blank" rel="noopener">Middle East Forum archive</a>. Backtest: Wikipedia polling and results pages, 2015–2022. Ballot boxes: <a href="https://votes25.bechirot.gov.il/" target="_blank" rel="noopener">Central Elections Committee</a>. Surveys: <a href="https://en.idi.org.il/" target="_blank" rel="noopener">Israel Democracy Institute</a> Israeli Voice Index; Konrad Adenauer Program survey of Arab citizens.</div>
+    <div>A statistical illustration, not a prediction of who will govern. Coalitions are formed after the vote.</div>
+  </footer>
+</div>
+
+<script id="data" type="application/json">{"meta":{"run_date":"2026-10-07","election":"2026-10-27","days_left":20,"n_sims":20000,"n_polls":37,"window_start":"2026-09-05","latest_poll":"2026-10-05","houses":["Channel 14 (Filber)","Direct Polls","Kantar","Lazar","Maagar Mochot","Midgam (Ch12)","Midgam Project (Ch13)","Yossi Tatika"],"polls_per_house":{"Lazar":9,"Channel 14 (Filber)":6,"Midgam (Ch12)":5,"Midgam Project (Ch13)":5,"Kantar":5,"Direct Polls":4,"Yossi Tatika":2,"Maagar Mochot":1},"labels":{"likud":"Likud","yashar":"Yashar (Eisenkot)","together":"Together (Bennett\u2013Lapid)","dems":"The Democrats","yb":"Yisrael Beytenu","joint_list":"Joint List","otzma":"Otzma Yehudit","shas":"Shas","utj":"United Torah Judaism","rzp":"Religious Zionism\u2013Zehut","raam":"Ra'am","amcha":"Amcha Yisrael (Winter)","blue_white":"Blue and White","reservists":"Reservists\u2013Economic (Hendel)"},"gov":["likud","otzma","shas","utj","rzp"],"opp":["yashar","together","dems","yb","reservists","blue_white"],"arab":["joint_list","raam"],"swing":["amcha"],"family":{"likud":"N","otzma":"N","rzp":"N","amcha":"N","shas":"H","utj":"H","joint_list":"A","raam":"A","yashar":"O","together":"O","dems":"O","yb":"O","reservists":"O","blue_white":"O"},"debut":["amcha","reservists","together","yashar"],"pairs":[["together","yb"],["yashar","dems"],["joint_list","raam"],["likud","rzp"]],"assumed_pairs":[["shas","utj"]],"others_pct":1.5,"house_family":{"Channel 14 (Filber)":"DP/Ch14","Direct Polls":"DP/Ch14","Kantar":"Kantar","Lazar":"Lazar","Maagar Mochot":"Maagar Mochot","Midgam (Ch12)":"Midgam (Ch12)","Midgam Project (Ch13)":"Midgam Project (Ch13)","Yossi Tatika":"Yossi Tatika"}},"model":{"parties":["likud","yashar","together","dems","yb","joint_list","otzma","shas","utj","rzp","raam","amcha","blue_white","reservists"],"segments":["arab","druze","haredi","dati","jewish"],"profile":[[0.010163,0.011161,0.00917,0.048153,0.017213,0.999997,0.003508,0.006203,0.001061,0.003795,0.999997,0.007507,0.012115,0.011137,0.067965],[0.003406,0.013238,0.005517,0.017371,0.030272,1e-06,0.000227,0.000955,2.4e-05,0.002956,1e-06,0.002138,0.02308,0.013223,0.008738],[0.013723,0.004764,0.008367,0.002978,0.007563,1e-06,0.05314,0.504146,0.952201,0.046568,1e-06,0.029449,0.004574,0.009158,0.013689],[0.020199,0.007924,0.035431,0.002702,0.005187,1e-06,0.13407,0.014757,0.002597,0.137174,1e-06,0.06563,0.009447,0.014834,0.016444],[0.95251,0.962913,0.941515,0.928795,0.939766,1e-06,0.809056,0.473938,0.044117,0.809507,1e-06,0.895276,0.950783,0.951648,0.893165]],"mu":{"consensus":[17.3783,17.6641,9.6023,7.3799,6.9177,6.2347,6.3186,6.1864,6.1172,4.5144,4.1852,2.7436,0.7864,2.7594],"track_record":[17.4539,17.6413,9.5676,7.3598,6.8868,6.233,6.3482,6.2028,6.1138,4.5164,4.1995,2.7516,0.7893,2.7384],"ch14_world":[22.8197,16.6689,6.3627,7.0976,5.9937,6.021,6.5714,6.7504,6.119,5.496,4.2893,2.4429,0.443,1.9039],"mainstream":[16.4336,17.8411,10.1801,7.4287,7.0779,6.2715,6.275,6.0889,6.1168,4.3478,4.1674,2.7948,0.8431,2.9052]},"se":{"consensus":[0.389,0.3962,0.3167,0.2887,0.282,0.2695,0.2664,0.2642,0.2708,0.2466,0.2361,0.211,0.1898,0.2246],"track_record":[0.389,0.3962,0.3167,0.2887,0.282,0.2695,0.2664,0.2642,0.2708,0.2466,0.2361,0.211,0.1898,0.2246],"ch14_world":[0.389,0.3962,0.3167,0.2887,0.282,0.2695,0.2664,0.2642,0.2708,0.2466,0.2361,0.211,0.1898,0.2246],"mainstream":[0.389,0.3962,0.3167,0.2887,0.282,0.2695,0.2664,0.2642,0.2708,0.2466,0.2361,0.211,0.1898,0.2246]},"sigma_bloc":1.8821421027396936,"drift":0.10515807787985651,"party_a":0.11153181547734764,"party_b":0.23780241049060072,"debut_mult":1.5,"seg_sigma":{"haredi":0.1526521283318586,"arab":0.1575874472321616},"seg_mean":{"haredi":0.1493222093469802},"days_left":20,"others_pct":1.5,"threshold":3.25,"seats":120,"pairs":[["together","yb"],["yashar","dems"],["joint_list","raam"],["likud","rzp"]],"assumed_pairs":[["shas","utj"]],"arab_turnout_base":0.53},"results":{"consensus":{"party":{"likud":{"mean":22.2584,"p10":19.0,"p50":22.0,"p90":26.0,"p_in":1.0,"p_largest":0.5107},"yashar":{"mean":22.53955,"p10":18.0,"p50":23.0,"p90":27.0,"p_in":1.0,"p_largest":0.4889},"together":{"mean":12.13625,"p10":9.0,"p50":12.0,"p90":16.0,"p_in":0.9986,"p_largest":0.0004},"dems":{"mean":9.17165,"p10":7.0,"p50":9.0,"p90":11.0,"p_in":0.9994,"p_largest":0.0},"yb":{"mean":8.635,"p10":7.0,"p50":9.0,"p90":11.0,"p_in":0.9981,"p_largest":0.0},"joint_list":{"mean":7.79685,"p10":5.0,"p50":8.0,"p90":10.0,"p_in":0.9891,"p_largest":0.0},"otzma":{"mean":7.7117,"p10":6.0,"p50":8.0,"p90":10.0,"p_in":0.99525,"p_largest":0.0},"shas":{"mean":8.388,"p10":6.0,"p50":8.0,"p90":11.0,"p_in":0.99595,"p_largest":0.0},"utj":{"mean":8.89255,"p10":6.0,"p50":9.0,"p90":12.0,"p_in":0.9961,"p_largest":0.0},"rzp":{"mean":5.05625,"p10":0.0,"p50":5.0,"p90":7.0,"p_in":0.8831,"p_largest":0.0},"raam":{"mean":4.3975,"p10":0.0,"p50":5.0,"p90":7.0,"p_in":0.77865,"p_largest":0.0},"amcha":{"mean":1.49455,"p10":0.0,"p50":0.0,"p90":5.0,"p_in":0.31595,"p_largest":0.0},"blue_white":{"mean":0.0,"p10":0.0,"p50":0.0,"p90":0.0,"p_in":0.0,"p_largest":0.0},"reservists":{"mean":1.52175,"p10":0.0,"p50":0.0,"p90":5.0,"p_in":0.3222,"p_largest":0.0}},"blocs":{"gov":{"mean":52.3069,"p10":46.0,"p90":59.0,"hist":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,2,3,2,7,9,28,46,63,109,169,282,388,512,722,889,1128,1246,1474,1681,1598,1683,1515,1390,1159,1033,773,599,470,378,231,155,98,71,39,26,8,7,3,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"opp":{"mean":54.0042,"p10":47.0,"p90":61.0,"hist":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,2,3,9,13,17,31,61,102,151,229,320,464,610,758,989,1200,1273,1466,1550,1542,1552,1467,1307,1148,919,764,612,473,321,216,145,120,72,34,19,16,13,3,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"arab":{"mean":12.19435,"p10":7.0,"p90":17.0,"hist":[86,0,0,0,222,588,903,989,838,766,1214,1815,2323,2642,2358,1870,1322,873,536,304,191,85,41,22,5,4,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"amcha":{"mean":1.49455,"p10":0.0,"p90":5.0,"hist":[13681,0,0,0,3027,2255,800,197,33,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"haredi":{"mean":17.28055,"p10":14.0,"p90":21.0,"hist":[1,0,0,0,3,11,14,32,29,36,77,223,554,982,1619,2197,2546,2668,2385,2090,1544,1187,752,463,283,160,70,34,21,8,6,4,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"paths":{"gov61":0.0509,"gov_amcha61":0.0993,"opp61":0.10255,"opp_amcha61":0.1606,"opp_raam61":0.33925,"opp_arab61":0.86475,"opp_haredi61":0.98775,"opp_shas61":0.65205,"deadlock":0.74085},"share_mean":{"likud":17.049,"yashar":17.258,"together":9.393,"dems":7.244,"yb":6.799,"joint_list":6.171,"otzma":6.258,"shas":6.591,"utj":6.96,"rzp":4.452,"raam":4.144,"amcha":2.703,"blue_white":0.788,"reservists":2.714}},"track_record":{"party":{"likud":{"mean":22.3541,"p10":19.0,"p50":22.0,"p90":26.0,"p_in":1.0,"p_largest":0.52155},"yashar":{"mean":22.50685,"p10":18.0,"p50":22.0,"p90":27.0,"p_in":1.0,"p_largest":0.4782},"together":{"mean":12.08835,"p10":9.0,"p50":12.0,"p90":16.0,"p_in":0.9986,"p_largest":0.00025},"dems":{"mean":9.14195,"p10":7.0,"p50":9.0,"p90":11.0,"p_in":0.9993,"p_largest":0.0},"yb":{"mean":8.59625,"p10":6.0,"p50":9.0,"p90":11.0,"p_in":0.998,"p_largest":0.0},"joint_list":{"mean":7.7938,"p10":5.0,"p50":8.0,"p90":10.0,"p_in":0.9891,"p_largest":0.0},"otzma":{"mean":7.74705,"p10":6.0,"p50":8.0,"p90":10.0,"p_in":0.9957,"p_largest":0.0},"shas":{"mean":8.4097,"p10":6.0,"p50":8.0,"p90":11.0,"p_in":0.996,"p_largest":0.0},"utj":{"mean":8.88515,"p10":6.0,"p50":9.0,"p90":12.0,"p_in":0.99605,"p_largest":0.0},"rzp":{"mean":5.05705,"p10":0.0,"p50":5.0,"p90":7.0,"p_in":0.8833,"p_largest":0.0},"raam":{"mean":4.42765,"p10":0.0,"p50":5.0,"p90":7.0,"p_in":0.7825,"p_largest":0.0},"amcha":{"mean":1.50745,"p10":0.0,"p50":0.0,"p90":5.0,"p_in":0.3185,"p_largest":0.0},"blue_white":{"mean":0.0,"p10":0.0,"p50":0.0,"p90":0.0,"p_in":0.0,"p_largest":0.0},"reservists":{"mean":1.48465,"p10":0.0,"p50":0.0,"p90":5.0,"p_in":0.3151,"p_largest":0.0}},"blocs":{"gov":{"mean":52.45305,"p10":46.0,"p90":59.0,"hist":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,2,3,1,7,7,25,43,62,100,158,262,382,480,684,846,1125,1222,1443,1656,1635,1657,1522,1442,1189,1080,774,633,477,378,265,167,100,78,42,28,10,8,2,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"opp":{"mean":53.81805,"p10":47.0,"p90":60.0,"hist":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,3,2,9,13,21,40,60,121,157,242,343,486,622,802,1044,1220,1308,1509,1549,1527,1525,1465,1280,1109,891,743,573,444,285,210,130,113,65,32,22,14,10,3,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"arab":{"mean":12.22145,"p10":7.0,"p90":17.0,"hist":[85,0,0,0,217,576,901,970,825,769,1202,1818,2328,2653,2351,1879,1340,879,551,303,190,86,41,22,6,5,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"amcha":{"mean":1.50745,"p10":0.0,"p90":5.0,"hist":[13630,0,0,0,3038,2283,811,197,34,5,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"haredi":{"mean":17.29485,"p10":14.0,"p90":21.0,"hist":[2,0,0,0,2,10,15,31,31,34,77,219,555,977,1605,2179,2551,2647,2404,2093,1562,1199,753,463,282,165,68,36,22,6,7,3,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"paths":{"gov61":0.05405,"gov_amcha61":0.1044,"opp61":0.09535,"opp_amcha61":0.1524,"opp_raam61":0.3282,"opp_arab61":0.85855,"opp_haredi61":0.98675,"opp_shas61":0.6393,"deadlock":0.7438},"share_mean":{"likud":17.121,"yashar":17.233,"together":9.358,"dems":7.223,"yb":6.768,"joint_list":6.168,"otzma":6.286,"shas":6.607,"utj":6.955,"rzp":4.453,"raam":4.157,"amcha":2.71,"blue_white":0.79,"reservists":2.693}},"ch14_world":{"party":{"likud":{"mean":29.11325,"p10":25.0,"p50":29.0,"p90":33.0,"p_in":1.0,"p_largest":0.9526},"yashar":{"mean":21.1023,"p10":17.0,"p50":21.0,"p90":25.0,"p_in":1.0,"p_largest":0.0474},"together":{"mean":7.74355,"p10":5.0,"p50":8.0,"p90":11.0,"p_in":0.96015,"p_largest":0.0},"dems":{"mean":8.7406,"p10":7.0,"p50":9.0,"p90":11.0,"p_in":0.9991,"p_largest":0.0},"yb":{"mean":7.38645,"p10":5.0,"p50":7.0,"p90":9.0,"p_in":0.98985,"p_largest":0.0},"joint_list":{"mean":7.4445,"p10":5.0,"p50":7.0,"p90":10.0,"p_in":0.9838,"p_largest":0.0},"otzma":{"mean":7.98425,"p10":6.0,"p50":8.0,"p90":10.0,"p_in":0.9977,"p_largest":0.0},"shas":{"mean":9.13305,"p10":7.0,"p50":9.0,"p90":12.0,"p_in":0.9989,"p_largest":0.0},"utj":{"mean":8.8153,"p10":6.0,"p50":9.0,"p90":12.0,"p_in":0.99635,"p_largest":0.0},"rzp":{"mean":6.5859,"p10":5.0,"p50":7.0,"p90":9.0,"p_in":0.9757,"p_largest":0.0},"raam":{"mean":4.57915,"p10":0.0,"p50":5.0,"p90":7.0,"p_in":0.80275,"p_largest":0.0},"amcha":{"mean":1.00115,"p10":0.0,"p50":0.0,"p90":4.0,"p_in":0.2204,"p_largest":0.0},"blue_white":{"mean":0.0,"p10":0.0,"p50":0.0,"p90":0.0,"p_in":0.0,"p_largest":0.0},"reservists":{"mean":0.37055,"p10":0.0,"p50":0.0,"p90":0.0,"p_in":0.08565,"p_largest":0.0}},"blocs":{"gov":{"mean":61.63175,"p10":56.0,"p90":68.0,"hist":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,4,12,12,30,44,69,144,220,346,413,679,865,1048,1325,1490,1648,1609,1719,1536,1439,1211,986,824,640,552,362,264,170,127,89,56,27,20,11,3,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"opp":{"mean":45.34345,"p10":39.0,"p90":51.0,"hist":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,6,6,9,14,31,43,64,113,180,254,338,441,690,830,1106,1266,1545,1606,1704,1640,1584,1417,1249,1077,845,613,458,328,202,143,89,43,30,14,13,4,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"arab":{"mean":12.02365,"p10":7.0,"p90":16.0,"hist":[117,0,0,0,274,671,894,890,681,756,1335,2043,2561,2769,2272,1751,1220,778,467,252,143,67,35,11,8,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"amcha":{"mean":1.00115,"p10":0.0,"p90":4.0,"hist":[15592,0,0,0,2556,1401,375,67,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"haredi":{"mean":17.94835,"p10":14.0,"p90":22.0,"hist":[0,0,0,0,1,4,10,11,24,27,28,122,330,667,1200,1848,2319,2644,2613,2285,1880,1488,1004,638,397,213,138,61,20,16,7,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"paths":{"gov61":0.5825,"gov_amcha61":0.65725,"opp61":0.00095,"opp_amcha61":0.0016,"opp_raam61":0.01275,"opp_arab61":0.26705,"opp_haredi61":0.7314,"opp_shas61":0.093,"deadlock":0.34115},"share_mean":{"likud":22.327,"yashar":16.237,"together":6.204,"dems":6.947,"yb":5.874,"joint_list":5.942,"otzma":6.489,"shas":7.17,"utj":6.941,"rzp":5.405,"raam":4.235,"amcha":2.402,"blue_white":0.475,"reservists":1.878}},"mainstream":{"party":{"likud":{"mean":21.05445,"p10":18.0,"p50":21.0,"p90":24.0,"p_in":1.0,"p_largest":0.39575},"yashar":{"mean":22.79445,"p10":18.0,"p50":23.0,"p90":27.0,"p_in":1.0,"p_largest":0.60185},"together":{"mean":12.8996,"p10":9.0,"p50":13.0,"p90":17.0,"p_in":0.9993,"p_largest":0.0024},"dems":{"mean":9.24275,"p10":7.0,"p50":9.0,"p90":11.0,"p_in":0.99945,"p_largest":0.0},"yb":{"mean":8.8533,"p10":7.0,"p50":9.0,"p90":11.0,"p_in":0.99855,"p_largest":0.0},"joint_list":{"mean":7.85465,"p10":5.0,"p50":8.0,"p90":10.0,"p_in":0.9899,"p_largest":0.0},"otzma":{"mean":7.66055,"p10":6.0,"p50":8.0,"p90":10.0,"p_in":0.9948,"p_largest":0.0},"shas":{"mean":8.25685,"p10":6.0,"p50":8.0,"p90":11.0,"p_in":0.9952,"p_largest":0.0},"utj":{"mean":8.9021,"p10":6.0,"p50":9.0,"p90":12.0,"p_in":0.996,"p_largest":0.0},"rzp":{"mean":4.75005,"p10":0.0,"p50":5.0,"p90":7.0,"p_in":0.8528,"p_largest":0.0},"raam":{"mean":4.3679,"p10":0.0,"p50":5.0,"p90":7.0,"p_in":0.7745,"p_largest":0.0},"amcha":{"mean":1.58655,"p10":0.0,"p50":0.0,"p90":5.0,"p_in":0.3334,"p_largest":0.0},"blue_white":{"mean":0.0,"p10":0.0,"p50":0.0,"p90":0.0,"p_in":0.0,"p_largest":0.0},"reservists":{"mean":1.7768,"p10":0.0,"p50":0.0,"p90":5.0,"p_in":0.36965,"p_largest":0.0}},"blocs":{"gov":{"mean":50.624,"p10":44.0,"p90":57.0,"hist":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,4,6,7,27,43,62,90,133,250,374,460,667,828,1023,1252,1393,1589,1642,1625,1583,1411,1262,1102,839,643,534,366,291,187,113,87,48,29,11,6,6,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"opp":{"mean":55.5669,"p10":49.0,"p90":62.0,"hist":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,2,2,3,13,18,27,40,83,117,198,292,385,517,678,873,1090,1216,1361,1473,1541,1567,1476,1376,1235,1054,826,712,554,403,285,202,134,108,47,30,28,18,5,7,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"arab":{"mean":12.22255,"p10":7.0,"p90":17.0,"hist":[88,0,0,0,210,558,920,998,841,804,1172,1782,2317,2598,2387,1864,1343,895,552,309,191,89,41,26,8,3,3,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"amcha":{"mean":1.58655,"p10":0.0,"p90":5.0,"hist":[13332,0,0,0,3116,2379,894,234,37,6,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"haredi":{"mean":17.15895,"p10":13.0,"p90":21.0,"hist":[2,0,0,0,1,12,16,39,32,36,89,246,610,1050,1676,2227,2620,2641,2372,1997,1524,1113,708,453,244,162,61,35,18,4,7,3,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"paths":{"gov61":0.02445,"gov_amcha61":0.0568,"opp61":0.1681,"opp_amcha61":0.25055,"opp_raam61":0.4587,"opp_arab61":0.917,"opp_haredi61":0.9942,"opp_shas61":0.75095,"deadlock":0.6933},"share_mean":{"likud":16.127,"yashar":17.437,"together":9.962,"dems":7.294,"yb":6.959,"joint_list":6.209,"otzma":6.217,"shas":6.489,"utj":6.962,"rzp":4.289,"raam":4.127,"amcha":2.753,"blue_white":0.841,"reservists":2.857}}},"averages":{"consensus":{"likud":{"level":17.378,"se":0.389},"yashar":{"level":17.664,"se":0.396},"together":{"level":9.602,"se":0.317},"dems":{"level":7.38,"se":0.289},"yb":{"level":6.918,"se":0.282},"joint_list":{"level":6.235,"se":0.269},"otzma":{"level":6.319,"se":0.266},"shas":{"level":6.186,"se":0.264},"utj":{"level":6.117,"se":0.271},"rzp":{"level":4.514,"se":0.247},"raam":{"level":4.185,"se":0.236},"amcha":{"level":2.744,"se":0.211},"blue_white":{"level":0.786,"se":0.19},"reservists":{"level":2.759,"se":0.225}},"track_record":{"likud":{"level":17.454,"se":0.389},"yashar":{"level":17.641,"se":0.396},"together":{"level":9.568,"se":0.317},"dems":{"level":7.36,"se":0.289},"yb":{"level":6.887,"se":0.282},"joint_list":{"level":6.233,"se":0.269},"otzma":{"level":6.348,"se":0.266},"shas":{"level":6.203,"se":0.264},"utj":{"level":6.114,"se":0.271},"rzp":{"level":4.516,"se":0.247},"raam":{"level":4.199,"se":0.236},"amcha":{"level":2.752,"se":0.211},"blue_white":{"level":0.789,"se":0.19},"reservists":{"level":2.738,"se":0.225}},"ch14_world":{"likud":{"level":22.82,"se":0.389},"yashar":{"level":16.669,"se":0.396},"together":{"level":6.363,"se":0.317},"dems":{"level":7.098,"se":0.289},"yb":{"level":5.994,"se":0.282},"joint_list":{"level":6.021,"se":0.269},"otzma":{"level":6.571,"se":0.266},"shas":{"level":6.75,"se":0.264},"utj":{"level":6.119,"se":0.271},"rzp":{"level":5.496,"se":0.247},"raam":{"level":4.289,"se":0.236},"amcha":{"level":2.443,"se":0.211},"blue_white":{"level":0.443,"se":0.19},"reservists":{"level":1.904,"se":0.225}},"mainstream":{"likud":{"level":16.434,"se":0.389},"yashar":{"level":17.841,"se":0.396},"together":{"level":10.18,"se":0.317},"dems":{"level":7.429,"se":0.289},"yb":{"level":7.078,"se":0.282},"joint_list":{"level":6.272,"se":0.269},"otzma":{"level":6.275,"se":0.266},"shas":{"level":6.089,"se":0.264},"utj":{"level":6.117,"se":0.271},"rzp":{"level":4.348,"se":0.247},"raam":{"level":4.167,"se":0.236},"amcha":{"level":2.795,"se":0.211},"blue_white":{"level":0.843,"se":0.19},"reservists":{"level":2.905,"se":0.225}}},"house":{"likud":{"level":17.378,"se":0.389,"house":{"Channel 14 (Filber)":6.43,"Direct Polls":4.259,"Kantar":-0.282,"Lazar":-1.56,"Maagar Mochot":-0.94,"Midgam (Ch12)":-0.535,"Midgam Project (Ch13)":-2.06,"Yossi Tatika":0.033}},"yashar":{"level":17.664,"se":0.396,"house":{"Channel 14 (Filber)":-1.439,"Direct Polls":-0.554,"Kantar":0.663,"Lazar":0.762,"Maagar Mochot":-0.173,"Midgam (Ch12)":0.726,"Midgam Project (Ch13)":-0.758,"Yossi Tatika":-0.224}},"together":{"level":9.602,"se":0.317,"house":{"Channel 14 (Filber)":-4.25,"Direct Polls":-2.299,"Kantar":-0.217,"Lazar":0.821,"Maagar Mochot":1.916,"Midgam (Ch12)":0.459,"Midgam Project (Ch13)":-0.375,"Yossi Tatika":0.671}},"dems":{"level":7.38,"se":0.289,"house":{"Channel 14 (Filber)":-0.533,"Direct Polls":-0.032,"Kantar":-0.207,"Lazar":0.322,"Maagar Mochot":-0.127,"Midgam (Ch12)":0.419,"Midgam Project (Ch13)":0.928,"Yossi Tatika":-1.052}},"yb":{"level":6.918,"se":0.282,"house":{"Channel 14 (Filber)":-1.088,"Direct Polls":-0.766,"Kantar":-0.106,"Lazar":0.746,"Maagar Mochot":-0.645,"Midgam (Ch12)":0.358,"Midgam Project (Ch13)":-0.031,"Yossi Tatika":0.604}},"joint_list":{"level":6.235,"se":0.269,"house":{"Channel 14 (Filber)":-0.37,"Direct Polls":-0.056,"Kantar":-0.086,"Lazar":-0.241,"Maagar Mochot":-0.13,"Midgam (Ch12)":-0.022,"Midgam Project (Ch13)":0.722,"Yossi Tatika":-0.03}},"otzma":{"level":6.319,"se":0.266,"house":{"Channel 14 (Filber)":0.311,"Direct Polls":0.192,"Kantar":0.079,"Lazar":0.374,"Maagar Mochot":0.855,"Midgam (Ch12)":-1.077,"Midgam Project (Ch13)":0.532,"Yossi Tatika":-1.015}},"shas":{"level":6.186,"se":0.264,"house":{"Channel 14 (Filber)":1.633,"Direct Polls":-0.512,"Kantar":-0.442,"Lazar":-0.672,"Maagar Mochot":0.786,"Midgam (Ch12)":-0.561,"Midgam Project (Ch13)":-0.565,"Yossi Tatika":0.895}},"utj":{"level":6.117,"se":0.271,"house":{"Channel 14 (Filber)":-0.309,"Direct Polls":0.312,"Kantar":-0.149,"Lazar":-0.566,"Maagar Mochot":-0.437,"Midgam (Ch12)":0.309,"Midgam Project (Ch13)":0.164,"Yossi Tatika":0.677}},"rzp":{"level":4.514,"se":0.247,"house":{"Channel 14 (Filber)":1.636,"Direct Polls":0.317,"Kantar":0.378,"Lazar":-0.129,"Maagar Mochot":-0.913,"Midgam (Ch12)":-0.051,"Midgam Project (Ch13)":0.863,"Yossi Tatika":-1.124}},"raam":{"level":4.185,"se":0.236,"house":{"Channel 14 (Filber)":0.091,"Direct Polls":0.117,"Kantar":0.048,"Lazar":-0.026,"Maagar Mochot":-0.088,"Midgam (Ch12)":-0.577,"Midgam Project (Ch13)":0.385,"Yossi Tatika":0.154}},"amcha":{"level":2.744,"se":0.211,"house":{"Channel 14 (Filber)":-0.749,"Direct Polls":0.151,"Kantar":0.091,"Lazar":-0.038,"Maagar Mochot":0.147,"Midgam (Ch12)":-0.227,"Midgam Project (Ch13)":0.557,"Yossi Tatika":-0.232}},"blue_white":{"level":0.786,"se":0.19,"house":{"Channel 14 (Filber)":-0.711,"Direct Polls":0.049,"Kantar":-0.076,"Lazar":0.021,"Maagar Mochot":-0.044,"Midgam (Ch12)":-0.161,"Midgam Project (Ch13)":-0.018,"Yossi Tatika":0.61}},"reservists":{"level":2.759,"se":0.225,"house":{"Channel 14 (Filber)":-0.723,"Direct Polls":-0.988,"Kantar":0.524,"Lazar":0.402,"Maagar Mochot":-0.487,"Midgam (Ch12)":0.34,"Midgam Project (Ch13)":0.282,"Yossi Tatika":-0.205}}},"weights":{"quality":{"Channel 14 (Filber)":1.0,"Direct Polls":0.929720801793172,"Kantar":1.0062379249739084,"Lazar":0.9380606608826804,"Maagar Mochot":0.9623303007473094,"Midgam (Ch12)":0.850746824132519,"Midgam Project (Ch13)":0.8925823884774624,"Yossi Tatika":1.0},"bloc_quality":{"Channel 14 (Filber)":1.0,"Direct Polls":1.1538215531100915,"Kantar":1.0850767022268388,"Lazar":0.9292893815150702,"Maagar Mochot":1.0468994331897996,"Midgam (Ch12)":0.8384033517222915,"Midgam Project (Ch13)":0.9798743201404644,"Yossi Tatika":1.0},"anchors":{"consensus":{"Channel 14 (Filber)":0.5,"Direct Polls":0.5,"Kantar":1.0,"Lazar":1.0,"Maagar Mochot":1.0,"Midgam (Ch12)":1.0,"Midgam Project (Ch13)":1.0,"Yossi Tatika":1.0},"track_record":{"Channel 14 (Filber)":0.5,"Direct Polls":0.5769107765550457,"Kantar":1.0850767022268388,"Lazar":0.9292893815150702,"Maagar Mochot":1.0468994331897996,"Midgam (Ch12)":0.8384033517222915,"Midgam Project (Ch13)":0.9798743201404644,"Yossi Tatika":1.0},"ch14_world":{"Channel 14 (Filber)":1.0,"Direct Polls":1.0,"Kantar":0.0,"Lazar":0.0,"Maagar Mochot":0.0,"Midgam (Ch12)":0.0,"Midgam Project (Ch13)":0.0,"Yossi Tatika":0.0},"mainstream":{"Channel 14 (Filber)":0.0,"Direct Polls":0.0,"Kantar":1.0,"Lazar":1.0,"Maagar Mochot":1.0,"Midgam (Ch12)":1.0,"Midgam Project (Ch13)":1.0,"Yossi Tatika":1.0}}},"ratings":[{"pollster":"Smith","polls":14,"elections":6,"n_time_weighted":5.083,"adj_error":-0.221,"adj_bias":0.328,"pred_error":-0.074,"pred_bias":0.111,"raw_error":1.669,"raw_bias":-0.816,"bloc_rms":2.39,"pred_bloc_rms":2.834,"pollscore":-0.012,"quality":1.013,"bloc_quality":1.166},{"pollster":"Kantar","polls":15,"elections":5,"n_time_weighted":6.249,"adj_error":-0.231,"adj_bias":-0.449,"pred_error":-0.089,"pred_bias":-0.173,"raw_error":1.563,"raw_bias":-1.426,"bloc_rms":2.741,"pred_bloc_rms":2.937,"pollscore":-0.006,"quality":1.006,"bloc_quality":1.085},{"pollster":"Shvakim Panorama","polls":1,"elections":1,"n_time_weighted":0.342,"adj_error":-0.148,"adj_bias":1.2,"pred_error":-0.005,"pred_bias":0.04,"raw_error":1.426,"raw_bias":2.484,"bloc_rms":2.484,"pred_bloc_rms":3.04,"pollscore":0.006,"quality":0.993,"bloc_quality":1.013},{"pollster":"Geocartography","polls":2,"elections":1,"n_time_weighted":0.347,"adj_error":-0.035,"adj_bias":3.407,"pred_error":-0.001,"pred_bias":0.114,"raw_error":2.263,"raw_bias":1.819,"bloc_rms":2.33,"pred_bloc_rms":3.035,"pollscore":0.025,"quality":0.974,"bloc_quality":1.016},{"pollster":"Teleseker","polls":6,"elections":1,"n_time_weighted":1.041,"adj_error":-0.245,"adj_bias":1.787,"pred_error":-0.023,"pred_bias":0.169,"raw_error":2.089,"raw_bias":0.034,"bloc_rms":1.229,"pred_bloc_rms":2.887,"pollscore":0.026,"quality":0.973,"bloc_quality":1.123},{"pollster":"Maagar Mochot","polls":18,"elections":6,"n_time_weighted":6.342,"adj_error":0.043,"adj_bias":0.329,"pred_error":0.017,"pred_bias":0.128,"raw_error":2.019,"raw_bias":-1.345,"bloc_rms":2.881,"pred_bloc_rms":2.99,"pollscore":0.037,"quality":0.962,"bloc_quality":1.047},{"pollster":"Dialog","polls":6,"elections":2,"n_time_weighted":1.188,"adj_error":0.194,"adj_bias":-1.185,"pred_error":0.021,"pred_bias":-0.126,"raw_error":2.436,"raw_bias":-2.892,"bloc_rms":3.202,"pred_bloc_rms":3.074,"pollscore":0.038,"quality":0.961,"bloc_quality":0.99},{"pollster":"Miskar","polls":2,"elections":1,"n_time_weighted":0.64,"adj_error":0.403,"adj_bias":2.604,"pred_error":0.024,"pred_bias":0.157,"raw_error":2.541,"raw_bias":-0.382,"bloc_rms":0.396,"pred_bloc_rms":2.899,"pollscore":0.047,"quality":0.952,"bloc_quality":1.114},{"pollster":"Lazar","polls":32,"elections":6,"n_time_weighted":11.868,"adj_error":0.005,"adj_bias":-0.499,"pred_error":0.003,"pred_bias":-0.271,"raw_error":1.949,"raw_bias":-2.037,"bloc_rms":3.27,"pred_bloc_rms":3.173,"pollscore":0.062,"quality":0.938,"bloc_quality":0.929},{"pollster":"Direct Polls","polls":9,"elections":4,"n_time_weighted":4.106,"adj_error":-0.087,"adj_bias":1.279,"pred_error":-0.025,"pred_bias":0.372,"raw_error":1.63,"raw_bias":-0.272,"bloc_rms":2.334,"pred_bloc_rms":2.848,"pollscore":0.071,"quality":0.93,"bloc_quality":1.154},{"pollster":"Fuchs (Ch13)","polls":8,"elections":2,"n_time_weighted":3.912,"adj_error":0.042,"adj_bias":-1.24,"pred_error":0.012,"pred_bias":-0.349,"raw_error":1.815,"raw_bias":-2.808,"bloc_rms":3.336,"pred_bloc_rms":3.137,"pollscore":0.084,"quality":0.917,"bloc_quality":0.951},{"pollster":"Midgam Project (Ch13)","polls":12,"elections":3,"n_time_weighted":4.07,"adj_error":0.189,"adj_bias":-1.299,"pred_error":0.055,"pred_bias":-0.376,"raw_error":2.043,"raw_bias":-2.228,"bloc_rms":3.167,"pred_bloc_rms":3.09,"pollscore":0.111,"quality":0.893,"bloc_quality":0.98},{"pollster":"Midgam (Ch12)","polls":36,"elections":6,"n_time_weighted":12.974,"adj_error":-0.007,"adj_bias":-1.284,"pred_error":-0.004,"pred_bias":-0.725,"raw_error":1.92,"raw_bias":-2.372,"bloc_rms":3.558,"pred_bloc_rms":3.341,"pollscore":0.16,"quality":0.851,"bloc_quality":0.838}],"calibration":{"sigma_bloc":1.8821421027396936,"bloc_bias":-0.9329396011509389,"sigma_haredi":1.407615759437828,"haredi_bias":-1.3769103477807028,"sigma_arab":1.7377504301766669,"arab_bias":-0.8411099599328282,"drift_var_per_day":0.10515807787985651,"by_election":{"bloc_swing":{"2015":-2.9,"2019a":-2.39,"2019b":1.84,"2020":-1.24,"2021":0.5,"2022":-1.41},"N_only":{"2015":-3.33,"2019a":-0.8,"2019b":2.82,"2020":-0.69,"2021":0.82,"2022":-0.29},"H":{"2015":0.86,"2019a":-3.17,"2019b":-1.96,"2020":-1.1,"2021":-0.66,"2022":-2.23},"A":{"2015":-0.29,"2019a":0.88,"2019b":-2.02,"2020":-1.76,"2021":1.12,"2022":-2.97},"O":{"2015":3.1,"2019a":1.82,"2019b":-0.76,"2020":1.62,"2021":-2.28,"2022":2.97}},"avg_params":{"bandwidth":12.0,"half_life":7.0,"degree":1,"mix":0.8,"prior_sd":2.5,"tau":0.6,"iters":12}},"polls":[{"date":"2026-09-06","pollster":"Kantar","n":551,"seats":{"likud":20,"yashar":23,"together":13,"dems":8,"yb":7,"joint_list":7,"otzma":7,"shas":7,"utj":8,"rzp":6,"raam":6,"amcha":4,"reservists":4}},{"date":"2026-09-07","pollster":"Channel 14 (Filber)","n":1057,"seats":{"likud":30,"yashar":22,"together":6,"dems":10,"yb":6,"joint_list":8,"otzma":8,"shas":10,"utj":7,"rzp":8,"raam":5,"amcha":0,"blue_white":0,"reservists":0}},{"date":"2026-09-07","pollster":"Midgam (Ch12)","n":503,"seats":{"likud":21,"yashar":25,"together":13,"dems":11,"yb":8,"joint_list":7,"otzma":6,"shas":7,"utj":8,"rzp":6,"raam":4,"amcha":4,"blue_white":0,"reservists":0}},{"date":"2026-09-07","pollster":"Channel 14 (Filber)","n":null,"seats":{"likud":30,"yashar":22,"together":6,"dems":10,"yb":6,"joint_list":8,"otzma":8,"shas":10,"utj":7,"rzp":8,"raam":5}},{"date":"2026-09-08","pollster":"Lazar","n":600,"seats":{"likud":20,"yashar":25,"together":13,"dems":10,"yb":9,"joint_list":7,"otzma":8,"shas":7,"utj":7,"rzp":5,"raam":5,"amcha":0,"blue_white":0}},{"date":"2026-09-08","pollster":"Lazar","n":600,"seats":{"likud":20,"yashar":25,"together":13,"dems":10,"yb":9,"joint_list":7,"otzma":8,"shas":7,"utj":7,"rzp":5,"raam":5,"amcha":0,"blue_white":0,"reservists":4}},{"date":"2026-09-09","pollster":"Channel 14 (Filber)","n":537,"seats":{"likud":31,"yashar":22,"together":7,"dems":8,"yb":7,"joint_list":6,"otzma":8,"shas":10,"utj":7,"rzp":8,"raam":6,"amcha":0,"blue_white":0,"reservists":0}},{"date":"2026-09-09","pollster":"Midgam (Ch12)","n":504,"seats":{"likud":21,"yashar":25,"together":13,"dems":10,"yb":9,"joint_list":7,"otzma":6,"shas":7,"utj":8,"rzp":5,"raam":4,"amcha":5,"blue_white":0,"reservists":0}},{"date":"2026-09-09","pollster":"Midgam Project (Ch13)","n":1119,"seats":{"likud":19,"yashar":22,"together":13,"dems":10,"yb":8,"joint_list":8,"otzma":9,"shas":7,"utj":8,"rzp":6,"raam":6,"amcha":4,"blue_white":0}},{"date":"2026-09-09","pollster":"Maagar Mochot","n":null,"seats":{"likud":20,"yashar":23,"together":16,"dems":9,"yb":7,"joint_list":7,"otzma":9,"shas":9,"utj":7,"rzp":4,"raam":5,"amcha":4,"blue_white":0,"reservists":0}},{"date":"2026-09-09","pollster":"Midgam Project (Ch13)","n":1119,"seats":{"likud":19,"yashar":22,"together":13,"dems":10,"yb":8,"joint_list":8,"otzma":9,"shas":7,"utj":8,"rzp":6,"raam":6,"amcha":4,"blue_white":0,"reservists":0}},{"date":"2026-09-09","pollster":"Lazar","n":506,"seats":{"likud":21,"yashar":25,"together":14,"dems":9,"yb":9,"joint_list":7,"otzma":7,"shas":7,"utj":7,"rzp":5,"raam":5,"amcha":4,"blue_white":0}},{"date":"2026-09-09","pollster":"Lazar","n":506,"seats":{"likud":21,"yashar":25,"together":14,"dems":9,"yb":9,"joint_list":7,"otzma":7,"shas":7,"utj":7,"rzp":5,"raam":5,"amcha":4,"blue_white":0,"reservists":0}},{"date":"2026-09-09","pollster":"Kantar","n":554,"seats":{"likud":21,"yashar":24,"together":12,"dems":9,"yb":7,"joint_list":7,"otzma":7,"shas":7,"utj":8,"rzp":5,"raam":5,"amcha":4,"blue_white":0,"reservists":4}},{"date":"2026-09-09","pollster":"Channel 14 (Filber)","n":537,"seats":{"likud":31,"yashar":22,"together":7,"dems":8,"yb":7,"joint_list":6,"otzma":8,"shas":10,"utj":7,"rzp":8,"raam":6,"amcha":0,"blue_white":0}},{"date":"2026-09-09","pollster":"Direct Polls","n":1054,"seats":{"likud":27,"yashar":22,"together":10,"dems":9,"yb":7,"joint_list":7,"otzma":8,"shas":7,"utj":8,"rzp":6,"raam":5,"amcha":4,"blue_white":0,"reservists":0}},{"date":"2026-09-10","pollster":"Yossi Tatika","n":500,"seats":{"likud":23,"yashar":23,"together":15,"dems":8,"yb":10,"joint_list":7,"otzma":6,"shas":10,"utj":9,"rzp":4,"raam":5,"amcha":0,"blue_white":0,"reservists":0}},{"date":"2026-09-10","pollster":"Lazar","n":601,"seats":{"likud":19,"yashar":25,"together":14,"dems":10,"yb":9,"joint_list":7,"otzma":8,"shas":7,"utj":7,"rzp":5,"raam":5,"amcha":4,"blue_white":0}},{"date":"2026-09-10","pollster":"Lazar","n":601,"seats":{"likud":19,"yashar":25,"together":14,"dems":10,"yb":9,"joint_list":7,"otzma":8,"shas":7,"utj":7,"rzp":5,"raam":5,"amcha":4,"blue_white":0,"reservists":0}},{"date":"2026-09-14","pollster":"Midgam (Ch12)","n":null,"seats":{"likud":20,"yashar":23,"together":13,"dems":10,"yb":8,"joint_list":8,"otzma":6,"shas":7,"utj":8,"rzp":5,"raam":4,"amcha":4,"blue_white":0,"reservists":4}},{"date":"2026-09-14","pollster":"Kantar","n":null,"seats":{"likud":20,"yashar":24,"together":12,"dems":8,"yb":8,"joint_list":7,"otzma":8,"shas":7,"utj":7,"rzp":6,"raam":5,"amcha":4,"reservists":4}},{"date":"2026-09-15","pollster":"Channel 14 (Filber)","n":483,"seats":{"likud":30,"yashar":21,"together":8,"dems":9,"yb":6,"joint_list":7,"otzma":8,"shas":10,"utj":8,"rzp":8,"raam":5,"amcha":0,"blue_white":0,"reservists":0}},{"date":"2026-09-15","pollster":"Midgam Project (Ch13)","n":886,"seats":{"likud":18,"yashar":22,"together":12,"dems":10,"yb":8,"joint_list":8,"otzma":8,"shas":7,"utj":7,"rzp":8,"raam":6,"amcha":6,"blue_white":0,"reservists":0}},{"date":"2026-09-17","pollster":"Yossi Tatika","n":500,"seats":{"likud":22,"yashar":24,"together":14,"dems":8,"yb":9,"joint_list":8,"otzma":7,"shas":9,"utj":9,"rzp":4,"raam":6,"amcha":0,"blue_white":0,"reservists":0}},{"date":"2026-09-17","pollster":"Channel 14 (Filber)","n":817,"seats":{"likud":31,"yashar":20,"together":9,"dems":8,"yb":7,"joint_list":7,"otzma":8,"shas":10,"utj":8,"rzp":7,"raam":5,"amcha":0,"blue_white":0,"reservists":0}},{"date":"2026-09-17","pollster":"Lazar","n":600,"seats":{"likud":18,"yashar":23,"together":13,"dems":9,"yb":9,"joint_list":7,"otzma":8,"shas":7,"utj":7,"rzp":6,"raam":5,"amcha":4,"blue_white":0,"reservists":4}},{"date":"2026-09-17","pollster":"Kantar","n":551,"seats":{"likud":20,"yashar":22,"together":13,"dems":9,"yb":8,"joint_list":7,"otzma":8,"shas":7,"utj":7,"rzp":6,"raam":5,"amcha":4,"blue_white":0,"reservists":4}},{"date":"2026-09-17","pollster":"Direct Polls","n":519,"seats":{"likud":27,"yashar":21,"together":9,"dems":10,"yb":8,"joint_list":7,"otzma":7,"shas":7,"utj":8,"rzp":6,"raam":5,"amcha":5,"reservists":0}},{"date":"2026-09-22","pollster":"Midgam (Ch12)","n":501,"seats":{"likud":20,"yashar":23,"together":13,"dems":9,"yb":9,"joint_list":7,"otzma":6,"shas":7,"utj":8,"rzp":5,"raam":5,"amcha":4,"blue_white":0,"reservists":4}},{"date":"2026-09-23","pollster":"Midgam Project (Ch13)","n":1503,"seats":{"likud":18,"yashar":22,"together":11,"dems":11,"yb":8,"joint_list":8,"otzma":7,"shas":7,"utj":8,"rzp":6,"raam":5,"amcha":5,"reservists":4}},{"date":"2026-09-24","pollster":"Lazar","n":610,"seats":{"likud":18,"yashar":22,"together":13,"dems":11,"yb":9,"joint_list":7,"otzma":9,"shas":6,"utj":6,"rzp":6,"raam":5,"amcha":4,"blue_white":0,"reservists":4}},{"date":"2026-09-24","pollster":"Direct Polls","n":537,"seats":{"likud":27,"yashar":22,"together":9,"dems":9,"yb":7,"joint_list":7,"otzma":8,"shas":7,"utj":8,"rzp":6,"raam":6,"amcha":4,"reservists":0}},{"date":"2026-09-27","pollster":"Kantar","n":552,"seats":{"likud":21,"yashar":23,"together":11,"dems":9,"yb":9,"joint_list":7,"otzma":7,"shas":7,"utj":7,"rzp":6,"raam":5,"amcha":4,"reservists":4}},{"date":"2026-09-30","pollster":"Midgam Project (Ch13)","n":1013,"seats":{"likud":19,"yashar":21,"together":11,"dems":11,"yb":9,"joint_list":9,"otzma":8,"shas":7,"utj":8,"rzp":7,"raam":5,"amcha":5,"blue_white":0,"reservists":0}},{"date":"2026-10-01","pollster":"Lazar","n":602,"seats":{"likud":19,"yashar":21,"together":13,"dems":10,"yb":9,"joint_list":7,"otzma":9,"shas":7,"utj":7,"rzp":5,"raam":5,"amcha":4,"blue_white":0,"reservists":4}},{"date":"2026-10-01","pollster":"Direct Polls","n":504,"seats":{"likud":28,"yashar":22,"together":9,"dems":9,"yb":7,"joint_list":8,"otzma":8,"shas":7,"utj":8,"rzp":5,"raam":5,"amcha":4,"reservists":0}},{"date":"2026-10-05","pollster":"Midgam (Ch12)","n":501,"seats":{"likud":21,"yashar":23,"together":13,"dems":9,"yb":9,"joint_list":8,"otzma":7,"shas":7,"utj":8,"rzp":6,"raam":5,"amcha":0,"blue_white":0,"reservists":4}}],"composition":{"segments":["arab","druze","haredi","dati","jewish"],"matrix":{"likud":{"arab":0.176,"druze":0.059,"haredi":0.238,"dati":0.35,"jewish":16.505},"yashar":{"arab":0.197,"druze":0.233,"haredi":0.084,"dati":0.14,"jewish":16.96},"together":{"arab":0.088,"druze":0.053,"haredi":0.08,"dati":0.339,"jewish":9.015},"dems":{"arab":0.354,"druze":0.128,"haredi":0.022,"dati":0.02,"jewish":6.835},"yb":{"arab":0.119,"druze":0.209,"haredi":0.052,"dati":0.036,"jewish":6.482},"joint_list":{"arab":6.217,"druze":0.0,"haredi":0.0,"dati":0.0,"jewish":0.0},"otzma":{"arab":0.022,"druze":0.001,"haredi":0.335,"dati":0.845,"jewish":5.097},"shas":{"arab":0.038,"druze":0.006,"haredi":3.11,"dati":0.091,"jewish":2.924},"utj":{"arab":0.006,"druze":0.0,"haredi":5.808,"dati":0.016,"jewish":0.269},"rzp":{"arab":0.017,"druze":0.013,"haredi":0.21,"dati":0.617,"jewish":3.644},"raam":{"arab":4.173,"druze":0.0,"haredi":0.0,"dati":0.0,"jewish":0.0},"amcha":{"arab":0.021,"druze":0.006,"haredi":0.081,"dati":0.18,"jewish":2.449},"blue_white":{"arab":0.009,"druze":0.018,"haredi":0.004,"dati":0.007,"jewish":0.746},"reservists":{"arab":0.031,"druze":0.036,"haredi":0.025,"dati":0.041,"jewish":2.618},"others":{"arab":0.102,"druze":0.013,"haredi":0.02,"dati":0.025,"jewish":1.336}},"turnout_2022":{"arab":0.53,"druze":0.488,"haredi":0.736,"dati":0.746,"jewish":0.648},"seg_share":{"arab":0.1157,"druze":0.0078,"haredi":0.1007,"dati":0.0271,"jewish":0.7488}},"dynamics":{"n":10000,"baseline":{"gov61":0.0491,"gov_amcha61":0.1009,"opp61":0.0978,"opp_amcha61":0.1552,"opp_raam61":0.3315,"opp_arab61":0.8611,"opp_haredi61":0.9889,"deadlock":0.7446,"seats_gov":52.385,"seats_opp":53.9356,"seats_arab":12.1644,"seats_amcha":1.515,"seats_haredi":17.2906,"in_rzp":0.8943,"in_raam":0.7839,"in_amcha":0.3203,"in_reservists":0.3121,"in_joint_list":0.989,"likud_largest":0.5128},"scenarios":[{"group":"turnout","key":"arab_45","label":"Arab turnout falls to 45%","why":"2021 level (44.6%), when the Joint List split"},{"group":"turnout","key":"arab_60","label":"Arab turnout rises to 60%","why":"Between 2019b (59%) and 2020 (65%)"},{"group":"turnout","key":"arab_67","label":"Arab turnout 67%","why":"KAS survey (May 2026): ~67% if a united Joint List runs"},{"group":"turnout","key":"haredi_up","label":"Haredi turnout +8%","why":"Draft-law fight mobilises haredi voters"},{"group":"turnout","key":"haredi_down","label":"Haredi turnout \u22128%","why":"Haredi voters disaffected with both camps"},{"group":"turnout","key":"likud_home10","label":"10% of Likud supporters stay home","why":"IDI: 43% of right-wing Jews say voting makes no difference (vs 15% on the left)"},{"group":"turnout","key":"right_home5","label":"5% of all right-bloc supporters stay home","why":"A general enthusiasm gap on the right"},{"group":"turnout","key":"opp_home7","label":"7% of opposition supporters stay home","why":"Complacency, or a 'nothing changes' mood in the centre"},{"group":"turnout","key":"expats","label":"Fly & Vote expats: 25,000 votes, 75% opposition","why":">33,000 expats registered to fly home to vote"},{"group":"strategy","key":"gevalt","label":"Gevalt: 30% of RZP and Amcha voters switch to Likud","why":"The 2015 pattern: small right lists bled to Likud in the final week"},{"group":"strategy","key":"amcha_out","label":"Amcha Yisrael drops out (votes 70% Likud, 30% Otzma)","why":"It is polling on the threshold"},{"group":"strategy","key":"reservists_out","label":"Reservists drop out (votes to Yashar/Together)","why":"Hendel's list is polling on the threshold"},{"group":"strategy","key":"bw_out","label":"Gantz's Blue and White drops out (votes to Yashar)","why":"Polling ~1%: a wasted-vote list"},{"group":"polls","key":"shy_right","label":"Polls miss like 2015: 3 seats toward the right","why":"Largest Netanyahu-bloc miss in the backtest"},{"group":"polls","key":"miss_left","label":"Polls miss 3 seats toward the opposition","why":"The 2019b-style miss in the other direction"},{"group":"polls","key":"no_haredi_fix","label":"No haredi correction","why":"Assume haredi parties are polled accurately this time"},{"group":"polls","key":"ch14","label":"Channel 14 and Direct Polls are right","why":"Anchor the average to the DP/Channel 14 family"},{"group":"polls","key":"mainstream","label":"Only the mainstream pollsters are right","why":"Drop Channel 14 and Direct Polls from the anchor"}],"results":{"baseline":{"gov61":0.0491,"gov_amcha61":0.1009,"opp61":0.0978,"opp_amcha61":0.1552,"opp_raam61":0.3315,"opp_arab61":0.8611,"opp_haredi61":0.9889,"deadlock":0.7446,"seats_gov":52.385,"seats_opp":53.9356,"seats_arab":12.1644,"seats_amcha":1.515,"seats_haredi":17.2906,"in_rzp":0.8943,"in_raam":0.7839,"in_amcha":0.3203,"in_reservists":0.3121,"in_joint_list":0.989,"likud_largest":0.5128},"arab_45":{"gov61":0.0828,"gov_amcha61":0.1556,"opp61":0.15,"opp_amcha61":0.2296,"opp_raam61":0.3259,"opp_arab61":0.7922,"opp_haredi61":0.9946,"deadlock":0.6182,"seats_gov":53.6177,"seats_opp":55.0869,"seats_arab":9.6916,"seats_amcha":1.6038,"seats_haredi":17.6936,"in_rzp":0.9053,"in_raam":0.6075,"in_amcha":0.3347,"in_reservists":0.3286,"in_joint_list":0.9634,"likud_largest":0.5133},"arab_60":{"gov61":0.0317,"gov_amcha61":0.0683,"opp61":0.0678,"opp_amcha61":0.1108,"opp_raam61":0.3297,"opp_arab61":0.9012,"opp_haredi61":0.9796,"deadlock":0.8211,"seats_gov":51.4772,"seats_opp":53.0795,"seats_arab":14.0039,"seats_amcha":1.4394,"seats_haredi":16.9978,"in_rzp":0.8847,"in_raam":0.8673,"in_amcha":0.3069,"in_reservists":0.2979,"in_joint_list":0.9954,"likud_largest":0.5153},"arab_67":{"gov61":0.0207,"gov_amcha61":0.0478,"opp61":0.0495,"opp_amcha61":0.083,"opp_raam61":0.33,"opp_arab61":0.9287,"opp_haredi61":0.9675,"deadlock":0.8693,"seats_gov":50.6455,"seats_opp":52.3162,"seats_arab":15.6683,"seats_amcha":1.37,"seats_haredi":16.7346,"in_rzp":0.8725,"in_raam":0.9146,"in_amcha":0.2939,"in_reservists":0.2857,"in_joint_list":0.9975,"likud_largest":0.5159},"haredi_up":{"gov61":0.0654,"gov_amcha61":0.1256,"opp61":0.082,"opp_amcha61":0.1333,"opp_raam61":0.2903,"opp_arab61":0.8302,"opp_haredi61":0.9913,"deadlock":0.742,"seats_gov":53.0588,"seats_opp":53.4483,"seats_arab":12.0106,"seats_amcha":1.4823,"seats_haredi":18.2123,"in_rzp":0.8901,"in_raam":0.7739,"in_amcha":0.3141,"in_reservists":0.3032,"in_joint_list":0.988,"likud_largest":0.5138},"haredi_down":{"gov61":0.0371,"gov_amcha61":0.0786,"opp61":0.119,"opp_amcha61":0.1833,"opp_raam61":0.3766,"opp_arab61":0.888,"opp_haredi61":0.9847,"deadlock":0.7389,"seats_gov":51.6945,"seats_opp":54.4383,"seats_arab":12.3194,"seats_amcha":1.5478,"seats_haredi":16.3538,"in_rzp":0.8961,"in_raam":0.7919,"in_amcha":0.3262,"in_reservists":0.3207,"in_joint_list":0.9899,"likud_largest":0.513},"likud_home10":{"gov61":0.0299,"gov_amcha61":0.0652,"opp61":0.1385,"opp_amcha61":0.2131,"opp_raam61":0.4156,"opp_arab61":0.9098,"opp_haredi61":0.9952,"deadlock":0.7225,"seats_gov":51.0546,"seats_opp":54.8945,"seats_arab":12.4484,"seats_amcha":1.6025,"seats_haredi":17.5896,"in_rzp":0.9047,"in_raam":0.7995,"in_amcha":0.3361,"in_reservists":0.3292,"in_joint_list":0.9904,"likud_largest":0.333},"right_home5":{"gov61":0.0261,"gov_amcha61":0.0543,"opp61":0.1559,"opp_amcha61":0.2218,"opp_raam61":0.4485,"opp_arab61":0.9233,"opp_haredi61":0.9932,"deadlock":0.7241,"seats_gov":50.7908,"seats_opp":55.2962,"seats_arab":12.5472,"seats_amcha":1.3658,"seats_haredi":16.792,"in_rzp":0.8722,"in_raam":0.8036,"in_amcha":0.2922,"in_reservists":0.3337,"in_joint_list":0.9908,"likud_largest":0.4233},"opp_home7":{"gov61":0.0951,"gov_amcha61":0.1814,"opp61":0.0356,"opp_amcha61":0.0699,"opp_raam61":0.1901,"opp_arab61":0.7653,"opp_haredi61":0.9704,"deadlock":0.7489,"seats_gov":54.1414,"seats_opp":51.5034,"seats_arab":12.683,"seats_amcha":1.6722,"seats_haredi":17.8438,"in_rzp":0.915,"in_raam":0.8109,"in_amcha":0.3495,"in_reservists":0.2737,"in_joint_list":0.9911,"likud_largest":0.6464},"expats":{"gov61":0.0468,"gov_amcha61":0.096,"opp61":0.104,"opp_amcha61":0.1627,"opp_raam61":0.3456,"opp_arab61":0.8659,"opp_haredi61":0.9907,"deadlock":0.7421,"seats_gov":52.2876,"seats_opp":54.1511,"seats_arab":12.0758,"seats_amcha":1.4855,"seats_haredi":17.2565,"in_rzp":0.8939,"in_raam":0.7786,"in_amcha":0.3148,"in_reservists":0.3142,"in_joint_list":0.9883,"likud_largest":0.503},"gevalt":{"gov61":0.0654,"gov_amcha61":0.0746,"opp61":0.137,"opp_amcha61":0.1448,"opp_raam61":0.4034,"opp_arab61":0.8968,"opp_haredi61":0.9925,"deadlock":0.7806,"seats_gov":52.6518,"seats_opp":54.7771,"seats_arab":12.3624,"seats_amcha":0.2087,"seats_haredi":17.5637,"in_rzp":0.4299,"in_raam":0.7839,"in_amcha":0.0492,"in_reservists":0.3121,"in_joint_list":0.989,"likud_largest":0.7157},"amcha_out":{"gov61":0.1152,"gov_amcha61":0.1152,"opp61":0.074,"opp_amcha61":0.074,"opp_raam61":0.2768,"opp_arab61":0.8394,"opp_haredi61":0.9878,"deadlock":0.8108,"seats_gov":54.6074,"seats_opp":53.3567,"seats_arab":12.0359,"seats_amcha":0.0,"seats_haredi":17.1056,"in_rzp":0.8943,"in_raam":0.7839,"in_amcha":0.0,"in_reservists":0.3121,"in_joint_list":0.989,"likud_largest":0.7046},"reservists_out":{"gov61":0.0364,"gov_amcha61":0.0777,"opp61":0.1143,"opp_amcha61":0.1815,"opp_raam61":0.3744,"opp_arab61":0.8873,"opp_haredi61":0.9927,"deadlock":0.7415,"seats_gov":51.8751,"seats_opp":54.5824,"seats_arab":12.0407,"seats_amcha":1.5018,"seats_haredi":17.1218,"in_rzp":0.8943,"in_raam":0.7839,"in_amcha":0.3203,"in_reservists":0.0,"in_joint_list":0.989,"likud_largest":0.374},"bw_out":{"gov61":0.0407,"gov_amcha61":0.0848,"opp61":0.1197,"opp_amcha61":0.1838,"opp_raam61":0.3715,"opp_arab61":0.8807,"opp_haredi61":0.9918,"deadlock":0.7321,"seats_gov":51.9262,"seats_opp":54.5105,"seats_arab":12.0589,"seats_amcha":1.5044,"seats_haredi":17.1442,"in_rzp":0.8943,"in_raam":0.7839,"in_amcha":0.3203,"in_reservists":0.3121,"in_joint_list":0.989,"likud_largest":0.4266},"shy_right":{"gov61":0.1526,"gov_amcha61":0.2649,"opp61":0.0259,"opp_amcha61":0.053,"opp_raam61":0.1309,"opp_arab61":0.6688,"opp_haredi61":0.9613,"deadlock":0.6826,"seats_gov":55.5327,"seats_opp":50.5443,"seats_arab":12.1259,"seats_amcha":1.7971,"seats_haredi":18.2883,"in_rzp":0.9266,"in_raam":0.7829,"in_amcha":0.3709,"in_reservists":0.2589,"in_joint_list":0.9888,"likud_largest":0.7154},"miss_left":{"gov61":0.0113,"gov_amcha61":0.0241,"opp61":0.2725,"opp_amcha61":0.3499,"opp_raam61":0.6017,"opp_arab61":0.9608,"opp_haredi61":0.998,"deadlock":0.6261,"seats_gov":49.1863,"seats_opp":57.3856,"seats_arab":12.2043,"seats_amcha":1.2238,"seats_haredi":16.2909,"in_rzp":0.8479,"in_raam":0.7848,"in_amcha":0.2654,"in_reservists":0.3674,"in_joint_list":0.989,"likud_largest":0.3149},"no_haredi_fix":{"gov61":0.0305,"gov_amcha61":0.0659,"opp61":0.135,"opp_amcha61":0.2066,"opp_raam61":0.4048,"opp_arab61":0.9062,"opp_haredi61":0.9815,"deadlock":0.7282,"seats_gov":51.1851,"seats_opp":54.8098,"seats_arab":12.4333,"seats_amcha":1.5718,"seats_haredi":15.646,"in_rzp":0.8994,"in_raam":0.7987,"in_amcha":0.3303,"in_reservists":0.3272,"in_joint_list":0.9903,"likud_largest":0.5133},"ch14":{"gov61":0.5893,"gov_amcha61":0.664,"opp61":0.0012,"opp_amcha61":0.0018,"opp_raam61":0.0109,"opp_arab61":0.2651,"opp_haredi61":0.7275,"deadlock":0.3342,"seats_gov":61.6913,"seats_opp":45.3003,"seats_arab":11.9801,"seats_amcha":1.0283,"seats_haredi":17.96,"in_rzp":0.9818,"in_raam":0.8046,"in_amcha":0.2267,"in_reservists":0.0831,"in_joint_list":0.9842,"likud_largest":0.9518},"mainstream":{"gov61":0.0255,"gov_amcha61":0.0569,"opp61":0.1711,"opp_amcha61":0.2541,"opp_raam61":0.4477,"opp_arab61":0.9176,"opp_haredi61":0.9952,"deadlock":0.6893,"seats_gov":50.6918,"seats_opp":55.5145,"seats_arab":12.1938,"seats_amcha":1.5999,"seats_haredi":17.1749,"in_rzp":0.8608,"in_raam":0.7795,"in_amcha":0.3356,"in_reservists":0.3602,"in_joint_list":0.9898,"likud_largest":0.3962}},"grid":{"arab":[0.4,0.45,0.5,0.53,0.56,0.6,0.65,0.7],"swing":[-4,-3,-2,-1,0,1,2,3,4],"gov_amcha61":[[0.04175,0.06675,0.1045,0.14875,0.1995,0.2755,0.3555,0.43775,0.523],[0.02775,0.044,0.07125,0.108,0.15675,0.213,0.284,0.362,0.448],[0.01875,0.03075,0.05025,0.0825,0.11925,0.169,0.229,0.30225,0.38025],[0.01525,0.025,0.03975,0.06625,0.10125,0.14525,0.1995,0.27,0.34375],[0.0125,0.0205,0.03275,0.055,0.08625,0.12775,0.17625,0.23375,0.3105],[0.00925,0.01525,0.0265,0.0445,0.07075,0.102,0.148,0.20425,0.27025],[0.00675,0.01125,0.01975,0.0325,0.051,0.07875,0.11775,0.16025,0.22425],[0.00425,0.00825,0.01425,0.023,0.03825,0.0595,0.09075,0.133,0.19]],"opp61":[[0.498,0.4135,0.33325,0.2505,0.18325,0.13675,0.09225,0.0615,0.03775],[0.43575,0.3585,0.26875,0.19725,0.14275,0.1025,0.07025,0.04275,0.02475],[0.3895,0.29975,0.222,0.161,0.11475,0.08075,0.05225,0.03225,0.01775],[0.35725,0.26975,0.19575,0.14475,0.10125,0.07175,0.04125,0.0255,0.014],[0.323,0.24075,0.17225,0.12775,0.08975,0.062,0.036,0.02075,0.0115],[0.279,0.20875,0.149,0.109,0.07625,0.047,0.0285,0.01625,0.00975],[0.239,0.177,0.1255,0.0895,0.061,0.03525,0.02075,0.01275,0.0075],[0.20425,0.149,0.103,0.0745,0.0485,0.027,0.01625,0.00875,0.00575]],"opp_amcha61":[[0.59375,0.5175,0.442,0.3535,0.2745,0.21675,0.16125,0.12025,0.084],[0.529,0.4535,0.362,0.28325,0.21975,0.16975,0.124,0.09,0.0585],[0.47225,0.38425,0.3005,0.234,0.17925,0.1365,0.09725,0.06825,0.044],[0.43625,0.34775,0.26875,0.209,0.15775,0.119,0.08075,0.05425,0.0355],[0.39725,0.3135,0.239,0.18675,0.14,0.1025,0.0715,0.04475,0.0285],[0.35025,0.27325,0.20875,0.16,0.118,0.082,0.05675,0.036,0.023],[0.3,0.229,0.17775,0.13325,0.09675,0.0645,0.0435,0.0275,0.01725],[0.25675,0.19475,0.14775,0.11175,0.077,0.05,0.03375,0.0195,0.01275]],"deadlock":[[0.368,0.42125,0.461,0.507,0.53525,0.51775,0.49275,0.45175,0.40325],[0.4455,0.505,0.56975,0.61275,0.6285,0.62175,0.59675,0.552,0.496],[0.50975,0.58575,0.6505,0.68575,0.7045,0.6965,0.6755,0.631,0.577],[0.54875,0.62725,0.6925,0.726,0.7425,0.737,0.721,0.67625,0.62125],[0.59025,0.666,0.72875,0.75875,0.77425,0.77025,0.75275,0.7215,0.66125],[0.6405,0.7115,0.765,0.79575,0.81175,0.8165,0.7955,0.75975,0.70675],[0.69325,0.75975,0.8025,0.83425,0.85225,0.857,0.83875,0.81225,0.7585],[0.739,0.797,0.838,0.86525,0.88475,0.8905,0.8755,0.8475,0.79725]]},"sweep":{"swing":[-6.0,-5.5,-5.0,-4.5,-4.0,-3.5,-3.0,-2.5,-2.0,-1.5,-1.0,-0.5,0.0,0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0,8.5,9.0],"gov_amcha61":[0.0045,0.0065,0.00775,0.01125,0.01525,0.02025,0.025,0.031,0.03975,0.0515,0.06625,0.08175,0.10125,0.1225,0.14525,0.172,0.1995,0.2325,0.27,0.30875,0.34375,0.383,0.4295,0.47,0.51375,0.55825,0.60275,0.6435,0.68375,0.71975,0.76125],"gov61":[0.00225,0.00325,0.00375,0.0055,0.00675,0.0085,0.01075,0.01375,0.01925,0.02325,0.02925,0.037,0.0485,0.06025,0.07475,0.0895,0.106,0.128,0.14875,0.176,0.20475,0.23675,0.2725,0.30775,0.3475,0.385,0.428,0.4725,0.51325,0.55175,0.59525],"opp61":[0.513,0.4715,0.4335,0.39675,0.35725,0.31475,0.26975,0.231,0.19575,0.16675,0.14475,0.12225,0.10125,0.08475,0.07175,0.056,0.04125,0.0335,0.0255,0.019,0.014,0.011,0.009,0.006,0.00375,0.0025,0.002,0.00175,0.0015,0.0005,0.0005]}}}</script>
+<script>
+(() => {
+const D = JSON.parse(document.getElementById("data").textContent);
+const M = D.meta, X = D.model, P = X.parties, L = M.labels;
+const $ = (id) => document.getElementById(id);
+const pct = (x) => x < 0.005 ? "<1%" : x > 0.995 ? ">99%" : Math.round(x * 100) + "%";
+const fmtDate = (s) => new Date(s + "T12:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const SNAME = { consensus: "Consensus of all pollsters", track_record: "Weighted by track record", ch14_world: "If Channel 14 and Direct Polls are right", mainstream: "Only the mainstream pollsters" };
+const SHORT = { consensus: "Consensus", track_record: "Track record", ch14_world: "Channel 14 world", mainstream: "Mainstream only" };
+let CMP = "ch14_world";
+const SK = () => ["consensus", CMP];
+const SC = (i) => i === 0 ? "s1" : "s2";
+
+$("eday").textContent = fmtDate(M.election);
+$("metaLine").textContent = `Run ${fmtDate(M.run_date)}, ${M.days_left} days out · ${M.n_polls} polls from ${M.houses.length} houses since ${fmtDate(M.window_start)} (latest ${fmtDate(M.latest_poll)}) · ${M.n_sims.toLocaleString()} simulations per scenario`;
+function renderKey() { $("scenKey").innerHTML = SK().map((k, i) => `<span><i class="sw ${SC(i)}"></i>${esc(SNAME[k])}</span>`).join(""); }
+
+/* ---------- simulation: mirrors pollster/simulate.py ---------- */
+function rng(seed) { let a = seed >>> 0; return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function gauss(r) { let u = 0; while (u === 0) u = r(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * r()); }
+function dhondt(v, seats) {
+  const n = v.length, out = new Array(n).fill(0), tot = v.reduce((a, b) => a + b, 0);
+  if (seats <= 0 || tot <= 0) return out;
+  const q = tot / seats; let s = 0;
+  for (let i = 0; i < n; i++) { out[i] = Math.floor(v[i] / q); s += out[i]; }
+  while (s < seats) { let b = 0, bv = -1; for (let i = 0; i < n; i++) { const x = v[i] / (out[i] + 1); if (x > bv) { bv = x; b = i; } } out[b]++; s++; }
+  return out;
+}
+function allocate(votes, names, pairs) {
+  const tot = votes.reduce((a, b) => a + b, 0), passed = votes.map(v => v >= X.threshold / 100 * tot);
+  const v = votes.map((x, i) => passed[i] ? x : 0), idx = Object.fromEntries(names.map((n, i) => [n, i]));
+  const groups = [], used = new Set();
+  for (const [a, b] of pairs) { const ia = idx[a], ib = idx[b]; if (ia !== undefined && ib !== undefined && passed[ia] && passed[ib] && !used.has(ia) && !used.has(ib)) { groups.push([ia, ib]); used.add(ia); used.add(ib); } }
+  names.forEach((_, i) => { if (passed[i] && !used.has(i)) groups.push([i]); });
+  const gs = dhondt(groups.map(g => g.reduce((s, i) => s + v[i], 0)), X.seats), out = new Array(names.length).fill(0);
+  groups.forEach((g, j) => { if (g.length > 1) { const sub = dhondt(g.map(i => v[i]), gs[j]); g.forEach((i, k) => out[i] = sub[k]); } else out[g[0]] = gs[j]; });
+  return out;
+}
+function simulate(anchor, o, n, seed) {
+  const r = rng(seed), k = 1 / 1.2, Pn = P.length, sc = o.unc;
+  const mu = X.mu[anchor].map(m => Math.max(m, 0.02)), se = X.se[anchor];
+  const fam = P.map(p => M.family[p]), to = fam.map(f => f === "N" || f === "H"), fr = fam.map(f => f === "O");
+  const psd = mu.map((m, i) => Math.sqrt(X.party_a + X.party_b * m / k) * k * (M.debut.includes(P[i]) ? X.debut_mult : 1));
+  const sig = Math.sqrt(X.sigma_bloc ** 2 + X.drift * X.days_left);
+  const names = P.concat(["others"]), S = X.segments, prof = X.profile;
+  const segMean = S.map(g => (g === "haredi" && !o.hfix) ? 0 : (X.seg_mean[g] || 0));
+  const segSig = S.map(g => X.seg_sigma[g] || 0);
+  const segAdd = S.map(g => g === "arab" ? Math.log(o.arab / 100 / X.arab_turnout_base) : g === "haredi" ? Math.log(1 + o.har / 100) : 0);
+  const pm = names.map(p => p === "likud" ? 1 - o.likud / 100 : M.opp.includes(p) ? 1 - o.opp / 100 : 1);
+  const pairs = X.pairs.concat(o.pair ? X.assumed_pairs : []);
+  const seats = [];
+  for (let d = 0; d < n; d++) {
+    let s = mu.map((m, i) => Math.max(m + sc * (gauss(r) * se[i] + gauss(r) * psd[i]), 0.02));
+    const x = (o.swing + sc * sig * gauss(r)) * k;
+    let tt = 0, ff = 0; for (let i = 0; i < Pn; i++) { if (to[i]) tt += s[i]; if (fr[i]) ff += s[i]; }
+    s = s.map((v, i) => Math.max(v + x * ((to[i] ? v / tt : 0) - (fr[i] ? v / ff : 0)), 0.02));
+    s.push(X.others_pct);
+    const tot0 = s.reduce((a, b) => a + b, 0);
+    const m = S.map((g, j) => Math.exp(segMean[j] + sc * segSig[j] * gauss(r) + segAdd[j]));
+    const out = new Array(s.length).fill(0);
+    for (let j = 0; j < S.length; j++) for (let i = 0; i < s.length; i++) out[i] += s[i] * prof[j][i] * m[j] * pm[i];
+    const ot = out.reduce((a, b) => a + b, 0);
+    seats.push(allocate(out.map(v => v / ot * tot0), names, pairs).slice(0, Pn));
+  }
+  return summarise(seats);
+}
+function summarise(seats) {
+  const col = Object.fromEntries(P.map((p, i) => [p, i])), n = seats.length;
+  const tot = (row, ps) => ps.reduce((a, p) => a + row[col[p]], 0);
+  const q = (arr, f) => { const a = arr.slice().sort((x, y) => x - y); return a[Math.min(a.length - 1, Math.floor(f * a.length))]; };
+  const party = {};
+  P.forEach(p => { const x = seats.map(r => r[col[p]]); party[p] = { mean: x.reduce((a, b) => a + b, 0) / n, p10: q(x, .1), p50: q(x, .5), p90: q(x, .9), p_in: x.filter(v => v > 0).length / n, p_largest: 0 }; });
+  seats.forEach(r => { let b = 0; r.forEach((v, i) => { if (v > r[b]) b = i; }); party[P[b]].p_largest += 1 / n; });
+  const G = seats.map(r => tot(r, M.gov)), O = seats.map(r => tot(r, M.opp)), A = seats.map(r => tot(r, M.arab)), S = seats.map(r => tot(r, M.swing)), H = seats.map(r => r[col.shas] + r[col.utj]);
+  const hist = (arr) => { const h = new Array(121).fill(0); arr.forEach(v => h[v]++); return h; };
+  const frac = (f) => seats.reduce((a, _, i) => a + (f(i) ? 1 : 0), 0) / n, mean = (a) => a.reduce((x, y) => x + y, 0) / n;
+  return { party, blocs: { gov: { mean: mean(G), hist: hist(G) }, opp: { mean: mean(O) }, arab: { mean: mean(A) }, amcha: { mean: mean(S) } },
+    paths: { gov61: frac(i => G[i] >= 61), gov_amcha61: frac(i => G[i] + S[i] >= 61), opp61: frac(i => O[i] >= 61), opp_amcha61: frac(i => O[i] + S[i] >= 61),
+      opp_raam61: frac(i => O[i] + seats[i][col.raam] >= 61), opp_arab61: frac(i => O[i] + A[i] >= 61), opp_haredi61: frac(i => O[i] + H[i] >= 61),
+      opp_shas61: frac(i => O[i] + seats[i][col.shas] >= 61), deadlock: frac(i => G[i] + S[i] < 61 && O[i] + S[i] < 61) } };
+}
+window.__sim = simulate;
+
+/* ---------- rendering ---------- */
+let R = null;
+const published = () => ({ consensus: D.results.consensus, [CMP]: D.results[CMP] });
+
+function renderHeadline() {
+  $("headline").innerHTML = SK().map((k, i) => {
+    const s = R[k], lp = P.slice().sort((a, b) => s.party[b].p_largest - s.party[a].p_largest)[0];
+    return `<div class="card"><h3><i class="sw ${SC(i)}"></i>${esc(SNAME[k])}</h3>
+      <div class="big"><div><b>${pct(s.paths.gov_amcha61)}</b><small>Netanyahu's bloc reaches 61 (with Amcha)</small></div>
+      <div><b>${pct(s.paths.opp_amcha61)}</b><small>Zionist opposition reaches 61 (with Amcha)</small></div>
+      <div><b>${pct(s.paths.deadlock)}</b><small>Neither camp, without Arab lists</small></div></div>
+      <div class="sub">Average seats: bloc <span class="num">${s.blocs.gov.mean.toFixed(1)}</span>, opposition <span class="num">${s.blocs.opp.mean.toFixed(1)}</span>, Arab lists <span class="num">${s.blocs.arab.mean.toFixed(1)}</span>, Amcha <span class="num">${s.blocs.amcha.mean.toFixed(1)}</span>. Largest party: ${esc(L[lp])} (${pct(s.party[lp].p_largest)}).</div></div>`;
+  }).join("");
+}
+
+function renderFindings() {
+  const c = D.results.consensus.paths, ch = D.results.ch14_world.paths, dy = D.dynamics.results, b = dy.baseline, cal = D.calibration;
+  const d = (k, m) => Math.round((dy[k][m] - b[m]) * 100);
+  const items = [
+    [`The most likely outcome is a deadlock: ${pct(c.deadlock)}.`, `Neither Netanyahu's bloc nor the Zionist opposition reaches 61 without the Arab lists, even counting Amcha Yisrael. The opposition gets there with Ra'am in ${pct(c.opp_raam61)} of simulations and with both Arab lists in ${pct(c.opp_arab61)}.`],
+    [`Whose polls you believe matters more than anything else.`, `Channel 14 and Direct Polls put the bloc about ${Math.round(["Channel 14 (Filber)", "Direct Polls"].reduce((a, h) => a + M.gov.reduce((b, p) => b + (D.house[p].house[h] || 0), 0) * 1.2, 0) / 2)} seats higher than the consensus does. If they are right, the bloc plus Amcha reaches 61 in ${pct(ch.gov_amcha61)} of simulations instead of ${pct(c.gov_amcha61)}. Their record does not settle it: after shrinking for small samples, no Israeli house's track record is much better than another's.`],
+    [`The haredi parties hold the balance.`, `The opposition plus Shas and UTJ reaches 61 in ${pct(c.opp_haredi61)} of simulations; plus Shas alone, ${pct(c.opp_shas61)}. Both parties left the government over the draft and neither has committed to Netanyahu.`],
+    [`Low Arab turnout helps both Jewish camps.`, `At 45% Arab turnout (the 2021 level), the bloc's chances rise ${d("arab_45", "gov_amcha61")} points and the opposition's ${d("arab_45", "opp61")}. At 67%, the level a survey projects for a united Joint List, Arab lists win about ${dy.arab_67.seats_arab.toFixed(0)} seats and a Jewish majority gets harder for everyone.`],
+    [`Polls have underrated the right, mostly through the haredim.`, `In five of six elections since 2015 the haredi parties beat their final polling average (by ${(-cal.haredi_bias).toFixed(1)} seats on average); the model adds that back. The bloc as a whole ran ${(-cal.bloc_bias).toFixed(1)} seats ahead of its average on average. A 2015-sized miss of 3 seats lifts the bloc's chances to ${pct(dy.shy_right.gov_amcha61)}.`],
+    [`Enthusiasm gaps move a few points, not the outcome.`, `If 10% of Likud supporters stay home, the bloc's chance falls ${-d("likud_home10", "gov_amcha61")} points; if 7% of opposition supporters stay home, it rises ${d("opp_home7", "gov_amcha61")}. A final-week "gevalt" squeeze of small right-wing lists toward Likud backfires by pushing them under the threshold.`],
+  ];
+  $("findings").innerHTML = items.map(([h, t]) => `<li><b>${esc(h)}</b><span>${esc(t)}</span></li>`).join("");
+}
+
+const PATHS = [
+  ["gov61", "Netanyahu's bloc alone", "Likud, Otzma, RZP, Shas, UTJ"],
+  ["gov_amcha61", "Bloc + Amcha Yisrael", "if Ofer Winter's list joins"],
+  ["opp61", "Zionist opposition alone", "Yashar, Together, Democrats, Yisrael Beytenu (+ Hendel, Gantz if in)"],
+  ["opp_amcha61", "Opposition + Amcha Yisrael", ""],
+  ["opp_raam61", "Opposition + Ra'am", "the 2021 Bennett–Lapid model"],
+  ["opp_arab61", "Opposition + both Arab lists", "Ra'am and the Joint List"],
+  ["opp_shas61", "Opposition + Shas", "if Deri changes sides"],
+  ["opp_haredi61", "Opposition + Shas + UTJ", "a deal on the draft"],
+  ["deadlock", "Neither camp reaches 61", "even with Amcha, without Arab lists"],
+];
+function renderPaths() {
+  $("paths").innerHTML = PATHS.map(([k, l, sub]) => `<div class="path"><div class="lbl">${esc(l)}${sub ? `<small>${esc(sub)}</small>` : ""}</div><div class="bars">${SK().map((s, i) => {
+    const v = R[s].paths[k], w = Math.max(v * 100, 0.6), inside = v > 0.82;
+    return `<div class="bar ${SC(i)}" title="${esc(SHORT[s])}: ${pct(v)}"><i style="width:${w}%"></i><em style="${inside ? `right:${100 - w + 1}%;color:var(--panel)` : `left:calc(${w}% + 6px)`}">${pct(v)}</em></div>`;
+  }).join("")}</div></div>`).join("");
+}
+
+function renderBloc() {
+  const el = $("blocChart"), W = 720, H = 260, m = { l: 40, r: 14, t: 18, b: 34 }, lo = 38, hi = 72, pw = W - m.l - m.r, ph = H - m.t - m.b;
+  const series = SK().map(k => { const h = R[k].blocs.gov.hist, n = h.reduce((a, b) => a + b, 0); return h.map(v => v / n); });
+  const ymax = Math.max(...series.flatMap(s => s.slice(lo, hi + 1))) * 1.12;
+  const x = (v) => m.l + (v - lo) / (hi - lo) * pw, y = (v) => m.t + ph - v / ymax * ph;
+  const step = ymax > 0.2 ? 0.05 : ymax > 0.1 ? 0.025 : 0.02;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Distribution of Netanyahu bloc seats">`;
+  for (let t = 0; t <= ymax; t += step) s += `<line class="grid" x1="${m.l}" x2="${W - m.r}" y1="${y(t)}" y2="${y(t)}"/><text x="${m.l - 6}" y="${y(t) + 4}" text-anchor="end">${(t * 100).toFixed(t * 100 % 1 ? 1 : 0)}%</text>`;
+  for (let v = 40; v <= 70; v += 5) s += `<text x="${x(v)}" y="${H - m.b + 18}" text-anchor="middle">${v}</text>`;
+  s += `<line class="axis" x1="${m.l}" x2="${W - m.r}" y1="${y(0)}" y2="${y(0)}"/>`;
+  SK().forEach((k, j) => {
+    const pts = []; for (let v = lo; v <= hi; v++) pts.push([x(v), y(series[j][v])]);
+    const line = pts.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join("");
+    s += `<path d="${line}L${x(hi)} ${y(0)}L${x(lo)} ${y(0)}Z" fill="var(--${SC(j)}-soft)" stroke="none"/><path d="${line}" fill="none" stroke="var(--${SC(j)})" stroke-width="2" stroke-linejoin="round"/>`;
+  });
+  s += `<line class="line61" x1="${x(61)}" x2="${x(61)}" y1="${m.t - 6}" y2="${y(0)}"/><text class="t61" x="${x(61) + 5}" y="${m.t + 4}">61 · majority</text>`;
+  s += `<text x="${m.l + pw / 2}" y="${H - 4}" text-anchor="middle">seats won by the bloc</text><line id="hx" class="axis" x1="0" x2="0" y1="${m.t}" y2="${y(0)}" visibility="hidden"/><rect id="hit" x="${m.l}" y="${m.t}" width="${pw}" height="${ph}" fill="transparent"/></svg><div class="tip" id="btip" hidden></div>`;
+  el.innerHTML = s;
+  const svg = el.querySelector("svg"), tip = $("btip"), hx = el.querySelector("#hx");
+  el.querySelector("#hit").addEventListener("pointermove", (ev) => {
+    const r = svg.getBoundingClientRect(), v = Math.round(lo + ((ev.clientX - r.left) / r.width * W - m.l) / pw * (hi - lo)); if (v < lo || v > hi) return;
+    hx.setAttribute("x1", x(v)); hx.setAttribute("x2", x(v)); hx.setAttribute("visibility", "visible"); tip.hidden = false;
+    tip.innerHTML = `<b>${v} seats</b><br>` + SK().map((k, j) => `${SHORT[k]}: ${(series[j][v] * 100).toFixed(1)}%`).join("<br>");
+    const er = el.getBoundingClientRect(); tip.style.left = Math.min(Math.max(ev.clientX - er.left + el.scrollLeft, 80), er.width - 80) + "px"; tip.style.top = (ev.clientY - er.top) + "px";
+  });
+  el.querySelector("#hit").addEventListener("pointerleave", () => { tip.hidden = true; hx.setAttribute("visibility", "hidden"); });
+}
+
+function renderDyn() {
+  const dy = D.dynamics, b = dy.baseline, lim = 0.3;
+  const G = { turnout: "Turnout", strategy: "Strategic voting and dropouts", polls: "Which polls are right" };
+  const bar = (v, col) => { const c = Math.max(-lim, Math.min(lim, v)), w = Math.abs(c) / lim * 50, left = c < 0 ? 50 - w : 50;
+    const lab = (v > 0 ? "+" : v < 0 ? "−" : "±") + Math.abs(Math.round(v * 100)); const lp = c < 0 ? `right:${50 + w + 1}%` : `left:${50 + w + 1}%`;
+    return `<div class="delta"><span class="mid"></span><i style="left:${left}%;width:${Math.max(w, .4)}%;background:${col}"></i><em style="${lp}">${lab}</em></div>`; };
+  let h = `<div class="dyn-head"><span class="lab">Scenario</span><span>Bloc + Amcha reach 61 (now ${pct(b.gov_amcha61)})</span><span>Opposition reaches 61 (now ${pct(b.opp61)})</span></div>`;
+  let g0 = null;
+  dy.scenarios.forEach(s => {
+    if (s.group !== g0) { h += `<div class="dyn-group">${G[s.group]}</div>`; g0 = s.group; }
+    const r = dy.results[s.key];
+    h += `<div class="dyn-row"><div class="lab">${esc(s.label)}<small>${esc(s.why)}</small></div>${bar(r.gov_amcha61 - b.gov_amcha61, "var(--down)")}${bar(r.opp61 - b.opp61, "var(--up)")}</div>`;
+  });
+  $("dyn").innerHTML = h;
+}
+
+let HM = "gov_amcha61";
+function renderHeat() {
+  const g = D.dynamics.grid, vals = g[HM], mx = Math.max(...vals.flat(), 0.01);
+  const mix = (t) => `color-mix(in oklab, var(--heat-hi) ${Math.round(t * 100)}%, var(--heat-lo))`;
+  let h = `<div class="hr"><span class="h" style="text-align:right;padding-right:6px">Arab ↓ / miss →</span>${g.swing.map(s => `<span class="h">${s > 0 ? "+" : s < 0 ? "−" : ""}${Math.abs(s)}</span>`).join("")}</div>`;
+  g.arab.forEach((a, i) => {
+    h += `<div class="hr"><span class="rl">${Math.round(a * 100)}%</span>${g.swing.map((s, j) => { const v = vals[i][j], t = v / mx; const base = Math.round(a * 100) === 53 && s === 0;
+      return `<span class="c${base ? " base" : ""}" style="background:${mix(t)};color:${t > .55 ? "var(--panel)" : "var(--ink)"}" title="Arab turnout ${Math.round(a * 100)}%, miss ${s}: ${pct(v)}">${Math.round(v * 100)}</span>`; }).join("")}</div>`;
+  });
+  $("heat").innerHTML = h;
+  [["hm-gov", "gov_amcha61"], ["hm-opp", "opp61"], ["hm-dead", "deadlock"]].forEach(([id, k]) => $(id).setAttribute("aria-pressed", String(k === HM)));
+}
+[["hm-gov", "gov_amcha61"], ["hm-opp", "opp61"], ["hm-dead", "deadlock"]].forEach(([id, k]) => $(id).addEventListener("click", () => { HM = k; renderHeat(); }));
+
+const BLOC_OF = (p) => M.gov.includes(p) ? "Netanyahu bloc" : M.opp.includes(p) ? "Opposition" : M.arab.includes(p) ? "Arab list" : "Uncommitted right";
+function renderTable() {
+  const maxS = 30, order = P.slice().sort((a, b) => R.consensus.party[b].mean - R.consensus.party[a].mean);
+  let h = `<thead><tr><th>Party</th><th>Seats, middle 80%</th><th class="r">Median</th><th class="r">In Knesset</th></tr></thead><tbody>`;
+  order.forEach(p => {
+    const row = SK().map(k => R[k].party[p]), x = (v) => (v / maxS * 100).toFixed(2) + "%";
+    let svg = `<div class="rng" aria-hidden="true">` + [4, 10, 20, 30].map(t => `<span class="tick" style="left:${x(t)}"></span>`).join("");
+    row.forEach((q, j) => { const top = 7 + j * 12, c = `var(--${SC(j)})`;
+      svg += `<span class="seg" style="left:${x(q.p10)};width:calc(${x(q.p90 - q.p10)} + 4px);top:${top}px;background:${c}"></span><span class="dot" style="left:${x(q.p50)};top:${top - 3}px;background:${c}"></span>`; });
+    svg += `</div>`;
+    h += `<tr><td><span class="bloc-tag">${BLOC_OF(p)}</span>${esc(L[p])}</td><td class="range">${svg}</td><td class="r">${row.map(q => `<span class="num">${q.p50}</span>`).join("<br>")}</td><td class="r">${row.map((q, j) => `<span class="pin${q.p_in < 0.9 ? " risk" : ""}"><i class="sw ${SC(j)}" style="width:8px;height:8px"></i>${pct(q.p_in)}</span>`).join("<br>")}</td></tr>`;
+  });
+  $("ptable").innerHTML = h + `</tbody>`;
+}
+
+function renderPolls() {
+  const el = $("pollChart"), W = 720, H = 280, m = { l: 34, r: 14, t: 16, b: 30 };
+  const pts = D.polls.map(p => ({ d: p.date, h: p.pollster, g: M.gov.reduce((a, k) => a + (p.seats[k] || 0), 0) }));
+  const t0 = new Date(M.window_start + "T12:00:00").getTime(), t1 = new Date(M.run_date + "T12:00:00").getTime();
+  const lo = 40, hi = 68, x = (d) => m.l + (new Date(d + "T12:00:00").getTime() - t0) / (t1 - t0) * (W - m.l - m.r), y = (v) => m.t + (hi - v) / (hi - lo) * (H - m.t - m.b);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Netanyahu bloc seats in each poll">`;
+  for (let v = 40; v <= 65; v += 5) s += `<line class="grid" x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/><text x="${m.l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
+  for (let d = new Date(t0); d.getTime() <= t1; d.setDate(d.getDate() + 7)) { const iso = d.toISOString().slice(0, 10); s += `<text x="${x(iso)}" y="${H - 8}" text-anchor="middle">${d.toLocaleDateString("en-GB", { day: "numeric", month: "short" })}</text>`; }
+  s += `<line class="line61" x1="${m.l}" x2="${W - m.r}" y1="${y(61)}" y2="${y(61)}"/><text class="t61" x="${W - m.r - 4}" y="${y(61) - 5}" text-anchor="end">61</text>`;
+  pts.forEach(p => { const dp = M.house_family[p.h] === "DP/Ch14"; s += `<circle cx="${x(p.d).toFixed(1)}" cy="${y(p.g).toFixed(1)}" r="5" fill="var(--${dp ? "s2" : "s1"})" fill-opacity=".8" stroke="var(--panel)" stroke-width="1"><title>${esc(p.h)}, ${p.d}: ${p.g} seats</title></circle>`; });
+  s += `</svg><div class="key" style="padding:4px 8px 6px;font-size:.85rem"><span><i class="sw s2"></i>Channel 14 and Direct Polls</span><span><i class="sw s1"></i>Kantar, Lazar, Midgam, Maagar Mochot, Tatika</span></div>`;
+  el.innerHTML = s;
+}
+
+function renderLean() {
+  const H = D.house, gov = M.gov, houses = Object.keys(H.likud.house);
+  const lean = Object.fromEntries(houses.map(h => [h, gov.reduce((a, p) => a + (H[p].house[h] || 0), 0) * 1.2]));
+  const A = D.weights.anchors, sum = (o) => Object.values(o).reduce((a, b) => a + b, 0);
+  const hs = houses.sort((a, b) => lean[b] - lean[a]), lim = Math.ceil(Math.max(...hs.map(h => Math.abs(lean[h]))) / 2) * 2, W = 300, cx = W / 2, sc = (v) => v / lim * (W / 2 - 4);
+  let html = `<div class="lean-row" style="color:var(--ink-3);font-family:var(--font-data);font-size:.68rem;letter-spacing:.05em;text-transform:uppercase"><span>House</span><span style="display:flex;justify-content:space-between"><span>−${lim}</span><span>0</span><span>+${lim}</span></span><span class="w" style="color:inherit">Weight</span></div>`;
+  hs.forEach(h => { const v = lean[h], x0 = v < 0 ? cx + sc(v) : cx;
+    html += `<div class="lean-row"><span>${esc(h)}</span><svg viewBox="0 0 ${W} 18" preserveAspectRatio="none" role="img" aria-label="${esc(h)} leans ${v.toFixed(1)} seats"><line x1="${cx}" x2="${cx}" y1="0" y2="18" stroke="var(--rule-strong)" vector-effect="non-scaling-stroke"/><rect x="${x0}" y="4" width="${Math.max(Math.abs(sc(v)), 1)}" height="10" rx="2" fill="var(--ink-2)"/></svg><span class="w">${v > 0 ? "+" : ""}${v.toFixed(1)} · <span style="color:var(--s1)">${Math.round(A.consensus[h] / sum(A.consensus) * 100)}%</span>/${Math.round(A.track_record[h] / sum(A.track_record) * 100)}%</span></div>`; });
+  $("lean").innerHTML = html;
+}
+
+function renderSeg() {
+  const C = D.composition, NAMES = { arab: "Arab citizens", druze: "Druze", haredi: "Haredim", dati: "Settlement / national-religious core", jewish: "Other Jewish voters" };
+  const order = ["jewish", "arab", "haredi", "dati", "druze"];
+  let h = `<thead><tr><th>Group</th><th class="r">Share of votes</th><th class="r">2022 turnout</th><th>Biggest parties in the group now</th></tr></thead><tbody>`;
+  order.forEach(g => {
+    const row = C.matrix, tot = Object.keys(row).reduce((a, p) => a + row[p][g], 0);
+    const top = Object.keys(row).filter(p => p !== "others").sort((a, b) => row[b][g] - row[a][g]).slice(0, 3).map(p => `${esc(L[p])} ${Math.round(row[p][g] / tot * 100)}%`).join(", ");
+    h += `<tr><td>${NAMES[g]}</td><td class="r num">${(C.seg_share[g] * 100).toFixed(1)}%</td><td class="r num">${Math.round(C.turnout_2022[g] * 100)}%</td><td>${top}</td></tr>`;
+  });
+  $("segtable").innerHTML = h + `</tbody>`;
+}
+
+function renderMethod() {
+  const c = D.calibration, ap = c.avg_params, pairs = M.pairs.map(([a, b]) => `${L[a]}–${L[b]}`).join(", ");
+  $("method").innerHTML = `
+  <p><b>1. Polls.</b> Every seat projection published since the lists were set (${fmtDate(M.window_start)}), converted back to vote shares, since published seats are inflated by votes for lists that miss the threshold.</p>
+  <p><b>2. Weights.</b> FiveThirtyEight's rules: weight grows with the square root of sample size (capped at 5,000); a house's polls within 14 days share one poll's weight; houses get a quality multiplier from their record.</p>
+  <p><b>3. Average.</b> For each party, a trend through time plus a fixed lean for each house, shrunk toward zero. The trend blends a kernel-weighted local regression (bandwidth ${ap.bandwidth} days) with an exponential moving average (half-life ${ap.half_life} days), settings tuned on 2015–2022 by how well the average predicted the next two weeks of polls. "No lean" means the plain average of houses, with Direct Polls and Channel 14 sharing one vote.</p>
+  <p><b>4. Pollster ratings.</b> Each house's error and bloc bias in the final three weeks of six elections, measured against other houses polling the same race, decayed 14% a year and shrunk toward average by n/(n+10). After shrinking, ratings differ little, so weighting by record barely moves the forecast.</p>
+  <p><b>5. Error.</b> Polls miss in groups. Each simulation draws a swing between the bloc and the opposition (σ ≈ ${c.sigma_bloc.toFixed(1)} seats on election day, widened by ${c.drift_var_per_day.toFixed(2)} seats² a day for the ${M.days_left} days left), haredi and Arab turnout shocks (σ ≈ ${c.sigma_haredi.toFixed(1)} and ${c.sigma_arab.toFixed(1)} seats), and party noise that grows with size and is 1.5× larger for first-time lists.</p>
+  <p><b>6. Turnout.</b> Ballot boxes from 2022 split the electorate into groups; the split is carried to 2026 parties and fitted to today's average. Arab and haredi shocks are turnout changes in those groups, so they also move the Arab and haredi votes that go to other parties. The haredi underpolling correction adds ${(-c.haredi_bias).toFixed(1)} seats' worth of haredi votes.</p>
+  <p><b>7. Seats.</b> Lists under 3.25% get nothing; the rest are allocated by Bader–Ofer with surplus agreements (${esc(pairs)}; Shas–UTJ assumed). The allocator reproduces the official 2022 result exactly.</p>
+  <p><b>Not modelled:</b> coalition bargaining after the vote, late mergers or withdrawals beyond the scenarios above, and events between now and election day beyond ordinary drift.</p>`;
+  const rows = D.ratings.filter(r => r.elections >= 3).sort((a, b) => a.pollscore - b.pollscore);
+  const be = c.by_election;
+  $("track").innerHTML = `<p>Lower scores are better. Bloc bias is the average miss on the Netanyahu bloc in a house's final polls; negative means it underrated the bloc.</p>
+  <div style="overflow-x:auto"><table style="min-width:460px"><thead><tr><th>House</th><th class="r">Elections</th><th class="r">Score</th><th class="r">Bloc bias</th><th class="r">Bloc weight</th></tr></thead><tbody>${rows.map(r => `<tr><td>${esc(r.pollster)}</td><td class="r num">${r.elections}</td><td class="r num">${r.pollscore.toFixed(2)}</td><td class="r num">${r.raw_bias > 0 ? "+" : ""}${r.raw_bias.toFixed(1)}</td><td class="r num">${r.bloc_quality.toFixed(2)}</td></tr>`).join("")}</tbody></table></div>
+  <p>How the final consensus average missed, in seats (bloc swing; haredi; Arab): ${Object.keys(be.bloc_swing).map(e => `${e} <span class="num">${be.bloc_swing[e] > 0 ? "+" : ""}${be.bloc_swing[e]}; ${be.H[e] > 0 ? "+" : ""}${be.H[e]}; ${be.A[e] > 0 ? "+" : ""}${be.A[e]}</span>`).join(" · ")}. Channel 14 (Filber), Yossi Tatika and TrendZone have no comparable record and get average trust.</p>`;
+}
+
+function renderAll() { renderKey(); renderHeadline(); renderPaths(); renderBloc(); renderTable(); }
+
+/* ---------- controls ---------- */
+const ctl = { arab: $("c-arab"), har: $("c-har"), likud: $("c-likud"), opp: $("c-opp"), swing: $("c-swing"), unc: $("c-unc"), hfix: $("c-hfix"), pair: $("c-pair") };
+const opts = () => ({ arab: +ctl.arab.value, har: +ctl.har.value, likud: +ctl.likud.value, opp: +ctl.opp.value, swing: +ctl.swing.value, unc: +ctl.unc.value, hfix: ctl.hfix.checked, pair: ctl.pair.checked });
+const isDefault = (o) => o.arab === 53 && o.har === 0 && o.likud === 0 && o.opp === 0 && o.swing === 0 && o.unc === 1 && o.hfix && o.pair;
+function labels() { const o = opts(), sg = (v, u) => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v) + u;
+  $("v-arab").textContent = o.arab + "%"; $("v-har").textContent = sg(o.har, "%"); $("v-likud").textContent = o.likud + "%"; $("v-opp").textContent = o.opp + "%"; $("v-swing").textContent = sg(o.swing, " seats"); $("v-unc").textContent = o.unc.toFixed(1) + "×"; }
+let timer = null;
+function rerun() {
+  labels(); clearTimeout(timer);
+  timer = setTimeout(() => {
+    const o = opts();
+    if (isDefault(o)) { R = published(); $("status").textContent = "Showing the published run."; $("status").className = "status"; renderAll(); return; }
+    $("status").textContent = "Simulating…";
+    setTimeout(() => { const t = performance.now(); R = { consensus: simulate("consensus", o, 6000, 20261027), [CMP]: simulate(CMP, o, 6000, 20261028) };
+      renderAll(); $("status").textContent = `Showing your assumptions (${Math.round(performance.now() - t)} ms).`; $("status").className = "status live"; }, 20);
+  }, 200);
+}
+Object.values(ctl).forEach(c => c.addEventListener("input", rerun));
+$("c-cmp").addEventListener("change", (e) => { CMP = e.target.value; rerun(); });
+$("reset").addEventListener("click", () => { ctl.arab.value = 53; ctl.har.value = 0; ctl.likud.value = 0; ctl.opp.value = 0; ctl.swing.value = 0; ctl.unc.value = 1; ctl.hfix.checked = true; ctl.pair.checked = true; rerun(); });
+
+R = published(); labels(); renderAll(); renderFindings(); renderDyn(); renderHeat(); renderPolls(); renderLean(); renderSeg(); renderMethod();
+})();
+</script>

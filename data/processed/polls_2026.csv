@@ -1,0 +1,2676 @@
+date,firm,pollster,publisher,n,party,seats,sub_pct,poll_id
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,likud,21,,0
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yashar,23,,0
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,together,13,,0
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,dems,9,,0
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yb,9,,0
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,joint_list,8,,0
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,otzma,7,,0
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,shas,7,,0
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,utj,8,,0
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,rzp,6,,0
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,raam,5,,0
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,amcha,0,1.5,0
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,blue_white,0,0.5,0
+2026-10-05,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,reservists,4,,0
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,likud,19,,1
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,yashar,21,,1
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,together,13,,1
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,dems,10,,1
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,yb,9,,1
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,joint_list,7,,1
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,otzma,9,,1
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,shas,7,,1
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,utj,7,,1
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,rzp,5,,1
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,raam,5,,1
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,amcha,4,,1
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,blue_white,0,0.7,1
+2026-10-01,LRI+P4A,Lazar,Maariv,602.0,reservists,4,,1
+2026-10-01,Direct Polls,Direct Polls,i24 News,504.0,likud,28,,2
+2026-10-01,Direct Polls,Direct Polls,i24 News,504.0,yashar,22,,2
+2026-10-01,Direct Polls,Direct Polls,i24 News,504.0,together,9,,2
+2026-10-01,Direct Polls,Direct Polls,i24 News,504.0,dems,9,,2
+2026-10-01,Direct Polls,Direct Polls,i24 News,504.0,yb,7,,2
+2026-10-01,Direct Polls,Direct Polls,i24 News,504.0,joint_list,8,,2
+2026-10-01,Direct Polls,Direct Polls,i24 News,504.0,otzma,8,,2
+2026-10-01,Direct Polls,Direct Polls,i24 News,504.0,shas,7,,2
+2026-10-01,Direct Polls,Direct Polls,i24 News,504.0,utj,8,,2
+2026-10-01,Direct Polls,Direct Polls,i24 News,504.0,rzp,5,,2
+2026-10-01,Direct Polls,Direct Polls,i24 News,504.0,raam,5,,2
+2026-10-01,Direct Polls,Direct Polls,i24 News,504.0,amcha,4,,2
+2026-10-01,Direct Polls,Direct Polls,i24 News,504.0,reservists,0,1.81,2
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,likud,19,,3
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,yashar,21,,3
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,together,11,,3
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,dems,11,,3
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,yb,9,,3
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,joint_list,9,,3
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,otzma,8,,3
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,shas,7,,3
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,utj,8,,3
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,rzp,7,,3
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,raam,5,,3
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,amcha,5,,3
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,blue_white,0,0.9,3
+2026-09-30,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1013.0,reservists,0,2.5,3
+2026-09-27,Kantar,Kantar,Kan 11,552.0,likud,21,,4
+2026-09-27,Kantar,Kantar,Kan 11,552.0,yashar,23,,4
+2026-09-27,Kantar,Kantar,Kan 11,552.0,together,11,,4
+2026-09-27,Kantar,Kantar,Kan 11,552.0,dems,9,,4
+2026-09-27,Kantar,Kantar,Kan 11,552.0,yb,9,,4
+2026-09-27,Kantar,Kantar,Kan 11,552.0,joint_list,7,,4
+2026-09-27,Kantar,Kantar,Kan 11,552.0,otzma,7,,4
+2026-09-27,Kantar,Kantar,Kan 11,552.0,shas,7,,4
+2026-09-27,Kantar,Kantar,Kan 11,552.0,utj,7,,4
+2026-09-27,Kantar,Kantar,Kan 11,552.0,rzp,6,,4
+2026-09-27,Kantar,Kantar,Kan 11,552.0,raam,5,,4
+2026-09-27,Kantar,Kantar,Kan 11,552.0,amcha,4,,4
+2026-09-27,Kantar,Kantar,Kan 11,552.0,reservists,4,,4
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,likud,18,,5
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,yashar,22,,5
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,together,13,,5
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,dems,11,,5
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,yb,9,,5
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,joint_list,7,,5
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,otzma,9,,5
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,shas,6,,5
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,utj,6,,5
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,rzp,6,,5
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,raam,5,,5
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,amcha,4,,5
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,blue_white,0,1.3,5
+2026-09-24,LRI+P4A,Lazar,Maariv,610.0,reservists,4,,5
+2026-09-24,Direct Polls,Direct Polls,i24 News,537.0,likud,27,,6
+2026-09-24,Direct Polls,Direct Polls,i24 News,537.0,yashar,22,,6
+2026-09-24,Direct Polls,Direct Polls,i24 News,537.0,together,9,,6
+2026-09-24,Direct Polls,Direct Polls,i24 News,537.0,dems,9,,6
+2026-09-24,Direct Polls,Direct Polls,i24 News,537.0,yb,7,,6
+2026-09-24,Direct Polls,Direct Polls,i24 News,537.0,joint_list,7,,6
+2026-09-24,Direct Polls,Direct Polls,i24 News,537.0,otzma,8,,6
+2026-09-24,Direct Polls,Direct Polls,i24 News,537.0,shas,7,,6
+2026-09-24,Direct Polls,Direct Polls,i24 News,537.0,utj,8,,6
+2026-09-24,Direct Polls,Direct Polls,i24 News,537.0,rzp,6,,6
+2026-09-24,Direct Polls,Direct Polls,i24 News,537.0,raam,6,,6
+2026-09-24,Direct Polls,Direct Polls,i24 News,537.0,amcha,4,,6
+2026-09-24,Direct Polls,Direct Polls,i24 News,537.0,reservists,0,1.6,6
+2026-09-23,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1503.0,likud,18,,7
+2026-09-23,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1503.0,yashar,22,,7
+2026-09-23,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1503.0,together,11,,7
+2026-09-23,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1503.0,dems,11,,7
+2026-09-23,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1503.0,yb,8,,7
+2026-09-23,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1503.0,joint_list,8,,7
+2026-09-23,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1503.0,otzma,7,,7
+2026-09-23,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1503.0,shas,7,,7
+2026-09-23,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1503.0,utj,8,,7
+2026-09-23,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1503.0,rzp,6,,7
+2026-09-23,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1503.0,raam,5,,7
+2026-09-23,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1503.0,amcha,5,,7
+2026-09-23,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1503.0,reservists,4,,7
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,likud,20,,8
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yashar,23,,8
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,together,13,,8
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,dems,9,,8
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yb,9,,8
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,joint_list,7,,8
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,otzma,6,,8
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,shas,7,,8
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,utj,8,,8
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,rzp,5,,8
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,raam,5,,8
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,amcha,4,,8
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,blue_white,0,0.7,8
+2026-09-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,reservists,4,,8
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,22,,9
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,24,,9
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,14,,9
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,9
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,9,,9
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,joint_list,8,,9
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,9
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,9
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,9,,9
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,4,,9
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,6,,9
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,amcha,0,3.0,9
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,0,2.0,9
+2026-09-17,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,reservists,0,2.2,9
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,likud,31,,10
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,yashar,20,,10
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,together,9,,10
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,dems,8,,10
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,yb,7,,10
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,joint_list,7,,10
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,otzma,8,,10
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,shas,10,,10
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,utj,8,,10
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,rzp,7,,10
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,raam,5,,10
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,amcha,0,2.6,10
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,blue_white,0,0.4,10
+2026-09-17,SF+ND,Channel 14 (Filber),Channel 14,817.0,reservists,0,2.2,10
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,likud,18,,11
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,yashar,23,,11
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,together,13,,11
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,dems,9,,11
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,yb,9,,11
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,joint_list,7,,11
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,otzma,8,,11
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,shas,7,,11
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,utj,7,,11
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,rzp,6,,11
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,raam,5,,11
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,amcha,4,,11
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,blue_white,0,1.1,11
+2026-09-17,LRI+P4A,Lazar,Maariv,600.0,reservists,4,,11
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,likud,20,,12
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,yashar,22,,12
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,together,13,,12
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,dems,9,,12
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,yb,8,,12
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,joint_list,7,,12
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,otzma,8,,12
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,shas,7,,12
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,utj,7,,12
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,rzp,6,,12
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,raam,5,,12
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,amcha,4,,12
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,blue_white,0,1.2,12
+2026-09-17,Kantar,Kantar,Israel Hayom,551.0,reservists,4,,12
+2026-09-17,Direct Polls,Direct Polls,i24 News,519.0,likud,27,,13
+2026-09-17,Direct Polls,Direct Polls,i24 News,519.0,yashar,21,,13
+2026-09-17,Direct Polls,Direct Polls,i24 News,519.0,together,9,,13
+2026-09-17,Direct Polls,Direct Polls,i24 News,519.0,dems,10,,13
+2026-09-17,Direct Polls,Direct Polls,i24 News,519.0,yb,8,,13
+2026-09-17,Direct Polls,Direct Polls,i24 News,519.0,joint_list,7,,13
+2026-09-17,Direct Polls,Direct Polls,i24 News,519.0,otzma,7,,13
+2026-09-17,Direct Polls,Direct Polls,i24 News,519.0,shas,7,,13
+2026-09-17,Direct Polls,Direct Polls,i24 News,519.0,utj,8,,13
+2026-09-17,Direct Polls,Direct Polls,i24 News,519.0,rzp,6,,13
+2026-09-17,Direct Polls,Direct Polls,i24 News,519.0,raam,5,,13
+2026-09-17,Direct Polls,Direct Polls,i24 News,519.0,amcha,5,,13
+2026-09-17,Direct Polls,Direct Polls,i24 News,519.0,reservists,0,2.2,13
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,likud,30,,14
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,yashar,21,,14
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,together,8,,14
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,dems,9,,14
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,yb,6,,14
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,joint_list,7,,14
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,otzma,8,,14
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,shas,10,,14
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,utj,8,,14
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,rzp,8,,14
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,raam,5,,14
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,amcha,0,2.3,14
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,blue_white,0,0.4,14
+2026-09-15,SF+ND,Channel 14 (Filber),Channel 14,483.0,reservists,0,2.1,14
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,likud,18,,15
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,yashar,22,,15
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,together,12,,15
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,dems,10,,15
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,yb,8,,15
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,joint_list,8,,15
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,otzma,8,,15
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,shas,7,,15
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,utj,7,,15
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,rzp,8,,15
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,raam,6,,15
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,amcha,6,,15
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,blue_white,0,0.8,15
+2026-09-15,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,886.0,reservists,0,3.1,15
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,likud,20,,16
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yashar,23,,16
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,together,13,,16
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,dems,10,,16
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yb,8,,16
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,joint_list,8,,16
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,otzma,6,,16
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,shas,7,,16
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,utj,8,,16
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,rzp,5,,16
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,raam,4,,16
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,amcha,4,,16
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,blue_white,0,0.5,16
+2026-09-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,,reservists,4,,16
+2026-09-14,Kantar,Kantar,Kan 11,,likud,20,,17
+2026-09-14,Kantar,Kantar,Kan 11,,yashar,24,,17
+2026-09-14,Kantar,Kantar,Kan 11,,together,12,,17
+2026-09-14,Kantar,Kantar,Kan 11,,dems,8,,17
+2026-09-14,Kantar,Kantar,Kan 11,,yb,8,,17
+2026-09-14,Kantar,Kantar,Kan 11,,joint_list,7,,17
+2026-09-14,Kantar,Kantar,Kan 11,,otzma,8,,17
+2026-09-14,Kantar,Kantar,Kan 11,,shas,7,,17
+2026-09-14,Kantar,Kantar,Kan 11,,utj,7,,17
+2026-09-14,Kantar,Kantar,Kan 11,,rzp,6,,17
+2026-09-14,Kantar,Kantar,Kan 11,,raam,5,,17
+2026-09-14,Kantar,Kantar,Kan 11,,amcha,4,,17
+2026-09-14,Kantar,Kantar,Kan 11,,reservists,4,,17
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,23,,18
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,23,,18
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,15,,18
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,18
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,18
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,joint_list,7,,18
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,6,,18
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,18
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,9,,18
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,4,,18
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,18
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,amcha,0,2.8,18
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,0,1.4,18
+2026-09-10,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,reservists,0,2.8,18
+2026-09-10,Lazar,Lazar,Maariv,601.0,likud,19,,19
+2026-09-10,Lazar,Lazar,Maariv,601.0,yashar,25,,19
+2026-09-10,Lazar,Lazar,Maariv,601.0,together,14,,19
+2026-09-10,Lazar,Lazar,Maariv,601.0,dems,10,,19
+2026-09-10,Lazar,Lazar,Maariv,601.0,yb,9,,19
+2026-09-10,Lazar,Lazar,Maariv,601.0,joint_list,7,,19
+2026-09-10,Lazar,Lazar,Maariv,601.0,otzma,8,,19
+2026-09-10,Lazar,Lazar,Maariv,601.0,shas,7,,19
+2026-09-10,Lazar,Lazar,Maariv,601.0,utj,7,,19
+2026-09-10,Lazar,Lazar,Maariv,601.0,rzp,5,,19
+2026-09-10,Lazar,Lazar,Maariv,601.0,raam,5,,19
+2026-09-10,Lazar,Lazar,Maariv,601.0,amcha,4,,19
+2026-09-10,Lazar,Lazar,Maariv,601.0,blue_white,0,1.1,19
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,likud,19,,20
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,yashar,25,,20
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,together,14,,20
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,dems,10,,20
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,yb,9,,20
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,joint_list,7,,20
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,otzma,8,,20
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,shas,7,,20
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,utj,7,,20
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,rzp,5,,20
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,raam,5,,20
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,amcha,4,,20
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,blue_white,0,1.1,20
+2026-09-10,LRI+P4A,Lazar,Maariv,601.0,reservists,0,3.0,20
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,likud,31,,21
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,yashar,22,,21
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,together,7,,21
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,dems,8,,21
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,yb,7,,21
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,joint_list,6,,21
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,otzma,8,,21
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,shas,10,,21
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,utj,7,,21
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,rzp,8,,21
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,raam,6,,21
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,amcha,0,2.1,21
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,blue_white,0,0.2,21
+2026-09-09,SF+ND,Channel 14 (Filber),Channel 14,537.0,reservists,0,1.4,21
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,likud,21,,22
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,yashar,25,,22
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,together,13,,22
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,dems,10,,22
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,yb,9,,22
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,joint_list,7,,22
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,otzma,6,,22
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,shas,7,,22
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,utj,8,,22
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,rzp,5,,22
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,raam,4,,22
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,amcha,5,,22
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,blue_white,0,1.4,22
+2026-09-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,reservists,0,2.9,22
+2026-09-09,Midgam Project,Midgam Project (Ch13),Channel 13,1119.0,likud,19,,23
+2026-09-09,Midgam Project,Midgam Project (Ch13),Channel 13,1119.0,yashar,22,,23
+2026-09-09,Midgam Project,Midgam Project (Ch13),Channel 13,1119.0,together,13,,23
+2026-09-09,Midgam Project,Midgam Project (Ch13),Channel 13,1119.0,dems,10,,23
+2026-09-09,Midgam Project,Midgam Project (Ch13),Channel 13,1119.0,yb,8,,23
+2026-09-09,Midgam Project,Midgam Project (Ch13),Channel 13,1119.0,joint_list,8,,23
+2026-09-09,Midgam Project,Midgam Project (Ch13),Channel 13,1119.0,otzma,9,,23
+2026-09-09,Midgam Project,Midgam Project (Ch13),Channel 13,1119.0,shas,7,,23
+2026-09-09,Midgam Project,Midgam Project (Ch13),Channel 13,1119.0,utj,8,,23
+2026-09-09,Midgam Project,Midgam Project (Ch13),Channel 13,1119.0,rzp,6,,23
+2026-09-09,Midgam Project,Midgam Project (Ch13),Channel 13,1119.0,raam,6,,23
+2026-09-09,Midgam Project,Midgam Project (Ch13),Channel 13,1119.0,amcha,4,,23
+2026-09-09,Midgam Project,Midgam Project (Ch13),Channel 13,1119.0,blue_white,0,1.1,23
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,likud,20,,24
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,yashar,23,,24
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,together,16,,24
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,dems,9,,24
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,yb,7,,24
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,joint_list,7,,24
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,otzma,9,,24
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,shas,9,,24
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,utj,7,,24
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,rzp,4,,24
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,raam,5,,24
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,amcha,4,,24
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,blue_white,0,1.0,24
+2026-09-09,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,reservists,0,2.0,24
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,likud,19,,25
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,yashar,22,,25
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,together,13,,25
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,dems,10,,25
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,yb,8,,25
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,joint_list,8,,25
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,otzma,9,,25
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,shas,7,,25
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,utj,8,,25
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,rzp,6,,25
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,raam,6,,25
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,amcha,4,,25
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,blue_white,0,1.1,25
+2026-09-09,MP+TM+SN+A,Midgam Project (Ch13),Channel 13,1119.0,reservists,0,3.2,25
+2026-09-09,Lazar,Lazar,Walla,506.0,likud,21,,26
+2026-09-09,Lazar,Lazar,Walla,506.0,yashar,25,,26
+2026-09-09,Lazar,Lazar,Walla,506.0,together,14,,26
+2026-09-09,Lazar,Lazar,Walla,506.0,dems,9,,26
+2026-09-09,Lazar,Lazar,Walla,506.0,yb,9,,26
+2026-09-09,Lazar,Lazar,Walla,506.0,joint_list,7,,26
+2026-09-09,Lazar,Lazar,Walla,506.0,otzma,7,,26
+2026-09-09,Lazar,Lazar,Walla,506.0,shas,7,,26
+2026-09-09,Lazar,Lazar,Walla,506.0,utj,7,,26
+2026-09-09,Lazar,Lazar,Walla,506.0,rzp,5,,26
+2026-09-09,Lazar,Lazar,Walla,506.0,raam,5,,26
+2026-09-09,Lazar,Lazar,Walla,506.0,amcha,4,,26
+2026-09-09,Lazar,Lazar,Walla,506.0,blue_white,0,0.9,26
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,likud,21,,27
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,yashar,25,,27
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,together,14,,27
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,dems,9,,27
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,yb,9,,27
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,joint_list,7,,27
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,otzma,7,,27
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,shas,7,,27
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,utj,7,,27
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,rzp,5,,27
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,raam,5,,27
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,amcha,4,,27
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,blue_white,0,0.9,27
+2026-09-09,LRI+P4A,Lazar,Walla,506.0,reservists,0,2.8,27
+2026-09-09,Kantar,Kantar,Kan 11,554.0,likud,21,,28
+2026-09-09,Kantar,Kantar,Kan 11,554.0,yashar,24,,28
+2026-09-09,Kantar,Kantar,Kan 11,554.0,together,12,,28
+2026-09-09,Kantar,Kantar,Kan 11,554.0,dems,9,,28
+2026-09-09,Kantar,Kantar,Kan 11,554.0,yb,7,,28
+2026-09-09,Kantar,Kantar,Kan 11,554.0,joint_list,7,,28
+2026-09-09,Kantar,Kantar,Kan 11,554.0,otzma,7,,28
+2026-09-09,Kantar,Kantar,Kan 11,554.0,shas,7,,28
+2026-09-09,Kantar,Kantar,Kan 11,554.0,utj,8,,28
+2026-09-09,Kantar,Kantar,Kan 11,554.0,rzp,5,,28
+2026-09-09,Kantar,Kantar,Kan 11,554.0,raam,5,,28
+2026-09-09,Kantar,Kantar,Kan 11,554.0,amcha,4,,28
+2026-09-09,Kantar,Kantar,Kan 11,554.0,blue_white,0,0.8,28
+2026-09-09,Kantar,Kantar,Kan 11,554.0,reservists,4,,28
+2026-09-09,Filber,Channel 14 (Filber),Channel 14,537.0,likud,31,,29
+2026-09-09,Filber,Channel 14 (Filber),Channel 14,537.0,yashar,22,,29
+2026-09-09,Filber,Channel 14 (Filber),Channel 14,537.0,together,7,,29
+2026-09-09,Filber,Channel 14 (Filber),Channel 14,537.0,dems,8,,29
+2026-09-09,Filber,Channel 14 (Filber),Channel 14,537.0,yb,7,,29
+2026-09-09,Filber,Channel 14 (Filber),Channel 14,537.0,joint_list,6,,29
+2026-09-09,Filber,Channel 14 (Filber),Channel 14,537.0,otzma,8,,29
+2026-09-09,Filber,Channel 14 (Filber),Channel 14,537.0,shas,10,,29
+2026-09-09,Filber,Channel 14 (Filber),Channel 14,537.0,utj,7,,29
+2026-09-09,Filber,Channel 14 (Filber),Channel 14,537.0,rzp,8,,29
+2026-09-09,Filber,Channel 14 (Filber),Channel 14,537.0,raam,6,,29
+2026-09-09,Filber,Channel 14 (Filber),Channel 14,537.0,amcha,0,2.1,29
+2026-09-09,Filber,Channel 14 (Filber),Channel 14,537.0,blue_white,0,0.2,29
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,likud,27,,30
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,yashar,22,,30
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,together,10,,30
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,dems,9,,30
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,yb,7,,30
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,joint_list,7,,30
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,otzma,8,,30
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,shas,7,,30
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,utj,8,,30
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,rzp,6,,30
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,raam,5,,30
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,amcha,4,,30
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,blue_white,0,1.1,30
+2026-09-09,Direct Polls,Direct Polls,i24 News,1054.0,reservists,0,1.4,30
+2026-09-08,Lazar,Lazar,Maariv,600.0,likud,20,,31
+2026-09-08,Lazar,Lazar,Maariv,600.0,yashar,25,,31
+2026-09-08,Lazar,Lazar,Maariv,600.0,together,13,,31
+2026-09-08,Lazar,Lazar,Maariv,600.0,dems,10,,31
+2026-09-08,Lazar,Lazar,Maariv,600.0,yb,9,,31
+2026-09-08,Lazar,Lazar,Maariv,600.0,joint_list,7,,31
+2026-09-08,Lazar,Lazar,Maariv,600.0,otzma,8,,31
+2026-09-08,Lazar,Lazar,Maariv,600.0,shas,7,,31
+2026-09-08,Lazar,Lazar,Maariv,600.0,utj,7,,31
+2026-09-08,Lazar,Lazar,Maariv,600.0,rzp,5,,31
+2026-09-08,Lazar,Lazar,Maariv,600.0,raam,5,,31
+2026-09-08,Lazar,Lazar,Maariv,600.0,amcha,0,2.8,31
+2026-09-08,Lazar,Lazar,Maariv,600.0,blue_white,0,1.3,31
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,likud,20,,32
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,yashar,25,,32
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,together,13,,32
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,dems,10,,32
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,yb,9,,32
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,joint_list,7,,32
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,otzma,8,,32
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,shas,7,,32
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,utj,7,,32
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,rzp,5,,32
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,raam,5,,32
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,amcha,0,2.8,32
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,blue_white,0,1.3,32
+2026-09-08,LRI+P4A,Lazar,Maariv,600.0,reservists,4,,32
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,likud,30,,33
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,yashar,22,,33
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,together,6,,33
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,dems,10,,33
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,yb,6,,33
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,joint_list,8,,33
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,otzma,8,,33
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,shas,10,,33
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,utj,7,,33
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,rzp,8,,33
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,raam,5,,33
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,amcha,0,3.0,33
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,blue_white,0,0.4,33
+2026-09-07,SF+ND,Channel 14 (Filber),Channel 14,1057.0,reservists,0,2.1,33
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,likud,21,,34
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,yashar,25,,34
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,together,13,,34
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,dems,11,,34
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,yb,8,,34
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,joint_list,7,,34
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,otzma,6,,34
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,shas,7,,34
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,utj,8,,34
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,rzp,6,,34
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,raam,4,,34
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,amcha,4,,34
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,blue_white,0,1.0,34
+2026-09-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,reservists,0,2.7,34
+2026-09-07,"Filber, NEXT DATA",Channel 14 (Filber),Channel 14,,likud,30,,35
+2026-09-07,"Filber, NEXT DATA",Channel 14 (Filber),Channel 14,,yashar,22,,35
+2026-09-07,"Filber, NEXT DATA",Channel 14 (Filber),Channel 14,,together,6,,35
+2026-09-07,"Filber, NEXT DATA",Channel 14 (Filber),Channel 14,,dems,10,,35
+2026-09-07,"Filber, NEXT DATA",Channel 14 (Filber),Channel 14,,yb,6,,35
+2026-09-07,"Filber, NEXT DATA",Channel 14 (Filber),Channel 14,,joint_list,8,,35
+2026-09-07,"Filber, NEXT DATA",Channel 14 (Filber),Channel 14,,otzma,8,,35
+2026-09-07,"Filber, NEXT DATA",Channel 14 (Filber),Channel 14,,shas,10,,35
+2026-09-07,"Filber, NEXT DATA",Channel 14 (Filber),Channel 14,,utj,7,,35
+2026-09-07,"Filber, NEXT DATA",Channel 14 (Filber),Channel 14,,rzp,8,,35
+2026-09-07,"Filber, NEXT DATA",Channel 14 (Filber),Channel 14,,raam,5,,35
+2026-09-06,Kantar,Kantar,Kan 11,551.0,likud,20,,36
+2026-09-06,Kantar,Kantar,Kan 11,551.0,yashar,23,,36
+2026-09-06,Kantar,Kantar,Kan 11,551.0,together,13,,36
+2026-09-06,Kantar,Kantar,Kan 11,551.0,dems,8,,36
+2026-09-06,Kantar,Kantar,Kan 11,551.0,yb,7,,36
+2026-09-06,Kantar,Kantar,Kan 11,551.0,joint_list,7,,36
+2026-09-06,Kantar,Kantar,Kan 11,551.0,otzma,7,,36
+2026-09-06,Kantar,Kantar,Kan 11,551.0,shas,7,,36
+2026-09-06,Kantar,Kantar,Kan 11,551.0,utj,8,,36
+2026-09-06,Kantar,Kantar,Kan 11,551.0,rzp,6,,36
+2026-09-06,Kantar,Kantar,Kan 11,551.0,raam,6,,36
+2026-09-06,Kantar,Kantar,Kan 11,551.0,amcha,4,,36
+2026-09-06,Kantar,Kantar,Kan 11,551.0,reservists,4,,36
+2026-09-04,Lazar,Lazar,Maariv,600.0,likud,20,,37
+2026-09-04,Lazar,Lazar,Maariv,600.0,yashar,23,,37
+2026-09-04,Lazar,Lazar,Maariv,600.0,together,15,,37
+2026-09-04,Lazar,Lazar,Maariv,600.0,dems,10,,37
+2026-09-04,Lazar,Lazar,Maariv,600.0,yb,9,,37
+2026-09-04,Lazar,Lazar,Maariv,600.0,joint_list,7,,37
+2026-09-04,Lazar,Lazar,Maariv,600.0,otzma,8,,37
+2026-09-04,Lazar,Lazar,Maariv,600.0,shas,7,,37
+2026-09-04,Lazar,Lazar,Maariv,600.0,utj,7,,37
+2026-09-04,Lazar,Lazar,Maariv,600.0,rzp,5,,37
+2026-09-04,Lazar,Lazar,Maariv,600.0,raam,5,,37
+2026-09-04,Lazar,Lazar,Maariv,600.0,amcha,4,,37
+2026-09-04,Lazar,Lazar,Maariv,600.0,blue_white,0,0.7,37
+2026-09-03,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,22,,38
+2026-09-03,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,22,,38
+2026-09-03,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,15,,38
+2026-09-03,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,38
+2026-09-03,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,38
+2026-09-03,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,joint_list,6,,38
+2026-09-03,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,6,,38
+2026-09-03,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,38
+2026-09-03,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,38
+2026-09-03,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,5,,38
+2026-09-03,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,38
+2026-09-03,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,amcha,0,2.4,38
+2026-09-03,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,0,1.4,38
+2026-09-03,SF+ND,Channel 14 (Filber),Channel 14,865.0,likud,31,,39
+2026-09-03,SF+ND,Channel 14 (Filber),Channel 14,865.0,yashar,22,,39
+2026-09-03,SF+ND,Channel 14 (Filber),Channel 14,865.0,together,9,,39
+2026-09-03,SF+ND,Channel 14 (Filber),Channel 14,865.0,dems,8,,39
+2026-09-03,SF+ND,Channel 14 (Filber),Channel 14,865.0,yb,6,,39
+2026-09-03,SF+ND,Channel 14 (Filber),Channel 14,865.0,joint_list,7,,39
+2026-09-03,SF+ND,Channel 14 (Filber),Channel 14,865.0,otzma,7,,39
+2026-09-03,SF+ND,Channel 14 (Filber),Channel 14,865.0,shas,10,,39
+2026-09-03,SF+ND,Channel 14 (Filber),Channel 14,865.0,utj,8,,39
+2026-09-03,SF+ND,Channel 14 (Filber),Channel 14,865.0,rzp,7,,39
+2026-09-03,SF+ND,Channel 14 (Filber),Channel 14,865.0,raam,5,,39
+2026-09-03,SF+ND,Channel 14 (Filber),Channel 14,865.0,amcha,0,2.7,39
+2026-09-03,SF+ND,Channel 14 (Filber),Channel 14,865.0,blue_white,0,1.2,39
+2026-09-03,Kantar,Kantar,Israel Hayom,555.0,likud,21,,40
+2026-09-03,Kantar,Kantar,Israel Hayom,555.0,yashar,24,,40
+2026-09-03,Kantar,Kantar,Israel Hayom,555.0,together,13,,40
+2026-09-03,Kantar,Kantar,Israel Hayom,555.0,dems,9,,40
+2026-09-03,Kantar,Kantar,Israel Hayom,555.0,yb,9,,40
+2026-09-03,Kantar,Kantar,Israel Hayom,555.0,joint_list,7,,40
+2026-09-03,Kantar,Kantar,Israel Hayom,555.0,otzma,7,,40
+2026-09-03,Kantar,Kantar,Israel Hayom,555.0,shas,7,,40
+2026-09-03,Kantar,Kantar,Israel Hayom,555.0,utj,8,,40
+2026-09-03,Kantar,Kantar,Israel Hayom,555.0,rzp,6,,40
+2026-09-03,Kantar,Kantar,Israel Hayom,555.0,raam,5,,40
+2026-09-03,Kantar,Kantar,Israel Hayom,555.0,amcha,4,,40
+2026-09-03,Kantar,Kantar,Israel Hayom,555.0,blue_white,0,1.7,40
+2026-09-02,Midgam Project,Midgam Project (Ch13),Channel 13,940.0,likud,21,,41
+2026-09-02,Midgam Project,Midgam Project (Ch13),Channel 13,940.0,yashar,22,,41
+2026-09-02,Midgam Project,Midgam Project (Ch13),Channel 13,940.0,together,12,,41
+2026-09-02,Midgam Project,Midgam Project (Ch13),Channel 13,940.0,dems,11,,41
+2026-09-02,Midgam Project,Midgam Project (Ch13),Channel 13,940.0,yb,8,,41
+2026-09-02,Midgam Project,Midgam Project (Ch13),Channel 13,940.0,joint_list,9,,41
+2026-09-02,Midgam Project,Midgam Project (Ch13),Channel 13,940.0,otzma,7,,41
+2026-09-02,Midgam Project,Midgam Project (Ch13),Channel 13,940.0,shas,7,,41
+2026-09-02,Midgam Project,Midgam Project (Ch13),Channel 13,940.0,utj,8,,41
+2026-09-02,Midgam Project,Midgam Project (Ch13),Channel 13,940.0,rzp,6,,41
+2026-09-02,Midgam Project,Midgam Project (Ch13),Channel 13,940.0,raam,5,,41
+2026-09-02,Midgam Project,Midgam Project (Ch13),Channel 13,940.0,amcha,4,,41
+2026-09-02,Midgam Project,Midgam Project (Ch13),Channel 13,940.0,blue_white,0,1.2,41
+2026-09-02,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,likud,19,,42
+2026-09-02,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,yashar,20,,42
+2026-09-02,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,together,18,,42
+2026-09-02,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,dems,10,,42
+2026-09-02,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,yb,7,,42
+2026-09-02,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,joint_list,7,,42
+2026-09-02,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,otzma,9,,42
+2026-09-02,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,shas,9,,42
+2026-09-02,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,utj,7,,42
+2026-09-02,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,rzp,5,,42
+2026-09-02,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,raam,4,,42
+2026-09-02,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,amcha,5,,42
+2026-09-02,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,blue_white,0,1.0,42
+2026-09-02,Lazar,Lazar,Walla,500.0,likud,22,,43
+2026-09-02,Lazar,Lazar,Walla,500.0,yashar,24,,43
+2026-09-02,Lazar,Lazar,Walla,500.0,together,15,,43
+2026-09-02,Lazar,Lazar,Walla,500.0,dems,10,,43
+2026-09-02,Lazar,Lazar,Walla,500.0,yb,9,,43
+2026-09-02,Lazar,Lazar,Walla,500.0,joint_list,8,,43
+2026-09-02,Lazar,Lazar,Walla,500.0,otzma,7,,43
+2026-09-02,Lazar,Lazar,Walla,500.0,shas,7,,43
+2026-09-02,Lazar,Lazar,Walla,500.0,utj,8,,43
+2026-09-02,Lazar,Lazar,Walla,500.0,rzp,5,,43
+2026-09-02,Lazar,Lazar,Walla,500.0,raam,5,,43
+2026-09-02,Lazar,Lazar,Walla,500.0,amcha,0,2.3,43
+2026-09-02,Lazar,Lazar,Walla,500.0,blue_white,0,0.7,43
+2026-09-02,Direct Polls,Direct Polls,i24 News,522.0,likud,27,,44
+2026-09-02,Direct Polls,Direct Polls,i24 News,522.0,yashar,23,,44
+2026-09-02,Direct Polls,Direct Polls,i24 News,522.0,together,9,,44
+2026-09-02,Direct Polls,Direct Polls,i24 News,522.0,dems,10,,44
+2026-09-02,Direct Polls,Direct Polls,i24 News,522.0,yb,8,,44
+2026-09-02,Direct Polls,Direct Polls,i24 News,522.0,joint_list,7,,44
+2026-09-02,Direct Polls,Direct Polls,i24 News,522.0,otzma,7,,44
+2026-09-02,Direct Polls,Direct Polls,i24 News,522.0,shas,7,,44
+2026-09-02,Direct Polls,Direct Polls,i24 News,522.0,utj,8,,44
+2026-09-02,Direct Polls,Direct Polls,i24 News,522.0,rzp,6,,44
+2026-09-02,Direct Polls,Direct Polls,i24 News,522.0,raam,5,,44
+2026-09-02,Direct Polls,Direct Polls,i24 News,522.0,amcha,5,,44
+2026-08-31,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,likud,23,,45
+2026-08-31,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,yashar,24,,45
+2026-08-31,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,together,15,,45
+2026-08-31,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,dems,11,,45
+2026-08-31,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,yb,9,,45
+2026-08-31,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,joint_list,7,,45
+2026-08-31,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,otzma,8,,45
+2026-08-31,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,shas,7,,45
+2026-08-31,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,utj,8,,45
+2026-08-31,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,rzp,0,2.6,45
+2026-08-31,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,raam,4,,45
+2026-08-31,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,amcha,4,,45
+2026-08-31,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,blue_white,0,0.9,45
+2026-08-30,SF+ND,Channel 14 (Filber),Channel 14,666.0,likud,31,,46
+2026-08-30,SF+ND,Channel 14 (Filber),Channel 14,666.0,yashar,24,,46
+2026-08-30,SF+ND,Channel 14 (Filber),Channel 14,666.0,together,6,,46
+2026-08-30,SF+ND,Channel 14 (Filber),Channel 14,666.0,dems,8,,46
+2026-08-30,SF+ND,Channel 14 (Filber),Channel 14,666.0,yb,7,,46
+2026-08-30,SF+ND,Channel 14 (Filber),Channel 14,666.0,joint_list,7,,46
+2026-08-30,SF+ND,Channel 14 (Filber),Channel 14,666.0,otzma,7,,46
+2026-08-30,SF+ND,Channel 14 (Filber),Channel 14,666.0,shas,10,,46
+2026-08-30,SF+ND,Channel 14 (Filber),Channel 14,666.0,utj,7,,46
+2026-08-30,SF+ND,Channel 14 (Filber),Channel 14,666.0,rzp,4,,46
+2026-08-30,SF+ND,Channel 14 (Filber),Channel 14,666.0,raam,5,,46
+2026-08-30,SF+ND,Channel 14 (Filber),Channel 14,666.0,amcha,4,,46
+2026-08-30,SF+ND,Channel 14 (Filber),Channel 14,666.0,blue_white,0,0.5,46
+2026-08-30,Kantar,Kantar,Kan 11,552.0,likud,21,,47
+2026-08-30,Kantar,Kantar,Kan 11,552.0,yashar,24,,47
+2026-08-30,Kantar,Kantar,Kan 11,552.0,together,14,,47
+2026-08-30,Kantar,Kantar,Kan 11,552.0,dems,9,,47
+2026-08-30,Kantar,Kantar,Kan 11,552.0,yb,8,,47
+2026-08-30,Kantar,Kantar,Kan 11,552.0,joint_list,8,,47
+2026-08-30,Kantar,Kantar,Kan 11,552.0,otzma,7,,47
+2026-08-30,Kantar,Kantar,Kan 11,552.0,shas,7,,47
+2026-08-30,Kantar,Kantar,Kan 11,552.0,utj,8,,47
+2026-08-30,Kantar,Kantar,Kan 11,552.0,rzp,5,,47
+2026-08-30,Kantar,Kantar,Kan 11,552.0,raam,5,,47
+2026-08-30,Kantar,Kantar,Kan 11,552.0,amcha,4,,47
+2026-08-30,Kantar,Kantar,Kan 11,552.0,blue_white,0,1.5,47
+2026-08-27,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,22,,48
+2026-08-27,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,26,,48
+2026-08-27,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,14,,48
+2026-08-27,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,48
+2026-08-27,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,48
+2026-08-27,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,joint_list,6,,48
+2026-08-27,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,6,,48
+2026-08-27,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,48
+2026-08-27,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,48
+2026-08-27,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,0,2.8,48
+2026-08-27,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,48
+2026-08-27,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,amcha,6,,48
+2026-08-27,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,0,2.4,48
+2026-08-27,SF+ND,Channel 14 (Filber),Channel 14,981.0,likud,31,,49
+2026-08-27,SF+ND,Channel 14 (Filber),Channel 14,981.0,yashar,23,,49
+2026-08-27,SF+ND,Channel 14 (Filber),Channel 14,981.0,together,7,,49
+2026-08-27,SF+ND,Channel 14 (Filber),Channel 14,981.0,dems,9,,49
+2026-08-27,SF+ND,Channel 14 (Filber),Channel 14,981.0,yb,6,,49
+2026-08-27,SF+ND,Channel 14 (Filber),Channel 14,981.0,joint_list,7,,49
+2026-08-27,SF+ND,Channel 14 (Filber),Channel 14,981.0,otzma,7,,49
+2026-08-27,SF+ND,Channel 14 (Filber),Channel 14,981.0,shas,10,,49
+2026-08-27,SF+ND,Channel 14 (Filber),Channel 14,981.0,utj,7,,49
+2026-08-27,SF+ND,Channel 14 (Filber),Channel 14,981.0,rzp,4,,49
+2026-08-27,SF+ND,Channel 14 (Filber),Channel 14,981.0,raam,5,,49
+2026-08-27,SF+ND,Channel 14 (Filber),Channel 14,981.0,amcha,4,,49
+2026-08-27,SF+ND,Channel 14 (Filber),Channel 14,981.0,blue_white,0,0.4,49
+2026-08-27,Lazar,Lazar,Maariv,506.0,likud,20,,50
+2026-08-27,Lazar,Lazar,Maariv,506.0,yashar,25,,50
+2026-08-27,Lazar,Lazar,Maariv,506.0,together,15,,50
+2026-08-27,Lazar,Lazar,Maariv,506.0,dems,10,,50
+2026-08-27,Lazar,Lazar,Maariv,506.0,yb,9,,50
+2026-08-27,Lazar,Lazar,Maariv,506.0,joint_list,8,,50
+2026-08-27,Lazar,Lazar,Maariv,506.0,otzma,8,,50
+2026-08-27,Lazar,Lazar,Maariv,506.0,shas,7,,50
+2026-08-27,Lazar,Lazar,Maariv,506.0,utj,8,,50
+2026-08-27,Lazar,Lazar,Maariv,506.0,rzp,0,3.0,50
+2026-08-27,Lazar,Lazar,Maariv,506.0,raam,5,,50
+2026-08-27,Lazar,Lazar,Maariv,506.0,amcha,5,,50
+2026-08-27,Lazar,Lazar,Maariv,506.0,blue_white,0,0.6,50
+2026-08-26,Midgam Project,Midgam Project (Ch13),Channel 13,1407.0,likud,19,,51
+2026-08-26,Midgam Project,Midgam Project (Ch13),Channel 13,1407.0,yashar,24,,51
+2026-08-26,Midgam Project,Midgam Project (Ch13),Channel 13,1407.0,together,13,,51
+2026-08-26,Midgam Project,Midgam Project (Ch13),Channel 13,1407.0,dems,11,,51
+2026-08-26,Midgam Project,Midgam Project (Ch13),Channel 13,1407.0,yb,9,,51
+2026-08-26,Midgam Project,Midgam Project (Ch13),Channel 13,1407.0,joint_list,10,,51
+2026-08-26,Midgam Project,Midgam Project (Ch13),Channel 13,1407.0,otzma,8,,51
+2026-08-26,Midgam Project,Midgam Project (Ch13),Channel 13,1407.0,shas,8,,51
+2026-08-26,Midgam Project,Midgam Project (Ch13),Channel 13,1407.0,utj,8,,51
+2026-08-26,Midgam Project,Midgam Project (Ch13),Channel 13,1407.0,rzp,5,,51
+2026-08-26,Midgam Project,Midgam Project (Ch13),Channel 13,1407.0,raam,5,,51
+2026-08-26,Midgam Project,Midgam Project (Ch13),Channel 13,1407.0,amcha,0,2.2,51
+2026-08-26,Midgam Project,Midgam Project (Ch13),Channel 13,1407.0,blue_white,0,1.8,51
+2026-08-26,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,likud,21,,52
+2026-08-26,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,yashar,21,,52
+2026-08-26,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,together,16,,52
+2026-08-26,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,dems,11,,52
+2026-08-26,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,yb,8,,52
+2026-08-26,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,joint_list,7,,52
+2026-08-26,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,otzma,9,,52
+2026-08-26,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,shas,9,,52
+2026-08-26,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,utj,7,,52
+2026-08-26,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,raam,4,,52
+2026-08-26,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),552.0,amcha,7,,52
+2026-08-26,Lazar,Lazar,Walla,500.0,likud,21,,53
+2026-08-26,Lazar,Lazar,Walla,500.0,yashar,25,,53
+2026-08-26,Lazar,Lazar,Walla,500.0,together,15,,53
+2026-08-26,Lazar,Lazar,Walla,500.0,dems,10,,53
+2026-08-26,Lazar,Lazar,Walla,500.0,yb,9,,53
+2026-08-26,Lazar,Lazar,Walla,500.0,joint_list,7,,53
+2026-08-26,Lazar,Lazar,Walla,500.0,otzma,8,,53
+2026-08-26,Lazar,Lazar,Walla,500.0,shas,7,,53
+2026-08-26,Lazar,Lazar,Walla,500.0,utj,7,,53
+2026-08-26,Lazar,Lazar,Walla,500.0,rzp,0,2.6,53
+2026-08-26,Lazar,Lazar,Walla,500.0,raam,5,,53
+2026-08-26,Lazar,Lazar,Walla,500.0,amcha,6,,53
+2026-08-26,Lazar,Lazar,Walla,500.0,blue_white,0,1.2,53
+2026-08-26,Direct Polls,Direct Polls,i24 News,532.0,likud,26,,54
+2026-08-26,Direct Polls,Direct Polls,i24 News,532.0,yashar,23,,54
+2026-08-26,Direct Polls,Direct Polls,i24 News,532.0,together,8,,54
+2026-08-26,Direct Polls,Direct Polls,i24 News,532.0,dems,10,,54
+2026-08-26,Direct Polls,Direct Polls,i24 News,532.0,yb,8,,54
+2026-08-26,Direct Polls,Direct Polls,i24 News,532.0,joint_list,6,,54
+2026-08-26,Direct Polls,Direct Polls,i24 News,532.0,otzma,6,,54
+2026-08-26,Direct Polls,Direct Polls,i24 News,532.0,shas,8,,54
+2026-08-26,Direct Polls,Direct Polls,i24 News,532.0,utj,7,,54
+2026-08-26,Direct Polls,Direct Polls,i24 News,532.0,rzp,4,,54
+2026-08-26,Direct Polls,Direct Polls,i24 News,532.0,raam,6,,54
+2026-08-26,Direct Polls,Direct Polls,i24 News,532.0,amcha,8,,54
+2026-08-24,SF+ND,Channel 14 (Filber),Channel 14,486.0,likud,32,,55
+2026-08-24,SF+ND,Channel 14 (Filber),Channel 14,486.0,yashar,24,,55
+2026-08-24,SF+ND,Channel 14 (Filber),Channel 14,486.0,together,7,,55
+2026-08-24,SF+ND,Channel 14 (Filber),Channel 14,486.0,dems,9,,55
+2026-08-24,SF+ND,Channel 14 (Filber),Channel 14,486.0,yb,7,,55
+2026-08-24,SF+ND,Channel 14 (Filber),Channel 14,486.0,otzma,8,,55
+2026-08-24,SF+ND,Channel 14 (Filber),Channel 14,486.0,shas,10,,55
+2026-08-24,SF+ND,Channel 14 (Filber),Channel 14,486.0,utj,8,,55
+2026-08-24,SF+ND,Channel 14 (Filber),Channel 14,486.0,rzp,5,,55
+2026-08-24,SF+ND,Channel 14 (Filber),Channel 14,486.0,raam,5,,55
+2026-08-24,SF+ND,Channel 14 (Filber),Channel 14,486.0,amcha,0,2.1,55
+2026-08-24,SF+ND,Channel 14 (Filber),Channel 14,486.0,blue_white,0,1.0,55
+2026-08-24,Midgam R&C,Midgam (Ch12),HaHadashot 12,500.0,likud,22,,56
+2026-08-24,Midgam R&C,Midgam (Ch12),HaHadashot 12,500.0,yashar,24,,56
+2026-08-24,Midgam R&C,Midgam (Ch12),HaHadashot 12,500.0,together,15,,56
+2026-08-24,Midgam R&C,Midgam (Ch12),HaHadashot 12,500.0,dems,11,,56
+2026-08-24,Midgam R&C,Midgam (Ch12),HaHadashot 12,500.0,yb,9,,56
+2026-08-24,Midgam R&C,Midgam (Ch12),HaHadashot 12,500.0,otzma,9,,56
+2026-08-24,Midgam R&C,Midgam (Ch12),HaHadashot 12,500.0,shas,7,,56
+2026-08-24,Midgam R&C,Midgam (Ch12),HaHadashot 12,500.0,utj,8,,56
+2026-08-24,Midgam R&C,Midgam (Ch12),HaHadashot 12,500.0,rzp,4,,56
+2026-08-24,Midgam R&C,Midgam (Ch12),HaHadashot 12,500.0,raam,4,,56
+2026-08-24,Midgam R&C,Midgam (Ch12),HaHadashot 12,500.0,blue_white,0,0.4,56
+2026-08-23,Kantar,Kantar,Kan 11,552.0,likud,22,,57
+2026-08-23,Kantar,Kantar,Kan 11,552.0,yashar,24,,57
+2026-08-23,Kantar,Kantar,Kan 11,552.0,together,14,,57
+2026-08-23,Kantar,Kantar,Kan 11,552.0,dems,10,,57
+2026-08-23,Kantar,Kantar,Kan 11,552.0,yb,9,,57
+2026-08-23,Kantar,Kantar,Kan 11,552.0,otzma,9,,57
+2026-08-23,Kantar,Kantar,Kan 11,552.0,shas,7,,57
+2026-08-23,Kantar,Kantar,Kan 11,552.0,utj,8,,57
+2026-08-23,Kantar,Kantar,Kan 11,552.0,rzp,5,,57
+2026-08-23,Kantar,Kantar,Kan 11,552.0,raam,5,,57
+2026-08-23,Kantar,Kantar,Kan 11,552.0,amcha,0,2.5,57
+2026-08-23,Kantar,Kantar,Kan 11,552.0,blue_white,0,1.8,57
+2026-08-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,21,,58
+2026-08-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,23,,58
+2026-08-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,15,,58
+2026-08-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,58
+2026-08-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,11,,58
+2026-08-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,58
+2026-08-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,58
+2026-08-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,58
+2026-08-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,6,,58
+2026-08-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,58
+2026-08-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,0,2.4,58
+2026-08-20,Lazar,Lazar,Maariv,501.0,likud,20,,59
+2026-08-20,Lazar,Lazar,Maariv,501.0,yashar,26,,59
+2026-08-20,Lazar,Lazar,Maariv,501.0,together,14,,59
+2026-08-20,Lazar,Lazar,Maariv,501.0,dems,10,,59
+2026-08-20,Lazar,Lazar,Maariv,501.0,yb,10,,59
+2026-08-20,Lazar,Lazar,Maariv,501.0,otzma,9,,59
+2026-08-20,Lazar,Lazar,Maariv,501.0,shas,7,,59
+2026-08-20,Lazar,Lazar,Maariv,501.0,utj,8,,59
+2026-08-20,Lazar,Lazar,Maariv,501.0,rzp,5,,59
+2026-08-20,Lazar,Lazar,Maariv,501.0,raam,5,,59
+2026-08-20,Lazar,Lazar,Maariv,501.0,amcha,0,1.5,59
+2026-08-20,Lazar,Lazar,Maariv,501.0,blue_white,0,1.1,59
+2026-08-20,Kantar,Kantar,Israel Hayom,553.0,likud,22,,60
+2026-08-20,Kantar,Kantar,Israel Hayom,553.0,yashar,23,,60
+2026-08-20,Kantar,Kantar,Israel Hayom,553.0,together,13,,60
+2026-08-20,Kantar,Kantar,Israel Hayom,553.0,dems,10,,60
+2026-08-20,Kantar,Kantar,Israel Hayom,553.0,yb,10,,60
+2026-08-20,Kantar,Kantar,Israel Hayom,553.0,otzma,9,,60
+2026-08-20,Kantar,Kantar,Israel Hayom,553.0,shas,7,,60
+2026-08-20,Kantar,Kantar,Israel Hayom,553.0,utj,8,,60
+2026-08-20,Kantar,Kantar,Israel Hayom,553.0,rzp,5,,60
+2026-08-20,Kantar,Kantar,Israel Hayom,553.0,raam,5,,60
+2026-08-20,Kantar,Kantar,Israel Hayom,553.0,blue_white,0,2.1,60
+2026-08-19,Midgam Project,Midgam Project (Ch13),Channel 13,1247.0,likud,23,,61
+2026-08-19,Midgam Project,Midgam Project (Ch13),Channel 13,1247.0,yashar,26,,61
+2026-08-19,Midgam Project,Midgam Project (Ch13),Channel 13,1247.0,together,13,,61
+2026-08-19,Midgam Project,Midgam Project (Ch13),Channel 13,1247.0,dems,11,,61
+2026-08-19,Midgam Project,Midgam Project (Ch13),Channel 13,1247.0,yb,9,,61
+2026-08-19,Midgam Project,Midgam Project (Ch13),Channel 13,1247.0,otzma,8,,61
+2026-08-19,Midgam Project,Midgam Project (Ch13),Channel 13,1247.0,shas,7,,61
+2026-08-19,Midgam Project,Midgam Project (Ch13),Channel 13,1247.0,utj,8,,61
+2026-08-19,Midgam Project,Midgam Project (Ch13),Channel 13,1247.0,rzp,5,,61
+2026-08-19,Midgam Project,Midgam Project (Ch13),Channel 13,1247.0,raam,5,,61
+2026-08-19,Midgam Project,Midgam Project (Ch13),Channel 13,1247.0,blue_white,0,1.8,61
+2026-08-19,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),551.0,likud,22,,62
+2026-08-19,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),551.0,yashar,25,,62
+2026-08-19,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),551.0,together,16,,62
+2026-08-19,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),551.0,dems,10,,62
+2026-08-19,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),551.0,yb,9,,62
+2026-08-19,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),551.0,otzma,9,,62
+2026-08-19,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),551.0,shas,9,,62
+2026-08-19,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),551.0,utj,7,,62
+2026-08-19,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),551.0,rzp,4,,62
+2026-08-19,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),551.0,raam,4,,62
+2026-08-19,Kantar,Kantar,Kan 11,558.0,likud,23,,63
+2026-08-19,Kantar,Kantar,Kan 11,558.0,yashar,24,,63
+2026-08-19,Kantar,Kantar,Kan 11,558.0,together,14,,63
+2026-08-19,Kantar,Kantar,Kan 11,558.0,dems,10,,63
+2026-08-19,Kantar,Kantar,Kan 11,558.0,yb,9,,63
+2026-08-19,Kantar,Kantar,Kan 11,558.0,otzma,9,,63
+2026-08-19,Kantar,Kantar,Kan 11,558.0,shas,7,,63
+2026-08-19,Kantar,Kantar,Kan 11,558.0,utj,8,,63
+2026-08-19,Kantar,Kantar,Kan 11,558.0,rzp,5,,63
+2026-08-19,Kantar,Kantar,Kan 11,558.0,raam,5,,63
+2026-08-19,Kantar,Kantar,Kan 11,558.0,blue_white,0,1.4,63
+2026-08-18,SF+ND,Channel 14 (Filber),Channel 14,636.0,likud,32,,64
+2026-08-18,SF+ND,Channel 14 (Filber),Channel 14,636.0,yashar,24,,64
+2026-08-18,SF+ND,Channel 14 (Filber),Channel 14,636.0,together,6,,64
+2026-08-18,SF+ND,Channel 14 (Filber),Channel 14,636.0,dems,9,,64
+2026-08-18,SF+ND,Channel 14 (Filber),Channel 14,636.0,yb,7,,64
+2026-08-18,SF+ND,Channel 14 (Filber),Channel 14,636.0,otzma,8,,64
+2026-08-18,SF+ND,Channel 14 (Filber),Channel 14,636.0,shas,10,,64
+2026-08-18,SF+ND,Channel 14 (Filber),Channel 14,636.0,utj,7,,64
+2026-08-18,SF+ND,Channel 14 (Filber),Channel 14,636.0,rzp,6,,64
+2026-08-18,SF+ND,Channel 14 (Filber),Channel 14,636.0,raam,6,,64
+2026-08-18,SF+ND,Channel 14 (Filber),Channel 14,636.0,amcha,0,0.9,64
+2026-08-18,SF+ND,Channel 14 (Filber),Channel 14,636.0,blue_white,0,0.4,64
+2026-08-18,Direct Polls,Direct Polls,i24 News,522.0,likud,31,,65
+2026-08-18,Direct Polls,Direct Polls,i24 News,522.0,yashar,24,,65
+2026-08-18,Direct Polls,Direct Polls,i24 News,522.0,together,9,,65
+2026-08-18,Direct Polls,Direct Polls,i24 News,522.0,dems,11,,65
+2026-08-18,Direct Polls,Direct Polls,i24 News,522.0,yb,8,,65
+2026-08-18,Direct Polls,Direct Polls,i24 News,522.0,otzma,6,,65
+2026-08-18,Direct Polls,Direct Polls,i24 News,522.0,shas,8,,65
+2026-08-18,Direct Polls,Direct Polls,i24 News,522.0,utj,8,,65
+2026-08-18,Direct Polls,Direct Polls,i24 News,522.0,rzp,5,,65
+2026-08-18,Direct Polls,Direct Polls,i24 News,522.0,raam,5,,65
+2026-08-17,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,likud,22,,66
+2026-08-17,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yashar,24,,66
+2026-08-17,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,together,15,,66
+2026-08-17,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,dems,11,,66
+2026-08-17,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yb,10,,66
+2026-08-17,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,otzma,8,,66
+2026-08-17,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,shas,7,,66
+2026-08-17,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,utj,8,,66
+2026-08-17,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,rzp,5,,66
+2026-08-17,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,raam,5,,66
+2026-08-17,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,blue_white,0,1.4,66
+2026-08-16,Kantar,Kantar,Kan 11,1103.0,likud,23,,67
+2026-08-16,Kantar,Kantar,Kan 11,1103.0,yashar,23,,67
+2026-08-16,Kantar,Kantar,Kan 11,1103.0,together,14,,67
+2026-08-16,Kantar,Kantar,Kan 11,1103.0,dems,10,,67
+2026-08-16,Kantar,Kantar,Kan 11,1103.0,yb,10,,67
+2026-08-16,Kantar,Kantar,Kan 11,1103.0,otzma,10,,67
+2026-08-16,Kantar,Kantar,Kan 11,1103.0,shas,7,,67
+2026-08-16,Kantar,Kantar,Kan 11,1103.0,utj,8,,67
+2026-08-16,Kantar,Kantar,Kan 11,1103.0,rzp,4,,67
+2026-08-16,Kantar,Kantar,Kan 11,1103.0,raam,5,,67
+2026-08-16,Kantar,Kantar,Kan 11,1103.0,blue_white,0,1.4,67
+2026-08-13,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,21,,68
+2026-08-13,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,25,,68
+2026-08-13,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,13,,68
+2026-08-13,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,9,,68
+2026-08-13,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,11,,68
+2026-08-13,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,68
+2026-08-13,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,8,,68
+2026-08-13,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,68
+2026-08-13,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,6,,68
+2026-08-13,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,6,,68
+2026-08-13,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,0,2.0,68
+2026-08-13,Lazar,Lazar,Maariv,506.0,likud,21,,69
+2026-08-13,Lazar,Lazar,Maariv,506.0,yashar,23,,69
+2026-08-13,Lazar,Lazar,Maariv,506.0,together,14,,69
+2026-08-13,Lazar,Lazar,Maariv,506.0,dems,10,,69
+2026-08-13,Lazar,Lazar,Maariv,506.0,yb,10,,69
+2026-08-13,Lazar,Lazar,Maariv,506.0,otzma,8,,69
+2026-08-13,Lazar,Lazar,Maariv,506.0,shas,7,,69
+2026-08-13,Lazar,Lazar,Maariv,506.0,utj,8,,69
+2026-08-13,Lazar,Lazar,Maariv,506.0,rzp,4,,69
+2026-08-13,Lazar,Lazar,Maariv,506.0,raam,5,,69
+2026-08-13,Lazar,Lazar,Maariv,506.0,blue_white,0,1.9,69
+2026-08-13,Direct Polls,Direct Polls,i24 News,512.0,likud,30,,70
+2026-08-13,Direct Polls,Direct Polls,i24 News,512.0,yashar,23,,70
+2026-08-13,Direct Polls,Direct Polls,i24 News,512.0,together,8,,70
+2026-08-13,Direct Polls,Direct Polls,i24 News,512.0,dems,10,,70
+2026-08-13,Direct Polls,Direct Polls,i24 News,512.0,yb,9,,70
+2026-08-13,Direct Polls,Direct Polls,i24 News,512.0,otzma,7,,70
+2026-08-13,Direct Polls,Direct Polls,i24 News,512.0,shas,8,,70
+2026-08-13,Direct Polls,Direct Polls,i24 News,512.0,utj,9,,70
+2026-08-13,Direct Polls,Direct Polls,i24 News,512.0,rzp,5,,70
+2026-08-13,Direct Polls,Direct Polls,i24 News,512.0,raam,5,,70
+2026-08-12,Midgam Project,Midgam Project (Ch13),Channel 13,1240.0,likud,21,,71
+2026-08-12,Midgam Project,Midgam Project (Ch13),Channel 13,1240.0,yashar,23,,71
+2026-08-12,Midgam Project,Midgam Project (Ch13),Channel 13,1240.0,together,12,,71
+2026-08-12,Midgam Project,Midgam Project (Ch13),Channel 13,1240.0,dems,11,,71
+2026-08-12,Midgam Project,Midgam Project (Ch13),Channel 13,1240.0,yb,10,,71
+2026-08-12,Midgam Project,Midgam Project (Ch13),Channel 13,1240.0,otzma,8,,71
+2026-08-12,Midgam Project,Midgam Project (Ch13),Channel 13,1240.0,shas,7,,71
+2026-08-12,Midgam Project,Midgam Project (Ch13),Channel 13,1240.0,utj,8,,71
+2026-08-12,Midgam Project,Midgam Project (Ch13),Channel 13,1240.0,rzp,5,,71
+2026-08-12,Midgam Project,Midgam Project (Ch13),Channel 13,1240.0,raam,5,,71
+2026-08-12,Midgam Project,Midgam Project (Ch13),Channel 13,1240.0,blue_white,0,1.0,71
+2026-08-10,Midgam R&C,Midgam (Ch12),HaHadashot 12,502.0,likud,22,,72
+2026-08-10,Midgam R&C,Midgam (Ch12),HaHadashot 12,502.0,yashar,24,,72
+2026-08-10,Midgam R&C,Midgam (Ch12),HaHadashot 12,502.0,together,15,,72
+2026-08-10,Midgam R&C,Midgam (Ch12),HaHadashot 12,502.0,dems,11,,72
+2026-08-10,Midgam R&C,Midgam (Ch12),HaHadashot 12,502.0,yb,10,,72
+2026-08-10,Midgam R&C,Midgam (Ch12),HaHadashot 12,502.0,otzma,8,,72
+2026-08-10,Midgam R&C,Midgam (Ch12),HaHadashot 12,502.0,shas,7,,72
+2026-08-10,Midgam R&C,Midgam (Ch12),HaHadashot 12,502.0,utj,8,,72
+2026-08-10,Midgam R&C,Midgam (Ch12),HaHadashot 12,502.0,rzp,5,,72
+2026-08-10,Midgam R&C,Midgam (Ch12),HaHadashot 12,502.0,raam,5,,72
+2026-08-10,Midgam R&C,Midgam (Ch12),HaHadashot 12,502.0,blue_white,0,0.8,72
+2026-08-10,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,likud,22,,73
+2026-08-10,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,yashar,22,,73
+2026-08-10,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,together,16,,73
+2026-08-10,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,dems,12,,73
+2026-08-10,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,yb,9,,73
+2026-08-10,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,otzma,9,,73
+2026-08-10,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,shas,10,,73
+2026-08-10,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,utj,7,,73
+2026-08-10,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,rzp,4,,73
+2026-08-10,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,raam,4,,73
+2026-08-10,Maagar Mochot,Maagar Mochot,Channel 16 (source no longer online),,blue_white,0,2.2,73
+2026-08-09,SF+ND,Channel 14 (Filber),Channel 14,741.0,likud,33,,74
+2026-08-09,SF+ND,Channel 14 (Filber),Channel 14,741.0,yashar,23,,74
+2026-08-09,SF+ND,Channel 14 (Filber),Channel 14,741.0,together,7,,74
+2026-08-09,SF+ND,Channel 14 (Filber),Channel 14,741.0,dems,10,,74
+2026-08-09,SF+ND,Channel 14 (Filber),Channel 14,741.0,yb,8,,74
+2026-08-09,SF+ND,Channel 14 (Filber),Channel 14,741.0,otzma,6,,74
+2026-08-09,SF+ND,Channel 14 (Filber),Channel 14,741.0,shas,10,,74
+2026-08-09,SF+ND,Channel 14 (Filber),Channel 14,741.0,utj,7,,74
+2026-08-09,SF+ND,Channel 14 (Filber),Channel 14,741.0,rzp,6,,74
+2026-08-09,SF+ND,Channel 14 (Filber),Channel 14,741.0,raam,5,,74
+2026-08-09,SF+ND,Channel 14 (Filber),Channel 14,741.0,amcha,0,0.6,74
+2026-08-09,SF+ND,Channel 14 (Filber),Channel 14,741.0,blue_white,0,0.4,74
+2026-08-09,Kantar,Kantar,Kan 11,551.0,likud,24,,75
+2026-08-09,Kantar,Kantar,Kan 11,551.0,yashar,23,,75
+2026-08-09,Kantar,Kantar,Kan 11,551.0,together,13,,75
+2026-08-09,Kantar,Kantar,Kan 11,551.0,dems,10,,75
+2026-08-09,Kantar,Kantar,Kan 11,551.0,yb,10,,75
+2026-08-09,Kantar,Kantar,Kan 11,551.0,otzma,8,,75
+2026-08-09,Kantar,Kantar,Kan 11,551.0,shas,8,,75
+2026-08-09,Kantar,Kantar,Kan 11,551.0,utj,8,,75
+2026-08-09,Kantar,Kantar,Kan 11,551.0,rzp,5,,75
+2026-08-09,Kantar,Kantar,Kan 11,551.0,raam,6,,75
+2026-08-09,Kantar,Kantar,Kan 11,551.0,blue_white,0,1.3,75
+2026-08-06,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,21,,76
+2026-08-06,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,23,,76
+2026-08-06,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,15,,76
+2026-08-06,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,76
+2026-08-06,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,11,,76
+2026-08-06,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,8,,76
+2026-08-06,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,8,,76
+2026-08-06,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,76
+2026-08-06,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,6,,76
+2026-08-06,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,6,,76
+2026-08-06,Lazar,Lazar,Maariv,502.0,likud,22,,77
+2026-08-06,Lazar,Lazar,Maariv,502.0,yashar,23,,77
+2026-08-06,Lazar,Lazar,Maariv,502.0,together,15,,77
+2026-08-06,Lazar,Lazar,Maariv,502.0,dems,9,,77
+2026-08-06,Lazar,Lazar,Maariv,502.0,yb,10,,77
+2026-08-06,Lazar,Lazar,Maariv,502.0,otzma,8,,77
+2026-08-06,Lazar,Lazar,Maariv,502.0,shas,7,,77
+2026-08-06,Lazar,Lazar,Maariv,502.0,utj,8,,77
+2026-08-06,Lazar,Lazar,Maariv,502.0,rzp,4,,77
+2026-08-06,Lazar,Lazar,Maariv,502.0,raam,5,,77
+2026-08-06,Lazar,Lazar,Maariv,502.0,blue_white,0,1.2,77
+2026-08-06,Kantar,Kantar,Israel Hayom,552.0,likud,23,,78
+2026-08-06,Kantar,Kantar,Israel Hayom,552.0,yashar,23,,78
+2026-08-06,Kantar,Kantar,Israel Hayom,552.0,together,13,,78
+2026-08-06,Kantar,Kantar,Israel Hayom,552.0,dems,10,,78
+2026-08-06,Kantar,Kantar,Israel Hayom,552.0,yb,9,,78
+2026-08-06,Kantar,Kantar,Israel Hayom,552.0,otzma,9,,78
+2026-08-06,Kantar,Kantar,Israel Hayom,552.0,shas,7,,78
+2026-08-06,Kantar,Kantar,Israel Hayom,552.0,utj,8,,78
+2026-08-06,Kantar,Kantar,Israel Hayom,552.0,rzp,4,,78
+2026-08-06,Kantar,Kantar,Israel Hayom,552.0,raam,6,,78
+2026-08-06,Kantar,Kantar,Israel Hayom,552.0,blue_white,0,0.7,78
+2026-08-06,Direct Polls,Direct Polls,i24 News,535.0,likud,28,,79
+2026-08-06,Direct Polls,Direct Polls,i24 News,535.0,yashar,23,,79
+2026-08-06,Direct Polls,Direct Polls,i24 News,535.0,together,7,,79
+2026-08-06,Direct Polls,Direct Polls,i24 News,535.0,dems,10,,79
+2026-08-06,Direct Polls,Direct Polls,i24 News,535.0,yb,8,,79
+2026-08-06,Direct Polls,Direct Polls,i24 News,535.0,otzma,8,,79
+2026-08-06,Direct Polls,Direct Polls,i24 News,535.0,shas,8,,79
+2026-08-06,Direct Polls,Direct Polls,i24 News,535.0,utj,9,,79
+2026-08-06,Direct Polls,Direct Polls,i24 News,535.0,rzp,5,,79
+2026-08-06,Direct Polls,Direct Polls,i24 News,535.0,raam,5,,79
+2026-08-06,Direct Polls,Direct Polls,i24 News,535.0,blue_white,0,1.1,79
+2026-08-05,Midgam Project,Midgam Project (Ch13),Channel 13,961.0,likud,22,,80
+2026-08-05,Midgam Project,Midgam Project (Ch13),Channel 13,961.0,yashar,23,,80
+2026-08-05,Midgam Project,Midgam Project (Ch13),Channel 13,961.0,together,13,,80
+2026-08-05,Midgam Project,Midgam Project (Ch13),Channel 13,961.0,dems,11,,80
+2026-08-05,Midgam Project,Midgam Project (Ch13),Channel 13,961.0,yb,11,,80
+2026-08-05,Midgam Project,Midgam Project (Ch13),Channel 13,961.0,otzma,9,,80
+2026-08-05,Midgam Project,Midgam Project (Ch13),Channel 13,961.0,shas,7,,80
+2026-08-05,Midgam Project,Midgam Project (Ch13),Channel 13,961.0,utj,8,,80
+2026-08-05,Midgam Project,Midgam Project (Ch13),Channel 13,961.0,rzp,5,,80
+2026-08-05,Midgam Project,Midgam Project (Ch13),Channel 13,961.0,raam,5,,80
+2026-08-05,Midgam Project,Midgam Project (Ch13),Channel 13,961.0,blue_white,0,1.4,80
+2026-08-04,SF+ND,Channel 14 (Filber),Channel 14,588.0,likud,31,,81
+2026-08-04,SF+ND,Channel 14 (Filber),Channel 14,588.0,yashar,22,,81
+2026-08-04,SF+ND,Channel 14 (Filber),Channel 14,588.0,together,8,,81
+2026-08-04,SF+ND,Channel 14 (Filber),Channel 14,588.0,dems,10,,81
+2026-08-04,SF+ND,Channel 14 (Filber),Channel 14,588.0,yb,8,,81
+2026-08-04,SF+ND,Channel 14 (Filber),Channel 14,588.0,otzma,6,,81
+2026-08-04,SF+ND,Channel 14 (Filber),Channel 14,588.0,shas,11,,81
+2026-08-04,SF+ND,Channel 14 (Filber),Channel 14,588.0,utj,8,,81
+2026-08-04,SF+ND,Channel 14 (Filber),Channel 14,588.0,rzp,6,,81
+2026-08-04,SF+ND,Channel 14 (Filber),Channel 14,588.0,raam,5,,81
+2026-08-04,SF+ND,Channel 14 (Filber),Channel 14,588.0,blue_white,0,0.5,81
+2026-08-04,Maagar Mochot,Maagar Mochot,Channel 16,,likud,21,,82
+2026-08-04,Maagar Mochot,Maagar Mochot,Channel 16,,yashar,22,,82
+2026-08-04,Maagar Mochot,Maagar Mochot,Channel 16,,together,14,,82
+2026-08-04,Maagar Mochot,Maagar Mochot,Channel 16,,dems,11,,82
+2026-08-04,Maagar Mochot,Maagar Mochot,Channel 16,,yb,9,,82
+2026-08-04,Maagar Mochot,Maagar Mochot,Channel 16,,otzma,9,,82
+2026-08-04,Maagar Mochot,Maagar Mochot,Channel 16,,shas,9,,82
+2026-08-04,Maagar Mochot,Maagar Mochot,Channel 16,,utj,8,,82
+2026-08-04,Maagar Mochot,Maagar Mochot,Channel 16,,rzp,4,,82
+2026-08-04,Maagar Mochot,Maagar Mochot,Channel 16,,raam,4,,82
+2026-08-03,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,likud,23,,83
+2026-08-03,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,yashar,23,,83
+2026-08-03,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,together,14,,83
+2026-08-03,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,dems,10,,83
+2026-08-03,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,yb,9,,83
+2026-08-03,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,otzma,7,,83
+2026-08-03,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,shas,7,,83
+2026-08-03,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,utj,8,,83
+2026-08-03,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,rzp,5,,83
+2026-08-03,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,raam,5,,83
+2026-08-03,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,blue_white,0,1.4,83
+2026-08-02,Kantar,Kantar,Kan 11,551.0,likud,23,,84
+2026-08-02,Kantar,Kantar,Kan 11,551.0,yashar,23,,84
+2026-08-02,Kantar,Kantar,Kan 11,551.0,together,13,,84
+2026-08-02,Kantar,Kantar,Kan 11,551.0,dems,8,,84
+2026-08-02,Kantar,Kantar,Kan 11,551.0,yb,9,,84
+2026-08-02,Kantar,Kantar,Kan 11,551.0,otzma,9,,84
+2026-08-02,Kantar,Kantar,Kan 11,551.0,shas,8,,84
+2026-08-02,Kantar,Kantar,Kan 11,551.0,utj,8,,84
+2026-08-02,Kantar,Kantar,Kan 11,551.0,rzp,4,,84
+2026-08-02,Kantar,Kantar,Kan 11,551.0,raam,5,,84
+2026-08-02,Kantar,Kantar,Kan 11,551.0,blue_white,0,1.4,84
+2026-07-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,20,,85
+2026-07-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,21,,85
+2026-07-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,13,,85
+2026-07-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,85
+2026-07-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,85
+2026-07-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,85
+2026-07-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,8,,85
+2026-07-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,85
+2026-07-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,6,,85
+2026-07-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,85
+2026-07-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,4,,85
+2026-07-30,Lazar,Lazar,Maariv,501.0,likud,22,,86
+2026-07-30,Lazar,Lazar,Maariv,501.0,yashar,23,,86
+2026-07-30,Lazar,Lazar,Maariv,501.0,together,15,,86
+2026-07-30,Lazar,Lazar,Maariv,501.0,dems,9,,86
+2026-07-30,Lazar,Lazar,Maariv,501.0,yb,10,,86
+2026-07-30,Lazar,Lazar,Maariv,501.0,otzma,7,,86
+2026-07-30,Lazar,Lazar,Maariv,501.0,shas,7,,86
+2026-07-30,Lazar,Lazar,Maariv,501.0,utj,8,,86
+2026-07-30,Lazar,Lazar,Maariv,501.0,rzp,5,,86
+2026-07-30,Lazar,Lazar,Maariv,501.0,raam,5,,86
+2026-07-30,Lazar,Lazar,Maariv,501.0,blue_white,0,1.2,86
+2026-07-29,SF+ND,Channel 14 (Filber),Channel 14,539.0,likud,32,,87
+2026-07-29,SF+ND,Channel 14 (Filber),Channel 14,539.0,yashar,22,,87
+2026-07-29,SF+ND,Channel 14 (Filber),Channel 14,539.0,together,7,,87
+2026-07-29,SF+ND,Channel 14 (Filber),Channel 14,539.0,dems,10,,87
+2026-07-29,SF+ND,Channel 14 (Filber),Channel 14,539.0,yb,8,,87
+2026-07-29,SF+ND,Channel 14 (Filber),Channel 14,539.0,otzma,7,,87
+2026-07-29,SF+ND,Channel 14 (Filber),Channel 14,539.0,shas,10,,87
+2026-07-29,SF+ND,Channel 14 (Filber),Channel 14,539.0,utj,8,,87
+2026-07-29,SF+ND,Channel 14 (Filber),Channel 14,539.0,rzp,5,,87
+2026-07-29,SF+ND,Channel 14 (Filber),Channel 14,539.0,raam,5,,87
+2026-07-29,SF+ND,Channel 14 (Filber),Channel 14,539.0,blue_white,0,1.1,87
+2026-07-29,Midgam Project,Midgam Project (Ch13),Channel 13,956.0,likud,23,,88
+2026-07-29,Midgam Project,Midgam Project (Ch13),Channel 13,956.0,yashar,23,,88
+2026-07-29,Midgam Project,Midgam Project (Ch13),Channel 13,956.0,together,13,,88
+2026-07-29,Midgam Project,Midgam Project (Ch13),Channel 13,956.0,dems,9,,88
+2026-07-29,Midgam Project,Midgam Project (Ch13),Channel 13,956.0,yb,10,,88
+2026-07-29,Midgam Project,Midgam Project (Ch13),Channel 13,956.0,otzma,8,,88
+2026-07-29,Midgam Project,Midgam Project (Ch13),Channel 13,956.0,shas,7,,88
+2026-07-29,Midgam Project,Midgam Project (Ch13),Channel 13,956.0,utj,9,,88
+2026-07-29,Midgam Project,Midgam Project (Ch13),Channel 13,956.0,rzp,4,,88
+2026-07-29,Midgam Project,Midgam Project (Ch13),Channel 13,956.0,raam,5,,88
+2026-07-29,Midgam Project,Midgam Project (Ch13),Channel 13,956.0,blue_white,0,2.3,88
+2026-07-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,likud,22,,89
+2026-07-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,yashar,23,,89
+2026-07-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,together,14,,89
+2026-07-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,dems,10,,89
+2026-07-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,yb,9,,89
+2026-07-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,otzma,8,,89
+2026-07-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,shas,8,,89
+2026-07-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,utj,8,,89
+2026-07-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,rzp,4,,89
+2026-07-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,raam,5,,89
+2026-07-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,blue_white,0,1.6,89
+2026-07-27,Direct Polls,Direct Polls,i24 News,525.0,likud,29,,90
+2026-07-27,Direct Polls,Direct Polls,i24 News,525.0,yashar,21,,90
+2026-07-27,Direct Polls,Direct Polls,i24 News,525.0,together,9,,90
+2026-07-27,Direct Polls,Direct Polls,i24 News,525.0,dems,10,,90
+2026-07-27,Direct Polls,Direct Polls,i24 News,525.0,yb,9,,90
+2026-07-27,Direct Polls,Direct Polls,i24 News,525.0,otzma,8,,90
+2026-07-27,Direct Polls,Direct Polls,i24 News,525.0,shas,9,,90
+2026-07-27,Direct Polls,Direct Polls,i24 News,525.0,utj,8,,90
+2026-07-27,Direct Polls,Direct Polls,i24 News,525.0,rzp,5,,90
+2026-07-27,Direct Polls,Direct Polls,i24 News,525.0,raam,5,,90
+2026-07-26,SF+ND,Channel 14 (Filber),Channel 14,878.0,likud,32,,91
+2026-07-26,SF+ND,Channel 14 (Filber),Channel 14,878.0,yashar,23,,91
+2026-07-26,SF+ND,Channel 14 (Filber),Channel 14,878.0,together,7,,91
+2026-07-26,SF+ND,Channel 14 (Filber),Channel 14,878.0,dems,12,,91
+2026-07-26,SF+ND,Channel 14 (Filber),Channel 14,878.0,yb,6,,91
+2026-07-26,SF+ND,Channel 14 (Filber),Channel 14,878.0,otzma,8,,91
+2026-07-26,SF+ND,Channel 14 (Filber),Channel 14,878.0,shas,10,,91
+2026-07-26,SF+ND,Channel 14 (Filber),Channel 14,878.0,utj,7,,91
+2026-07-26,SF+ND,Channel 14 (Filber),Channel 14,878.0,rzp,6,,91
+2026-07-26,SF+ND,Channel 14 (Filber),Channel 14,878.0,raam,5,,91
+2026-07-26,SF+ND,Channel 14 (Filber),Channel 14,878.0,blue_white,0,0.9,91
+2026-07-26,Kantar,Kantar,Kan 11,551.0,likud,22,,92
+2026-07-26,Kantar,Kantar,Kan 11,551.0,yashar,21,,92
+2026-07-26,Kantar,Kantar,Kan 11,551.0,together,14,,92
+2026-07-26,Kantar,Kantar,Kan 11,551.0,dems,10,,92
+2026-07-26,Kantar,Kantar,Kan 11,551.0,yb,9,,92
+2026-07-26,Kantar,Kantar,Kan 11,551.0,otzma,9,,92
+2026-07-26,Kantar,Kantar,Kan 11,551.0,shas,8,,92
+2026-07-26,Kantar,Kantar,Kan 11,551.0,utj,8,,92
+2026-07-26,Kantar,Kantar,Kan 11,551.0,rzp,5,,92
+2026-07-26,Kantar,Kantar,Kan 11,551.0,raam,5,,92
+2026-07-26,Kantar,Kantar,Kan 11,551.0,blue_white,0,2.6,92
+2026-07-23,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,21,,93
+2026-07-23,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,25,,93
+2026-07-23,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,13,,93
+2026-07-23,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,10,,93
+2026-07-23,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,93
+2026-07-23,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,8,,93
+2026-07-23,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,93
+2026-07-23,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,93
+2026-07-23,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,5,,93
+2026-07-23,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,93
+2026-07-23,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,0,2.0,93
+2026-07-23,Lazar,Lazar,Maariv,500.0,likud,20,,94
+2026-07-23,Lazar,Lazar,Maariv,500.0,yashar,23,,94
+2026-07-23,Lazar,Lazar,Maariv,500.0,together,17,,94
+2026-07-23,Lazar,Lazar,Maariv,500.0,dems,11,,94
+2026-07-23,Lazar,Lazar,Maariv,500.0,yb,10,,94
+2026-07-23,Lazar,Lazar,Maariv,500.0,otzma,8,,94
+2026-07-23,Lazar,Lazar,Maariv,500.0,shas,8,,94
+2026-07-23,Lazar,Lazar,Maariv,500.0,utj,8,,94
+2026-07-23,Lazar,Lazar,Maariv,500.0,rzp,5,,94
+2026-07-23,Lazar,Lazar,Maariv,500.0,raam,5,,94
+2026-07-23,Lazar,Lazar,Maariv,500.0,blue_white,0,1.6,94
+2026-07-23,Kantar,Kantar,Israel Hayom,,likud,23,,95
+2026-07-23,Kantar,Kantar,Israel Hayom,,yashar,23,,95
+2026-07-23,Kantar,Kantar,Israel Hayom,,together,14,,95
+2026-07-23,Kantar,Kantar,Israel Hayom,,dems,10,,95
+2026-07-23,Kantar,Kantar,Israel Hayom,,yb,9,,95
+2026-07-23,Kantar,Kantar,Israel Hayom,,otzma,9,,95
+2026-07-23,Kantar,Kantar,Israel Hayom,,shas,8,,95
+2026-07-23,Kantar,Kantar,Israel Hayom,,utj,8,,95
+2026-07-23,Kantar,Kantar,Israel Hayom,,rzp,5,,95
+2026-07-23,Kantar,Kantar,Israel Hayom,,raam,5,,95
+2026-07-23,Kantar,Kantar,Israel Hayom,,blue_white,0,2.4,95
+2026-07-21,Midgam Project,Midgam Project (Ch13),Channel 13,988.0,likud,21,,96
+2026-07-21,Midgam Project,Midgam Project (Ch13),Channel 13,988.0,yashar,21,,96
+2026-07-21,Midgam Project,Midgam Project (Ch13),Channel 13,988.0,together,14,,96
+2026-07-21,Midgam Project,Midgam Project (Ch13),Channel 13,988.0,dems,11,,96
+2026-07-21,Midgam Project,Midgam Project (Ch13),Channel 13,988.0,yb,10,,96
+2026-07-21,Midgam Project,Midgam Project (Ch13),Channel 13,988.0,otzma,7,,96
+2026-07-21,Midgam Project,Midgam Project (Ch13),Channel 13,988.0,shas,8,,96
+2026-07-21,Midgam Project,Midgam Project (Ch13),Channel 13,988.0,utj,8,,96
+2026-07-21,Midgam Project,Midgam Project (Ch13),Channel 13,988.0,rzp,5,,96
+2026-07-21,Midgam Project,Midgam Project (Ch13),Channel 13,988.0,raam,5,,96
+2026-07-21,Midgam Project,Midgam Project (Ch13),Channel 13,988.0,blue_white,0,1.0,96
+2026-07-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,507.0,likud,23,,97
+2026-07-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,507.0,yashar,24,,97
+2026-07-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,507.0,together,15,,97
+2026-07-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,507.0,dems,11,,97
+2026-07-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,507.0,yb,9,,97
+2026-07-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,507.0,otzma,8,,97
+2026-07-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,507.0,shas,8,,97
+2026-07-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,507.0,utj,8,,97
+2026-07-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,507.0,rzp,4,,97
+2026-07-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,507.0,raam,5,,97
+2026-07-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,507.0,blue_white,0,1.3,97
+2026-07-19,Kantar,Kantar,Kan 11,551.0,likud,21,,98
+2026-07-19,Kantar,Kantar,Kan 11,551.0,yashar,22,,98
+2026-07-19,Kantar,Kantar,Kan 11,551.0,together,15,,98
+2026-07-19,Kantar,Kantar,Kan 11,551.0,dems,9,,98
+2026-07-19,Kantar,Kantar,Kan 11,551.0,yb,9,,98
+2026-07-19,Kantar,Kantar,Kan 11,551.0,otzma,10,,98
+2026-07-19,Kantar,Kantar,Kan 11,551.0,shas,8,,98
+2026-07-19,Kantar,Kantar,Kan 11,551.0,utj,8,,98
+2026-07-19,Kantar,Kantar,Kan 11,551.0,rzp,4,,98
+2026-07-19,Kantar,Kantar,Kan 11,551.0,raam,5,,98
+2026-07-19,Kantar,Kantar,Kan 11,551.0,blue_white,0,2.2,98
+2026-07-17,Lazar,Lazar,Maariv,500.0,likud,22,,99
+2026-07-17,Lazar,Lazar,Maariv,500.0,yashar,22,,99
+2026-07-17,Lazar,Lazar,Maariv,500.0,together,16,,99
+2026-07-17,Lazar,Lazar,Maariv,500.0,dems,11,,99
+2026-07-17,Lazar,Lazar,Maariv,500.0,yb,9,,99
+2026-07-17,Lazar,Lazar,Maariv,500.0,otzma,7,,99
+2026-07-17,Lazar,Lazar,Maariv,500.0,shas,7,,99
+2026-07-17,Lazar,Lazar,Maariv,500.0,utj,8,,99
+2026-07-17,Lazar,Lazar,Maariv,500.0,rzp,4,,99
+2026-07-17,Lazar,Lazar,Maariv,500.0,raam,5,,99
+2026-07-17,Lazar,Lazar,Maariv,500.0,blue_white,0,1.7,99
+2026-07-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,21,,100
+2026-07-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,23,,100
+2026-07-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,15,,100
+2026-07-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,100
+2026-07-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,100
+2026-07-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,100
+2026-07-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,100
+2026-07-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,100
+2026-07-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,5,,100
+2026-07-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,4,,100
+2026-07-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,4,,100
+2026-07-16,SF+ND,Channel 14 (Filber),Channel 14,,likud,32,,101
+2026-07-16,SF+ND,Channel 14 (Filber),Channel 14,,yashar,21,,101
+2026-07-16,SF+ND,Channel 14 (Filber),Channel 14,,together,8,,101
+2026-07-16,SF+ND,Channel 14 (Filber),Channel 14,,dems,11,,101
+2026-07-16,SF+ND,Channel 14 (Filber),Channel 14,,yb,7,,101
+2026-07-16,SF+ND,Channel 14 (Filber),Channel 14,,otzma,7,,101
+2026-07-16,SF+ND,Channel 14 (Filber),Channel 14,,shas,10,,101
+2026-07-16,SF+ND,Channel 14 (Filber),Channel 14,,utj,8,,101
+2026-07-16,SF+ND,Channel 14 (Filber),Channel 14,,rzp,6,,101
+2026-07-16,SF+ND,Channel 14 (Filber),Channel 14,,raam,5,,101
+2026-07-16,SF+ND,Channel 14 (Filber),Channel 14,,blue_white,0,0.9,101
+2026-07-16,Direct Polls,Direct Polls,i24 News,550.0,likud,28,,102
+2026-07-16,Direct Polls,Direct Polls,i24 News,550.0,yashar,22,,102
+2026-07-16,Direct Polls,Direct Polls,i24 News,550.0,together,9,,102
+2026-07-16,Direct Polls,Direct Polls,i24 News,550.0,dems,11,,102
+2026-07-16,Direct Polls,Direct Polls,i24 News,550.0,yb,8,,102
+2026-07-16,Direct Polls,Direct Polls,i24 News,550.0,otzma,7,,102
+2026-07-16,Direct Polls,Direct Polls,i24 News,550.0,shas,9,,102
+2026-07-16,Direct Polls,Direct Polls,i24 News,550.0,utj,8,,102
+2026-07-16,Direct Polls,Direct Polls,i24 News,550.0,rzp,6,,102
+2026-07-16,Direct Polls,Direct Polls,i24 News,550.0,raam,5,,102
+2026-07-16,Direct Polls,Direct Polls,i24 News,550.0,blue_white,0,1.9,102
+2026-07-15,Midgam Project,Midgam Project (Ch13),Channel 13,,likud,22,,103
+2026-07-15,Midgam Project,Midgam Project (Ch13),Channel 13,,yashar,21,,103
+2026-07-15,Midgam Project,Midgam Project (Ch13),Channel 13,,together,15,,103
+2026-07-15,Midgam Project,Midgam Project (Ch13),Channel 13,,dems,11,,103
+2026-07-15,Midgam Project,Midgam Project (Ch13),Channel 13,,yb,10,,103
+2026-07-15,Midgam Project,Midgam Project (Ch13),Channel 13,,otzma,7,,103
+2026-07-15,Midgam Project,Midgam Project (Ch13),Channel 13,,shas,7,,103
+2026-07-15,Midgam Project,Midgam Project (Ch13),Channel 13,,utj,8,,103
+2026-07-15,Midgam Project,Midgam Project (Ch13),Channel 13,,rzp,6,,103
+2026-07-15,Midgam Project,Midgam Project (Ch13),Channel 13,,raam,4,,103
+2026-07-15,Midgam Project,Midgam Project (Ch13),Channel 13,,blue_white,0,0.8,103
+2026-07-13,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,likud,22,,104
+2026-07-13,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,yashar,23,,104
+2026-07-13,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,together,16,,104
+2026-07-13,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,dems,10,,104
+2026-07-13,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,yb,10,,104
+2026-07-13,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,otzma,8,,104
+2026-07-13,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,shas,8,,104
+2026-07-13,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,utj,8,,104
+2026-07-13,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,rzp,5,,104
+2026-07-13,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,raam,5,,104
+2026-07-13,Midgam R&C,Midgam (Ch12),HaHadashot 12,509.0,blue_white,0,1.4,104
+2026-07-12,Kantar,Kantar,Kan 11,551.0,likud,23,,105
+2026-07-12,Kantar,Kantar,Kan 11,551.0,yashar,24,,105
+2026-07-12,Kantar,Kantar,Kan 11,551.0,together,15,,105
+2026-07-12,Kantar,Kantar,Kan 11,551.0,dems,9,,105
+2026-07-12,Kantar,Kantar,Kan 11,551.0,yb,10,,105
+2026-07-12,Kantar,Kantar,Kan 11,551.0,otzma,8,,105
+2026-07-12,Kantar,Kantar,Kan 11,551.0,shas,8,,105
+2026-07-12,Kantar,Kantar,Kan 11,551.0,utj,8,,105
+2026-07-12,Kantar,Kantar,Kan 11,551.0,rzp,5,,105
+2026-07-12,Kantar,Kantar,Kan 11,551.0,raam,5,,105
+2026-07-12,Kantar,Kantar,Kan 11,551.0,blue_white,0,2.7,105
+2026-07-09,SF+ND,Channel 14 (Filber),Channel 14,752.0,likud,33,,106
+2026-07-09,SF+ND,Channel 14 (Filber),Channel 14,752.0,yashar,21,,106
+2026-07-09,SF+ND,Channel 14 (Filber),Channel 14,752.0,together,8,,106
+2026-07-09,SF+ND,Channel 14 (Filber),Channel 14,752.0,dems,10,,106
+2026-07-09,SF+ND,Channel 14 (Filber),Channel 14,752.0,yb,8,,106
+2026-07-09,SF+ND,Channel 14 (Filber),Channel 14,752.0,otzma,7,,106
+2026-07-09,SF+ND,Channel 14 (Filber),Channel 14,752.0,shas,10,,106
+2026-07-09,SF+ND,Channel 14 (Filber),Channel 14,752.0,utj,8,,106
+2026-07-09,SF+ND,Channel 14 (Filber),Channel 14,752.0,rzp,5,,106
+2026-07-09,SF+ND,Channel 14 (Filber),Channel 14,752.0,raam,5,,106
+2026-07-09,SF+ND,Channel 14 (Filber),Channel 14,752.0,blue_white,0,0.8,106
+2026-07-09,Lazar,Lazar,Maariv,500.0,likud,21,,107
+2026-07-09,Lazar,Lazar,Maariv,500.0,yashar,22,,107
+2026-07-09,Lazar,Lazar,Maariv,500.0,together,18,,107
+2026-07-09,Lazar,Lazar,Maariv,500.0,dems,10,,107
+2026-07-09,Lazar,Lazar,Maariv,500.0,yb,10,,107
+2026-07-09,Lazar,Lazar,Maariv,500.0,otzma,8,,107
+2026-07-09,Lazar,Lazar,Maariv,500.0,shas,8,,107
+2026-07-09,Lazar,Lazar,Maariv,500.0,utj,8,,107
+2026-07-09,Lazar,Lazar,Maariv,500.0,rzp,4,,107
+2026-07-09,Lazar,Lazar,Maariv,500.0,raam,5,,107
+2026-07-09,Lazar,Lazar,Maariv,500.0,blue_white,0,1.4,107
+2026-07-09,Kantar,Kantar,Israel Hayom,,likud,24,,108
+2026-07-09,Kantar,Kantar,Israel Hayom,,yashar,23,,108
+2026-07-09,Kantar,Kantar,Israel Hayom,,together,14,,108
+2026-07-09,Kantar,Kantar,Israel Hayom,,dems,8,,108
+2026-07-09,Kantar,Kantar,Israel Hayom,,yb,8,,108
+2026-07-09,Kantar,Kantar,Israel Hayom,,otzma,8,,108
+2026-07-09,Kantar,Kantar,Israel Hayom,,shas,8,,108
+2026-07-09,Kantar,Kantar,Israel Hayom,,utj,9,,108
+2026-07-09,Kantar,Kantar,Israel Hayom,,rzp,4,,108
+2026-07-09,Kantar,Kantar,Israel Hayom,,raam,5,,108
+2026-07-09,Kantar,Kantar,Israel Hayom,,blue_white,0,2.1,108
+2026-07-09,Direct Polls,Direct Polls,i24 News,527.0,likud,29,,109
+2026-07-09,Direct Polls,Direct Polls,i24 News,527.0,yashar,21,,109
+2026-07-09,Direct Polls,Direct Polls,i24 News,527.0,together,9,,109
+2026-07-09,Direct Polls,Direct Polls,i24 News,527.0,dems,10,,109
+2026-07-09,Direct Polls,Direct Polls,i24 News,527.0,yb,9,,109
+2026-07-09,Direct Polls,Direct Polls,i24 News,527.0,otzma,8,,109
+2026-07-09,Direct Polls,Direct Polls,i24 News,527.0,shas,9,,109
+2026-07-09,Direct Polls,Direct Polls,i24 News,527.0,utj,8,,109
+2026-07-09,Direct Polls,Direct Polls,i24 News,527.0,rzp,5,,109
+2026-07-09,Direct Polls,Direct Polls,i24 News,527.0,raam,5,,109
+2026-07-08,Midgam Project,Midgam Project (Ch13),Channel 13,,likud,22,,110
+2026-07-08,Midgam Project,Midgam Project (Ch13),Channel 13,,yashar,23,,110
+2026-07-08,Midgam Project,Midgam Project (Ch13),Channel 13,,together,15,,110
+2026-07-08,Midgam Project,Midgam Project (Ch13),Channel 13,,dems,10,,110
+2026-07-08,Midgam Project,Midgam Project (Ch13),Channel 13,,yb,10,,110
+2026-07-08,Midgam Project,Midgam Project (Ch13),Channel 13,,otzma,8,,110
+2026-07-08,Midgam Project,Midgam Project (Ch13),Channel 13,,shas,8,,110
+2026-07-08,Midgam Project,Midgam Project (Ch13),Channel 13,,utj,8,,110
+2026-07-08,Midgam Project,Midgam Project (Ch13),Channel 13,,rzp,5,,110
+2026-07-08,Midgam Project,Midgam Project (Ch13),Channel 13,,raam,5,,110
+2026-07-08,Midgam Project,Midgam Project (Ch13),Channel 13,,blue_white,0,2.1,110
+2026-07-06,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,likud,23,,111
+2026-07-06,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,yashar,23,,111
+2026-07-06,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,together,16,,111
+2026-07-06,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,dems,10,,111
+2026-07-06,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,yb,9,,111
+2026-07-06,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,otzma,9,,111
+2026-07-06,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,shas,8,,111
+2026-07-06,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,utj,8,,111
+2026-07-06,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,rzp,4,,111
+2026-07-06,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,raam,4,,111
+2026-07-06,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,blue_white,0,1.0,111
+2026-07-05,Kantar,Kantar,Kan 11,553.0,likud,23,,112
+2026-07-05,Kantar,Kantar,Kan 11,553.0,yashar,23,,112
+2026-07-05,Kantar,Kantar,Kan 11,553.0,together,16,,112
+2026-07-05,Kantar,Kantar,Kan 11,553.0,dems,9,,112
+2026-07-05,Kantar,Kantar,Kan 11,553.0,yb,9,,112
+2026-07-05,Kantar,Kantar,Kan 11,553.0,otzma,9,,112
+2026-07-05,Kantar,Kantar,Kan 11,553.0,shas,8,,112
+2026-07-05,Kantar,Kantar,Kan 11,553.0,utj,8,,112
+2026-07-05,Kantar,Kantar,Kan 11,553.0,rzp,5,,112
+2026-07-05,Kantar,Kantar,Kan 11,553.0,raam,4,,112
+2026-07-05,Kantar,Kantar,Kan 11,553.0,blue_white,0,1.9,112
+2026-07-02,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,22,,113
+2026-07-02,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,23,,113
+2026-07-02,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,16,,113
+2026-07-02,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,113
+2026-07-02,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,11,,113
+2026-07-02,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,8,,113
+2026-07-02,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,113
+2026-07-02,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,113
+2026-07-02,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,5,,113
+2026-07-02,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,4,,113
+2026-07-02,SF+ND,Channel 14 (Filber),Channel 14,,likud,33,,114
+2026-07-02,SF+ND,Channel 14 (Filber),Channel 14,,yashar,20,,114
+2026-07-02,SF+ND,Channel 14 (Filber),Channel 14,,together,9,,114
+2026-07-02,SF+ND,Channel 14 (Filber),Channel 14,,dems,9,,114
+2026-07-02,SF+ND,Channel 14 (Filber),Channel 14,,yb,8,,114
+2026-07-02,SF+ND,Channel 14 (Filber),Channel 14,,otzma,7,,114
+2026-07-02,SF+ND,Channel 14 (Filber),Channel 14,,shas,11,,114
+2026-07-02,SF+ND,Channel 14 (Filber),Channel 14,,utj,7,,114
+2026-07-02,SF+ND,Channel 14 (Filber),Channel 14,,rzp,5,,114
+2026-07-02,SF+ND,Channel 14 (Filber),Channel 14,,raam,5,,114
+2026-07-02,SF+ND,Channel 14 (Filber),Channel 14,,blue_white,0,1.9,114
+2026-07-02,Lazar,Lazar,Maariv,606.0,likud,21,,115
+2026-07-02,Lazar,Lazar,Maariv,606.0,yashar,20,,115
+2026-07-02,Lazar,Lazar,Maariv,606.0,together,19,,115
+2026-07-02,Lazar,Lazar,Maariv,606.0,dems,10,,115
+2026-07-02,Lazar,Lazar,Maariv,606.0,yb,10,,115
+2026-07-02,Lazar,Lazar,Maariv,606.0,otzma,8,,115
+2026-07-02,Lazar,Lazar,Maariv,606.0,shas,8,,115
+2026-07-02,Lazar,Lazar,Maariv,606.0,utj,8,,115
+2026-07-02,Lazar,Lazar,Maariv,606.0,rzp,5,,115
+2026-07-02,Lazar,Lazar,Maariv,606.0,raam,5,,115
+2026-07-02,Lazar,Lazar,Maariv,606.0,blue_white,0,0.8,115
+2026-07-01,Midgam Project,Midgam Project (Ch13),Channel 13,1108.0,likud,21,,116
+2026-07-01,Midgam Project,Midgam Project (Ch13),Channel 13,1108.0,yashar,20,,116
+2026-07-01,Midgam Project,Midgam Project (Ch13),Channel 13,1108.0,together,17,,116
+2026-07-01,Midgam Project,Midgam Project (Ch13),Channel 13,1108.0,dems,11,,116
+2026-07-01,Midgam Project,Midgam Project (Ch13),Channel 13,1108.0,yb,10,,116
+2026-07-01,Midgam Project,Midgam Project (Ch13),Channel 13,1108.0,otzma,8,,116
+2026-07-01,Midgam Project,Midgam Project (Ch13),Channel 13,1108.0,shas,9,,116
+2026-07-01,Midgam Project,Midgam Project (Ch13),Channel 13,1108.0,utj,8,,116
+2026-07-01,Midgam Project,Midgam Project (Ch13),Channel 13,1108.0,rzp,5,,116
+2026-07-01,Midgam Project,Midgam Project (Ch13),Channel 13,1108.0,raam,5,,116
+2026-07-01,Midgam Project,Midgam Project (Ch13),Channel 13,1108.0,blue_white,0,1.8,116
+2026-06-30,Direct Polls,Direct Polls,i24 News,,likud,29,,117
+2026-06-30,Direct Polls,Direct Polls,i24 News,,yashar,19,,117
+2026-06-30,Direct Polls,Direct Polls,i24 News,,together,11,,117
+2026-06-30,Direct Polls,Direct Polls,i24 News,,dems,11,,117
+2026-06-30,Direct Polls,Direct Polls,i24 News,,yb,9,,117
+2026-06-30,Direct Polls,Direct Polls,i24 News,,otzma,8,,117
+2026-06-30,Direct Polls,Direct Polls,i24 News,,shas,9,,117
+2026-06-30,Direct Polls,Direct Polls,i24 News,,utj,8,,117
+2026-06-30,Direct Polls,Direct Polls,i24 News,,rzp,4,,117
+2026-06-30,Direct Polls,Direct Polls,i24 News,,raam,5,,117
+2026-06-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,,likud,24,,118
+2026-06-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yashar,22,,118
+2026-06-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,,together,17,,118
+2026-06-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,,dems,10,,118
+2026-06-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yb,9,,118
+2026-06-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,,otzma,8,,118
+2026-06-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,,shas,9,,118
+2026-06-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,,utj,7,,118
+2026-06-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,,rzp,4,,118
+2026-06-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,,raam,5,,118
+2026-06-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,,blue_white,0,2.5,118
+2026-06-25,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,21,,119
+2026-06-25,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,23,,119
+2026-06-25,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,17,,119
+2026-06-25,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,7,,119
+2026-06-25,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,11,,119
+2026-06-25,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,8,,119
+2026-06-25,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,119
+2026-06-25,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,7,,119
+2026-06-25,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,4,,119
+2026-06-25,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,4,,119
+2026-06-25,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,4,,119
+2026-06-25,SF+ND,Channel 14 (Filber),Channel 14,654.0,likud,33,,120
+2026-06-25,SF+ND,Channel 14 (Filber),Channel 14,654.0,yashar,20,,120
+2026-06-25,SF+ND,Channel 14 (Filber),Channel 14,654.0,together,9,,120
+2026-06-25,SF+ND,Channel 14 (Filber),Channel 14,654.0,dems,9,,120
+2026-06-25,SF+ND,Channel 14 (Filber),Channel 14,654.0,yb,9,,120
+2026-06-25,SF+ND,Channel 14 (Filber),Channel 14,654.0,otzma,7,,120
+2026-06-25,SF+ND,Channel 14 (Filber),Channel 14,654.0,shas,11,,120
+2026-06-25,SF+ND,Channel 14 (Filber),Channel 14,654.0,utj,8,,120
+2026-06-25,SF+ND,Channel 14 (Filber),Channel 14,654.0,rzp,4,,120
+2026-06-25,SF+ND,Channel 14 (Filber),Channel 14,654.0,raam,5,,120
+2026-06-25,SF+ND,Channel 14 (Filber),Channel 14,654.0,blue_white,0,1.8,120
+2026-06-25,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,likud,23,,121
+2026-06-25,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,yashar,21,,121
+2026-06-25,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,together,18,,121
+2026-06-25,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,dems,10,,121
+2026-06-25,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,yb,9,,121
+2026-06-25,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,otzma,9,,121
+2026-06-25,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,shas,9,,121
+2026-06-25,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,utj,7,,121
+2026-06-25,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,rzp,4,,121
+2026-06-25,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,raam,4,,121
+2026-06-25,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,blue_white,0,1.8,121
+2026-06-25,Lazar,Lazar,Maariv,500.0,likud,22,,122
+2026-06-25,Lazar,Lazar,Maariv,500.0,yashar,21,,122
+2026-06-25,Lazar,Lazar,Maariv,500.0,together,18,,122
+2026-06-25,Lazar,Lazar,Maariv,500.0,dems,10,,122
+2026-06-25,Lazar,Lazar,Maariv,500.0,yb,11,,122
+2026-06-25,Lazar,Lazar,Maariv,500.0,otzma,9,,122
+2026-06-25,Lazar,Lazar,Maariv,500.0,shas,8,,122
+2026-06-25,Lazar,Lazar,Maariv,500.0,utj,7,,122
+2026-06-25,Lazar,Lazar,Maariv,500.0,rzp,4,,122
+2026-06-25,Lazar,Lazar,Maariv,500.0,raam,4,,122
+2026-06-25,Lazar,Lazar,Maariv,500.0,blue_white,0,1.7,122
+2026-06-25,Kantar,Kantar,Israel Hayom,,likud,24,,123
+2026-06-25,Kantar,Kantar,Israel Hayom,,yashar,21,,123
+2026-06-25,Kantar,Kantar,Israel Hayom,,together,16,,123
+2026-06-25,Kantar,Kantar,Israel Hayom,,dems,10,,123
+2026-06-25,Kantar,Kantar,Israel Hayom,,yb,9,,123
+2026-06-25,Kantar,Kantar,Israel Hayom,,otzma,9,,123
+2026-06-25,Kantar,Kantar,Israel Hayom,,shas,8,,123
+2026-06-25,Kantar,Kantar,Israel Hayom,,utj,8,,123
+2026-06-25,Kantar,Kantar,Israel Hayom,,rzp,4,,123
+2026-06-25,Kantar,Kantar,Israel Hayom,,raam,4,,123
+2026-06-25,Kantar,Kantar,Israel Hayom,,blue_white,0,1.8,123
+2026-06-25,Direct Polls,Direct Polls,i24 News,530.0,likud,27,,124
+2026-06-25,Direct Polls,Direct Polls,i24 News,530.0,yashar,20,,124
+2026-06-25,Direct Polls,Direct Polls,i24 News,530.0,together,11,,124
+2026-06-25,Direct Polls,Direct Polls,i24 News,530.0,dems,10,,124
+2026-06-25,Direct Polls,Direct Polls,i24 News,530.0,yb,10,,124
+2026-06-25,Direct Polls,Direct Polls,i24 News,530.0,otzma,8,,124
+2026-06-25,Direct Polls,Direct Polls,i24 News,530.0,shas,9,,124
+2026-06-25,Direct Polls,Direct Polls,i24 News,530.0,utj,8,,124
+2026-06-25,Direct Polls,Direct Polls,i24 News,530.0,rzp,5,,124
+2026-06-25,Direct Polls,Direct Polls,i24 News,530.0,raam,5,,124
+2026-06-25,Direct Polls,Direct Polls,i24 News,530.0,blue_white,0,1.2,124
+2026-06-24,Midgam Project,Midgam Project (Ch13),Channel 13,,likud,23,,125
+2026-06-24,Midgam Project,Midgam Project (Ch13),Channel 13,,yashar,20,,125
+2026-06-24,Midgam Project,Midgam Project (Ch13),Channel 13,,together,15,,125
+2026-06-24,Midgam Project,Midgam Project (Ch13),Channel 13,,dems,10,,125
+2026-06-24,Midgam Project,Midgam Project (Ch13),Channel 13,,yb,12,,125
+2026-06-24,Midgam Project,Midgam Project (Ch13),Channel 13,,otzma,9,,125
+2026-06-24,Midgam Project,Midgam Project (Ch13),Channel 13,,shas,8,,125
+2026-06-24,Midgam Project,Midgam Project (Ch13),Channel 13,,utj,8,,125
+2026-06-24,Midgam Project,Midgam Project (Ch13),Channel 13,,rzp,5,,125
+2026-06-24,Midgam Project,Midgam Project (Ch13),Channel 13,,raam,4,,125
+2026-06-24,Midgam Project,Midgam Project (Ch13),Channel 13,,blue_white,0,1.8,125
+2026-06-24,Kantar,Kantar,Kan 11,553.0,likud,24,,126
+2026-06-24,Kantar,Kantar,Kan 11,553.0,yashar,22,,126
+2026-06-24,Kantar,Kantar,Kan 11,553.0,together,16,,126
+2026-06-24,Kantar,Kantar,Kan 11,553.0,dems,9,,126
+2026-06-24,Kantar,Kantar,Kan 11,553.0,yb,10,,126
+2026-06-24,Kantar,Kantar,Kan 11,553.0,otzma,9,,126
+2026-06-24,Kantar,Kantar,Kan 11,553.0,shas,8,,126
+2026-06-24,Kantar,Kantar,Kan 11,553.0,utj,7,,126
+2026-06-24,Kantar,Kantar,Kan 11,553.0,rzp,5,,126
+2026-06-24,Kantar,Kantar,Kan 11,553.0,raam,4,,126
+2026-06-24,Kantar,Kantar,Kan 11,553.0,blue_white,0,2.2,126
+2026-06-18,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,23,,127
+2026-06-18,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,23,,127
+2026-06-18,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,19,,127
+2026-06-18,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,127
+2026-06-18,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,127
+2026-06-18,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,9,,127
+2026-06-18,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,127
+2026-06-18,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,127
+2026-06-18,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,127
+2026-06-18,SF+ND,Channel 14 (Filber),Channel 14,1552.0,likud,33,,128
+2026-06-18,SF+ND,Channel 14 (Filber),Channel 14,1552.0,yashar,20,,128
+2026-06-18,SF+ND,Channel 14 (Filber),Channel 14,1552.0,together,10,,128
+2026-06-18,SF+ND,Channel 14 (Filber),Channel 14,1552.0,dems,9,,128
+2026-06-18,SF+ND,Channel 14 (Filber),Channel 14,1552.0,yb,8,,128
+2026-06-18,SF+ND,Channel 14 (Filber),Channel 14,1552.0,otzma,7,,128
+2026-06-18,SF+ND,Channel 14 (Filber),Channel 14,1552.0,shas,10,,128
+2026-06-18,SF+ND,Channel 14 (Filber),Channel 14,1552.0,utj,8,,128
+2026-06-18,SF+ND,Channel 14 (Filber),Channel 14,1552.0,rzp,4,,128
+2026-06-18,SF+ND,Channel 14 (Filber),Channel 14,1552.0,raam,5,,128
+2026-06-18,SF+ND,Channel 14 (Filber),Channel 14,1552.0,blue_white,0,1.8,128
+2026-06-18,Midgam R&C,Midgam (Ch12),HaHadashot 12,,likud,22,,129
+2026-06-18,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yashar,21,,129
+2026-06-18,Midgam R&C,Midgam (Ch12),HaHadashot 12,,together,19,,129
+2026-06-18,Midgam R&C,Midgam (Ch12),HaHadashot 12,,dems,10,,129
+2026-06-18,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yb,9,,129
+2026-06-18,Midgam R&C,Midgam (Ch12),HaHadashot 12,,otzma,9,,129
+2026-06-18,Midgam R&C,Midgam (Ch12),HaHadashot 12,,shas,9,,129
+2026-06-18,Midgam R&C,Midgam (Ch12),HaHadashot 12,,utj,7,,129
+2026-06-18,Midgam R&C,Midgam (Ch12),HaHadashot 12,,rzp,4,,129
+2026-06-18,Midgam R&C,Midgam (Ch12),HaHadashot 12,,raam,5,,129
+2026-06-18,Midgam R&C,Midgam (Ch12),HaHadashot 12,,blue_white,0,1.9,129
+2026-06-18,Lazar,Lazar,Maariv,501.0,likud,21,,130
+2026-06-18,Lazar,Lazar,Maariv,501.0,yashar,21,,130
+2026-06-18,Lazar,Lazar,Maariv,501.0,together,20,,130
+2026-06-18,Lazar,Lazar,Maariv,501.0,dems,10,,130
+2026-06-18,Lazar,Lazar,Maariv,501.0,yb,10,,130
+2026-06-18,Lazar,Lazar,Maariv,501.0,otzma,8,,130
+2026-06-18,Lazar,Lazar,Maariv,501.0,shas,9,,130
+2026-06-18,Lazar,Lazar,Maariv,501.0,utj,7,,130
+2026-06-18,Lazar,Lazar,Maariv,501.0,rzp,4,,130
+2026-06-18,Lazar,Lazar,Maariv,501.0,raam,4,,130
+2026-06-18,Lazar,Lazar,Maariv,501.0,blue_white,0,1.7,130
+2026-06-17,Midgam Project,Midgam Project (Ch13),Channel 13,,likud,22,,131
+2026-06-17,Midgam Project,Midgam Project (Ch13),Channel 13,,yashar,20,,131
+2026-06-17,Midgam Project,Midgam Project (Ch13),Channel 13,,together,17,,131
+2026-06-17,Midgam Project,Midgam Project (Ch13),Channel 13,,dems,11,,131
+2026-06-17,Midgam Project,Midgam Project (Ch13),Channel 13,,yb,11,,131
+2026-06-17,Midgam Project,Midgam Project (Ch13),Channel 13,,otzma,8,,131
+2026-06-17,Midgam Project,Midgam Project (Ch13),Channel 13,,shas,9,,131
+2026-06-17,Midgam Project,Midgam Project (Ch13),Channel 13,,utj,8,,131
+2026-06-17,Midgam Project,Midgam Project (Ch13),Channel 13,,rzp,4,,131
+2026-06-17,Midgam Project,Midgam Project (Ch13),Channel 13,,raam,4,,131
+2026-06-17,Midgam Project,Midgam Project (Ch13),Channel 13,,blue_white,0,2.0,131
+2026-06-16,Kantar,Kantar,Kan 11,555.0,likud,23,,132
+2026-06-16,Kantar,Kantar,Kan 11,555.0,yashar,21,,132
+2026-06-16,Kantar,Kantar,Kan 11,555.0,together,17,,132
+2026-06-16,Kantar,Kantar,Kan 11,555.0,dems,9,,132
+2026-06-16,Kantar,Kantar,Kan 11,555.0,yb,10,,132
+2026-06-16,Kantar,Kantar,Kan 11,555.0,otzma,9,,132
+2026-06-16,Kantar,Kantar,Kan 11,555.0,shas,9,,132
+2026-06-16,Kantar,Kantar,Kan 11,555.0,utj,7,,132
+2026-06-16,Kantar,Kantar,Kan 11,555.0,rzp,4,,132
+2026-06-16,Kantar,Kantar,Kan 11,555.0,raam,4,,132
+2026-06-16,Kantar,Kantar,Kan 11,555.0,blue_white,0,1.6,132
+2026-06-16,Direct Polls,Direct Polls,i24 News,,likud,28,,133
+2026-06-16,Direct Polls,Direct Polls,i24 News,,yashar,18,,133
+2026-06-16,Direct Polls,Direct Polls,i24 News,,together,12,,133
+2026-06-16,Direct Polls,Direct Polls,i24 News,,dems,11,,133
+2026-06-16,Direct Polls,Direct Polls,i24 News,,yb,9,,133
+2026-06-16,Direct Polls,Direct Polls,i24 News,,otzma,9,,133
+2026-06-16,Direct Polls,Direct Polls,i24 News,,shas,9,,133
+2026-06-16,Direct Polls,Direct Polls,i24 News,,utj,8,,133
+2026-06-16,Direct Polls,Direct Polls,i24 News,,rzp,4,,133
+2026-06-16,Direct Polls,Direct Polls,i24 News,,raam,5,,133
+2026-06-11,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,24,,134
+2026-06-11,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,21,,134
+2026-06-11,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,21,,134
+2026-06-11,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,134
+2026-06-11,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,134
+2026-06-11,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,8,,134
+2026-06-11,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,134
+2026-06-11,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,134
+2026-06-11,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,134
+2026-06-11,SF+ND,Channel 14 (Filber),Channel 14,771.0,likud,33,,135
+2026-06-11,SF+ND,Channel 14 (Filber),Channel 14,771.0,yashar,16,,135
+2026-06-11,SF+ND,Channel 14 (Filber),Channel 14,771.0,together,13,,135
+2026-06-11,SF+ND,Channel 14 (Filber),Channel 14,771.0,dems,9,,135
+2026-06-11,SF+ND,Channel 14 (Filber),Channel 14,771.0,yb,8,,135
+2026-06-11,SF+ND,Channel 14 (Filber),Channel 14,771.0,otzma,8,,135
+2026-06-11,SF+ND,Channel 14 (Filber),Channel 14,771.0,shas,10,,135
+2026-06-11,SF+ND,Channel 14 (Filber),Channel 14,771.0,utj,7,,135
+2026-06-11,SF+ND,Channel 14 (Filber),Channel 14,771.0,rzp,5,,135
+2026-06-11,SF+ND,Channel 14 (Filber),Channel 14,771.0,raam,5,,135
+2026-06-11,SF+ND,Channel 14 (Filber),Channel 14,771.0,blue_white,0,0.8,135
+2026-06-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,likud,22,,136
+2026-06-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yashar,20,,136
+2026-06-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,together,20,,136
+2026-06-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,dems,11,,136
+2026-06-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yb,8,,136
+2026-06-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,otzma,9,,136
+2026-06-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,shas,9,,136
+2026-06-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,utj,7,,136
+2026-06-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,rzp,4,,136
+2026-06-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,raam,5,,136
+2026-06-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,blue_white,0,0.7,136
+2026-06-11,Lazar,Lazar,Maariv,500.0,likud,22,,137
+2026-06-11,Lazar,Lazar,Maariv,500.0,yashar,17,,137
+2026-06-11,Lazar,Lazar,Maariv,500.0,together,21,,137
+2026-06-11,Lazar,Lazar,Maariv,500.0,dems,10,,137
+2026-06-11,Lazar,Lazar,Maariv,500.0,yb,9,,137
+2026-06-11,Lazar,Lazar,Maariv,500.0,otzma,9,,137
+2026-06-11,Lazar,Lazar,Maariv,500.0,shas,8,,137
+2026-06-11,Lazar,Lazar,Maariv,500.0,utj,7,,137
+2026-06-11,Lazar,Lazar,Maariv,500.0,rzp,4,,137
+2026-06-11,Lazar,Lazar,Maariv,500.0,raam,4,,137
+2026-06-11,Lazar,Lazar,Maariv,500.0,blue_white,0,1.9,137
+2026-06-11,Kantar,Kantar,Israel Hayom,,likud,24,,138
+2026-06-11,Kantar,Kantar,Israel Hayom,,yashar,20,,138
+2026-06-11,Kantar,Kantar,Israel Hayom,,together,19,,138
+2026-06-11,Kantar,Kantar,Israel Hayom,,dems,9,,138
+2026-06-11,Kantar,Kantar,Israel Hayom,,yb,9,,138
+2026-06-11,Kantar,Kantar,Israel Hayom,,otzma,9,,138
+2026-06-11,Kantar,Kantar,Israel Hayom,,shas,9,,138
+2026-06-11,Kantar,Kantar,Israel Hayom,,utj,7,,138
+2026-06-11,Kantar,Kantar,Israel Hayom,,rzp,4,,138
+2026-06-11,Kantar,Kantar,Israel Hayom,,raam,4,,138
+2026-06-11,Kantar,Kantar,Israel Hayom,,blue_white,0,2.2,138
+2026-06-05,SF+ND,Channel 14 (Filber),Channel 14,,likud,32,,139
+2026-06-05,SF+ND,Channel 14 (Filber),Channel 14,,yashar,16,,139
+2026-06-05,SF+ND,Channel 14 (Filber),Channel 14,,together,14,,139
+2026-06-05,SF+ND,Channel 14 (Filber),Channel 14,,dems,9,,139
+2026-06-05,SF+ND,Channel 14 (Filber),Channel 14,,yb,8,,139
+2026-06-05,SF+ND,Channel 14 (Filber),Channel 14,,otzma,9,,139
+2026-06-05,SF+ND,Channel 14 (Filber),Channel 14,,shas,10,,139
+2026-06-05,SF+ND,Channel 14 (Filber),Channel 14,,utj,7,,139
+2026-06-05,SF+ND,Channel 14 (Filber),Channel 14,,rzp,5,,139
+2026-06-05,SF+ND,Channel 14 (Filber),Channel 14,,raam,5,,139
+2026-06-05,SF+ND,Channel 14 (Filber),Channel 14,,blue_white,0,1.3,139
+2026-06-04,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,23,,140
+2026-06-04,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,19,,140
+2026-06-04,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,21,,140
+2026-06-04,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,140
+2026-06-04,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,140
+2026-06-04,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,6,,140
+2026-06-04,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,140
+2026-06-04,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,140
+2026-06-04,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,4,,140
+2026-06-04,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,4,,140
+2026-06-04,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,4,,140
+2026-06-04,Midgam R&C,Midgam (Ch12),HaHadashot 12,505.0,likud,23,,141
+2026-06-04,Midgam R&C,Midgam (Ch12),HaHadashot 12,505.0,yashar,19,,141
+2026-06-04,Midgam R&C,Midgam (Ch12),HaHadashot 12,505.0,together,21,,141
+2026-06-04,Midgam R&C,Midgam (Ch12),HaHadashot 12,505.0,dems,10,,141
+2026-06-04,Midgam R&C,Midgam (Ch12),HaHadashot 12,505.0,yb,9,,141
+2026-06-04,Midgam R&C,Midgam (Ch12),HaHadashot 12,505.0,otzma,8,,141
+2026-06-04,Midgam R&C,Midgam (Ch12),HaHadashot 12,505.0,shas,9,,141
+2026-06-04,Midgam R&C,Midgam (Ch12),HaHadashot 12,505.0,utj,7,,141
+2026-06-04,Midgam R&C,Midgam (Ch12),HaHadashot 12,505.0,rzp,4,,141
+2026-06-04,Midgam R&C,Midgam (Ch12),HaHadashot 12,505.0,raam,5,,141
+2026-06-04,Midgam R&C,Midgam (Ch12),HaHadashot 12,505.0,blue_white,0,1.8,141
+2026-06-04,Lazar,Lazar,Maariv,500.0,likud,25,,142
+2026-06-04,Lazar,Lazar,Maariv,500.0,yashar,17,,142
+2026-06-04,Lazar,Lazar,Maariv,500.0,together,23,,142
+2026-06-04,Lazar,Lazar,Maariv,500.0,dems,10,,142
+2026-06-04,Lazar,Lazar,Maariv,500.0,yb,10,,142
+2026-06-04,Lazar,Lazar,Maariv,500.0,otzma,9,,142
+2026-06-04,Lazar,Lazar,Maariv,500.0,shas,9,,142
+2026-06-04,Lazar,Lazar,Maariv,500.0,utj,7,,142
+2026-06-04,Lazar,Lazar,Maariv,500.0,rzp,0,2.6,142
+2026-06-04,Lazar,Lazar,Maariv,500.0,raam,4,,142
+2026-06-04,Lazar,Lazar,Maariv,500.0,blue_white,0,2.2,142
+2026-06-04,Kantar,Kantar,Kan 11,551.0,likud,24,,143
+2026-06-04,Kantar,Kantar,Kan 11,551.0,yashar,17,,143
+2026-06-04,Kantar,Kantar,Kan 11,551.0,together,23,,143
+2026-06-04,Kantar,Kantar,Kan 11,551.0,dems,9,,143
+2026-06-04,Kantar,Kantar,Kan 11,551.0,yb,8,,143
+2026-06-04,Kantar,Kantar,Kan 11,551.0,otzma,10,,143
+2026-06-04,Kantar,Kantar,Kan 11,551.0,shas,8,,143
+2026-06-04,Kantar,Kantar,Kan 11,551.0,utj,7,,143
+2026-06-04,Kantar,Kantar,Kan 11,551.0,rzp,4,,143
+2026-06-04,Kantar,Kantar,Kan 11,551.0,raam,4,,143
+2026-06-04,Kantar,Kantar,Kan 11,551.0,blue_white,0,2.3,143
+2026-06-03,Direct Polls,Direct Polls,i24 News,515.0,likud,30,,144
+2026-06-03,Direct Polls,Direct Polls,i24 News,515.0,yashar,16,,144
+2026-06-03,Direct Polls,Direct Polls,i24 News,515.0,together,14,,144
+2026-06-03,Direct Polls,Direct Polls,i24 News,515.0,dems,10,,144
+2026-06-03,Direct Polls,Direct Polls,i24 News,515.0,yb,9,,144
+2026-06-03,Direct Polls,Direct Polls,i24 News,515.0,otzma,8,,144
+2026-06-03,Direct Polls,Direct Polls,i24 News,515.0,shas,9,,144
+2026-06-03,Direct Polls,Direct Polls,i24 News,515.0,utj,8,,144
+2026-06-03,Direct Polls,Direct Polls,i24 News,515.0,rzp,5,,144
+2026-06-03,Direct Polls,Direct Polls,i24 News,515.0,raam,6,,144
+2026-06-03,Direct Polls,Direct Polls,i24 News,515.0,blue_white,0,1.4,144
+2026-05-28,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,24,,145
+2026-05-28,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,18,,145
+2026-05-28,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,22,,145
+2026-05-28,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,145
+2026-05-28,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,145
+2026-05-28,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,6,,145
+2026-05-28,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,145
+2026-05-28,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,145
+2026-05-28,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,4,,145
+2026-05-28,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,145
+2026-05-28,SF+ND,Channel 14 (Filber),Channel 14,615.0,likud,33,,146
+2026-05-28,SF+ND,Channel 14 (Filber),Channel 14,615.0,yashar,15,,146
+2026-05-28,SF+ND,Channel 14 (Filber),Channel 14,615.0,together,15,,146
+2026-05-28,SF+ND,Channel 14 (Filber),Channel 14,615.0,dems,9,,146
+2026-05-28,SF+ND,Channel 14 (Filber),Channel 14,615.0,yb,8,,146
+2026-05-28,SF+ND,Channel 14 (Filber),Channel 14,615.0,otzma,7,,146
+2026-05-28,SF+ND,Channel 14 (Filber),Channel 14,615.0,shas,11,,146
+2026-05-28,SF+ND,Channel 14 (Filber),Channel 14,615.0,utj,7,,146
+2026-05-28,SF+ND,Channel 14 (Filber),Channel 14,615.0,rzp,5,,146
+2026-05-28,SF+ND,Channel 14 (Filber),Channel 14,615.0,raam,5,,146
+2026-05-28,SF+ND,Channel 14 (Filber),Channel 14,615.0,blue_white,0,1.2,146
+2026-05-28,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,likud,23,,147
+2026-05-28,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,yashar,17,,147
+2026-05-28,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,together,22,,147
+2026-05-28,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,dems,11,,147
+2026-05-28,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,yb,9,,147
+2026-05-28,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,otzma,8,,147
+2026-05-28,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,shas,8,,147
+2026-05-28,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,utj,8,,147
+2026-05-28,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,rzp,4,,147
+2026-05-28,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,raam,5,,147
+2026-05-28,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,blue_white,0,1.8,147
+2026-05-27,Kantar,Kantar,Israel Hayom,,likud,25,,148
+2026-05-27,Kantar,Kantar,Israel Hayom,,yashar,17,,148
+2026-05-27,Kantar,Kantar,Israel Hayom,,together,22,,148
+2026-05-27,Kantar,Kantar,Israel Hayom,,dems,9,,148
+2026-05-27,Kantar,Kantar,Israel Hayom,,yb,9,,148
+2026-05-27,Kantar,Kantar,Israel Hayom,,otzma,8,,148
+2026-05-27,Kantar,Kantar,Israel Hayom,,shas,9,,148
+2026-05-27,Kantar,Kantar,Israel Hayom,,utj,7,,148
+2026-05-27,Kantar,Kantar,Israel Hayom,,rzp,4,,148
+2026-05-27,Kantar,Kantar,Israel Hayom,,raam,5,,148
+2026-05-27,Kantar,Kantar,Israel Hayom,,blue_white,0,2.2,148
+2026-05-25,Maagar Mochot,Maagar Mochot,Channel 13,,likud,25,,149
+2026-05-25,Maagar Mochot,Maagar Mochot,Channel 13,,yashar,14,,149
+2026-05-25,Maagar Mochot,Maagar Mochot,Channel 13,,together,23,,149
+2026-05-25,Maagar Mochot,Maagar Mochot,Channel 13,,dems,9,,149
+2026-05-25,Maagar Mochot,Maagar Mochot,Channel 13,,yb,8,,149
+2026-05-25,Maagar Mochot,Maagar Mochot,Channel 13,,otzma,10,,149
+2026-05-25,Maagar Mochot,Maagar Mochot,Channel 13,,shas,10,,149
+2026-05-25,Maagar Mochot,Maagar Mochot,Channel 13,,utj,7,,149
+2026-05-25,Maagar Mochot,Maagar Mochot,Channel 13,,rzp,4,,149
+2026-05-25,Maagar Mochot,Maagar Mochot,Channel 13,,raam,4,,149
+2026-05-21,Lazar,Lazar,Maariv,,likud,24,,150
+2026-05-21,Lazar,Lazar,Maariv,,yashar,15,,150
+2026-05-21,Lazar,Lazar,Maariv,,together,25,,150
+2026-05-21,Lazar,Lazar,Maariv,,dems,10,,150
+2026-05-21,Lazar,Lazar,Maariv,,yb,9,,150
+2026-05-21,Lazar,Lazar,Maariv,,otzma,8,,150
+2026-05-21,Lazar,Lazar,Maariv,,shas,8,,150
+2026-05-21,Lazar,Lazar,Maariv,,utj,7,,150
+2026-05-21,Lazar,Lazar,Maariv,,rzp,4,,150
+2026-05-21,Lazar,Lazar,Maariv,,raam,5,,150
+2026-05-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,24,,151
+2026-05-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,16,,151
+2026-05-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,23,,151
+2026-05-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,151
+2026-05-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,9,,151
+2026-05-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,6,,151
+2026-05-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,151
+2026-05-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,151
+2026-05-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,4,,151
+2026-05-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,151
+2026-05-20,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,4,,151
+2026-05-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,likud,25,,152
+2026-05-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yashar,16,,152
+2026-05-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,together,23,,152
+2026-05-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,dems,10,,152
+2026-05-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yb,8,,152
+2026-05-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,otzma,7,,152
+2026-05-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,shas,9,,152
+2026-05-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,utj,8,,152
+2026-05-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,rzp,4,,152
+2026-05-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,raam,5,,152
+2026-05-20,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,blue_white,0,1.4,152
+2026-05-20,Lazar,Lazar,Maariv,500.0,likud,24,,153
+2026-05-20,Lazar,Lazar,Maariv,500.0,yashar,15,,153
+2026-05-20,Lazar,Lazar,Maariv,500.0,together,25,,153
+2026-05-20,Lazar,Lazar,Maariv,500.0,dems,10,,153
+2026-05-20,Lazar,Lazar,Maariv,500.0,yb,9,,153
+2026-05-20,Lazar,Lazar,Maariv,500.0,otzma,8,,153
+2026-05-20,Lazar,Lazar,Maariv,500.0,shas,8,,153
+2026-05-20,Lazar,Lazar,Maariv,500.0,utj,7,,153
+2026-05-20,Lazar,Lazar,Maariv,500.0,rzp,4,,153
+2026-05-20,Lazar,Lazar,Maariv,500.0,raam,5,,153
+2026-05-20,Lazar,Lazar,Maariv,500.0,blue_white,0,1.5,153
+2026-05-20,Kantar,Kantar,Kan 11,551.0,likud,27,,154
+2026-05-20,Kantar,Kantar,Kan 11,551.0,yashar,16,,154
+2026-05-20,Kantar,Kantar,Kan 11,551.0,together,23,,154
+2026-05-20,Kantar,Kantar,Kan 11,551.0,dems,10,,154
+2026-05-20,Kantar,Kantar,Kan 11,551.0,yb,8,,154
+2026-05-20,Kantar,Kantar,Kan 11,551.0,otzma,9,,154
+2026-05-20,Kantar,Kantar,Kan 11,551.0,shas,9,,154
+2026-05-20,Kantar,Kantar,Kan 11,551.0,utj,8,,154
+2026-05-20,Kantar,Kantar,Kan 11,551.0,raam,5,,154
+2026-05-19,Direct Polls,Direct Polls,i24 News,546.0,likud,30,,155
+2026-05-19,Direct Polls,Direct Polls,i24 News,546.0,yashar,17,,155
+2026-05-19,Direct Polls,Direct Polls,i24 News,546.0,together,15,,155
+2026-05-19,Direct Polls,Direct Polls,i24 News,546.0,dems,9,,155
+2026-05-19,Direct Polls,Direct Polls,i24 News,546.0,yb,8,,155
+2026-05-19,Direct Polls,Direct Polls,i24 News,546.0,otzma,8,,155
+2026-05-19,Direct Polls,Direct Polls,i24 News,546.0,shas,10,,155
+2026-05-19,Direct Polls,Direct Polls,i24 News,546.0,utj,8,,155
+2026-05-19,Direct Polls,Direct Polls,i24 News,546.0,rzp,4,,155
+2026-05-19,Direct Polls,Direct Polls,i24 News,546.0,raam,6,,155
+2026-05-14,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,24,,156
+2026-05-14,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,15,,156
+2026-05-14,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,24,,156
+2026-05-14,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,156
+2026-05-14,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,156
+2026-05-14,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,8,,156
+2026-05-14,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,156
+2026-05-14,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,156
+2026-05-14,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,4,,156
+2026-05-14,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,6,,156
+2026-05-14,SF+ND,Channel 14 (Filber),Channel 14,436.0,likud,33,,157
+2026-05-14,SF+ND,Channel 14 (Filber),Channel 14,436.0,yashar,14,,157
+2026-05-14,SF+ND,Channel 14 (Filber),Channel 14,436.0,together,16,,157
+2026-05-14,SF+ND,Channel 14 (Filber),Channel 14,436.0,dems,9,,157
+2026-05-14,SF+ND,Channel 14 (Filber),Channel 14,436.0,yb,7,,157
+2026-05-14,SF+ND,Channel 14 (Filber),Channel 14,436.0,otzma,8,,157
+2026-05-14,SF+ND,Channel 14 (Filber),Channel 14,436.0,shas,10,,157
+2026-05-14,SF+ND,Channel 14 (Filber),Channel 14,436.0,utj,7,,157
+2026-05-14,SF+ND,Channel 14 (Filber),Channel 14,436.0,rzp,5,,157
+2026-05-14,SF+ND,Channel 14 (Filber),Channel 14,436.0,raam,6,,157
+2026-05-14,SF+ND,Channel 14 (Filber),Channel 14,436.0,blue_white,0,2.3,157
+2026-05-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,likud,26,,158
+2026-05-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,yashar,15,,158
+2026-05-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,together,24,,158
+2026-05-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,dems,10,,158
+2026-05-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,yb,9,,158
+2026-05-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,otzma,9,,158
+2026-05-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,shas,9,,158
+2026-05-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,utj,8,,158
+2026-05-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,rzp,0,2.8,158
+2026-05-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,raam,5,,158
+2026-05-14,Midgam R&C,Midgam (Ch12),HaHadashot 12,506.0,blue_white,0,2.7,158
+2026-05-13,Maagar Mochot,Maagar Mochot,Channel 13,,likud,25,,159
+2026-05-13,Maagar Mochot,Maagar Mochot,Channel 13,,yashar,12,,159
+2026-05-13,Maagar Mochot,Maagar Mochot,Channel 13,,together,26,,159
+2026-05-13,Maagar Mochot,Maagar Mochot,Channel 13,,dems,9,,159
+2026-05-13,Maagar Mochot,Maagar Mochot,Channel 13,,yb,7,,159
+2026-05-13,Maagar Mochot,Maagar Mochot,Channel 13,,otzma,10,,159
+2026-05-13,Maagar Mochot,Maagar Mochot,Channel 13,,shas,10,,159
+2026-05-13,Maagar Mochot,Maagar Mochot,Channel 13,,utj,7,,159
+2026-05-13,Maagar Mochot,Maagar Mochot,Channel 13,,rzp,4,,159
+2026-05-13,Maagar Mochot,Maagar Mochot,Channel 13,,raam,5,,159
+2026-05-13,Lazar,Lazar,Maariv,502.0,likud,25,,160
+2026-05-13,Lazar,Lazar,Maariv,502.0,yashar,16,,160
+2026-05-13,Lazar,Lazar,Maariv,502.0,together,26,,160
+2026-05-13,Lazar,Lazar,Maariv,502.0,dems,10,,160
+2026-05-13,Lazar,Lazar,Maariv,502.0,yb,9,,160
+2026-05-13,Lazar,Lazar,Maariv,502.0,otzma,8,,160
+2026-05-13,Lazar,Lazar,Maariv,502.0,shas,9,,160
+2026-05-13,Lazar,Lazar,Maariv,502.0,utj,7,,160
+2026-05-13,Lazar,Lazar,Maariv,502.0,rzp,0,2.1,160
+2026-05-13,Lazar,Lazar,Maariv,502.0,raam,5,,160
+2026-05-13,Lazar,Lazar,Maariv,502.0,blue_white,0,2.1,160
+2026-05-13,Kantar,Kantar,Israel Hayom,,likud,26,,161
+2026-05-13,Kantar,Kantar,Israel Hayom,,yashar,16,,161
+2026-05-13,Kantar,Kantar,Israel Hayom,,together,24,,161
+2026-05-13,Kantar,Kantar,Israel Hayom,,dems,10,,161
+2026-05-13,Kantar,Kantar,Israel Hayom,,yb,8,,161
+2026-05-13,Kantar,Kantar,Israel Hayom,,otzma,9,,161
+2026-05-13,Kantar,Kantar,Israel Hayom,,shas,9,,161
+2026-05-13,Kantar,Kantar,Israel Hayom,,utj,7,,161
+2026-05-13,Kantar,Kantar,Israel Hayom,,rzp,0,2.9,161
+2026-05-13,Kantar,Kantar,Israel Hayom,,raam,5,,161
+2026-05-13,Kantar,Kantar,Israel Hayom,,blue_white,0,2.7,161
+2026-05-12,Kantar,Kantar,Kan 11,557.0,likud,26,,162
+2026-05-12,Kantar,Kantar,Kan 11,557.0,yashar,15,,162
+2026-05-12,Kantar,Kantar,Kan 11,557.0,together,25,,162
+2026-05-12,Kantar,Kantar,Kan 11,557.0,dems,10,,162
+2026-05-12,Kantar,Kantar,Kan 11,557.0,yb,9,,162
+2026-05-12,Kantar,Kantar,Kan 11,557.0,otzma,9,,162
+2026-05-12,Kantar,Kantar,Kan 11,557.0,shas,9,,162
+2026-05-12,Kantar,Kantar,Kan 11,557.0,utj,7,,162
+2026-05-12,Kantar,Kantar,Kan 11,557.0,raam,5,,162
+2026-05-07,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,26,,163
+2026-05-07,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,14,,163
+2026-05-07,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,26,,163
+2026-05-07,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,163
+2026-05-07,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,9,,163
+2026-05-07,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,163
+2026-05-07,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,163
+2026-05-07,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,163
+2026-05-07,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,163
+2026-05-07,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,4,,163
+2026-05-07,SF+ND,Channel 14 (Filber),Channel 14,721.0,likud,34,,164
+2026-05-07,SF+ND,Channel 14 (Filber),Channel 14,721.0,yashar,13,,164
+2026-05-07,SF+ND,Channel 14 (Filber),Channel 14,721.0,together,16,,164
+2026-05-07,SF+ND,Channel 14 (Filber),Channel 14,721.0,dems,8,,164
+2026-05-07,SF+ND,Channel 14 (Filber),Channel 14,721.0,yb,8,,164
+2026-05-07,SF+ND,Channel 14 (Filber),Channel 14,721.0,otzma,8,,164
+2026-05-07,SF+ND,Channel 14 (Filber),Channel 14,721.0,shas,10,,164
+2026-05-07,SF+ND,Channel 14 (Filber),Channel 14,721.0,utj,8,,164
+2026-05-07,SF+ND,Channel 14 (Filber),Channel 14,721.0,rzp,5,,164
+2026-05-07,SF+ND,Channel 14 (Filber),Channel 14,721.0,raam,5,,164
+2026-05-07,SF+ND,Channel 14 (Filber),Channel 14,721.0,blue_white,0,1.8,164
+2026-05-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,likud,25,,165
+2026-05-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,yashar,14,,165
+2026-05-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,together,25,,165
+2026-05-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,dems,11,,165
+2026-05-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,yb,9,,165
+2026-05-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,otzma,9,,165
+2026-05-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,shas,9,,165
+2026-05-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,utj,8,,165
+2026-05-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,rzp,0,2.9,165
+2026-05-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,raam,5,,165
+2026-05-07,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,blue_white,0,1.5,165
+2026-05-07,Lazar,Lazar,Maariv,503.0,likud,26,,166
+2026-05-07,Lazar,Lazar,Maariv,503.0,yashar,15,,166
+2026-05-07,Lazar,Lazar,Maariv,503.0,together,26,,166
+2026-05-07,Lazar,Lazar,Maariv,503.0,dems,10,,166
+2026-05-07,Lazar,Lazar,Maariv,503.0,yb,9,,166
+2026-05-07,Lazar,Lazar,Maariv,503.0,otzma,9,,166
+2026-05-07,Lazar,Lazar,Maariv,503.0,shas,8,,166
+2026-05-07,Lazar,Lazar,Maariv,503.0,utj,7,,166
+2026-05-07,Lazar,Lazar,Maariv,503.0,rzp,0,2.5,166
+2026-05-07,Lazar,Lazar,Maariv,503.0,raam,5,,166
+2026-05-07,Lazar,Lazar,Maariv,503.0,blue_white,0,1.9,166
+2026-04-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,26,,167
+2026-04-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,15,,167
+2026-04-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,together,28,,167
+2026-04-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,167
+2026-04-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,167
+2026-04-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,167
+2026-04-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,167
+2026-04-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,167
+2026-04-30,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,167
+2026-04-30,Lazar,Lazar,Maariv,501.0,likud,26,,168
+2026-04-30,Lazar,Lazar,Maariv,501.0,yashar,14,,168
+2026-04-30,Lazar,Lazar,Maariv,501.0,together,28,,168
+2026-04-30,Lazar,Lazar,Maariv,501.0,dems,10,,168
+2026-04-30,Lazar,Lazar,Maariv,501.0,yb,8,,168
+2026-04-30,Lazar,Lazar,Maariv,501.0,otzma,9,,168
+2026-04-30,Lazar,Lazar,Maariv,501.0,shas,8,,168
+2026-04-30,Lazar,Lazar,Maariv,501.0,utj,7,,168
+2026-04-30,Lazar,Lazar,Maariv,501.0,rzp,0,1.5,168
+2026-04-30,Lazar,Lazar,Maariv,501.0,raam,5,,168
+2026-04-30,Lazar,Lazar,Maariv,501.0,blue_white,0,1.4,168
+2026-04-30,Kantar,Kantar,Israel Hayom,,likud,28,,169
+2026-04-30,Kantar,Kantar,Israel Hayom,,yashar,16,,169
+2026-04-30,Kantar,Kantar,Israel Hayom,,together,23,,169
+2026-04-30,Kantar,Kantar,Israel Hayom,,dems,9,,169
+2026-04-30,Kantar,Kantar,Israel Hayom,,yb,9,,169
+2026-04-30,Kantar,Kantar,Israel Hayom,,otzma,9,,169
+2026-04-30,Kantar,Kantar,Israel Hayom,,shas,8,,169
+2026-04-30,Kantar,Kantar,Israel Hayom,,utj,7,,169
+2026-04-30,Kantar,Kantar,Israel Hayom,,rzp,0,2.7,169
+2026-04-30,Kantar,Kantar,Israel Hayom,,raam,5,,169
+2026-04-30,Kantar,Kantar,Israel Hayom,,blue_white,0,1.6,169
+2026-04-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,likud,25,,170
+2026-04-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yashar,15,,170
+2026-04-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,together,26,,170
+2026-04-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,dems,10,,170
+2026-04-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yb,9,,170
+2026-04-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,otzma,9,,170
+2026-04-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,shas,9,,170
+2026-04-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,utj,7,,170
+2026-04-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,rzp,0,2.9,170
+2026-04-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,raam,5,,170
+2026-04-27,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,blue_white,0,1.9,170
+2026-04-27,Maagar Mochot,Maagar Mochot,Channel 13,,likud,26,,171
+2026-04-27,Maagar Mochot,Maagar Mochot,Channel 13,,yashar,12,,171
+2026-04-27,Maagar Mochot,Maagar Mochot,Channel 13,,together,26,,171
+2026-04-27,Maagar Mochot,Maagar Mochot,Channel 13,,dems,8,,171
+2026-04-27,Maagar Mochot,Maagar Mochot,Channel 13,,yb,6,,171
+2026-04-27,Maagar Mochot,Maagar Mochot,Channel 13,,otzma,10,,171
+2026-04-27,Maagar Mochot,Maagar Mochot,Channel 13,,shas,10,,171
+2026-04-27,Maagar Mochot,Maagar Mochot,Channel 13,,utj,7,,171
+2026-04-27,Maagar Mochot,Maagar Mochot,Channel 13,,rzp,4,,171
+2026-04-27,Maagar Mochot,Maagar Mochot,Channel 13,,raam,5,,171
+2026-04-27,Maagar Mochot,Maagar Mochot,Channel 13,,blue_white,0,1.6,171
+2026-04-27,Lazar,Lazar,Walla,500.0,likud,28,,172
+2026-04-27,Lazar,Lazar,Walla,500.0,yashar,15,,172
+2026-04-27,Lazar,Lazar,Walla,500.0,together,27,,172
+2026-04-27,Lazar,Lazar,Walla,500.0,dems,9,,172
+2026-04-27,Lazar,Lazar,Walla,500.0,yb,8,,172
+2026-04-27,Lazar,Lazar,Walla,500.0,otzma,8,,172
+2026-04-27,Lazar,Lazar,Walla,500.0,shas,8,,172
+2026-04-27,Lazar,Lazar,Walla,500.0,utj,7,,172
+2026-04-27,Lazar,Lazar,Walla,500.0,raam,5,,172
+2026-04-27,Kantar,Kantar,Kan 11,555.0,likud,27,,173
+2026-04-27,Kantar,Kantar,Kan 11,555.0,yashar,15,,173
+2026-04-27,Kantar,Kantar,Kan 11,555.0,together,24,,173
+2026-04-27,Kantar,Kantar,Kan 11,555.0,dems,11,,173
+2026-04-27,Kantar,Kantar,Kan 11,555.0,yb,8,,173
+2026-04-27,Kantar,Kantar,Kan 11,555.0,otzma,9,,173
+2026-04-27,Kantar,Kantar,Kan 11,555.0,shas,9,,173
+2026-04-27,Kantar,Kantar,Kan 11,555.0,utj,7,,173
+2026-04-27,Kantar,Kantar,Kan 11,555.0,rzp,0,2.0,173
+2026-04-27,Kantar,Kantar,Kan 11,555.0,raam,5,,173
+2026-04-27,Kantar,Kantar,Kan 11,555.0,blue_white,0,2.6,173
+2026-04-27,Direct Polls,Direct Polls,i24 News,578.0,likud,33,,174
+2026-04-27,Direct Polls,Direct Polls,i24 News,578.0,yashar,8,,174
+2026-04-27,Direct Polls,Direct Polls,i24 News,578.0,together,24,,174
+2026-04-27,Direct Polls,Direct Polls,i24 News,578.0,dems,9,,174
+2026-04-27,Direct Polls,Direct Polls,i24 News,578.0,yb,6,,174
+2026-04-27,Direct Polls,Direct Polls,i24 News,578.0,otzma,6,,174
+2026-04-27,Direct Polls,Direct Polls,i24 News,578.0,shas,11,,174
+2026-04-27,Direct Polls,Direct Polls,i24 News,578.0,utj,8,,174
+2026-04-27,Direct Polls,Direct Polls,i24 News,578.0,rzp,4,,174
+2026-04-27,Direct Polls,Direct Polls,i24 News,578.0,raam,7,,174
+2026-04-26,Filber,Channel 14 (Filber),Channel 14,932.0,likud,34,,175
+2026-04-26,Filber,Channel 14 (Filber),Channel 14,932.0,yashar,9,,175
+2026-04-26,Filber,Channel 14 (Filber),Channel 14,932.0,together,20,,175
+2026-04-26,Filber,Channel 14 (Filber),Channel 14,932.0,dems,8,,175
+2026-04-26,Filber,Channel 14 (Filber),Channel 14,932.0,yb,8,,175
+2026-04-26,Filber,Channel 14 (Filber),Channel 14,932.0,otzma,7,,175
+2026-04-26,Filber,Channel 14 (Filber),Channel 14,932.0,shas,11,,175
+2026-04-26,Filber,Channel 14 (Filber),Channel 14,932.0,utj,8,,175
+2026-04-26,Filber,Channel 14 (Filber),Channel 14,932.0,rzp,4,,175
+2026-04-26,Filber,Channel 14 (Filber),Channel 14,932.0,blue_white,0,0.7,175
+2026-04-24,Lazar,Lazar,Maariv,502.0,likud,24,,176
+2026-04-24,Lazar,Lazar,Maariv,502.0,yashar,12,,176
+2026-04-24,Lazar,Lazar,Maariv,502.0,dems,9,,176
+2026-04-24,Lazar,Lazar,Maariv,502.0,yb,9,,176
+2026-04-24,Lazar,Lazar,Maariv,502.0,otzma,9,,176
+2026-04-24,Lazar,Lazar,Maariv,502.0,shas,9,,176
+2026-04-24,Lazar,Lazar,Maariv,502.0,utj,7,,176
+2026-04-24,Lazar,Lazar,Maariv,502.0,rzp,0,2.8,176
+2026-04-24,Lazar,Lazar,Maariv,502.0,raam,5,,176
+2026-04-24,Lazar,Lazar,Maariv,502.0,blue_white,0,1.7,176
+2026-04-23,Midgam R&C,Midgam (Ch12),HaHadashot 12,,likud,25,,177
+2026-04-23,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yashar,14,,177
+2026-04-23,Midgam R&C,Midgam (Ch12),HaHadashot 12,,dems,10,,177
+2026-04-23,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yb,8,,177
+2026-04-23,Midgam R&C,Midgam (Ch12),HaHadashot 12,,otzma,9,,177
+2026-04-23,Midgam R&C,Midgam (Ch12),HaHadashot 12,,shas,9,,177
+2026-04-23,Midgam R&C,Midgam (Ch12),HaHadashot 12,,utj,7,,177
+2026-04-23,Midgam R&C,Midgam (Ch12),HaHadashot 12,,rzp,0,2.7,177
+2026-04-23,Midgam R&C,Midgam (Ch12),HaHadashot 12,,raam,5,,177
+2026-04-23,Midgam R&C,Midgam (Ch12),HaHadashot 12,,blue_white,0,0.8,177
+2026-04-23,Filber,Channel 14 (Filber),Channel 14,958.0,likud,35,,178
+2026-04-23,Filber,Channel 14 (Filber),Channel 14,958.0,yashar,12,,178
+2026-04-23,Filber,Channel 14 (Filber),Channel 14,958.0,dems,8,,178
+2026-04-23,Filber,Channel 14 (Filber),Channel 14,958.0,yb,9,,178
+2026-04-23,Filber,Channel 14 (Filber),Channel 14,958.0,otzma,8,,178
+2026-04-23,Filber,Channel 14 (Filber),Channel 14,958.0,shas,11,,178
+2026-04-23,Filber,Channel 14 (Filber),Channel 14,958.0,utj,8,,178
+2026-04-23,Filber,Channel 14 (Filber),Channel 14,958.0,rzp,4,,178
+2026-04-23,Filber,Channel 14 (Filber),Channel 14,958.0,blue_white,0,1.2,178
+2026-04-17,Lazar,Lazar,Maariv,500.0,likud,25,,179
+2026-04-17,Lazar,Lazar,Maariv,500.0,yashar,12,,179
+2026-04-17,Lazar,Lazar,Maariv,500.0,dems,9,,179
+2026-04-17,Lazar,Lazar,Maariv,500.0,yb,9,,179
+2026-04-17,Lazar,Lazar,Maariv,500.0,otzma,8,,179
+2026-04-17,Lazar,Lazar,Maariv,500.0,shas,9,,179
+2026-04-17,Lazar,Lazar,Maariv,500.0,utj,7,,179
+2026-04-17,Lazar,Lazar,Maariv,500.0,rzp,0,2.3,179
+2026-04-17,Lazar,Lazar,Maariv,500.0,raam,5,,179
+2026-04-17,Lazar,Lazar,Maariv,500.0,blue_white,0,2.1,179
+2026-04-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,28,,180
+2026-04-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,16,,180
+2026-04-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,9,,180
+2026-04-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,180
+2026-04-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,6,,180
+2026-04-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,180
+2026-04-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,180
+2026-04-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,180
+2026-04-16,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,4,,180
+2026-04-16,Midgam R&C,Midgam (Ch12),HaHadashot 12,,likud,25,,181
+2026-04-16,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yashar,14,,181
+2026-04-16,Midgam R&C,Midgam (Ch12),HaHadashot 12,,dems,10,,181
+2026-04-16,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yb,9,,181
+2026-04-16,Midgam R&C,Midgam (Ch12),HaHadashot 12,,otzma,10,,181
+2026-04-16,Midgam R&C,Midgam (Ch12),HaHadashot 12,,shas,9,,181
+2026-04-16,Midgam R&C,Midgam (Ch12),HaHadashot 12,,utj,7,,181
+2026-04-16,Midgam R&C,Midgam (Ch12),HaHadashot 12,,rzp,0,2.8,181
+2026-04-16,Midgam R&C,Midgam (Ch12),HaHadashot 12,,raam,5,,181
+2026-04-16,Midgam R&C,Midgam (Ch12),HaHadashot 12,,blue_white,0,2.0,181
+2026-04-16,Kantar,Kantar,Israel Hayom,,likud,26,,182
+2026-04-16,Kantar,Kantar,Israel Hayom,,yashar,14,,182
+2026-04-16,Kantar,Kantar,Israel Hayom,,dems,9,,182
+2026-04-16,Kantar,Kantar,Israel Hayom,,yb,8,,182
+2026-04-16,Kantar,Kantar,Israel Hayom,,otzma,10,,182
+2026-04-16,Kantar,Kantar,Israel Hayom,,shas,9,,182
+2026-04-16,Kantar,Kantar,Israel Hayom,,utj,7,,182
+2026-04-16,Kantar,Kantar,Israel Hayom,,rzp,0,2.5,182
+2026-04-16,Kantar,Kantar,Israel Hayom,,raam,5,,182
+2026-04-16,Filber,Channel 14 (Filber),Channel 14,511.0,likud,35,,183
+2026-04-16,Filber,Channel 14 (Filber),Channel 14,511.0,yashar,13,,183
+2026-04-16,Filber,Channel 14 (Filber),Channel 14,511.0,dems,10,,183
+2026-04-16,Filber,Channel 14 (Filber),Channel 14,511.0,yb,9,,183
+2026-04-16,Filber,Channel 14 (Filber),Channel 14,511.0,otzma,7,,183
+2026-04-16,Filber,Channel 14 (Filber),Channel 14,511.0,shas,11,,183
+2026-04-16,Filber,Channel 14 (Filber),Channel 14,511.0,utj,8,,183
+2026-04-16,Filber,Channel 14 (Filber),Channel 14,511.0,rzp,4,,183
+2026-04-16,Filber,Channel 14 (Filber),Channel 14,511.0,blue_white,0,1.2,183
+2026-04-10,Lazar,Lazar,Maariv,500.0,likud,25,,184
+2026-04-10,Lazar,Lazar,Maariv,500.0,yashar,13,,184
+2026-04-10,Lazar,Lazar,Maariv,500.0,dems,8,,184
+2026-04-10,Lazar,Lazar,Maariv,500.0,yb,9,,184
+2026-04-10,Lazar,Lazar,Maariv,500.0,otzma,8,,184
+2026-04-10,Lazar,Lazar,Maariv,500.0,shas,9,,184
+2026-04-10,Lazar,Lazar,Maariv,500.0,utj,7,,184
+2026-04-10,Lazar,Lazar,Maariv,500.0,rzp,0,1.8,184
+2026-04-10,Lazar,Lazar,Maariv,500.0,raam,5,,184
+2026-04-10,Lazar,Lazar,Maariv,500.0,blue_white,0,2.5,184
+2026-04-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,,likud,25,,185
+2026-04-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yashar,13,,185
+2026-04-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,,dems,10,,185
+2026-04-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yb,9,,185
+2026-04-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,,otzma,9,,185
+2026-04-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,,shas,9,,185
+2026-04-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,,utj,7,,185
+2026-04-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,,rzp,0,2.9,185
+2026-04-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,,raam,5,,185
+2026-04-09,Midgam R&C,Midgam (Ch12),HaHadashot 12,,blue_white,0,1.5,185
+2026-04-09,Maagar Mochot,Maagar Mochot,Channel 13,,likud,22,,186
+2026-04-09,Maagar Mochot,Maagar Mochot,Channel 13,,yashar,12,,186
+2026-04-09,Maagar Mochot,Maagar Mochot,Channel 13,,dems,8,,186
+2026-04-09,Maagar Mochot,Maagar Mochot,Channel 13,,yb,8,,186
+2026-04-09,Maagar Mochot,Maagar Mochot,Channel 13,,otzma,10,,186
+2026-04-09,Maagar Mochot,Maagar Mochot,Channel 13,,shas,10,,186
+2026-04-09,Maagar Mochot,Maagar Mochot,Channel 13,,utj,7,,186
+2026-04-09,Maagar Mochot,Maagar Mochot,Channel 13,,rzp,5,,186
+2026-04-09,Maagar Mochot,Maagar Mochot,Channel 13,,raam,5,,186
+2026-04-09,Kantar,Kantar,Kan 11,552.0,likud,25,,187
+2026-04-09,Kantar,Kantar,Kan 11,552.0,yashar,14,,187
+2026-04-09,Kantar,Kantar,Kan 11,552.0,dems,11,,187
+2026-04-09,Kantar,Kantar,Kan 11,552.0,yb,9,,187
+2026-04-09,Kantar,Kantar,Kan 11,552.0,otzma,10,,187
+2026-04-09,Kantar,Kantar,Kan 11,552.0,shas,9,,187
+2026-04-09,Kantar,Kantar,Kan 11,552.0,utj,7,,187
+2026-04-09,Kantar,Kantar,Kan 11,552.0,rzp,0,2.4,187
+2026-04-09,Kantar,Kantar,Kan 11,552.0,raam,5,,187
+2026-04-09,Kantar,Kantar,Kan 11,552.0,blue_white,0,1.7,187
+2026-04-09,Filber,Channel 14 (Filber),Channel 14,951.0,likud,35,,188
+2026-04-09,Filber,Channel 14 (Filber),Channel 14,951.0,yashar,12,,188
+2026-04-09,Filber,Channel 14 (Filber),Channel 14,951.0,dems,10,,188
+2026-04-09,Filber,Channel 14 (Filber),Channel 14,951.0,yb,8,,188
+2026-04-09,Filber,Channel 14 (Filber),Channel 14,951.0,otzma,7,,188
+2026-04-09,Filber,Channel 14 (Filber),Channel 14,951.0,shas,10,,188
+2026-04-09,Filber,Channel 14 (Filber),Channel 14,951.0,utj,9,,188
+2026-04-09,Filber,Channel 14 (Filber),Channel 14,951.0,rzp,4,,188
+2026-04-09,Filber,Channel 14 (Filber),Channel 14,951.0,blue_white,0,1.8,188
+2026-03-31,Lazar,Lazar,Maariv,500.0,likud,25,,189
+2026-03-31,Lazar,Lazar,Maariv,500.0,yashar,14,,189
+2026-03-31,Lazar,Lazar,Maariv,500.0,dems,9,,189
+2026-03-31,Lazar,Lazar,Maariv,500.0,yb,8,,189
+2026-03-31,Lazar,Lazar,Maariv,500.0,otzma,8,,189
+2026-03-31,Lazar,Lazar,Maariv,500.0,shas,9,,189
+2026-03-31,Lazar,Lazar,Maariv,500.0,utj,7,,189
+2026-03-31,Lazar,Lazar,Maariv,500.0,rzp,0,2.0,189
+2026-03-31,Lazar,Lazar,Maariv,500.0,raam,4,,189
+2026-03-31,Lazar,Lazar,Maariv,500.0,blue_white,0,1.4,189
+2026-03-29,Kantar,Kantar,Kan 11,553.0,likud,28,,190
+2026-03-29,Kantar,Kantar,Kan 11,553.0,yashar,13,,190
+2026-03-29,Kantar,Kantar,Kan 11,553.0,dems,9,,190
+2026-03-29,Kantar,Kantar,Kan 11,553.0,yb,9,,190
+2026-03-29,Kantar,Kantar,Kan 11,553.0,otzma,8,,190
+2026-03-29,Kantar,Kantar,Kan 11,553.0,shas,9,,190
+2026-03-29,Kantar,Kantar,Kan 11,553.0,utj,8,,190
+2026-03-29,Kantar,Kantar,Kan 11,553.0,raam,5,,190
+2026-03-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,29,,191
+2026-03-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,17,,191
+2026-03-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,191
+2026-03-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,191
+2026-03-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,191
+2026-03-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,191
+2026-03-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,191
+2026-03-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,191
+2026-03-26,Lazar,Lazar,Maariv,500.0,likud,26,,192
+2026-03-26,Lazar,Lazar,Maariv,500.0,yashar,13,,192
+2026-03-26,Lazar,Lazar,Maariv,500.0,dems,10,,192
+2026-03-26,Lazar,Lazar,Maariv,500.0,yb,9,,192
+2026-03-26,Lazar,Lazar,Maariv,500.0,otzma,9,,192
+2026-03-26,Lazar,Lazar,Maariv,500.0,shas,8,,192
+2026-03-26,Lazar,Lazar,Maariv,500.0,utj,7,,192
+2026-03-26,Lazar,Lazar,Maariv,500.0,rzp,0,2.3,192
+2026-03-26,Lazar,Lazar,Maariv,500.0,raam,5,,192
+2026-03-26,Lazar,Lazar,Maariv,500.0,blue_white,0,2.8,192
+2026-03-26,Filber,Channel 14 (Filber),Channel 14,754.0,likud,35,,193
+2026-03-26,Filber,Channel 14 (Filber),Channel 14,754.0,yashar,11,,193
+2026-03-26,Filber,Channel 14 (Filber),Channel 14,754.0,dems,10,,193
+2026-03-26,Filber,Channel 14 (Filber),Channel 14,754.0,yb,8,,193
+2026-03-26,Filber,Channel 14 (Filber),Channel 14,754.0,otzma,7,,193
+2026-03-26,Filber,Channel 14 (Filber),Channel 14,754.0,shas,10,,193
+2026-03-26,Filber,Channel 14 (Filber),Channel 14,754.0,utj,9,,193
+2026-03-26,Filber,Channel 14 (Filber),Channel 14,754.0,rzp,4,,193
+2026-03-26,Filber,Channel 14 (Filber),Channel 14,754.0,blue_white,0,1.2,193
+2026-03-20,Lazar,Lazar,Maariv,,likud,28,,194
+2026-03-20,Lazar,Lazar,Maariv,,yashar,11,,194
+2026-03-20,Lazar,Lazar,Maariv,,dems,10,,194
+2026-03-20,Lazar,Lazar,Maariv,,yb,10,,194
+2026-03-20,Lazar,Lazar,Maariv,,otzma,7,,194
+2026-03-20,Lazar,Lazar,Maariv,,shas,8,,194
+2026-03-20,Lazar,Lazar,Maariv,,utj,7,,194
+2026-03-20,Lazar,Lazar,Maariv,,raam,5,,194
+2026-03-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,28,,195
+2026-03-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,16,,195
+2026-03-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,9,,195
+2026-03-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,195
+2026-03-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,195
+2026-03-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,8,,195
+2026-03-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,195
+2026-03-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,195
+2026-03-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,4,,195
+2026-03-19,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,likud,28,,196
+2026-03-19,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,yashar,12,,196
+2026-03-19,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,dems,12,,196
+2026-03-19,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,yb,9,,196
+2026-03-19,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,otzma,7,,196
+2026-03-19,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,shas,9,,196
+2026-03-19,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,utj,7,,196
+2026-03-19,Midgam R&C,Midgam (Ch12),HaHadashot 12,503.0,raam,5,,196
+2026-03-13,Lazar,Lazar,Maariv,500.0,likud,27,,197
+2026-03-13,Lazar,Lazar,Maariv,500.0,yashar,13,,197
+2026-03-13,Lazar,Lazar,Maariv,500.0,dems,10,,197
+2026-03-13,Lazar,Lazar,Maariv,500.0,yb,8,,197
+2026-03-13,Lazar,Lazar,Maariv,500.0,otzma,8,,197
+2026-03-13,Lazar,Lazar,Maariv,500.0,shas,8,,197
+2026-03-13,Lazar,Lazar,Maariv,500.0,utj,7,,197
+2026-03-13,Lazar,Lazar,Maariv,500.0,rzp,0,3.0,197
+2026-03-13,Lazar,Lazar,Maariv,500.0,raam,5,,197
+2026-03-13,Lazar,Lazar,Maariv,500.0,blue_white,0,1.3,197
+2026-03-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,29,,198
+2026-03-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,15,,198
+2026-03-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,198
+2026-03-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,198
+2026-03-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,6,,198
+2026-03-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,8,,198
+2026-03-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,7,,198
+2026-03-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,4,,198
+2026-03-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,198
+2026-03-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,,likud,26,,199
+2026-03-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yashar,11,,199
+2026-03-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,,dems,12,,199
+2026-03-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yb,9,,199
+2026-03-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,,otzma,9,,199
+2026-03-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,,shas,9,,199
+2026-03-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,,utj,7,,199
+2026-03-11,Midgam R&C,Midgam (Ch12),HaHadashot 12,,raam,5,,199
+2026-03-05,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,31,,200
+2026-03-05,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,14,,200
+2026-03-05,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,200
+2026-03-05,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,200
+2026-03-05,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,6,,200
+2026-03-05,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,9,,200
+2026-03-05,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,7,,200
+2026-03-05,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,5,,200
+2026-03-05,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,4,,200
+2026-03-05,Lazar,Lazar,Maariv,500.0,likud,27,,201
+2026-03-05,Lazar,Lazar,Maariv,500.0,yashar,14,,201
+2026-03-05,Lazar,Lazar,Maariv,500.0,dems,10,,201
+2026-03-05,Lazar,Lazar,Maariv,500.0,yb,8,,201
+2026-03-05,Lazar,Lazar,Maariv,500.0,otzma,9,,201
+2026-03-05,Lazar,Lazar,Maariv,500.0,shas,8,,201
+2026-03-05,Lazar,Lazar,Maariv,500.0,utj,7,,201
+2026-03-05,Lazar,Lazar,Maariv,500.0,rzp,0,2.8,201
+2026-03-05,Lazar,Lazar,Maariv,500.0,raam,5,,201
+2026-03-05,Lazar,Lazar,Maariv,500.0,blue_white,0,2.0,201
+2026-03-05,Filber,Channel 14 (Filber),Channel 14,742.0,likud,34,,202
+2026-03-05,Filber,Channel 14 (Filber),Channel 14,742.0,yashar,10,,202
+2026-03-05,Filber,Channel 14 (Filber),Channel 14,742.0,dems,9,,202
+2026-03-05,Filber,Channel 14 (Filber),Channel 14,742.0,yb,7,,202
+2026-03-05,Filber,Channel 14 (Filber),Channel 14,742.0,otzma,8,,202
+2026-03-05,Filber,Channel 14 (Filber),Channel 14,742.0,shas,11,,202
+2026-03-05,Filber,Channel 14 (Filber),Channel 14,742.0,utj,9,,202
+2026-03-05,Filber,Channel 14 (Filber),Channel 14,742.0,rzp,4,,202
+2026-03-05,Filber,Channel 14 (Filber),Channel 14,742.0,blue_white,0,1.3,202
+2026-02-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,27,,203
+2026-02-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,12,,203
+2026-02-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,9,,203
+2026-02-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,203
+2026-02-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,8,,203
+2026-02-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,203
+2026-02-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,203
+2026-02-26,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,6,,203
+2026-02-26,Midgam R&C,Midgam (Ch12),HaHadashot 12,,likud,26,,204
+2026-02-26,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yashar,11,,204
+2026-02-26,Midgam R&C,Midgam (Ch12),HaHadashot 12,,dems,11,,204
+2026-02-26,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yb,8,,204
+2026-02-26,Midgam R&C,Midgam (Ch12),HaHadashot 12,,otzma,10,,204
+2026-02-26,Midgam R&C,Midgam (Ch12),HaHadashot 12,,shas,9,,204
+2026-02-26,Midgam R&C,Midgam (Ch12),HaHadashot 12,,utj,7,,204
+2026-02-26,Midgam R&C,Midgam (Ch12),HaHadashot 12,,rzp,0,2.6,204
+2026-02-26,Midgam R&C,Midgam (Ch12),HaHadashot 12,,raam,6,,204
+2026-02-26,Midgam R&C,Midgam (Ch12),HaHadashot 12,,blue_white,0,1.9,204
+2026-02-26,Lazar,Lazar,Maariv,501.0,likud,26,,205
+2026-02-26,Lazar,Lazar,Maariv,501.0,yashar,14,,205
+2026-02-26,Lazar,Lazar,Maariv,501.0,dems,11,,205
+2026-02-26,Lazar,Lazar,Maariv,501.0,yb,8,,205
+2026-02-26,Lazar,Lazar,Maariv,501.0,otzma,9,,205
+2026-02-26,Lazar,Lazar,Maariv,501.0,shas,8,,205
+2026-02-26,Lazar,Lazar,Maariv,501.0,utj,7,,205
+2026-02-26,Lazar,Lazar,Maariv,501.0,rzp,0,2.2,205
+2026-02-26,Lazar,Lazar,Maariv,501.0,raam,5,,205
+2026-02-26,Lazar,Lazar,Maariv,501.0,blue_white,0,2.8,205
+2026-02-26,Filber,Channel 14 (Filber),Channel 14,579.0,likud,33,,206
+2026-02-26,Filber,Channel 14 (Filber),Channel 14,579.0,yashar,11,,206
+2026-02-26,Filber,Channel 14 (Filber),Channel 14,579.0,dems,9,,206
+2026-02-26,Filber,Channel 14 (Filber),Channel 14,579.0,yb,8,,206
+2026-02-26,Filber,Channel 14 (Filber),Channel 14,579.0,otzma,8,,206
+2026-02-26,Filber,Channel 14 (Filber),Channel 14,579.0,shas,11,,206
+2026-02-26,Filber,Channel 14 (Filber),Channel 14,579.0,utj,8,,206
+2026-02-26,Filber,Channel 14 (Filber),Channel 14,579.0,rzp,5,,206
+2026-02-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,27,,207
+2026-02-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,9,,207
+2026-02-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,9,,207
+2026-02-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,207
+2026-02-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,207
+2026-02-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,207
+2026-02-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,207
+2026-02-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,6,,207
+2026-02-19,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,4,,207
+2026-02-19,Lazar,Lazar,Maariv,501.0,likud,26,,208
+2026-02-19,Lazar,Lazar,Maariv,501.0,yashar,13,,208
+2026-02-19,Lazar,Lazar,Maariv,501.0,dems,11,,208
+2026-02-19,Lazar,Lazar,Maariv,501.0,yb,8,,208
+2026-02-19,Lazar,Lazar,Maariv,501.0,otzma,9,,208
+2026-02-19,Lazar,Lazar,Maariv,501.0,shas,8,,208
+2026-02-19,Lazar,Lazar,Maariv,501.0,utj,7,,208
+2026-02-19,Lazar,Lazar,Maariv,501.0,rzp,0,2.6,208
+2026-02-19,Lazar,Lazar,Maariv,501.0,raam,5,,208
+2026-02-19,Lazar,Lazar,Maariv,501.0,blue_white,0,2.9,208
+2026-02-19,Filber,Channel 14 (Filber),Channel 14,1024.0,likud,34,,209
+2026-02-19,Filber,Channel 14 (Filber),Channel 14,1024.0,yashar,9,,209
+2026-02-19,Filber,Channel 14 (Filber),Channel 14,1024.0,dems,9,,209
+2026-02-19,Filber,Channel 14 (Filber),Channel 14,1024.0,yb,8,,209
+2026-02-19,Filber,Channel 14 (Filber),Channel 14,1024.0,otzma,8,,209
+2026-02-19,Filber,Channel 14 (Filber),Channel 14,1024.0,shas,10,,209
+2026-02-19,Filber,Channel 14 (Filber),Channel 14,1024.0,utj,9,,209
+2026-02-19,Filber,Channel 14 (Filber),Channel 14,1024.0,rzp,4,,209
+2026-02-18,Direct Polls,Direct Polls,i24 News,535.0,likud,34,,210
+2026-02-18,Direct Polls,Direct Polls,i24 News,535.0,yashar,11,,210
+2026-02-18,Direct Polls,Direct Polls,i24 News,535.0,dems,9,,210
+2026-02-18,Direct Polls,Direct Polls,i24 News,535.0,yb,8,,210
+2026-02-18,Direct Polls,Direct Polls,i24 News,535.0,otzma,8,,210
+2026-02-18,Direct Polls,Direct Polls,i24 News,535.0,shas,10,,210
+2026-02-18,Direct Polls,Direct Polls,i24 News,535.0,utj,8,,210
+2026-02-18,Direct Polls,Direct Polls,i24 News,535.0,rzp,4,,210
+2026-02-18,Direct Polls,Direct Polls,i24 News,535.0,blue_white,0,2.6,210
+2026-02-17,Maagar Mochot,Maagar Mochot,Channel 13,,likud,25,,211
+2026-02-17,Maagar Mochot,Maagar Mochot,Channel 13,,yashar,9,,211
+2026-02-17,Maagar Mochot,Maagar Mochot,Channel 13,,dems,7,,211
+2026-02-17,Maagar Mochot,Maagar Mochot,Channel 13,,yb,8,,211
+2026-02-17,Maagar Mochot,Maagar Mochot,Channel 13,,otzma,8,,211
+2026-02-17,Maagar Mochot,Maagar Mochot,Channel 13,,shas,10,,211
+2026-02-17,Maagar Mochot,Maagar Mochot,Channel 13,,utj,7,,211
+2026-02-17,Maagar Mochot,Maagar Mochot,Channel 13,,rzp,0,2.4,211
+2026-02-17,Maagar Mochot,Maagar Mochot,Channel 13,,blue_white,0,1.6,211
+2026-02-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,28,,212
+2026-02-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,8,,212
+2026-02-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,212
+2026-02-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,11,,212
+2026-02-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,212
+2026-02-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,212
+2026-02-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,212
+2026-02-12,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,6,,212
+2026-02-12,Midgam R&C,Midgam (Ch12),HaHadashot 12,,likud,26,,213
+2026-02-12,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yashar,11,,213
+2026-02-12,Midgam R&C,Midgam (Ch12),HaHadashot 12,,dems,11,,213
+2026-02-12,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yb,9,,213
+2026-02-12,Midgam R&C,Midgam (Ch12),HaHadashot 12,,otzma,9,,213
+2026-02-12,Midgam R&C,Midgam (Ch12),HaHadashot 12,,shas,9,,213
+2026-02-12,Midgam R&C,Midgam (Ch12),HaHadashot 12,,utj,7,,213
+2026-02-12,Midgam R&C,Midgam (Ch12),HaHadashot 12,,rzp,0,2.7,213
+2026-02-12,Midgam R&C,Midgam (Ch12),HaHadashot 12,,raam,5,,213
+2026-02-12,Midgam R&C,Midgam (Ch12),HaHadashot 12,,blue_white,0,2.2,213
+2026-02-12,Lazar,Lazar,Maariv,593.0,likud,25,,214
+2026-02-12,Lazar,Lazar,Maariv,593.0,yashar,12,,214
+2026-02-12,Lazar,Lazar,Maariv,593.0,dems,9,,214
+2026-02-12,Lazar,Lazar,Maariv,593.0,yb,9,,214
+2026-02-12,Lazar,Lazar,Maariv,593.0,otzma,10,,214
+2026-02-12,Lazar,Lazar,Maariv,593.0,shas,8,,214
+2026-02-12,Lazar,Lazar,Maariv,593.0,utj,7,,214
+2026-02-12,Lazar,Lazar,Maariv,593.0,rzp,0,2.5,214
+2026-02-12,Lazar,Lazar,Maariv,593.0,raam,5,,214
+2026-02-12,Lazar,Lazar,Maariv,593.0,blue_white,0,2.5,214
+2026-02-12,Filber,Channel 14 (Filber),Channel 14,532.0,likud,35,,215
+2026-02-12,Filber,Channel 14 (Filber),Channel 14,532.0,yashar,8,,215
+2026-02-12,Filber,Channel 14 (Filber),Channel 14,532.0,dems,10,,215
+2026-02-12,Filber,Channel 14 (Filber),Channel 14,532.0,yb,8,,215
+2026-02-12,Filber,Channel 14 (Filber),Channel 14,532.0,otzma,7,,215
+2026-02-12,Filber,Channel 14 (Filber),Channel 14,532.0,shas,10,,215
+2026-02-12,Filber,Channel 14 (Filber),Channel 14,532.0,utj,9,,215
+2026-02-12,Filber,Channel 14 (Filber),Channel 14,532.0,rzp,5,,215
+2026-02-11,Kantar,Kantar,Israel Hayom,,likud,27,,216
+2026-02-11,Kantar,Kantar,Israel Hayom,,yashar,11,,216
+2026-02-11,Kantar,Kantar,Israel Hayom,,dems,9,,216
+2026-02-11,Kantar,Kantar,Israel Hayom,,yb,9,,216
+2026-02-11,Kantar,Kantar,Israel Hayom,,otzma,10,,216
+2026-02-11,Kantar,Kantar,Israel Hayom,,shas,9,,216
+2026-02-11,Kantar,Kantar,Israel Hayom,,utj,7,,216
+2026-02-11,Kantar,Kantar,Israel Hayom,,rzp,0,2.7,216
+2026-02-11,Kantar,Kantar,Israel Hayom,,raam,5,,216
+2026-02-11,Kantar,Kantar,Israel Hayom,,blue_white,0,2.9,216
+2026-02-06,TrendZone,TrendZone,–,,likud,33,,217
+2026-02-06,TrendZone,TrendZone,–,,yashar,8,,217
+2026-02-06,TrendZone,TrendZone,–,,dems,9,,217
+2026-02-06,TrendZone,TrendZone,–,,yb,8,,217
+2026-02-06,TrendZone,TrendZone,–,,otzma,8,,217
+2026-02-06,TrendZone,TrendZone,–,,shas,7,,217
+2026-02-06,TrendZone,TrendZone,–,,utj,7,,217
+2026-02-05,Yossi Tatika,Yossi Tatika,The Times of Israel,500.0,likud,27,,218
+2026-02-05,Yossi Tatika,Yossi Tatika,The Times of Israel,500.0,yashar,6,,218
+2026-02-05,Yossi Tatika,Yossi Tatika,The Times of Israel,500.0,dems,8,,218
+2026-02-05,Yossi Tatika,Yossi Tatika,The Times of Israel,500.0,yb,10,,218
+2026-02-05,Yossi Tatika,Yossi Tatika,The Times of Israel,500.0,otzma,7,,218
+2026-02-05,Yossi Tatika,Yossi Tatika,The Times of Israel,500.0,shas,10,,218
+2026-02-05,Yossi Tatika,Yossi Tatika,The Times of Israel,500.0,utj,8,,218
+2026-02-05,Yossi Tatika,Yossi Tatika,The Times of Israel,500.0,blue_white,4,,218
+2026-02-05,Filber,Channel 14 (Filber),Channel 14,952.0,likud,34,,219
+2026-02-05,Filber,Channel 14 (Filber),Channel 14,952.0,yashar,6,,219
+2026-02-05,Filber,Channel 14 (Filber),Channel 14,952.0,dems,9,,219
+2026-02-05,Filber,Channel 14 (Filber),Channel 14,952.0,yb,8,,219
+2026-02-05,Filber,Channel 14 (Filber),Channel 14,952.0,otzma,7,,219
+2026-02-05,Filber,Channel 14 (Filber),Channel 14,952.0,shas,11,,219
+2026-02-05,Filber,Channel 14 (Filber),Channel 14,952.0,utj,9,,219
+2026-02-05,Filber,Channel 14 (Filber),Channel 14,952.0,rzp,4,,219
+2026-02-05,Filber,Channel 14 (Filber),Channel 14,952.0,blue_white,4,,219
+2026-02-04,Maagar Mochot,Maagar Mochot,Channel 13,,likud,26,,220
+2026-02-04,Maagar Mochot,Maagar Mochot,Channel 13,,yashar,6,,220
+2026-02-04,Maagar Mochot,Maagar Mochot,Channel 13,,dems,8,,220
+2026-02-04,Maagar Mochot,Maagar Mochot,Channel 13,,yb,7,,220
+2026-02-04,Maagar Mochot,Maagar Mochot,Channel 13,,otzma,9,,220
+2026-02-04,Maagar Mochot,Maagar Mochot,Channel 13,,shas,9,,220
+2026-02-04,Maagar Mochot,Maagar Mochot,Channel 13,,utj,6,,220
+2026-02-04,Maagar Mochot,Maagar Mochot,Channel 13,,rzp,4,,220
+2026-01-29,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,28,,221
+2026-01-29,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,8,,221
+2026-01-29,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,10,,221
+2026-01-29,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,221
+2026-01-29,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,221
+2026-01-29,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,221
+2026-01-29,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,221
+2026-01-29,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,6,,221
+2026-01-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,likud,27,,222
+2026-01-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yashar,9,,222
+2026-01-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,dems,11,,222
+2026-01-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yb,8,,222
+2026-01-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,otzma,8,,222
+2026-01-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,shas,9,,222
+2026-01-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,utj,7,,222
+2026-01-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,rzp,0,2.9,222
+2026-01-29,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,blue_white,0,1.8,222
+2026-01-29,Lazar,Lazar,Maariv,503.0,likud,27,,223
+2026-01-29,Lazar,Lazar,Maariv,503.0,yashar,10,,223
+2026-01-29,Lazar,Lazar,Maariv,503.0,dems,9,,223
+2026-01-29,Lazar,Lazar,Maariv,503.0,yb,9,,223
+2026-01-29,Lazar,Lazar,Maariv,503.0,otzma,8,,223
+2026-01-29,Lazar,Lazar,Maariv,503.0,shas,8,,223
+2026-01-29,Lazar,Lazar,Maariv,503.0,utj,7,,223
+2026-01-29,Lazar,Lazar,Maariv,503.0,rzp,0,2.2,223
+2026-01-29,Lazar,Lazar,Maariv,503.0,blue_white,0,2.7,223
+2026-01-29,Filber,Channel 14 (Filber),Channel 14,952.0,likud,34,,224
+2026-01-29,Filber,Channel 14 (Filber),Channel 14,952.0,yashar,7,,224
+2026-01-29,Filber,Channel 14 (Filber),Channel 14,952.0,dems,9,,224
+2026-01-29,Filber,Channel 14 (Filber),Channel 14,952.0,yb,9,,224
+2026-01-29,Filber,Channel 14 (Filber),Channel 14,952.0,otzma,7,,224
+2026-01-29,Filber,Channel 14 (Filber),Channel 14,952.0,shas,10,,224
+2026-01-29,Filber,Channel 14 (Filber),Channel 14,952.0,utj,9,,224
+2026-01-29,Filber,Channel 14 (Filber),Channel 14,952.0,rzp,4,,224
+2026-01-29,Filber,Channel 14 (Filber),Channel 14,952.0,blue_white,0,3.0,224
+2026-01-22,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,25,,225
+2026-01-22,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,7,,225
+2026-01-22,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,9,,225
+2026-01-22,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,225
+2026-01-22,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,6,,225
+2026-01-22,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,225
+2026-01-22,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,225
+2026-01-22,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,rzp,4,,225
+2026-01-22,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,6,,225
+2026-01-22,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,4,,225
+2026-01-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,likud,25,,226
+2026-01-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yashar,9,,226
+2026-01-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,dems,11,,226
+2026-01-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,yb,9,,226
+2026-01-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,otzma,9,,226
+2026-01-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,shas,9,,226
+2026-01-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,utj,8,,226
+2026-01-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,rzp,0,2.9,226
+2026-01-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,raam,5,,226
+2026-01-22,Midgam R&C,Midgam (Ch12),HaHadashot 12,501.0,blue_white,0,1.7,226
+2026-01-22,Lazar,Lazar,Maariv,501.0,likud,25,,227
+2026-01-22,Lazar,Lazar,Maariv,501.0,yashar,11,,227
+2026-01-22,Lazar,Lazar,Maariv,501.0,dems,9,,227
+2026-01-22,Lazar,Lazar,Maariv,501.0,yb,9,,227
+2026-01-22,Lazar,Lazar,Maariv,501.0,otzma,9,,227
+2026-01-22,Lazar,Lazar,Maariv,501.0,shas,8,,227
+2026-01-22,Lazar,Lazar,Maariv,501.0,utj,7,,227
+2026-01-22,Lazar,Lazar,Maariv,501.0,rzp,0,2.0,227
+2026-01-22,Lazar,Lazar,Maariv,501.0,raam,5,,227
+2026-01-22,Lazar,Lazar,Maariv,501.0,blue_white,0,2.8,227
+2026-01-22,Filber,Channel 14 (Filber),Channel 14,503.0,likud,34,,228
+2026-01-22,Filber,Channel 14 (Filber),Channel 14,503.0,yashar,7,,228
+2026-01-22,Filber,Channel 14 (Filber),Channel 14,503.0,dems,10,,228
+2026-01-22,Filber,Channel 14 (Filber),Channel 14,503.0,yb,8,,228
+2026-01-22,Filber,Channel 14 (Filber),Channel 14,503.0,otzma,7,,228
+2026-01-22,Filber,Channel 14 (Filber),Channel 14,503.0,shas,10,,228
+2026-01-22,Filber,Channel 14 (Filber),Channel 14,503.0,utj,9,,228
+2026-01-22,Filber,Channel 14 (Filber),Channel 14,503.0,rzp,5,,228
+2026-01-22,Filber,Channel 14 (Filber),Channel 14,503.0,raam,5,,228
+2026-01-22,Filber,Channel 14 (Filber),Channel 14,503.0,blue_white,4,,228
+2026-01-20,Maagar Mochot,Maagar Mochot,Channel 13,,likud,25,,229
+2026-01-20,Maagar Mochot,Maagar Mochot,Channel 13,,yashar,7,,229
+2026-01-20,Maagar Mochot,Maagar Mochot,Channel 13,,dems,10,,229
+2026-01-20,Maagar Mochot,Maagar Mochot,Channel 13,,yb,9,,229
+2026-01-20,Maagar Mochot,Maagar Mochot,Channel 13,,otzma,9,,229
+2026-01-20,Maagar Mochot,Maagar Mochot,Channel 13,,shas,10,,229
+2026-01-20,Maagar Mochot,Maagar Mochot,Channel 13,,utj,7,,229
+2026-01-20,Maagar Mochot,Maagar Mochot,Channel 13,,rzp,0,2.6,229
+2026-01-20,Maagar Mochot,Maagar Mochot,Channel 13,,raam,4,,229
+2026-01-20,Maagar Mochot,Maagar Mochot,Channel 13,,blue_white,0,2.0,229
+2026-01-15,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,27,,230
+2026-01-15,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,7,,230
+2026-01-15,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,230
+2026-01-15,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,230
+2026-01-15,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,230
+2026-01-15,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,230
+2026-01-15,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,230
+2026-01-15,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,6,,230
+2026-01-15,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,blue_white,4,,230
+2026-01-15,TrendZone,TrendZone,–,,likud,34,,231
+2026-01-15,TrendZone,TrendZone,–,,yashar,9,,231
+2026-01-15,TrendZone,TrendZone,–,,dems,12,,231
+2026-01-15,TrendZone,TrendZone,–,,yb,6,,231
+2026-01-15,TrendZone,TrendZone,–,,otzma,10,,231
+2026-01-15,TrendZone,TrendZone,–,,shas,6,,231
+2026-01-15,TrendZone,TrendZone,–,,utj,6,,231
+2026-01-15,TrendZone,TrendZone,–,,raam,5,,231
+2026-01-15,TrendZone,TrendZone,–,,blue_white,0,1.8,231
+2026-01-15,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,likud,26,,232
+2026-01-15,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,yashar,8,,232
+2026-01-15,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,dems,12,,232
+2026-01-15,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,yb,8,,232
+2026-01-15,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,otzma,9,,232
+2026-01-15,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,shas,8,,232
+2026-01-15,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,utj,8,,232
+2026-01-15,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,rzp,0,2.9,232
+2026-01-15,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,raam,5,,232
+2026-01-15,Midgam R&C,Midgam (Ch12),HaHadashot 12,504.0,blue_white,0,2.4,232
+2026-01-15,Lazar,Lazar,Maariv,501.0,likud,26,,233
+2026-01-15,Lazar,Lazar,Maariv,501.0,yashar,11,,233
+2026-01-15,Lazar,Lazar,Maariv,501.0,dems,10,,233
+2026-01-15,Lazar,Lazar,Maariv,501.0,yb,8,,233
+2026-01-15,Lazar,Lazar,Maariv,501.0,otzma,10,,233
+2026-01-15,Lazar,Lazar,Maariv,501.0,shas,8,,233
+2026-01-15,Lazar,Lazar,Maariv,501.0,utj,7,,233
+2026-01-15,Lazar,Lazar,Maariv,501.0,rzp,0,2.6,233
+2026-01-15,Lazar,Lazar,Maariv,501.0,raam,4,,233
+2026-01-15,Lazar,Lazar,Maariv,501.0,blue_white,0,2.3,233
+2026-01-15,Filber,Channel 14 (Filber),Channel 14,604.0,likud,35,,234
+2026-01-15,Filber,Channel 14 (Filber),Channel 14,604.0,yashar,6,,234
+2026-01-15,Filber,Channel 14 (Filber),Channel 14,604.0,dems,11,,234
+2026-01-15,Filber,Channel 14 (Filber),Channel 14,604.0,yb,10,,234
+2026-01-15,Filber,Channel 14 (Filber),Channel 14,604.0,otzma,7,,234
+2026-01-15,Filber,Channel 14 (Filber),Channel 14,604.0,shas,11,,234
+2026-01-15,Filber,Channel 14 (Filber),Channel 14,604.0,utj,9,,234
+2026-01-15,Filber,Channel 14 (Filber),Channel 14,604.0,rzp,4,,234
+2026-01-15,Filber,Channel 14 (Filber),Channel 14,604.0,raam,6,,234
+2026-01-15,Filber,Channel 14 (Filber),Channel 14,604.0,blue_white,0,2.8,234
+2026-01-14,Kantar,Kantar,Israel Hayom,600.0,likud,27,,235
+2026-01-14,Kantar,Kantar,Israel Hayom,600.0,yashar,9,,235
+2026-01-14,Kantar,Kantar,Israel Hayom,600.0,dems,9,,235
+2026-01-14,Kantar,Kantar,Israel Hayom,600.0,yb,8,,235
+2026-01-14,Kantar,Kantar,Israel Hayom,600.0,otzma,9,,235
+2026-01-14,Kantar,Kantar,Israel Hayom,600.0,shas,10,,235
+2026-01-14,Kantar,Kantar,Israel Hayom,600.0,utj,7,,235
+2026-01-14,Kantar,Kantar,Israel Hayom,600.0,rzp,0,2.9,235
+2026-01-14,Kantar,Kantar,Israel Hayom,600.0,raam,5,,235
+2026-01-14,Kantar,Kantar,Israel Hayom,600.0,blue_white,0,3.0,235
+2026-01-08,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,28,,236
+2026-01-08,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,6,,236
+2026-01-08,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,9,,236
+2026-01-08,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,236
+2026-01-08,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,7,,236
+2026-01-08,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,236
+2026-01-08,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,236
+2026-01-08,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,6,,236
+2026-01-08,Midgam R&C,Midgam (Ch12),HaHadashot 12,,likud,25,,237
+2026-01-08,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yashar,8,,237
+2026-01-08,Midgam R&C,Midgam (Ch12),HaHadashot 12,,dems,12,,237
+2026-01-08,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yb,8,,237
+2026-01-08,Midgam R&C,Midgam (Ch12),HaHadashot 12,,otzma,8,,237
+2026-01-08,Midgam R&C,Midgam (Ch12),HaHadashot 12,,shas,8,,237
+2026-01-08,Midgam R&C,Midgam (Ch12),HaHadashot 12,,utj,7,,237
+2026-01-08,Midgam R&C,Midgam (Ch12),HaHadashot 12,,rzp,4,,237
+2026-01-08,Midgam R&C,Midgam (Ch12),HaHadashot 12,,raam,5,,237
+2026-01-08,Midgam R&C,Midgam (Ch12),HaHadashot 12,,blue_white,0,0.6,237
+2026-01-08,Lazar,Lazar,Maariv,503.0,likud,27,,238
+2026-01-08,Lazar,Lazar,Maariv,503.0,yashar,10,,238
+2026-01-08,Lazar,Lazar,Maariv,503.0,dems,10,,238
+2026-01-08,Lazar,Lazar,Maariv,503.0,yb,9,,238
+2026-01-08,Lazar,Lazar,Maariv,503.0,otzma,9,,238
+2026-01-08,Lazar,Lazar,Maariv,503.0,shas,8,,238
+2026-01-08,Lazar,Lazar,Maariv,503.0,utj,7,,238
+2026-01-08,Lazar,Lazar,Maariv,503.0,rzp,0,2.2,238
+2026-01-08,Lazar,Lazar,Maariv,503.0,raam,5,,238
+2026-01-08,Lazar,Lazar,Maariv,503.0,blue_white,0,2.2,238
+2026-01-08,Filber,Channel 14 (Filber),Channel 14,506.0,likud,35,,239
+2026-01-08,Filber,Channel 14 (Filber),Channel 14,506.0,yashar,8,,239
+2026-01-08,Filber,Channel 14 (Filber),Channel 14,506.0,dems,8,,239
+2026-01-08,Filber,Channel 14 (Filber),Channel 14,506.0,yb,9,,239
+2026-01-08,Filber,Channel 14 (Filber),Channel 14,506.0,otzma,7,,239
+2026-01-08,Filber,Channel 14 (Filber),Channel 14,506.0,shas,11,,239
+2026-01-08,Filber,Channel 14 (Filber),Channel 14,506.0,utj,9,,239
+2026-01-08,Filber,Channel 14 (Filber),Channel 14,506.0,rzp,4,,239
+2026-01-08,Filber,Channel 14 (Filber),Channel 14,506.0,raam,5,,239
+2026-01-08,Filber,Channel 14 (Filber),Channel 14,506.0,blue_white,0,1.4,239
+2026-01-07,Maagar Mochot,Maagar Mochot,Channel 13,,likud,26,,240
+2026-01-07,Maagar Mochot,Maagar Mochot,Channel 13,,yashar,8,,240
+2026-01-07,Maagar Mochot,Maagar Mochot,Channel 13,,dems,8,,240
+2026-01-07,Maagar Mochot,Maagar Mochot,Channel 13,,yb,10,,240
+2026-01-07,Maagar Mochot,Maagar Mochot,Channel 13,,otzma,10,,240
+2026-01-07,Maagar Mochot,Maagar Mochot,Channel 13,,shas,10,,240
+2026-01-07,Maagar Mochot,Maagar Mochot,Channel 13,,utj,7,,240
+2026-01-07,Maagar Mochot,Maagar Mochot,Channel 13,,rzp,0,2.3,240
+2026-01-07,Maagar Mochot,Maagar Mochot,Channel 13,,raam,5,,240
+2026-01-07,Maagar Mochot,Maagar Mochot,Channel 13,,blue_white,0,2.3,240
+2026-01-01,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,likud,28,,241
+2026-01-01,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yashar,7,,241
+2026-01-01,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,dems,8,,241
+2026-01-01,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,yb,10,,241
+2026-01-01,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,otzma,6,,241
+2026-01-01,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,shas,10,,241
+2026-01-01,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,utj,8,,241
+2026-01-01,Yossi Tatika,Yossi Tatika,Zman Yisrael,500.0,raam,6,,241
+2026-01-01,Midgam R&C,Midgam (Ch12),HaHadashot 12,,likud,26,,242
+2026-01-01,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yashar,8,,242
+2026-01-01,Midgam R&C,Midgam (Ch12),HaHadashot 12,,dems,11,,242
+2026-01-01,Midgam R&C,Midgam (Ch12),HaHadashot 12,,yb,9,,242
+2026-01-01,Midgam R&C,Midgam (Ch12),HaHadashot 12,,otzma,9,,242
+2026-01-01,Midgam R&C,Midgam (Ch12),HaHadashot 12,,shas,9,,242
+2026-01-01,Midgam R&C,Midgam (Ch12),HaHadashot 12,,utj,7,,242
+2026-01-01,Midgam R&C,Midgam (Ch12),HaHadashot 12,,rzp,0,2.9,242
+2026-01-01,Midgam R&C,Midgam (Ch12),HaHadashot 12,,raam,5,,242
+2026-01-01,Midgam R&C,Midgam (Ch12),HaHadashot 12,,blue_white,0,2.0,242
+2026-01-01,Lazar,Lazar,Maariv,,likud,27,,243
+2026-01-01,Lazar,Lazar,Maariv,,yashar,10,,243
+2026-01-01,Lazar,Lazar,Maariv,,dems,10,,243
+2026-01-01,Lazar,Lazar,Maariv,,yb,10,,243
+2026-01-01,Lazar,Lazar,Maariv,,otzma,10,,243
+2026-01-01,Lazar,Lazar,Maariv,,shas,8,,243
+2026-01-01,Lazar,Lazar,Maariv,,utj,7,,243
+2026-01-01,Lazar,Lazar,Maariv,,rzp,0,2.8,243
+2026-01-01,Lazar,Lazar,Maariv,,raam,5,,243
+2026-01-01,Lazar,Lazar,Maariv,,blue_white,0,2.0,243
+2026-01-01,Filber,Channel 14 (Filber),Channel 14,736.0,likud,35,,244
+2026-01-01,Filber,Channel 14 (Filber),Channel 14,736.0,yashar,8,,244
+2026-01-01,Filber,Channel 14 (Filber),Channel 14,736.0,dems,10,,244
+2026-01-01,Filber,Channel 14 (Filber),Channel 14,736.0,yb,9,,244
+2026-01-01,Filber,Channel 14 (Filber),Channel 14,736.0,otzma,7,,244
+2026-01-01,Filber,Channel 14 (Filber),Channel 14,736.0,shas,11,,244
+2026-01-01,Filber,Channel 14 (Filber),Channel 14,736.0,utj,8,,244
+2026-01-01,Filber,Channel 14 (Filber),Channel 14,736.0,rzp,5,,244
+2026-01-01,Filber,Channel 14 (Filber),Channel 14,736.0,raam,5,,244
+2026-01-01,Filber,Channel 14 (Filber),Channel 14,736.0,blue_white,0,0.9,244
