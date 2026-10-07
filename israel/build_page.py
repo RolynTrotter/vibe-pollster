@@ -1,6 +1,8 @@
 """Inject model output into site/template.html -> output/knesset_2026.html."""
 import json
 
+import pandas as pd
+
 F = json.load(open("output/forecast.json"))
 D = json.load(open("output/dynamics.json"))
 
@@ -15,6 +17,12 @@ data = dict(
     house=F["averages"]["consensus"],
     weights=F["weights"],
     ratings=F["ratings"],
+    house_misses=(lambda E: dict(
+        elections=sorted(E.election.unique().tolist()),
+        field=E.groupby("election").bias.mean().round(1).to_dict(),
+        house={h: g.groupby("election").bias.mean().round(1).to_dict()
+               for h, g in E.groupby("pollster") if g.election.nunique() >= 3}))(
+        pd.read_csv("data/processed/backtest_poll_errors.csv")),
     calibration={k: v for k, v in F["meta"]["calibration"].items()
                  if k in ["sigma_bloc", "bloc_bias", "sigma_haredi", "haredi_bias", "sigma_arab",
                           "arab_bias", "drift_var_per_day", "by_election", "avg_params"]},

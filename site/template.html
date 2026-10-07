@@ -254,6 +254,13 @@ footer { font-size: .85rem; color: var(--ink-3); display: grid; gap: 6px; }
     <div class="chart" id="pollChart"></div>
   </section>
 
+  <section aria-labelledby="h-why">
+    <h2 id="h-why">Why the pollsters disagree, and why it's hard to settle</h2>
+    <div class="method" id="why"></div>
+    <div class="tbl-wrap"><table id="misstable"></table></div>
+    <p class="note">Average miss on Netanyahu's bloc in each house's final three weeks of polls, in seats. Negative means the house underrated the bloc. The bottom row is the average of all houses.</p>
+  </section>
+
   <section aria-labelledby="h-lean">
     <h2 id="h-lean">How far each pollster leans</h2>
     <p class="note">Each house's estimated lean on the Netanyahu bloc, in seats, against the consensus average, with its weight in the consensus and track-record averages. Direct Polls and Channel 14 share methods, so they share one vote.</p>
@@ -502,6 +509,30 @@ function renderPolls() {
   el.innerHTML = s;
 }
 
+function renderWhy() {
+  const H = D.house, gov = M.gov, lean = (h) => gov.reduce((a, p) => a + (H[p].house[h] || 0), 0) * 1.2;
+  const se = (p, h) => (H[p].house[h] || 0) * 1.2, f = (v) => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(1);
+  const main = Object.keys(H.likud.house).filter(h => M.house_family[h] !== "DP/Ch14"), lo = Math.min(...main.map(lean)), hi = Math.max(...main.map(lean));
+  const dp = D.house_misses.house["Direct Polls"] || {}, fld = D.house_misses.field;
+  $("why").innerHTML = `
+  <p><b>Two camps.</b> Direct Polls was founded by Shlomo Filber, a former Netanyahu aide, and Channel 14, a right-leaning network, runs its polls through Filber and Next Data. The model treats them as one voice. Against the consensus, Channel 14 puts Netanyahu's bloc ${f(lean("Channel 14 (Filber)"))} seats higher and Direct Polls ${f(lean("Direct Polls"))}. The mainstream houses (Kantar, Midgam, Lazar, Midgam Project, Maagar Mochot, Tatika) sit between ${f(lo)} and ${f(hi)}.</p>
+  <p><b>Where the gap is.</b> Mostly two parties. Channel 14 has Likud ${f(se("likud", "Channel 14 (Filber)"))} seats above the consensus and Bennett–Lapid's Together ${f(se("together", "Channel 14 (Filber)"))}; for Direct Polls the figures are ${f(se("likud", "Direct Polls"))} and ${f(se("together", "Direct Polls"))}. The camps disagree mainly about soft right-of-centre voters choosing between Likud and Bennett.</p>
+  <p><b>Not sampling noise.</b> A 500-person poll is off by 2–3 seats on Likud by chance, but that cancels out across dozens of polls. A gap that holds poll after poll comes from method: how respondents are recruited, how they are weighted (for example, to how they say they voted in 2022), and who counts as a likely voter. Neither camp publishes enough detail to say which.</p>
+  <p><b>The record doesn't settle it.</b> Direct Polls has a decent record: in 2022 it missed the bloc by ${f(dp["2022"] ?? 0)} seats, against ${f(fld["2022"] ?? 0)} for the average house. But in every past election it erred in the same direction as the others and never sat 5 or more seats away from them, as it does now. Channel 14's current operation has no record at all.</p>
+  <p><b>Why a small country makes this harder.</b> The number of polls isn't the problem; ${M.n_polls} since 5 September is plenty to average. The limits are elsewhere:</p>
+  <ul style="margin:0;padding-left:1.2em;display:grid;gap:6px">
+    <li><b>Few independent views.</b> ${M.houses.length} houses in two camps is closer to two opinions than ${M.n_polls}.</li>
+    <li><b>Few races to grade on.</b> FiveThirtyEight rates US pollsters on thousands of races a cycle. Israel votes as one national constituency, so even five elections in four years give each pollster about six races. That can't separate skill from luck, which is why the ratings come out nearly equal.</li>
+    <li><b>Small samples of key groups.</b> A 500-person poll reaches roughly 60 Haredim and 75 Arab citizens, one reason the Haredi parties were underpolled in five of six elections.</li>
+    <li><b>No cross-checks.</b> In the US, state and district polls can contradict a bad national number. Here nothing independent tests the national polls before election day.</li>
+  </ul>`;
+  const E = D.house_misses, order = Object.keys(E.house).sort((a, b) => (a === "Direct Polls" ? -1 : b === "Direct Polls" ? 1 : a.localeCompare(b)));
+  const cell = (v) => v === undefined ? `<td class="r num" style="color:var(--ink-3)">–</td>` : `<td class="r num">${f(v)}</td>`;
+  $("misstable").innerHTML = `<thead><tr><th>House</th>${E.elections.map(e => `<th class="r">${e}</th>`).join("")}</tr></thead><tbody>` +
+    order.map(h => `<tr><td${h === "Direct Polls" ? ' style="font-weight:700"' : ""}>${esc(h)}</td>${E.elections.map(e => cell(E.house[h][e])).join("")}</tr>`).join("") +
+    `<tr><td style="font-weight:700">All houses</td>${E.elections.map(e => cell(E.field[e])).join("")}</tr></tbody>`;
+}
+
 function renderLean() {
   const H = D.house, gov = M.gov, houses = Object.keys(H.likud.house);
   const lean = Object.fromEntries(houses.map(h => [h, gov.reduce((a, p) => a + (H[p].house[h] || 0), 0) * 1.2]));
@@ -566,6 +597,6 @@ Object.values(ctl).forEach(c => c.addEventListener("input", rerun));
 $("c-cmp").addEventListener("change", (e) => { CMP = e.target.value; rerun(); });
 $("reset").addEventListener("click", () => { ctl.arab.value = 53; ctl.har.value = 0; ctl.likud.value = 0; ctl.opp.value = 0; ctl.swing.value = 0; ctl.unc.value = 1; ctl.hfix.checked = true; ctl.pair.checked = true; rerun(); });
 
-R = published(); labels(); renderAll(); renderFindings(); renderDyn(); renderHeat(); renderPolls(); renderLean(); renderSeg(); renderMethod();
+R = published(); labels(); renderAll(); renderFindings(); renderDyn(); renderHeat(); renderPolls(); renderWhy(); renderLean(); renderSeg(); renderMethod();
 })();
 </script>
