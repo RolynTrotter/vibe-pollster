@@ -10,7 +10,6 @@
   --tekhelet: #1f4f9c;            /* majority line, links, focus */
   --s1: #2a78d6; --s2: #e0622f;   /* scenario 1 consensus, scenario 2 comparison */
   --s1-soft: rgba(42,120,214,.16); --s2-soft: rgba(224,98,47,.16);
-  --up: #2a78d6; --down: #c2410c; /* change toward opposition / toward bloc in dynamics */
   --heat-lo: #eef2f8; --heat-hi: #1f4f9c;
   --font-display: "Frank Ruhl Libre", Georgia, "Times New Roman", serif;
   --font-body: "Assistant", "Segoe UI", system-ui, sans-serif;
@@ -22,14 +21,14 @@
     --bg: #12151b; --panel: #1a1e26; --ink: #eef0f4; --ink-2: #b6bcc8; --ink-3: #8f96a5;
     --rule: #2a303b; --rule-strong: #3a4250; --track: #252b35; --tekhelet: #8fb2ee;
     --s1: #4a93ec; --s2: #e8743f; --s1-soft: rgba(74,147,236,.22); --s2-soft: rgba(232,116,63,.22);
-    --up: #4a93ec; --down: #f08a54; --heat-lo: #1f2530; --heat-hi: #6f9be6; color-scheme: dark;
+    --heat-lo: #1f2530; --heat-hi: #6f9be6; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #12151b; --panel: #1a1e26; --ink: #eef0f4; --ink-2: #b6bcc8; --ink-3: #8f96a5;
   --rule: #2a303b; --rule-strong: #3a4250; --track: #252b35; --tekhelet: #8fb2ee;
   --s1: #4a93ec; --s2: #e8743f; --s1-soft: rgba(74,147,236,.22); --s2-soft: rgba(232,116,63,.22);
-  --up: #4a93ec; --down: #f08a54; --heat-lo: #1f2530; --heat-hi: #6f9be6; color-scheme: dark;
+  --heat-lo: #1f2530; --heat-hi: #6f9be6; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.5; }
@@ -51,6 +50,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .key span { display: inline-flex; align-items: center; gap: 8px; }
 .sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block; flex: none; }
 .sw.s1 { background: var(--s1); } .sw.s2 { background: var(--s2); }
+.scen-key { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: .85rem; color: var(--ink-2); }
+.scen-key span { display: inline-flex; align-items: center; gap: 6px; }
+.legend-box { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; display: grid; gap: 8px; font-size: .93rem; color: var(--ink-2); max-width: 65ch; }
+.legend-box .row { display: flex; gap: 10px; align-items: baseline; }
+.legend-box .sw { transform: translateY(1px); }
+.legend-box b { color: var(--ink); }
 
 .headline { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
 @media (max-width: 600px) { .headline { grid-template-columns: 1fr; } }
@@ -164,7 +169,7 @@ footer { font-size: .85rem; color: var(--ink-3); display: grid; gap: 6px; }
     <h1>Who reaches 61?</h1>
     <p class="lede">A seat forecast for Israel's election, built from every published poll, weighted the way FiveThirtyEight weights polls, with a turnout model for the groups whose turnout swings elections.</p>
     <p class="meta" id="metaLine"></p>
-    <div class="key" id="scenKey"></div>
+    <div class="legend-box" id="scenKey"></div>
   </header>
 
   <section aria-labelledby="h-head">
@@ -180,18 +185,20 @@ footer { font-size: .85rem; color: var(--ink-3); display: grid; gap: 6px; }
   <section aria-labelledby="h-paths">
     <h2 id="h-paths">Paths to a majority</h2>
     <p class="note">Share of simulated elections in which each group of parties wins at least 61 of 120 seats.</p>
+    <div class="scen-key"></div>
     <div class="paths" id="paths"></div>
   </section>
 
   <section aria-labelledby="h-bloc">
     <h2 id="h-bloc">Seats for Netanyahu's bloc</h2>
     <p class="note">Likud, Otzma Yehudit, Religious Zionism, Shas and United Torah Judaism. The dashed line is a majority.</p>
+    <div class="scen-key"></div>
     <div class="chart" id="blocChart"></div>
   </section>
 
   <section aria-labelledby="h-dyn">
     <h2 id="h-dyn">What could change the result</h2>
-    <p class="note">Each row reruns the consensus forecast with one change, using the same random draws, so the difference comes from the change alone. Bars show the change in percentage points.</p>
+    <p class="note">Each row reruns the consensus forecast with one change, using the same random draws, so the difference comes from the change alone. Bars show the change in percentage points from the main forecast; right is up, left is down.</p>
     <div class="chart" style="padding:12px 14px"><div class="dyn" id="dyn"></div></div>
   </section>
 
@@ -237,6 +244,7 @@ footer { font-size: .85rem; color: var(--ink-3); display: grid; gap: 6px; }
   <section aria-labelledby="h-parties">
     <h2 id="h-parties">Party by party</h2>
     <p class="note">Bars span the middle 80% of simulated outcomes; the dot is the median. The last column is the chance each list clears the 3.25% threshold (about four seats).</p>
+    <div class="scen-key"></div>
     <div class="tbl-wrap"><table id="ptable"></table></div>
   </section>
 
@@ -279,7 +287,7 @@ const $ = (id) => document.getElementById(id);
 const pct = (x) => x < 0.005 ? "<1%" : x > 0.995 ? ">99%" : Math.round(x * 100) + "%";
 const fmtDate = (s) => new Date(s + "T12:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-const SNAME = { consensus: "Consensus of all pollsters", track_record: "Weighted by track record", ch14_world: "If Channel 14 and Direct Polls are right", mainstream: "Only the mainstream pollsters" };
+const SNAME = { consensus: "Main forecast: every pollster counts equally", track_record: "Weighted by track record", ch14_world: "If Channel 14 and Direct Polls are right", mainstream: "Only the mainstream pollsters" };
 const SHORT = { consensus: "Consensus", track_record: "Track record", ch14_world: "Channel 14 world", mainstream: "Mainstream only" };
 let CMP = "ch14_world";
 const SK = () => ["consensus", CMP];
@@ -287,7 +295,12 @@ const SC = (i) => i === 0 ? "s1" : "s2";
 
 $("eday").textContent = fmtDate(M.election);
 $("metaLine").textContent = `Run ${fmtDate(M.run_date)}, ${M.days_left} days out · ${M.n_polls} polls from ${M.houses.length} houses since ${fmtDate(M.window_start)} (latest ${fmtDate(M.latest_poll)}) · ${M.n_sims.toLocaleString()} simulations per scenario`;
-function renderKey() { $("scenKey").innerHTML = SK().map((k, i) => `<span><i class="sw ${SC(i)}"></i>${esc(SNAME[k])}</span>`).join(""); }
+function renderKey() {
+  $("scenKey").innerHTML = `<div>Most charts below show two forecasts side by side. The colors mean the same thing everywhere:</div>
+    <div class="row"><i class="sw s1"></i><span><b>Blue: the main forecast.</b> Every pollster counts equally (Direct Polls and Channel 14 share one vote).</span></div>
+    <div class="row"><i class="sw s2"></i><span><b>Orange: ${esc(SNAME[CMP].replace(/^If /, "a comparison: if ").replace(/^Only/, "a comparison: only").replace(/^Weighted/, "a comparison: weighted"))}.</b> These pollsters disagree most with the rest. Pick a different comparison under “Try your own assumptions”.</span></div>`;
+  document.querySelectorAll(".scen-key").forEach(el => el.innerHTML = SK().map((k, i) => `<span><i class="sw ${SC(i)}"></i>${i === 0 ? "Main forecast" : esc(SNAME[k])}</span>`).join(""));
+}
 
 /* ---------- simulation: mirrors pollster/simulate.py ---------- */
 function rng(seed) { let a = seed >>> 0; return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
@@ -441,7 +454,7 @@ function renderDyn() {
   dy.scenarios.forEach(s => {
     if (s.group !== g0) { h += `<div class="dyn-group">${G[s.group]}</div>`; g0 = s.group; }
     const r = dy.results[s.key];
-    h += `<div class="dyn-row"><div class="lab">${esc(s.label)}<small>${esc(s.why)}</small></div>${bar(r.gov_amcha61 - b.gov_amcha61, "var(--down)")}${bar(r.opp61 - b.opp61, "var(--up)")}</div>`;
+    h += `<div class="dyn-row"><div class="lab">${esc(s.label)}<small>${esc(s.why)}</small></div>${bar(r.gov_amcha61 - b.gov_amcha61, "var(--ink-2)")}${bar(r.opp61 - b.opp61, "var(--ink-2)")}</div>`;
   });
   $("dyn").innerHTML = h;
 }
@@ -484,8 +497,8 @@ function renderPolls() {
   for (let v = 40; v <= 65; v += 5) s += `<line class="grid" x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/><text x="${m.l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
   for (let d = new Date(t0); d.getTime() <= t1; d.setDate(d.getDate() + 7)) { const iso = d.toISOString().slice(0, 10); s += `<text x="${x(iso)}" y="${H - 8}" text-anchor="middle">${d.toLocaleDateString("en-GB", { day: "numeric", month: "short" })}</text>`; }
   s += `<line class="line61" x1="${m.l}" x2="${W - m.r}" y1="${y(61)}" y2="${y(61)}"/><text class="t61" x="${W - m.r - 4}" y="${y(61) - 5}" text-anchor="end">61</text>`;
-  pts.forEach(p => { const dp = M.house_family[p.h] === "DP/Ch14"; s += `<circle cx="${x(p.d).toFixed(1)}" cy="${y(p.g).toFixed(1)}" r="5" fill="var(--${dp ? "s2" : "s1"})" fill-opacity=".8" stroke="var(--panel)" stroke-width="1"><title>${esc(p.h)}, ${p.d}: ${p.g} seats</title></circle>`; });
-  s += `</svg><div class="key" style="padding:4px 8px 6px;font-size:.85rem"><span><i class="sw s2"></i>Channel 14 and Direct Polls</span><span><i class="sw s1"></i>Kantar, Lazar, Midgam, Maagar Mochot, Tatika</span></div>`;
+  pts.forEach(p => { const dp = M.house_family[p.h] === "DP/Ch14"; s += `<circle cx="${x(p.d).toFixed(1)}" cy="${y(p.g).toFixed(1)}" r="5" fill="${dp ? "var(--ink)" : "var(--panel)"}" stroke="${dp ? "var(--panel)" : "var(--ink-2)"}" stroke-width="${dp ? 1 : 1.6}"><title>${esc(p.h)}, ${p.d}: ${p.g} seats</title></circle>`; });
+  s += `</svg><div class="key" style="padding:4px 8px 6px;font-size:.85rem"><span><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="var(--ink)"/></svg>Channel 14 and Direct Polls</span><span><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4.2" fill="var(--panel)" stroke="var(--ink-2)" stroke-width="1.6"/></svg>Kantar, Lazar, Midgam, Maagar Mochot, Tatika</span></div>`;
   el.innerHTML = s;
 }
 
@@ -494,9 +507,9 @@ function renderLean() {
   const lean = Object.fromEntries(houses.map(h => [h, gov.reduce((a, p) => a + (H[p].house[h] || 0), 0) * 1.2]));
   const A = D.weights.anchors, sum = (o) => Object.values(o).reduce((a, b) => a + b, 0);
   const hs = houses.sort((a, b) => lean[b] - lean[a]), lim = Math.ceil(Math.max(...hs.map(h => Math.abs(lean[h]))) / 2) * 2, W = 300, cx = W / 2, sc = (v) => v / lim * (W / 2 - 4);
-  let html = `<div class="lean-row" style="color:var(--ink-3);font-family:var(--font-data);font-size:.68rem;letter-spacing:.05em;text-transform:uppercase"><span>House</span><span style="display:flex;justify-content:space-between"><span>−${lim}</span><span>0</span><span>+${lim}</span></span><span class="w" style="color:inherit">Weight</span></div>`;
+  let html = `<div class="lean-row" style="color:var(--ink-3);font-family:var(--font-data);font-size:.68rem;letter-spacing:.05em;text-transform:uppercase"><span>House</span><span style="display:flex;justify-content:space-between"><span>−${lim}</span><span>0</span><span>+${lim}</span></span><span class="w" style="color:inherit">Weight: equal / record</span></div>`;
   hs.forEach(h => { const v = lean[h], x0 = v < 0 ? cx + sc(v) : cx;
-    html += `<div class="lean-row"><span>${esc(h)}</span><svg viewBox="0 0 ${W} 18" preserveAspectRatio="none" role="img" aria-label="${esc(h)} leans ${v.toFixed(1)} seats"><line x1="${cx}" x2="${cx}" y1="0" y2="18" stroke="var(--rule-strong)" vector-effect="non-scaling-stroke"/><rect x="${x0}" y="4" width="${Math.max(Math.abs(sc(v)), 1)}" height="10" rx="2" fill="var(--ink-2)"/></svg><span class="w">${v > 0 ? "+" : ""}${v.toFixed(1)} · <span style="color:var(--s1)">${Math.round(A.consensus[h] / sum(A.consensus) * 100)}%</span>/${Math.round(A.track_record[h] / sum(A.track_record) * 100)}%</span></div>`; });
+    html += `<div class="lean-row"><span>${esc(h)}</span><svg viewBox="0 0 ${W} 18" preserveAspectRatio="none" role="img" aria-label="${esc(h)} leans ${v.toFixed(1)} seats"><line x1="${cx}" x2="${cx}" y1="0" y2="18" stroke="var(--rule-strong)" vector-effect="non-scaling-stroke"/><rect x="${x0}" y="4" width="${Math.max(Math.abs(sc(v)), 1)}" height="10" rx="2" fill="var(--ink-2)"/></svg><span class="w">${v > 0 ? "+" : ""}${v.toFixed(1)} · ${Math.round(A.consensus[h] / sum(A.consensus) * 100)}% / ${Math.round(A.track_record[h] / sum(A.track_record) * 100)}%</span></div>`; });
   $("lean").innerHTML = html;
 }
 

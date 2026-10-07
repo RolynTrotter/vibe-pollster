@@ -5,7 +5,7 @@ const html = fs.readFileSync(process.argv[2], "utf8");
 const data = html.match(/<script id="data" type="application\/json">([\s\S]*?)<\/script>/)[1];
 const code = html.match(/<script>\n([\s\S]*?)<\/script>/)[1];
 const el = () => new Proxy({ addEventListener() {}, setAttribute() {}, querySelector() { return el(); }, getBoundingClientRect() { return {}; }, style: {}, value: "0", checked: true }, { get(t, k) { return k in t ? t[k] : (k === "textContent" ? data : undefined); }, set(t, k, v) { t[k] = v; return true; } });
-global.document = { getElementById: (id) => id === "data" ? { textContent: data } : el() };
+global.document = { getElementById: (id) => id === "data" ? { textContent: data } : el(), querySelectorAll: () => [] };
 global.window = {}; global.performance = { now: () => 0 };
 try { eval(code); } catch (e) { console.error("render error:", e.message); }
 const D = JSON.parse(data);

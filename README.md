@@ -16,7 +16,7 @@ private Claude artifact, "Knesset 2026 Forecast").
 
 ## Forecast as of 7 October 2026 (20 days out)
 
-20,000 simulated elections from 28 polls by 8 houses published since the lists were set (5 Sep).
+20,000 simulated elections from 37 polls by 8 houses published since the lists were set (5 Sep).
 
 | Path to 61 seats | Consensus | If Channel 14 & Direct Polls are right |
 |---|---:|---:|
