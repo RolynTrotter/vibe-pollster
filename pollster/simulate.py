@@ -32,6 +32,7 @@ class ErrorModel:
     seg_sigma: dict = field(default_factory=dict)   # segment -> sd of log turnout multiplier
     seg_mean: dict = field(default_factory=dict)    # segment -> mean log multiplier (bias correction)
     scale: float = 1.0                              # inflate/deflate all random error
+    party_shift: dict = field(default_factory=dict) # party -> share points (bias correction)
 
 
 @dataclass
@@ -58,6 +59,9 @@ def simulate(parties: list[str], mu, se, family: dict, gov_fams=("N", "H"), opp_
     se = np.asarray(se, float)
     for p, d in scenario.level_shift.items():
         mu[parties.index(p)] += d
+    for p, d in err.party_shift.items():
+        if p in parties:
+            mu[parties.index(p)] += d
     mu = np.clip(mu, 0.02, None)
     k = 1 / err.seat_per_pct
     sc = 0.0 if scenario.no_error else err.scale

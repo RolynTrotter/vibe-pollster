@@ -88,7 +88,9 @@ def build_model(run_date: str, n: int = 20000):
         sigma_bloc=cal["sigma_bloc"], drift_var_per_day=cal["drift_var_per_day"],
         party_a=cal["party_a"], party_b=cal["party_b"],
         seg_sigma={"haredi": cal["sigma_haredi"] / sens_h, "arab": cal["sigma_arab"] / sens_a},
-        seg_mean={"haredi": -cal["haredi_bias"] / sens_h},
+        # Shas, not the haredi community as a whole, is what polls miss: Shas beat
+        # its final average in 5 of 6 elections; UTJ's average was on target.
+        party_shift={"shas": -cal["party_bias"]["shas"]["mean"] / 1.2},
     )
     days_left = (pd.Timestamp(C.ELECTION_DATE) - pd.Timestamp(run_date)).days
     ctx = dict(polls=polls, anchors=anchors, quality=q, bloc_quality=bq, fam=fam, avg=avg,
@@ -163,7 +165,7 @@ def main():
                  se={k: np.round(v, 4).tolist() for k, v in ctx["se"].items()},
                  sigma_bloc=e.sigma_bloc, drift=e.drift_var_per_day, party_a=e.party_a,
                  party_b=e.party_b, debut_mult=e.debut_mult, seg_sigma=e.seg_sigma,
-                 seg_mean=e.seg_mean, days_left=ctx["days_left"], others_pct=C.OTHERS_PCT,
+                 seg_mean=e.seg_mean, party_shift=e.party_shift, days_left=ctx["days_left"], others_pct=C.OTHERS_PCT,
                  threshold=C.THRESHOLD, seats=C.SEATS, pairs=C.SURPLUS_PAIRS,
                  assumed_pairs=C.ASSUMED_PAIRS, arab_turnout_base=0.53)
     json.dump(dict(meta=meta, model=model, results=res, averages=averages_out, curves=curves, days=ctx["days"],

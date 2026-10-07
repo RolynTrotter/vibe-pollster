@@ -100,6 +100,7 @@ th { font-family: var(--font-data); font-weight: 500; font-size: .7rem; letter-s
 tr:last-child td { border-bottom: 0; }
 td.r, th.r { text-align: right; }
 #ptable td:first-child { min-width: 11.5rem; }
+#backtable td.num, #misstable td.num { white-space: nowrap; }
 .bloc-tag { font-family: var(--font-data); font-size: .66rem; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-3); display: block; }
 .range { width: 100%; min-width: 150px; }
 .rng { position: relative; height: 30px; margin-inline: 6px; }
@@ -234,7 +235,7 @@ footer { font-size: .85rem; color: var(--ink-3); display: grid; gap: 6px; }
           <input type="range" id="c-unc" min="0.5" max="2" step="0.1" value="1"><small>1.0× is the error measured in 2015–2022.</small></div>
       </div>
       <div class="toggles">
-        <label><input type="checkbox" id="c-hfix" checked> Correct for haredi underpolling</label>
+        <label><input type="checkbox" id="c-hfix" checked> Correct for Shas underpolling</label>
         <label><input type="checkbox" id="c-pair" checked> Assume a Shas–UTJ surplus deal</label>
       </div>
       <div class="btnrow"><button type="button" id="reset">Reset to published model</button><span class="status" id="status">Showing the published run.</span></div>
@@ -271,6 +272,13 @@ footer { font-size: .85rem; color: var(--ink-3); display: grid; gap: 6px; }
     <h2 id="h-seg">Who votes for whom</h2>
     <p class="note">The turnout model splits the electorate into groups using 2022 ballot-box results, then fits that split to today's polls. A turnout change in one group moves every party in proportion to its votes there.</p>
     <div class="tbl-wrap"><table id="segtable"></table></div>
+  </section>
+
+  <section aria-labelledby="h-back">
+    <h2 id="h-back">How it would have done, 2015–2022</h2>
+    <div class="method" id="back"></div>
+    <div class="tbl-wrap"><table id="backtable"></table></div>
+    <p class="note">Each election was forecast with everything learned from the other five only: pollster ratings, error sizes and the Shas correction. Ranges are the middle 80% of simulated outcomes. "Raw polls" is the plain average of published seat projections in the final week.</p>
   </section>
 
   <section aria-labelledby="h-method">
@@ -332,12 +340,12 @@ function allocate(votes, names, pairs) {
 }
 function simulate(anchor, o, n, seed) {
   const r = rng(seed), k = 1 / 1.2, Pn = P.length, sc = o.unc;
-  const mu = X.mu[anchor].map(m => Math.max(m, 0.02)), se = X.se[anchor];
+  const mu = X.mu[anchor].map((m, i) => Math.max(m + (o.hfix ? (X.party_shift[P[i]] || 0) : 0), 0.02)), se = X.se[anchor];
   const fam = P.map(p => M.family[p]), to = fam.map(f => f === "N" || f === "H"), fr = fam.map(f => f === "O");
   const psd = mu.map((m, i) => Math.sqrt(X.party_a + X.party_b * m / k) * k * (M.debut.includes(P[i]) ? X.debut_mult : 1));
   const sig = Math.sqrt(X.sigma_bloc ** 2 + X.drift * X.days_left);
   const names = P.concat(["others"]), S = X.segments, prof = X.profile;
-  const segMean = S.map(g => (g === "haredi" && !o.hfix) ? 0 : (X.seg_mean[g] || 0));
+  const segMean = S.map(g => X.seg_mean[g] || 0);
   const segSig = S.map(g => X.seg_sigma[g] || 0);
   const segAdd = S.map(g => g === "arab" ? Math.log(o.arab / 100 / X.arab_turnout_base) : g === "haredi" ? Math.log(1 + o.har / 100) : 0);
   const pm = names.map(p => p === "likud" ? 1 - o.likud / 100 : M.opp.includes(p) ? 1 - o.opp / 100 : 1);
@@ -398,7 +406,7 @@ function renderFindings() {
     [`Whose polls you believe matters more than anything else.`, `Channel 14 and Direct Polls put the bloc about ${Math.round(["Channel 14 (Filber)", "Direct Polls"].reduce((a, h) => a + M.gov.reduce((b, p) => b + (D.house[p].house[h] || 0), 0) * 1.2, 0) / 2)} seats higher than the consensus does. If they are right, the bloc plus Amcha reaches 61 in ${pct(ch.gov_amcha61)} of simulations instead of ${pct(c.gov_amcha61)}. Their record does not settle it: after shrinking for small samples, no Israeli house's track record is much better than another's.`],
     [`The haredi parties hold the balance.`, `The opposition plus Shas and UTJ reaches 61 in ${pct(c.opp_haredi61)} of simulations; plus Shas alone, ${pct(c.opp_shas61)}. Both parties left the government over the draft and neither has committed to Netanyahu.`],
     [`Low Arab turnout helps both Jewish camps.`, `At 45% Arab turnout (the 2021 level), the bloc's chances rise ${d("arab_45", "gov_amcha61")} points and the opposition's ${d("arab_45", "opp61")}. At 67%, the level a survey projects for a united Joint List, Arab lists win about ${dy.arab_67.seats_arab.toFixed(0)} seats and a Jewish majority gets harder for everyone.`],
-    [`Polls have underrated the right, mostly through the haredim.`, `In five of six elections since 2015 the haredi parties beat their final polling average (by ${(-cal.haredi_bias).toFixed(1)} seats on average); the model adds that back. The bloc as a whole ran ${(-cal.bloc_bias).toFixed(1)} seats ahead of its average on average. A 2015-sized miss of 3 seats lifts the bloc's chances to ${pct(dy.shy_right.gov_amcha61)}.`],
+    [`Polls keep underrating Shas.`, `Shas beat its final polling average in ${cal.party_bias.shas.under} of the last ${cal.party_bias.shas.of} elections, by ${(-cal.party_bias.shas.mean).toFixed(1)} seats on average, and the model adds that back. UTJ, the other haredi party, was polled accurately, so the miss is about Shas's voters (about half of them traditional Mizrahi Jews, not Haredim) rather than haredim as a whole. The bloc as a whole ran ${(-cal.bloc_bias).toFixed(1)} seats ahead of its average on average. A 2015-sized miss of 3 seats lifts the bloc's chances to ${pct(dy.shy_right.gov_amcha61)}.`],
     [`Enthusiasm gaps move a few points, not the outcome.`, `If 10% of Likud supporters stay home, the bloc's chance falls ${-d("likud_home10", "gov_amcha61")} points; if 7% of opposition supporters stay home, it rises ${d("opp_home7", "gov_amcha61")}. A final-week "gevalt" squeeze of small right-wing lists toward Likud backfires by pushing them under the threshold.`],
   ];
   $("findings").innerHTML = items.map(([h, t]) => `<li><b>${esc(h)}</b><span>${esc(t)}</span></li>`).join("");
@@ -523,7 +531,7 @@ function renderWhy() {
   <ul style="margin:0;padding-left:1.2em;display:grid;gap:6px">
     <li><b>Few independent views.</b> ${M.houses.length} houses in two camps is closer to two opinions than ${M.n_polls}.</li>
     <li><b>Few races to grade on.</b> FiveThirtyEight rates US pollsters on thousands of races a cycle. Israel votes as one national constituency, so even five elections in four years give each pollster about six races. That can't separate skill from luck, which is why the ratings come out nearly equal.</li>
-    <li><b>Small samples of key groups.</b> A 500-person poll reaches roughly 60 Haredim and 75 Arab citizens, one reason the Haredi parties were underpolled in five of six elections.</li>
+    <li><b>Small samples of key groups.</b> A 500-person poll reaches roughly 60 Haredim and 75 Arab citizens, one reason group-level misses are common.</li>
     <li><b>No cross-checks.</b> In the US, state and district polls can contradict a bad national number. Here nothing independent tests the national polls before election day.</li>
   </ul>`;
   const E = D.house_misses, order = Object.keys(E.house).sort((a, b) => (a === "Direct Polls" ? -1 : b === "Direct Polls" ? 1 : a.localeCompare(b)));
@@ -531,6 +539,19 @@ function renderWhy() {
   $("misstable").innerHTML = `<thead><tr><th>House</th>${E.elections.map(e => `<th class="r">${e}</th>`).join("")}</tr></thead><tbody>` +
     order.map(h => `<tr><td${h === "Direct Polls" ? ' style="font-weight:700"' : ""}>${esc(h)}</td>${E.elections.map(e => cell(E.house[h][e])).join("")}</tr>`).join("") +
     `<tr><td style="font-weight:700">All houses</td>${E.elections.map(e => cell(E.field[e])).join("")}</tr></tbody>`;
+}
+
+function renderBack() {
+  const B = D.backtest, f = (v) => v.toFixed(1), rows = B.rows;
+  const S = B.summary;
+  $("back").innerHTML = `
+  <p>Each past election was held out in turn and forecast as if it hadn't happened yet. On the question that matters most, the size of Netanyahu's bloc, the model missed by <b>${f(S.final.bloc_err)} seats</b> on average using the final polls and ${f(S.d20.bloc_err)} seats from 20 days out, where we are now. Averaging the published polls missed by ${f(S.final.bloc_err_raw)} and ${f(S.d20.bloc_err_raw)}. The actual bloc landed inside the model's 80% range in ${Math.round(S.final.bloc_cover * 6)} of 6 elections from the final polls and ${Math.round(S.d20.bloc_cover * 6)} of 6 from 20 days out; an 80% range should miss about one in five, so the ranges may run a little wide.</p>
+  <p>For the yes-or-no question of whether the bloc reaches 61, the model's probabilities scored ${S.final.brier.toFixed(2)} (Brier score; 0 is perfect, 0.25 is a coin flip). Reading the raw polls as a yes or no scored ${S.final.brier_raw.toFixed(2)}: they called 2022 wrong, showing the bloc at about 60 when it won 64. The model had ${f(rows.find(r => r.e === "2022" && r.d === 0).mean)} and a ${Math.round(rows.find(r => r.e === "2022" && r.d === 0).p61 * 100)}% chance.</p>
+  <p>Party by party it is no better than the polls: an average miss of ${f(S.final.party_mae)} seats against ${f(S.final.party_mae_raw)}. The worst misses were shared by every pollster: Likud in 2015 (polled about 21, won 30, mostly from Jewish Home voters, so the bloc total was still right), and in April 2019 New Right and Zehut, polled in at about 5–6 seats each, both missed the threshold.</p>`;
+  const elections = [...new Set(rows.map(r => r.e))];
+  $("backtable").innerHTML = `<thead><tr><th>Election</th><th class="r">Bloc, 20 days out</th><th class="r">Bloc, final polls</th><th class="r">Raw polls</th><th class="r">Actual</th><th class="r">Chance of 61</th></tr></thead><tbody>` +
+    elections.map(e => { const a = rows.find(r => r.e === e && r.d === 20), b = rows.find(r => r.e === e && r.d === 0);
+      return `<tr><td>${e}</td><td class="r num">${f(a.mean)} <span style="color:var(--ink-3)">(${a.p10}–${a.p90})</span></td><td class="r num">${f(b.mean)} <span style="color:var(--ink-3)">(${b.p10}–${b.p90})</span></td><td class="r num">${f(b.raw)}</td><td class="r num"><b>${b.actual}</b></td><td class="r num">${Math.round(b.p61 * 100)}%${b.actual >= 61 ? " ✓" : ""}</td></tr>`; }).join("") + `</tbody>`;
 }
 
 function renderLean() {
@@ -559,12 +580,12 @@ function renderSeg() {
 function renderMethod() {
   const c = D.calibration, ap = c.avg_params, pairs = M.pairs.map(([a, b]) => `${L[a]}–${L[b]}`).join(", ");
   $("method").innerHTML = `
-  <p><b>1. Polls.</b> Every seat projection published since the lists were set (${fmtDate(M.window_start)}), converted back to vote shares, since published seats are inflated by votes for lists that miss the threshold.</p>
+  <p><b>1. Polls.</b> Every seat projection published since the lists were set (${fmtDate(M.window_start)}), converted back to vote shares. Published seats are inflated by votes for lists that miss the threshold, and Bader–Ofer rounding favors big lists, so the conversion gives each seat-winning list half a seat back and never puts it below the threshold.</p>
   <p><b>2. Weights.</b> FiveThirtyEight's rules: weight grows with the square root of sample size (capped at 5,000); a house's polls within 14 days share one poll's weight; houses get a quality multiplier from their record.</p>
   <p><b>3. Average.</b> For each party, a trend through time plus a fixed lean for each house, shrunk toward zero. The trend blends a kernel-weighted local regression (bandwidth ${ap.bandwidth} days) with an exponential moving average (half-life ${ap.half_life} days), settings tuned on 2015–2022 by how well the average predicted the next two weeks of polls. "No lean" means the plain average of houses, with Direct Polls and Channel 14 sharing one vote.</p>
   <p><b>4. Pollster ratings.</b> Each house's error and bloc bias in the final three weeks of six elections, measured against other houses polling the same race, decayed 14% a year and shrunk toward average by n/(n+10). After shrinking, ratings differ little, so weighting by record barely moves the forecast.</p>
   <p><b>5. Error.</b> Polls miss in groups. Each simulation draws a swing between the bloc and the opposition (σ ≈ ${c.sigma_bloc.toFixed(1)} seats on election day, widened by ${c.drift_var_per_day.toFixed(2)} seats² a day for the ${M.days_left} days left), haredi and Arab turnout shocks (σ ≈ ${c.sigma_haredi.toFixed(1)} and ${c.sigma_arab.toFixed(1)} seats), and party noise that grows with size and is 1.5× larger for first-time lists.</p>
-  <p><b>6. Turnout.</b> Ballot boxes from 2022 split the electorate into groups; the split is carried to 2026 parties and fitted to today's average. Arab and haredi shocks are turnout changes in those groups, so they also move the Arab and haredi votes that go to other parties. The haredi underpolling correction adds ${(-c.haredi_bias).toFixed(1)} seats' worth of haredi votes.</p>
+  <p><b>6. Turnout.</b> Ballot boxes from 2022 split the electorate into groups; the split is carried to 2026 parties and fitted to today's average. Arab and haredi shocks are turnout changes in those groups, so they also move the Arab and haredi votes that go to other parties. Separately, Shas gets ${(-c.party_bias.shas.mean).toFixed(1)} seats added, its average underpolling since 2015.</p>
   <p><b>7. Seats.</b> Lists under 3.25% get nothing; the rest are allocated by Bader–Ofer with surplus agreements (${esc(pairs)}; Shas–UTJ assumed). The allocator reproduces the official 2022 result exactly.</p>
   <p><b>Not modelled:</b> coalition bargaining after the vote, late mergers or withdrawals beyond the scenarios above, and events between now and election day beyond ordinary drift.</p>`;
   const rows = D.ratings.filter(r => r.elections >= 3).sort((a, b) => a.pollscore - b.pollscore);
@@ -597,6 +618,6 @@ Object.values(ctl).forEach(c => c.addEventListener("input", rerun));
 $("c-cmp").addEventListener("change", (e) => { CMP = e.target.value; rerun(); });
 $("reset").addEventListener("click", () => { ctl.arab.value = 53; ctl.har.value = 0; ctl.likud.value = 0; ctl.opp.value = 0; ctl.swing.value = 0; ctl.unc.value = 1; ctl.hfix.checked = true; ctl.pair.checked = true; rerun(); });
 
-R = published(); labels(); renderAll(); renderFindings(); renderDyn(); renderHeat(); renderPolls(); renderWhy(); renderLean(); renderSeg(); renderMethod();
+R = published(); labels(); renderAll(); renderFindings(); renderDyn(); renderHeat(); renderPolls(); renderWhy(); renderLean(); renderBack(); renderSeg(); renderMethod();
 })();
 </script>

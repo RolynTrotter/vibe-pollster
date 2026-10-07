@@ -24,6 +24,8 @@ MONTHS = {m: i for i, m in enumerate(
 # election id -> (file stem, table index, election date, column map, result map)
 ELECTIONS = {
     "2015": dict(
+        pairs=[("likud", "jewish_home"), ("yb", "kulanu"), ("zionist_union", "meretz"), ("shas", "utj")],
+        debut=["kulanu", "yachad", "zionist_union", "joint_list"],
         stem="2015", table=0, date=date(2015, 3, 17),
         cols={"Likud": "likud", "Yisrael Beiteinu": "yb", "Yesh Atid": "yesh_atid",
               "Labor": "zionist_union", "Jewish Home": "jewish_home", "Shas": "shas",
@@ -38,6 +40,8 @@ ELECTIONS = {
                 "shas": "H", "utj": "H", "joint_list": "A", "yesh_atid": "O",
                 "zionist_union": "O", "meretz": "O", "kulanu": "S"}),
     "2019a": dict(
+        pairs=[("urwp", "likud"), ("new_right", "yb"), ("meretz", "labor"), ("utj", "shas"), ("hadash_taal", "raam_balad")],
+        debut=["blue_white", "new_right", "zehut", "gesher", "urwp", "raam_balad", "hadash_taal"],
         stem="April_2019", table=2, date=date(2019, 4, 9),
         cols={"Likud": "likud", "Labor": "labor", "Blue\xa0& White": "blue_white",
               "Kulanu": "kulanu", "Ra'am –Balad": "raam_balad", "Shas": "shas",
@@ -55,6 +59,8 @@ ELECTIONS = {
                 "hadash_taal": "A", "labor": "O", "blue_white": "O", "meretz": "O",
                 "gesher": "O"}),
     "2019b": dict(
+        pairs=[("yamina", "likud"), ("dem_union", "labor"), ("utj", "shas"), ("blue_white", "yb")],
+        debut=["yamina", "dem_union", "joint_list"],
         stem="September_2019", table=1, date=date(2019, 9, 17),
         cols={"Likud": "likud", "Blue\xa0& White": "blue_white", "Joint List": "joint_list",
               "Shas": "shas", "UTJ": "utj", "Yamina": "yamina", "Labor- Gesher": "labor",
@@ -69,6 +75,8 @@ ELECTIONS = {
                 "joint_list": "A", "blue_white": "O", "labor": "O", "yb": "O",
                 "dem_union": "O"}),
     "2020": dict(
+        pairs=[("likud", "yamina"), ("blue_white", "emet"), ("utj", "shas")],
+        debut=["emet"],
         stem="2020", table=0, date=date(2020, 3, 2),
         cols={"Blue & White": "blue_white", "Likud": "likud", "Joint List": "joint_list",
               "Emet": "emet", "Shas": "shas", "Yisrael Beiteinu": "yb", "UTJ": "utj",
@@ -80,6 +88,8 @@ ELECTIONS = {
         family={"likud": "N", "yamina": "N", "otzma": "N", "shas": "H", "utj": "H",
                 "joint_list": "A", "blue_white": "O", "emet": "O", "yb": "O"}),
     "2021": dict(
+        pairs=[("yamina", "new_hope"), ("yesh_atid", "yb"), ("blue_white", "new_economic"), ("likud", "rzp"), ("labor", "meretz"), ("shas", "utj")],
+        debut=["new_hope", "rzp", "new_economic", "raam", "yamina"],
         stem="2021", table=0, date=date(2021, 3, 23),
         cols={"Likud": "likud", "Yesh Atid": "yesh_atid", "Blue & White": "blue_white",
               "Joint List": "joint_list", "Shas": "shas", "UTJ": "utj",
@@ -97,6 +107,8 @@ ELECTIONS = {
                 "meretz": "O", "new_hope": "O", "labor": "O", "new_economic": "O",
                 "yamina": "S"}),
     "2022": dict(
+        pairs=[("labor", "meretz"), ("likud", "rzp"), ("national_unity", "yesh_atid"), ("shas", "utj")],
+        debut=["national_unity"],
         stem="2022", table=0, date=date(2022, 11, 1),
         cols={"Likud": "likud", "Yesh Atid": "yesh_atid", "National Unity": "national_unity",
               "Shas": "shas", "Jewish Home": "jewish_home", "Labor": "labor", "UTJ": "utj",
@@ -113,8 +125,7 @@ ELECTIONS = {
                 "national_unity": "O", "labor": "O", "yb": "O", "meretz": "O"}),
 }
 
-SURPLUS_2022 = [("likud", "rzp"), ("yesh_atid", "national_unity"), ("shas", "utj"),
-                ("labor", "meretz"), ("hadash_taal", "raam")]
+SURPLUS_2022 = ELECTIONS["2022"]["pairs"]  # Arab parties failed to sign in 2022
 
 
 def canon_pollster(firm: str, publisher: str = "") -> str | None:

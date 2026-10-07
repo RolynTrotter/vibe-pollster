@@ -66,8 +66,8 @@ def scenarios(ctx):
          "Largest Netanyahu-bloc miss in the backtest", Scenario(bloc_shift=3.0)),
         ("polls", "miss_left", "Polls miss 3 seats toward the opposition",
          "The 2019b-style miss in the other direction", Scenario(bloc_shift=-3.0)),
-        ("polls", "no_haredi_fix", "No haredi correction",
-         "Assume haredi parties are polled accurately this time", None),
+        ("polls", "no_shas_fix", "No Shas correction",
+         "Assume Shas is polled accurately this time", None),
         ("polls", "ch14", "Channel 14 and Direct Polls are right",
          "Anchor the average to the DP/Channel 14 family", None),
         ("polls", "mainstream", "Only the mainstream pollsters are right",
@@ -102,9 +102,9 @@ def main():
             summ, _ = run(ctx, "ch14_world", n=a.n)
         elif key == "mainstream":
             summ, _ = run(ctx, "mainstream", n=a.n)
-        elif key == "no_haredi_fix":
+        elif key == "no_shas_fix":
             import copy
-            e = copy.deepcopy(ctx["err"]); e.seg_mean = {}
+            e = copy.deepcopy(ctx["err"]); e.party_shift = {}
             summ, _ = run(ctx, "consensus", n=a.n, err=e)
         else:
             summ, _ = run(ctx, "consensus", scenario=sc, n=a.n)

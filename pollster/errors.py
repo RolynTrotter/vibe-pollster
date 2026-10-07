@@ -58,7 +58,14 @@ def calibrate(E: pd.DataFrame) -> dict:
     # drift: growth of bloc-swing variance with days out
     v = D.groupby("days_out").bloc_swing.apply(lambda s: np.mean(np.square(s)))
     slope = np.polyfit(v.index.values, v.values, 1)[0] if len(v) > 1 else 0.0
+    # persistent party-level bias for parties that ran in every election
+    n_el = E0.election.nunique()
+    pb = E0.groupby("party").err.agg(["mean", "count", lambda s: int((s < 0).sum())])
+    pb.columns = ["mean", "count", "n_under"]
+    party_bias = {p: dict(mean=round(float(r["mean"]), 3), under=int(r.n_under), of=int(r["count"]))
+                  for p, r in pb[pb["count"] == n_el].iterrows()}
     return dict(
+        party_bias=party_bias,
         sigma_bloc=rms(D0.bloc_swing), bloc_bias=float(D0.bloc_swing.mean()),
         nat_bias=float(D0.N_only.mean()),
         sigma_haredi=float(D0.H.std(ddof=1)), haredi_bias=float(D0.H.mean()),
