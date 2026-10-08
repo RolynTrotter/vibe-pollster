@@ -1,0 +1,255 @@
+<title>Election Model Scorecard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a lab report. One column; each finding is a numbered exhibit with its evidence directly under it. */
+:root {
+  --bg: #f4f5f2; --panel: #ffffff; --ink: #15171a; --ink-2: #4b5058; --ink-3: #737983;
+  --rule: #dfe1dc; --rule-strong: #c7cac3; --track: #eceee9;
+  --accent: #1f5a3d;                         /* exhibit numbers, links, focus */
+  --s1: #2a78d6; --s2: #eb6834;              /* model / comparison series */
+  --good: #1e7a4c; --bad: #b3402a;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121412; --panel: #1b1e1b; --ink: #eef0ec; --ink-2: #b9bdb5; --ink-3: #8e938a;
+    --rule: #2a2e2a; --rule-strong: #3b403a; --track: #242823; --accent: #7fc9a2;
+    --s1: #3987e5; --s2: #d95926; --good: #6fcf97; --bad: #f08a6c; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121412; --panel: #1b1e1b; --ink: #eef0ec; --ink-2: #b9bdb5; --ink-3: #8e938a;
+  --rule: #2a2e2a; --rule-strong: #3b403a; --track: #242823; --accent: #7fc9a2;
+  --s1: #3987e5; --s2: #d95926; --good: #6fcf97; --bad: #f08a6c; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55; }
+.wrap { max-width: 880px; margin: 0 auto; padding-inline: 16px; padding-block: 32px 64px; display: grid; gap: 48px; }
+h1, h2 { font-family: var(--font-display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+h1 { font-size: clamp(2.1rem, 6vw, 3.2rem); line-height: 1.05; font-weight: 700; }
+h2 { font-size: 1.5rem; line-height: 1.2; font-weight: 700; }
+p { margin: 0; max-width: 66ch; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.eyebrow { font-family: var(--font-data); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.lede { font-size: 1.12rem; color: var(--ink-2); }
+.note { font-size: .9rem; color: var(--ink-2); }
+.num { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+section { display: grid; gap: 14px; min-width: 0; }
+.exh { font-family: var(--font-data); font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 620px) { .stats { grid-template-columns: 1fr; } }
+.stat { border-top: 2px solid var(--ink); padding-top: 10px; display: grid; gap: 4px; align-content: start; }
+.stat b { font-family: var(--font-display); font-size: 2.2rem; line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stat span { color: var(--ink-2); font-size: .9rem; }
+.answer { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; display: grid; gap: 10px; }
+.answer ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; color: var(--ink-2); }
+.answer b { color: var(--ink); }
+.tbl-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; min-width: 600px; font-size: .9rem; }
+th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: middle; }
+th { font-family: var(--font-data); font-weight: 500; font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+td.r, th.r { text-align: right; } td.num, th.num { white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+tr.grp td { background: var(--track); font-weight: 600; font-size: .8rem; letter-spacing: .03em; }
+.better { color: var(--good); } .worse { color: var(--bad); }
+.pbar { display: inline-block; width: 64px; height: 8px; background: var(--track); border-radius: 0 3px 3px 0; position: relative; vertical-align: middle; margin-right: 6px; }
+.pbar i { position: absolute; inset: 0 auto 0 0; background: var(--ink-2); border-radius: 0 3px 3px 0; }
+.chart { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 8px 8px; position: relative; overflow-x: auto; }
+.chart svg { display: block; width: 100%; height: auto; min-width: 320px; max-width: 680px; margin-inline: auto; }
+.chart text { fill: var(--ink-2); font-family: var(--font-data); font-size: 11px; }
+.chart .grid { stroke: var(--rule); stroke-width: 1; }
+.chart .axis { stroke: var(--rule-strong); stroke-width: 1; }
+.key { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: .85rem; color: var(--ink-2); padding: 4px 8px 0; }
+.key span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font-size: .8rem; line-height: 1.35; padding: 6px 8px; border-radius: 6px; white-space: nowrap; transform: translate(-50%, calc(-100% - 10px)); }
+.two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 700px) { .two { grid-template-columns: 1fr; } }
+pre { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; overflow-x: auto; font-family: var(--font-data); font-size: .82rem; margin: 0; }
+footer { font-size: .85rem; color: var(--ink-3); display: grid; gap: 6px; }
+</style>
+
+<div class="wrap">
+  <header style="display:grid;gap:12px">
+    <div class="eyebrow">vibe-pollster · cross-country backtest</div>
+    <h1>Can one model call any election?</h1>
+    <p class="lede">The Knesset model, generalized and tested on <span id="nEl"></span> past elections in six countries. Each was forecast as if it hadn't happened yet, using only what the other elections taught the model.</p>
+  </header>
+
+  <section aria-label="Headline numbers">
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section aria-labelledby="h-ans">
+    <h2 id="h-ans">The short answer</h2>
+    <div class="answer" id="answer"></div>
+  </section>
+
+  <section aria-labelledby="h-el">
+    <div class="exh">Exhibit 1</div>
+    <h2 id="h-el">Every election, forecast blind</h2>
+    <p class="note">Average miss on each list's vote share, in percentage points, for the model and for a plain average of the last week's polls. "Winner odds" is the chance the model gave the list that actually came first. Green means the model beat the plain average.</p>
+    <div class="tbl-wrap"><table id="eltable"></table></div>
+  </section>
+
+  <section aria-labelledby="h-prob">
+    <div class="exh">Exhibit 2</div>
+    <h2 id="h-prob">Where the model earns its keep: probabilities</h2>
+    <p class="note">Brier scores (0 is perfect, lower is better) for three kinds of question, 20 days out and from the final polls. "Plain average" reads the polls as a yes-or-no answer. The variants test what each part of the model adds.</p>
+    <div class="tbl-wrap"><table id="probtable"></table></div>
+  </section>
+
+  <section aria-labelledby="h-cal">
+    <div class="exh">Exhibit 3</div>
+    <h2 id="h-cal">When it says 70%, does it happen 70% of the time?</h2>
+    <p class="note">All yes-or-no forecasts (threshold calls and bloc or coalition majorities), grouped by the probability the model gave them. Points on the diagonal are perfectly calibrated; above it, the model was too cautious. Most points sit on or above the line, so if anything it hedges a little too much.</p>
+    <div class="chart" id="calChart"></div>
+  </section>
+
+  <section aria-labelledby="h-err">
+    <div class="exh">Exhibit 4</div>
+    <h2 id="h-err">How fast polls go stale</h2>
+    <p class="note">Average miss per list of a poll average against the final result, by days before the vote. These six countries against an archive of legislative elections since 1990 in 31 countries (Jennings &amp; Wlezien).</p>
+    <div class="chart" id="errChart"></div>
+  </section>
+
+  <section aria-labelledby="h-scope">
+    <h2 id="h-scope">What it covers, and what it doesn't</h2>
+    <div class="answer" id="scope"></div>
+  </section>
+
+  <section aria-labelledby="h-use">
+    <h2 id="h-use">Using it for a new election</h2>
+    <p class="note">Write a short spec (parties, which camp each is in, seat rules) and a CSV of polls, then run one command. Error sizes come from this backtest.</p>
+    <pre id="usage"></pre>
+  </section>
+
+  <footer>
+    <div>Code and data: <a href="https://github.com/RolynTrotter/vibe-pollster" target="_blank" rel="noopener">github.com/RolynTrotter/vibe-pollster</a> (<span class="num">countries/</span>, <span class="num">pollster/pipeline.py</span>). Polls and results: Wikipedia opinion-polling and election pages (snapshots in the repo), cross-checked against <a href="https://www.parlgov.org/" target="_blank" rel="noopener">ParlGov</a>. Cross-national errors: Jennings &amp; Wlezien (2018), <i>Nature Human Behaviour</i>, data at <a href="https://doi.org/10.7910/DVN/8421DX" target="_blank" rel="noopener">Harvard Dataverse</a>.</div>
+  </footer>
+</div>
+
+<script id="data" type="application/json">{"elections":[{"uid":"Germany 2013","country":"Germany","year":"2013","d20":{"n_polls":72,"n_houses":7,"mae":1.39,"mae_raw":1.26,"cover":0.86,"largest":"union","p_largest":1.0,"raw_largest":"union","worst":{"party":"gruene","e":3.4829851362176534}},"d0":{"n_polls":91,"n_houses":7,"mae":0.84,"mae_raw":0.82,"cover":1.0,"largest":"union","p_largest":0.999,"raw_largest":"union","worst":{"party":"union","e":-2.0895706653084005}}},{"uid":"Germany 2017","country":"Germany","year":"2017","d20":{"n_polls":80,"n_houses":10,"mae":2.55,"mae_raw":2.46,"cover":0.33,"largest":"union","p_largest":1.0,"raw_largest":"union","worst":{"party":"union","e":4.8848028010658595}},"d0":{"n_polls":103,"n_houses":10,"mae":1.48,"mae_raw":1.56,"cover":0.83,"largest":"union","p_largest":1.0,"raw_largest":"union","worst":{"party":"union","e":2.860311463556023}}},{"uid":"Germany 2021","country":"Germany","year":"2021","d20":{"n_polls":105,"n_houses":13,"mae":1.32,"mae_raw":1.37,"cover":0.71,"largest":"spd","p_largest":0.934,"raw_largest":"spd","worst":{"party":"union","e":-3.5285613539052534}},"d0":{"n_polls":135,"n_houses":13,"mae":0.77,"mae_raw":0.8,"cover":0.86,"largest":"spd","p_largest":0.879,"raw_largest":"spd","worst":{"party":"union","e":-1.9637563555873747}}},{"uid":"Germany 2025","country":"Germany","year":"2025","d20":{"n_polls":36,"n_houses":11,"mae":1.06,"mae_raw":1.08,"cover":0.88,"largest":"union","p_largest":0.994,"raw_largest":"union","worst":{"party":"linke","e":-4.064352670674866}},"d0":{"n_polls":68,"n_houses":13,"mae":0.85,"mae_raw":0.75,"cover":1.0,"largest":"union","p_largest":1.0,"raw_largest":"union","worst":{"party":"union","e":1.4705670075569586}}},{"uid":"Netherlands 2017","country":"Netherlands","year":"2017","d20":{"n_polls":35,"n_houses":5,"mae":1.94,"mae_raw":2.0,"cover":0.64,"largest":"vvd","p_largest":0.415,"raw_largest":"pvv","worst":{"party":"vvd","e":-4.875058877741758}},"d0":{"n_polls":57,"n_houses":5,"mae":1.19,"mae_raw":1.22,"cover":0.82,"largest":"vvd","p_largest":0.825,"raw_largest":"vvd","worst":{"party":"vvd","e":-4.0313408965593815}}},{"uid":"Netherlands 2021","country":"Netherlands","year":"2021","d20":{"n_polls":27,"n_houses":4,"mae":1.54,"mae_raw":1.57,"cover":0.75,"largest":"vvd","p_largest":1.0,"raw_largest":"vvd","worst":{"party":"d66","e":-5.8589118446544575}},"d0":{"n_polls":40,"n_houses":4,"mae":0.91,"mae_raw":0.87,"cover":0.88,"largest":"vvd","p_largest":1.0,"raw_largest":"vvd","worst":{"party":"d66","e":-3.8405849513788137}}},{"uid":"Netherlands 2023","country":"Netherlands","year":"2023","d20":{"n_polls":18,"n_houses":3,"mae":1.69,"mae_raw":1.73,"cover":0.82,"largest":"pvv","p_largest":0.003,"raw_largest":"nsc","worst":{"party":"pvv","e":-11.93942544164846}},"d0":{"n_polls":28,"n_houses":3,"mae":0.95,"mae_raw":0.87,"cover":0.88,"largest":"pvv","p_largest":0.22,"raw_largest":"pvv","worst":{"party":"pvv","e":-7.145440853579409}}},{"uid":"Netherlands 2025","country":"Netherlands","year":"2025","d20":{"n_polls":16,"n_houses":3,"mae":2.0,"mae_raw":1.99,"cover":0.69,"largest":"d66","p_largest":0.0,"raw_largest":"pvv","worst":{"party":"d66","e":-8.853669363656872}},"d0":{"n_polls":26,"n_houses":3,"mae":0.82,"mae_raw":0.78,"cover":0.81,"largest":"d66","p_largest":0.062,"raw_largest":"pvv","worst":{"party":"d66","e":-3.2015565220912716}}},{"uid":"Sweden 2014","country":"Sweden","year":"2014","d20":{"n_polls":76,"n_houses":10,"mae":1.75,"mae_raw":1.84,"cover":0.67,"largest":"s","p_largest":0.826,"raw_largest":"s","worst":{"party":"sd","e":-4.576520019440496}},"d0":{"n_polls":110,"n_houses":10,"mae":1.08,"mae_raw":0.99,"cover":0.78,"largest":"s","p_largest":0.952,"raw_largest":"s","worst":{"party":"sd","e":-4.074689798742156}}},{"uid":"Sweden 2018","country":"Sweden","year":"2018","d20":{"n_polls":30,"n_houses":9,"mae":1.55,"mae_raw":1.66,"cover":0.78,"largest":"s","p_largest":0.817,"raw_largest":"s","worst":{"party":"s","e":-3.9461044801857277}},"d0":{"n_polls":66,"n_houses":9,"mae":1.42,"mae_raw":1.28,"cover":0.67,"largest":"s","p_largest":0.971,"raw_largest":"s","worst":{"party":"s","e":-3.4249233970161903}}},{"uid":"Sweden 2022","country":"Sweden","year":"2022","d20":{"n_polls":25,"n_houses":6,"mae":0.82,"mae_raw":0.79,"cover":1.0,"largest":"s","p_largest":0.959,"raw_largest":"s","worst":{"party":"v","e":1.9074971481995622}},"d0":{"n_polls":80,"n_houses":7,"mae":0.96,"mae_raw":1.07,"cover":1.0,"largest":"s","p_largest":0.973,"raw_largest":"s","worst":{"party":"s","e":-2.2230785926558276}}},{"uid":"Denmark 2015","country":"Denmark","year":"2015","d20":{"n_polls":43,"n_houses":8,"mae":1.23,"mae_raw":1.28,"cover":0.8,"largest":"a","p_largest":0.854,"raw_largest":"a","worst":{"party":"aa","e":-2.7292704593592267}},"d0":{"n_polls":148,"n_houses":8,"mae":0.78,"mae_raw":0.89,"cover":0.9,"largest":"a","p_largest":0.969,"raw_largest":"a","worst":{"party":"o","e":-2.973242385005932}}},{"uid":"Denmark 2019","country":"Denmark","year":"2019","d20":{"n_polls":48,"n_houses":7,"mae":1.41,"mae_raw":1.45,"cover":0.77,"largest":"a","p_largest":0.997,"raw_largest":"a","worst":{"party":"v","e":-5.6623050139363045}},"d0":{"n_polls":91,"n_houses":7,"mae":0.93,"mae_raw":1.04,"cover":0.85,"largest":"a","p_largest":0.996,"raw_largest":"a","worst":{"party":"v","e":-3.955966461259681}}},{"uid":"Denmark 2022","country":"Denmark","year":"2022","d20":{"n_polls":24,"n_houses":4,"mae":1.47,"mae_raw":1.41,"cover":0.71,"largest":"a","p_largest":1.0,"raw_largest":"a","worst":{"party":"c","e":4.814561599496249}},"d0":{"n_polls":39,"n_houses":4,"mae":0.53,"mae_raw":0.53,"cover":1.0,"largest":"a","p_largest":1.0,"raw_largest":"a","worst":{"party":"a","e":-1.8024974873781403}}},{"uid":"New Zealand 2017","country":"New Zealand","year":"2017","d20":{"n_polls":13,"n_houses":4,"mae":1.02,"mae_raw":1.13,"cover":1.0,"largest":"nat","p_largest":0.593,"raw_largest":"nat","worst":{"party":"lab","e":3.489280728232245}},"d0":{"n_polls":21,"n_houses":5,"mae":0.85,"mae_raw":0.77,"cover":0.88,"largest":"nat","p_largest":0.862,"raw_largest":"nat","worst":{"party":"nat","e":-1.6939496205271993}}},{"uid":"New Zealand 2020","country":"New Zealand","year":"2020","d20":{"n_polls":10,"n_houses":3,"mae":1.03,"mae_raw":1.33,"cover":0.88,"largest":"lab","p_largest":1.0,"raw_largest":"lab","worst":{"party":"nat","e":4.51417935103612}},"d0":{"n_polls":13,"n_houses":3,"mae":1.39,"mae_raw":1.48,"cover":0.75,"largest":"lab","p_largest":1.0,"raw_largest":"lab","worst":{"party":"nat","e":4.8940537927720165}}},{"uid":"New Zealand 2023","country":"New Zealand","year":"2023","d20":{"n_polls":20,"n_houses":7,"mae":0.87,"mae_raw":0.75,"cover":0.88,"largest":"nat","p_largest":0.995,"raw_largest":"nat","worst":{"party":"act","e":2.0410077044780515}},"d0":{"n_polls":28,"n_houses":8,"mae":1.25,"mae_raw":1.43,"cover":0.88,"largest":"nat","p_largest":0.963,"raw_largest":"nat","worst":{"party":"nat","e":-3.9584961319560747}}},{"uid":"Israel 2015","country":"Israel","year":"2015","d20":{"n_polls":28,"n_houses":7,"mae":1.2,"mae_raw":1.17,"cover":0.82,"largest":"likud","p_largest":0.496,"raw_largest":"zionist_union","worst":{"party":"likud","e":-4.428350009958454}},"d0":{"n_polls":54,"n_houses":7,"mae":1.28,"mae_raw":1.33,"cover":0.82,"largest":"likud","p_largest":0.281,"raw_largest":"zionist_union","worst":{"party":"likud","e":-6.1641620424472094}}},{"uid":"Israel 2019a","country":"Israel","year":"2019a","d20":{"n_polls":23,"n_houses":9,"mae":1.5,"mae_raw":1.43,"cover":0.79,"largest":"likud","p_largest":0.466,"raw_largest":"blue_white","worst":{"party":"likud","e":-3.9601198427749082}},"d0":{"n_polls":52,"n_houses":9,"mae":1.67,"mae_raw":1.65,"cover":0.71,"largest":"likud","p_largest":0.537,"raw_largest":"blue_white","worst":{"party":"likud","e":-4.099348774129073}}},{"uid":"Israel 2019b","country":"Israel","year":"2019b","d20":{"n_polls":15,"n_houses":6,"mae":1.05,"mae_raw":1.02,"cover":1.0,"largest":"blue_white","p_largest":0.429,"raw_largest":"likud","worst":{"party":"yamina","e":2.5723192830336066}},"d0":{"n_polls":36,"n_houses":8,"mae":0.84,"mae_raw":0.82,"cover":0.9,"largest":"blue_white","p_largest":0.432,"raw_largest":"likud","worst":{"party":"otzma","e":1.6453474918389297}}},{"uid":"Israel 2020","country":"Israel","year":"2020","d20":{"n_polls":15,"n_houses":6,"mae":1.23,"mae_raw":1.31,"cover":1.0,"largest":"likud","p_largest":0.417,"raw_largest":"blue_white","worst":{"party":"likud","e":-3.022921535528422}},"d0":{"n_polls":39,"n_houses":7,"mae":0.94,"mae_raw":0.97,"cover":1.0,"largest":"likud","p_largest":0.564,"raw_largest":"likud","worst":{"party":"likud","e":-2.307120135891079}}},{"uid":"Israel 2021","country":"Israel","year":"2021","d20":{"n_polls":21,"n_houses":6,"mae":1.66,"mae_raw":1.62,"cover":0.79,"largest":"likud","p_largest":0.97,"raw_largest":"likud","worst":{"party":"new_hope","e":4.993984190469705}},"d0":{"n_polls":41,"n_houses":7,"mae":1.07,"mae_raw":1.07,"cover":0.79,"largest":"likud","p_largest":0.996,"raw_largest":"likud","worst":{"party":"blue_white","e":-2.6963746849600696}}},{"uid":"Israel 2022","country":"Israel","year":"2022","d20":{"n_polls":22,"n_houses":6,"mae":0.77,"mae_raw":0.81,"cover":0.92,"largest":"likud","p_largest":0.911,"raw_largest":"likud","worst":{"party":"shas","e":-1.6178567252637732}},"d0":{"n_polls":47,"n_houses":7,"mae":0.58,"mae_raw":0.6,"cover":1.0,"largest":"likud","p_largest":0.912,"raw_largest":"likud","worst":{"party":"yesh_atid","e":1.361163624018893}}}],"modes":{"20":[{"mode":"model","vote_mae":1.3943,"cover80":0.8029,"brier_threshold":0.1006,"brier_threshold_plain":0.1414,"brier_largest":0.292,"brier_largest_plain":0.6087,"brier_majority":0.0894,"brier_majority_plain":0.2273,"logscore_largest":-0.6346},{"mode":"unseen_country","vote_mae":1.3947,"cover80":0.8455,"brier_threshold":0.103,"brier_threshold_plain":0.1414,"brier_largest":0.299,"brier_largest_plain":0.6087,"brier_majority":0.0932,"brier_majority_plain":0.2273,"logscore_largest":-0.6478},{"mode":"global_prior","vote_mae":1.4121,"cover80":0.9504,"brier_threshold":0.131,"brier_threshold_plain":0.1414,"brier_largest":0.288,"brier_largest_plain":0.6087,"brier_majority":0.101,"brier_majority_plain":0.2273,"logscore_largest":-0.6279},{"mode":"naive","vote_mae":1.4189,"cover80":0.936,"brier_threshold":0.1314,"brier_threshold_plain":0.1414,"brier_largest":0.302,"brier_largest_plain":0.6087,"brier_majority":0.1038,"brier_majority_plain":0.2273,"logscore_largest":-0.6429}],"0":[{"mode":"model","vote_mae":1.0161,"cover80":0.8693,"brier_threshold":0.0819,"brier_threshold_plain":0.1053,"brier_largest":0.2156,"brier_largest_plain":0.3478,"brier_majority":0.0777,"brier_majority_plain":0.1136,"logscore_largest":-0.3628},{"mode":"unseen_country","vote_mae":1.0173,"cover80":0.8933,"brier_threshold":0.086,"brier_threshold_plain":0.1053,"brier_largest":0.2197,"brier_largest_plain":0.3478,"brier_majority":0.0819,"brier_majority_plain":0.1136,"logscore_largest":-0.3777},{"mode":"global_prior","vote_mae":1.0159,"cover80":0.8576,"brier_threshold":0.0801,"brier_threshold_plain":0.1053,"brier_largest":0.2185,"brier_largest_plain":0.3478,"brier_majority":0.0726,"brier_majority_plain":0.1136,"logscore_largest":-0.362},{"mode":"naive","vote_mae":1.0202,"cover80":0.8517,"brier_threshold":0.0795,"brier_threshold_plain":0.1053,"brier_largest":0.2203,"brier_largest_plain":0.3478,"brier_majority":0.0738,"brier_majority_plain":0.1136,"logscore_largest":-0.3492}]},"reliability":{"20":[{"bucket":"(-0.01, 0.1]","n":17,"p":0.034,"hit":0.0},{"bucket":"(0.1, 0.3]","n":15,"p":0.208,"hit":0.0},{"bucket":"(0.3, 0.5]","n":19,"p":0.426,"hit":0.526},{"bucket":"(0.5, 0.7]","n":24,"p":0.607,"hit":0.792},{"bucket":"(0.7, 0.9]","n":32,"p":0.82,"hit":0.875},{"bucket":"(0.9, 1.0]","n":36,"p":0.963,"hit":1.0}],"0":[{"bucket":"(-0.01, 0.1]","n":16,"p":0.03,"hit":0.0},{"bucket":"(0.1, 0.3]","n":17,"p":0.202,"hit":0.059},{"bucket":"(0.3, 0.5]","n":13,"p":0.405,"hit":0.308},{"bucket":"(0.5, 0.7]","n":20,"p":0.572,"hit":0.7},{"bucket":"(0.7, 0.9]","n":33,"p":0.809,"hit":0.939},{"bucket":"(0.9, 1.0]","n":40,"p":0.967,"hit":1.0}]},"by_country":{"20":[{"country":"Denmark","vote_mae":1.37,"vote_mae_raw":1.379,"seat_mae":1.434,"seat_mae_raw":1.474,"cover80":0.761},{"country":"Germany","vote_mae":1.582,"vote_mae_raw":1.541,"seat_mae":2.387,"seat_mae_raw":2.303,"cover80":0.695},{"country":"Israel","vote_mae":1.235,"vote_mae_raw":1.227,"seat_mae":1.44,"seat_mae_raw":1.438,"cover80":0.885},{"country":"Netherlands","vote_mae":1.794,"vote_mae_raw":1.824,"seat_mae":1.894,"seat_mae_raw":1.923,"cover80":0.724},{"country":"New Zealand","vote_mae":0.974,"vote_mae_raw":1.068,"seat_mae":0.925,"seat_mae_raw":1.191,"cover80":0.917},{"country":"Sweden","vote_mae":1.374,"vote_mae_raw":1.433,"seat_mae":1.772,"seat_mae_raw":1.666,"cover80":0.815},{"country":"All (equal per election)","vote_mae":1.394,"vote_mae_raw":1.411,"seat_mae":1.659,"seat_mae_raw":1.675,"cover80":0.803}],"0":[{"country":"Denmark","vote_mae":0.745,"vote_mae_raw":0.82,"seat_mae":0.849,"seat_mae_raw":0.905,"cover80":0.915},{"country":"Germany","vote_mae":0.985,"vote_mae_raw":0.982,"seat_mae":1.326,"seat_mae_raw":1.341,"cover80":0.923},{"country":"Israel","vote_mae":1.064,"vote_mae_raw":1.073,"seat_mae":1.336,"seat_mae_raw":1.352,"cover80":0.87},{"country":"Netherlands","vote_mae":0.966,"vote_mae_raw":0.936,"seat_mae":0.981,"seat_mae_raw":0.942,"cover80":0.849},{"country":"New Zealand","vote_mae":1.16,"vote_mae_raw":1.228,"seat_mae":1.262,"seat_mae_raw":1.192,"cover80":0.833},{"country":"Sweden","vote_mae":1.156,"vote_mae_raw":1.115,"seat_mae":1.162,"seat_mae_raw":1.146,"cover80":0.815},{"country":"All (equal per election)","vote_mae":1.016,"vote_mae_raw":1.026,"seat_mae":1.177,"seat_mae_raw":1.173,"cover80":0.869}]},"error_curve":{"ours":{"0":1.001,"7":1.2,"14":1.341,"21":1.436,"28":1.518},"jw":{"0":1.448,"7":1.788,"18":2.477,"35":2.971},"jw_n":{"elections":129,"countries":31}},"pooled":{"a":1.0419463894767327,"b":0.13680116176972076,"c":0.00741892448971062,"s_bloc":2.008518158999377,"k_bloc":0.0,"country_scale":{"Denmark":0.7873077981324856,"Germany":0.7581676193603178,"Israel":0.9615006667316589,"Netherlands":0.9036419801468171,"New Zealand":0.7339916208138221,"Sweden":0.9521132449504853},"debut_mult":1.5,"e":0.0},"labels":{"Germany|union":"CDU","Germany|spd":"SPD","Germany|afd":"AfD","Germany|fdp":"FDP","Germany|linke":"Left","Germany|gruene":"Gr\u00fcne","Germany|bsw":"BSW","Germany|fw":"Free Voters","Germany|piraten":"Piraten","Netherlands|vvd":"VVD","Netherlands|pvv":"PVV","Netherlands|cda":"CDA","Netherlands|d66":"D66","Netherlands|gl":"GroenLinks","Netherlands|pvda":"PvdA","Netherlands|glpvda":"GL\u2013PvdA","Netherlands|sp":"Socialist Party","Netherlands|cu":"Christian Union","Netherlands|pvdd":"PvdD","Netherlands|plus50":"50+","Netherlands|sgp":"SGP","Netherlands|denk":"DENK","Netherlands|fvd":"FvD","Netherlands|ja21":"JA21","Netherlands|volt":"Volt","Netherlands|bij1":"BIJ1","Netherlands|bbb":"BBB","Netherlands|nsc":"NSC","Sweden|s":"Social Democrats","Sweden|m":"Moderates","Sweden|sd":"Sweden Democrats","Sweden|mp":"Green Party","Sweden|c":"Centre Party","Sweden|v":"Left Party","Sweden|l":"Liberals","Sweden|kd":"Christian Democrats","Sweden|fi":"Feminist Initiative","Denmark|a":"Social Democrats","Denmark|v":"Venstre","Denmark|o":"Danish People's Party","Denmark|b":"Social Liberals","Denmark|f":"Green Left","Denmark|oe":"Red\u2013Green Alliance","Denmark|c":"Conservatives","Denmark|aa":"Alternative","Denmark|d":"New Right","Denmark|i":"Liberal Alliance","Denmark|k":"Christian Democrats","Denmark|m":"Moderates","Denmark|ae":"Denmark Democrats","Denmark|p":"Hard Line","Denmark|e":"Klaus Risk\u00e6r Pedersen","Denmark|q":"Frie Gr\u00f8nne","New Zealand|nat":"National","New Zealand|lab":"Labour","New Zealand|grn":"GRN","New Zealand|nzf":"NZF","New Zealand|act":"ACT","New Zealand|mri":"MRI","New Zealand|top":"TOP","New Zealand|con":"CON","Israel|likud":"Likud","Israel|blue_white":"Blue and White"}}</script>
+<script>
+(() => {
+const D = JSON.parse(document.getElementById("data").textContent);
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const pct = (x) => x < 0.005 ? "<1%" : x >= 0.995 ? ">99%" : Math.round(x * 100) + "%";
+const M = (d, mode) => D.modes[d].find(r => r.mode === mode);
+const m20 = M("20", "model"), m0 = M("0", "model");
+const els = D.elections, countries = [...new Set(els.map(e => e.country))];
+$("nEl").textContent = els.length;
+
+$("stats").innerHTML = [
+  [m20.vote_mae.toFixed(1) + " pts", `average miss per list, 20 days out (${m0.vote_mae.toFixed(1)} from the final polls)`],
+  [Math.round(m20.cover80 * 100) + "%", "of results fell inside the 80% ranges, 20 days out"],
+  [m20.brier_largest.toFixed(2), `Brier score for who comes first, against ${m20.brier_largest_plain.toFixed(2)} for reading the polls at face value`],
+].map(([b, s]) => `<div class="stat"><b>${b}</b><span>${esc(s)}</span></div>`).join("");
+
+const un = M("20", "unseen_country"), gp = M("20", "global_prior"), nv = M("20", "naive");
+$("answer").innerHTML = `
+  <p><b>Yes, for countries that elect a parliament from national party lists, and the hard part is data, not math.</b></p>
+  <ul>
+    <li><b>It can't beat the polls on the numbers.</b> Its vote-share estimates miss by the same ${m20.vote_mae.toFixed(1)} points as a plain poll average. House-effect adjustment barely moves the average when there are many pollsters.</li>
+    <li><b>It is much better at odds.</b> Treating the polls as certain gets "who wins" and "who gets a majority" badly wrong when races are close. The model's probabilities score ${m20.brier_majority.toFixed(2)} on majorities against ${m20.brier_majority_plain.toFixed(2)}, and ${m20.brier_largest.toFixed(2)} on the largest party against ${m20.brier_largest_plain.toFixed(2)}.</li>
+    <li><b>Most of that gain comes from sizing the uncertainty correctly,</b> not from clever corrections. A naive version with no house effects does almost as well on the final polls. Three weeks out, the error model calibrated on these elections matters: its ranges hold ${pct(m20.cover80)} of results as intended, while a generic cross-national error size is too wide (${pct(gp.cover80)}) and calls thresholds worse (${gp.brier_threshold.toFixed(3)} vs ${m20.brier_threshold.toFixed(3)}).</li>
+    <li><b>It transfers.</b> Forecasting each country with nothing learned from that country's own past ("unseen country" below) scores about the same as the full model (${un.brier_majority.toFixed(3)} vs ${m20.brier_majority.toFixed(3)} on majorities). Polling errors are similar in size across these democracies.</li>
+    <li><b>What no model fixes:</b> late swings the polls never caught. The Dutch PVV in 2023 and D66 in 2025 came first with almost no chance in the averages three weeks out.</li>
+  </ul>`;
+
+/* Exhibit 1 */
+(() => {
+  let h = `<thead><tr><th>Election</th><th class="r">Polls (final)</th><th class="r">Miss 20 days out</th><th class="r">Plain avg</th><th class="r">Miss, final polls</th><th class="r">Plain avg</th><th>Came first</th><th class="r">Winner odds, 20 days</th><th class="r">Final</th></tr></thead><tbody>`;
+  const cls = (a, b) => a < b - 0.02 ? "better" : a > b + 0.02 ? "worse" : "";
+  countries.forEach(c => {
+    h += `<tr class="grp"><td colspan="9">${esc(c)}</td></tr>`;
+    els.filter(e => e.country === c).forEach(e => {
+      const a = e.d20, b = e.d0;
+      h += `<tr><td>${esc(e.year)}</td><td class="r num">${b.n_polls}</td><td class="r num ${cls(a.mae, a.mae_raw)}">${a.mae.toFixed(2)}</td><td class="r num">${a.mae_raw.toFixed(2)}</td>
+        <td class="r num ${cls(b.mae, b.mae_raw)}">${b.mae.toFixed(2)}</td><td class="r num">${b.mae_raw.toFixed(2)}</td><td>${esc(D.labels[e.country + "|" + b.largest] || b.largest)}</td>
+        <td class="r num"><span class="pbar" aria-hidden="true"><i style="width:${a.p_largest * 100}%"></i></span>${pct(a.p_largest)}</td><td class="r num">${pct(b.p_largest)}</td></tr>`;
+    });
+  });
+  $("eltable").innerHTML = h + `</tbody>`;
+})();
+
+/* Exhibit 2 */
+(() => {
+  const names = { model: "Full model", unseen_country: "Unseen country (no own history)", global_prior: "Generic cross-national error size", naive: "Plain average + generic error" };
+  const rows = ["model", "unseen_country", "global_prior", "naive"];
+  let h = `<thead><tr><th>Variant</th><th class="r">Threshold calls</th><th class="r">Largest list</th><th class="r">Majorities</th><th class="r">80% ranges hold</th></tr></thead><tbody>`;
+  ["20", "0"].forEach(d => {
+    h += `<tr class="grp"><td colspan="5">${d === "20" ? "20 days out" : "Final polls"}</td></tr>`;
+    rows.forEach(k => { const r = M(d, k);
+      h += `<tr><td>${names[k]}</td><td class="r num">${r.brier_threshold.toFixed(3)}</td><td class="r num">${r.brier_largest.toFixed(3)}</td><td class="r num">${r.brier_majority.toFixed(3)}</td><td class="r num">${pct(r.cover80)}</td></tr>`; });
+    const p = M(d, "model");
+    h += `<tr><td style="color:var(--ink-3)">Polls read as certain</td><td class="r num" style="color:var(--ink-3)">${p.brier_threshold_plain.toFixed(3)}</td><td class="r num" style="color:var(--ink-3)">${p.brier_largest_plain.toFixed(3)}</td><td class="r num" style="color:var(--ink-3)">${p.brier_majority_plain.toFixed(3)}</td><td class="r num" style="color:var(--ink-3)">–</td></tr>`;
+  });
+  $("probtable").innerHTML = h + `</tbody>`;
+})();
+
+/* Exhibit 3: calibration */
+(() => {
+  const el = $("calChart"), W = 520, H = 340, m = { l: 46, r: 16, t: 14, b: 40 }, pw = W - m.l - m.r, ph = H - m.t - m.b;
+  const x = (v) => m.l + v * pw, y = (v) => m.t + (1 - v) * ph;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Calibration of yes-or-no forecasts">`;
+  for (let t = 0; t <= 1.001; t += 0.2) s += `<line class="grid" x1="${m.l}" x2="${W - m.r}" y1="${y(t)}" y2="${y(t)}"/><text x="${m.l - 6}" y="${y(t) + 4}" text-anchor="end">${Math.round(t * 100)}%</text><text x="${x(t)}" y="${H - m.b + 16}" text-anchor="middle">${Math.round(t * 100)}%</text>`;
+  s += `<line x1="${x(0)}" y1="${y(0)}" x2="${x(1)}" y2="${y(1)}" stroke="var(--rule-strong)" stroke-dasharray="4 3"/>`;
+  s += `<text x="${m.l + pw / 2}" y="${H - 6}" text-anchor="middle">probability the model gave</text><text transform="translate(12 ${m.t + ph / 2}) rotate(-90)" text-anchor="middle">how often it happened</text>`;
+  const series = [["20", "var(--s1)", "20 days out"], ["0", "var(--s2)", "Final polls"]];
+  series.forEach(([d, col]) => {
+    const pts = D.reliability[d];
+    s += `<path d="${pts.map((p, i) => (i ? "L" : "M") + x(p.p).toFixed(1) + " " + y(p.hit).toFixed(1)).join("")}" fill="none" stroke="${col}" stroke-width="2"/>`;
+    pts.forEach(p => { const r = 4 + Math.sqrt(p.n); s += `<circle cx="${x(p.p)}" cy="${y(p.hit)}" r="${r.toFixed(1)}" fill="${col}" stroke="var(--panel)" stroke-width="2"><title>${d === "20" ? "20 days out" : "Final"}: said ${Math.round(p.p * 100)}% on average, happened ${Math.round(p.hit * 100)}% (${p.n} forecasts)</title></circle>`; });
+  });
+  s += `</svg><div class="key">${series.map(([, c, l]) => `<span><i class="sw" style="background:${c}"></i>${l}</span>`).join("")}<span>dot size = number of forecasts</span></div>`;
+  el.innerHTML = s;
+})();
+
+/* Exhibit 4: error by horizon */
+(() => {
+  const el = $("errChart"), W = 640, H = 300, m = { l: 46, r: 120, t: 14, b: 40 }, pw = W - m.l - m.r, ph = H - m.t - m.b;
+  const ours = Object.entries(D.error_curve.ours).map(([k, v]) => [+k, v]), jw = Object.entries(D.error_curve.jw).map(([k, v]) => [+k, v]);
+  const xmax = 36, ymax = 3.5, x = (v) => m.l + v / xmax * pw, y = (v) => m.t + (1 - v / ymax) * ph;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Poll average error by days before the election">`;
+  for (let t = 0; t <= ymax; t += 0.5) s += `<line class="grid" x1="${m.l}" x2="${m.l + pw}" y1="${y(t)}" y2="${y(t)}"/><text x="${m.l - 6}" y="${y(t) + 4}" text-anchor="end">${t.toFixed(1)}</text>`;
+  [0, 7, 14, 21, 28, 35].forEach(d => s += `<text x="${x(d)}" y="${H - m.b + 16}" text-anchor="middle">${d}</text>`);
+  s += `<text x="${m.l + pw / 2}" y="${H - 6}" text-anchor="middle">days before the election</text><text transform="translate(12 ${m.t + ph / 2}) rotate(-90)" text-anchor="middle">avg miss per list, points</text>`;
+  [[ours, "var(--s1)", "These 6 countries"], [jw, "var(--s2)", `${D.error_curve.jw_n.countries} countries, ${D.error_curve.jw_n.elections} elections`]].forEach(([pts, col, lab]) => {
+    s += `<path d="${pts.map((p, i) => (i ? "L" : "M") + x(p[0]).toFixed(1) + " " + y(p[1]).toFixed(1)).join("")}" fill="none" stroke="${col}" stroke-width="2"/>`;
+    pts.forEach(p => s += `<circle cx="${x(p[0])}" cy="${y(p[1])}" r="5" fill="${col}" stroke="var(--panel)" stroke-width="2"><title>${lab}, ${p[0]} days: ${p[1].toFixed(2)} points</title></circle>`);
+    const last = pts[pts.length - 1];
+    s += `<text x="${x(last[0]) + 9}" y="${y(last[1]) + 4}" style="fill:var(--ink)">${lab.split(",")[0]}</text>`;
+  });
+  s += `</svg><div class="key"><span><i class="sw" style="background:var(--s1)"></i>These six countries, 2013–2025 (house-adjusted average)</span><span><i class="sw" style="background:var(--s2)"></i>Jennings &amp; Wlezien archive, legislative elections since 1990 (poll of polls)</span></div>`;
+  el.innerHTML = s;
+})();
+
+$("scope").innerHTML = `
+  <p><b>Works now:</b> one national list vote with a legal threshold. Seats by D'Hondt (Israel, Netherlands), Sainte-Laguë (Germany, New Zealand), modified Sainte-Laguë (Sweden) or largest remainder (Denmark), with surplus agreements and threshold exemptions such as Germany's three-seat rule and New Zealand's electorate seats. The allocator reproduces the official seat counts in these elections, except where overhang seats made the chamber bigger.</p>
+  <ul>
+    <li><b>Not yet:</b> first-past-the-post and other district systems (UK, Canada, US House) need constituency results and a swing model; presidential runoffs need a second-round transfer model; regional list systems like Spain's need province-level allocation.</li>
+    <li><b>Adding a country</b> takes a config file: party names as they appear in Wikipedia's poll tables, which camp each party is in, and the seat rules. Wikipedia's tables are messy (typos, regional polls on the same page, header rows in the body), so every country gets a check against official results.</li>
+    <li><b>Small sample.</b> ${els.length} elections is enough to size errors and check calibration roughly, not finely. The cross-national archive puts election-day errors in the same range.</li>
+  </ul>`;
+
+$("usage").textContent = `python -m pollster.forecast spec.json polls.csv --run-date 2026-10-07
+
+# spec.json
+{"country": "Israel", "date": "2026-10-27", "seats": 120, "threshold": 3.25,
+ "method": "dhondt", "pairs": [["yashar", "dems"]],
+ "parties": ["likud", "yashar", ...], "family": {"likud": "R", "yashar": "L", ...},
+ "coalitions": {"Netanyahu bloc": ["likud", "otzma", "rzp", "shas", "utj"]}}
+
+# polls.csv
+date,pollster,n,party,share
+2026-10-05,Midgam (Ch12),501,likud,16.9`;
+})();
+</script>

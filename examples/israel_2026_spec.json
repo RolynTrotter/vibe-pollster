@@ -1,0 +1,127 @@
+{
+ "country": "Israel",
+ "date": "2026-10-27",
+ "seats": 120,
+ "threshold": 3.25,
+ "method": "dhondt",
+ "pairs": [
+  [
+   "together",
+   "yb"
+  ],
+  [
+   "yashar",
+   "dems"
+  ],
+  [
+   "joint_list",
+   "raam"
+  ],
+  [
+   "likud",
+   "rzp"
+  ],
+  [
+   "shas",
+   "utj"
+  ]
+ ],
+ "parties": [
+  "likud",
+  "yashar",
+  "together",
+  "dems",
+  "yb",
+  "joint_list",
+  "otzma",
+  "shas",
+  "utj",
+  "rzp",
+  "raam",
+  "amcha",
+  "blue_white",
+  "reservists"
+ ],
+ "family": {
+  "likud": "R",
+  "otzma": "R",
+  "rzp": "R",
+  "amcha": "X",
+  "shas": "R",
+  "utj": "R",
+  "joint_list": "X",
+  "raam": "X",
+  "yashar": "L",
+  "together": "L",
+  "dems": "L",
+  "yb": "L",
+  "reservists": "L",
+  "blue_white": "L"
+ },
+ "debut": [
+  "amcha",
+  "reservists",
+  "together",
+  "yashar"
+ ],
+ "labels": {
+  "likud": "Likud",
+  "yashar": "Yashar (Eisenkot)",
+  "together": "Together (Bennett–Lapid)",
+  "dems": "The Democrats",
+  "yb": "Yisrael Beytenu",
+  "joint_list": "Joint List",
+  "otzma": "Otzma Yehudit",
+  "shas": "Shas",
+  "utj": "United Torah Judaism",
+  "rzp": "Religious Zionism–Zehut",
+  "raam": "Ra'am",
+  "amcha": "Amcha Yisrael (Winter)",
+  "blue_white": "Blue and White",
+  "reservists": "Reservists–Economic (Hendel)"
+ },
+ "coalitions": {
+  "Netanyahu bloc": [
+   "likud",
+   "otzma",
+   "shas",
+   "utj",
+   "rzp"
+  ],
+  "Bloc + Amcha": [
+   "likud",
+   "otzma",
+   "shas",
+   "utj",
+   "rzp",
+   "amcha"
+  ],
+  "Zionist opposition": [
+   "yashar",
+   "together",
+   "dems",
+   "yb",
+   "reservists",
+   "blue_white"
+  ],
+  "Opposition + Ra'am": [
+   "yashar",
+   "together",
+   "dems",
+   "yb",
+   "reservists",
+   "blue_white",
+   "raam"
+  ],
+  "Opposition + Shas + UTJ": [
+   "yashar",
+   "together",
+   "dems",
+   "yb",
+   "reservists",
+   "blue_white",
+   "shas",
+   "utj"
+  ]
+ }
+}

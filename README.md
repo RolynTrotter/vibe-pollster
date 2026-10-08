@@ -2,8 +2,9 @@
 
 Alex wants to get sound election predictions.
 
-A small, general election-modeling toolkit (`pollster/`) plus a full forecast of
-Israel's **27 October 2026 Knesset election** (`israel/`). The modelling borrows
+A general election-modeling toolkit (`pollster/`), tested blind on 23 elections in six
+countries (`countries/`), plus a full forecast of Israel's **27 October 2026 Knesset
+election** (`israel/`). The modelling borrows
 from FiveThirtyEight's published methods (poll weighting, house effects, pollster
 ratings, tuned averages, correlated-error simulation) and from Skipper Seabold's
 replication of the 2012 Silver model ([jseabold/538model](https://github.com/jseabold/538model)).
@@ -82,6 +83,57 @@ Takeaways:
 - **Threshold calls** (lists with a 3–97% chance): Brier 0.14 from the final polls, about the same as raw polls; 0.15 vs 0.27 from 20 days out.
 - Caveat: averaging hyperparameters were tuned once on all six elections (flat surface, little leakage). Writing this backtest also exposed two fixes now in the model: Shas, not haredim generally, is what polls miss, and seat-to-share conversion was understating 4–5 seat lists.
 
+## General-purpose forecaster: six countries, 23 elections
+
+The Israeli model is one instance of a country-agnostic pipeline (`pollster/pipeline.py`,
+`pollster/forecast.py`). Any election decided by a national party-list vote with a
+threshold can be forecast from a short spec and a polls CSV:
+
+```bash
+python -m pollster.forecast examples/israel_2026_spec.json examples/israel_2026_polls.csv --run-date 2026-10-07
+```
+
+**Countries configured** (`countries/`): Germany 2013–2025, Netherlands 2017–2025, Sweden
+2014–2022, Denmark 2015–2022, New Zealand 2017–2023, plus Israel 2015–2022. Polls and
+results are parsed from Wikipedia snapshots by a generic parser (`pollster/wiki.py`) with
+per-country party aliases, then checked against ParlGov. Seat rules: D'Hondt, Sainte-Laguë,
+modified Sainte-Laguë, Hare largest remainder, thresholds, surplus agreements and
+threshold exemptions (`pollster/systems.py`; `tests/test_systems.py` checks them against
+official seat counts).
+
+**Blind backtest** (`python -m countries.backtest && python -m countries.scorecard`): each
+election is forecast with error parameters fitted on all the *other* elections. Results
+(published as the "Election Model Scorecard" artifact; `output/scorecard.html`):
+
+| 20 days out | Vote miss / list | 80% ranges hold | Brier: threshold | Brier: largest list | Brier: majorities |
+|---|---:|---:|---:|---:|---:|
+| Full model | 1.39 pts | 80% | 0.101 | 0.292 | 0.089 |
+| Unseen country (no own history) | 1.39 | 85% | 0.103 | 0.299 | 0.093 |
+| Generic cross-national error size | 1.41 | 95% | 0.131 | 0.288 | 0.101 |
+| Plain poll average + generic error | 1.42 | 94% | 0.131 | 0.302 | 0.104 |
+| Polls read as certain | 1.41 | – | 0.141 | 0.609 | 0.227 |
+
+From the final polls the full model misses by 1.02 pts per list (plain average 1.03), with
+Brier 0.082 / 0.216 / 0.078 against 0.105 / 0.348 / 0.114 for reading the polls as certain.
+
+What this shows:
+- **Point estimates can't beat a plain poll average**; house adjustments barely move it when there are several pollsters.
+- **Probabilities are where the value is**: who comes first and who gets a majority are scored far better than by reading polls at face value.
+- **Correctly sized error is most of that value.** Error sizes fitted on these elections give honest 80% ranges three weeks out; a generic cross-national size is too wide and calls thresholds worse. On the final polls all variants are close.
+- **It transfers**: forecasting a country with nothing learned from its own past works as well as the full model, so a new list-PR country only needs a config file.
+- **Late swings remain unforecastable**: the Dutch PVV (2023) and D66 (2025) won with near-zero odds three weeks out.
+- Calibration is decent and, if anything, slightly cautious (events given 60–80% happened about 70–90% of the time).
+
+**Cross-national check.** `countries/jw_prior.py` fits error sizes to Jennings & Wlezien's
+archive (poll-of-polls vs results, 129 legislative elections in 31 countries since 1990;
+[doi:10.7910/DVN/8421DX](https://doi.org/10.7910/DVN/8421DX)). Election-day party error
+agrees with this backtest (sd ≈ 1.5 pts for a 10% party, 2.3 for a 30% party); the six
+countries here poll better than the archive average further out. The 292 MB source file
+is not in the repo; download it from Dataverse to refit `data/processed/multi/jw_prior.json`.
+
+**Not covered yet:** district systems (FPTP: UK, Canada, US House), presidential runoffs,
+and regional list systems such as Spain's.
+
 ## Method
 
 1. **Polls → vote shares** (`pollster/polls.py`). Seat projections are deflated to vote shares using reported sub-threshold percentages plus 1.5% for unlisted lists; seat-winning lists share the rest in proportion to seats + 0.5 (undoing D'Hondt's big-list tilt) and are never put below the threshold.
@@ -114,6 +166,12 @@ python -m israel.dynamics           # -> output/dynamics.json
 python -m israel.backtest           # -> output/backtest.json (leave-one-election-out)
 python -m israel.build_page         # -> output/knesset_2026.html
 python tests/test_allocation.py     # 2022 allocation check
+python tests/test_systems.py        # seat rules vs official results in other countries
+
+# cross-country
+python -m countries.ingest          # Wikipedia snapshots -> data/processed/multi/
+python -m countries.backtest        # leave-one-election-out, 4 variants (~10 min)
+python -m countries.scorecard && python -m countries.build_scorecard   # -> output/scorecard.html
 node tests/js_parity.js output/knesset_2026.html   # browser simulator matches Python
 ```
 
