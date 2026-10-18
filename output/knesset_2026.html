@@ -216,7 +216,7 @@ footer { font-size: .85rem; color: var(--ink-3); display: grid; gap: 6px; }
 
   <section aria-labelledby="h-what">
     <h2 id="h-what">Try your own assumptions</h2>
-    <p class="note">Change any setting and the page reruns 6,000 simulated elections per scenario in your browser. The published numbers use 20,000.</p>
+    <p class="note">Change any setting and the page reruns 6,000 simulated elections per scenario in your browser. The published numbers use <span id="nsims-pub"></span>.</p>
     <div class="controls">
       <div class="ctl"><label for="c-cmp">Compare the consensus with</label>
         <select id="c-cmp"><option value="ch14_world">Channel 14 and Direct Polls are right</option><option value="mainstream">Only the mainstream pollsters</option><option value="track_record">Pollsters weighted by track record</option></select></div>
@@ -236,7 +236,7 @@ footer { font-size: .85rem; color: var(--ink-3); display: grid; gap: 6px; }
       </div>
       <div class="toggles">
         <label><input type="checkbox" id="c-hfix" checked> Correct for Shas underpolling</label>
-        <label><input type="checkbox" id="c-pair" checked> Assume a Shas–UTJ surplus deal</label>
+        <label id="pair-wrap"><input type="checkbox" id="c-pair" checked> Assume a Shas–UTJ surplus deal</label>
       </div>
       <div class="btnrow"><button type="button" id="reset">Reset to published model</button><span class="status" id="status">Showing the published run.</span></div>
     </div>
@@ -309,6 +309,8 @@ const SK = () => ["consensus", CMP];
 const SC = (i) => i === 0 ? "s1" : "s2";
 
 $("eday").textContent = fmtDate(M.election);
+$("nsims-pub").textContent = M.n_sims.toLocaleString();
+if (!(X.assumed_pairs || []).length) $("pair-wrap").style.display = "none";
 $("metaLine").textContent = `Run ${fmtDate(M.run_date)}, ${M.days_left} days out · ${M.n_polls} polls from ${M.houses.length} houses since ${fmtDate(M.window_start)} (latest ${fmtDate(M.latest_poll)}) · ${M.n_sims.toLocaleString()} simulations per scenario`;
 function renderKey() {
   $("scenKey").innerHTML = `<div>Most charts below show two forecasts side by side. The colors mean the same thing everywhere:</div>
@@ -545,7 +547,7 @@ function renderBack() {
   const B = D.backtest, f = (v) => v.toFixed(1), rows = B.rows;
   const S = B.summary;
   $("back").innerHTML = `
-  <p>Each past election was held out in turn and forecast as if it hadn't happened yet. On the question that matters most, the size of Netanyahu's bloc, the model missed by <b>${f(S.final.bloc_err)} seats</b> on average using the final polls and ${f(S.d20.bloc_err)} seats from 20 days out, where we are now. Averaging the published polls missed by ${f(S.final.bloc_err_raw)} and ${f(S.d20.bloc_err_raw)}. The actual bloc landed inside the model's 80% range in ${Math.round(S.final.bloc_cover * 6)} of 6 elections from the final polls and ${Math.round(S.d20.bloc_cover * 6)} of 6 from 20 days out; an 80% range should miss about one in five, so the ranges may run a little wide.</p>
+  <p>Each past election was held out in turn and forecast as if it hadn't happened yet. On the question that matters most, the size of Netanyahu's bloc, the model missed by <b>${f(S.final.bloc_err)} seats</b> on average using the final polls and ${f(S.d20.bloc_err)} seats from 20 days out${M.days_left >= 15 ? ", where we are now" : ""}. Averaging the published polls missed by ${f(S.final.bloc_err_raw)} and ${f(S.d20.bloc_err_raw)}. The actual bloc landed inside the model's 80% range in ${Math.round(S.final.bloc_cover * 6)} of 6 elections from the final polls and ${Math.round(S.d20.bloc_cover * 6)} of 6 from 20 days out; an 80% range should miss about one in five, so the ranges may run a little wide.</p>
   <p>For the yes-or-no question of whether the bloc reaches 61, the model's probabilities scored ${S.final.brier.toFixed(2)} (Brier score; 0 is perfect, 0.25 is a coin flip). Reading the raw polls as a yes or no scored ${S.final.brier_raw.toFixed(2)}: they called 2022 wrong, showing the bloc at about 60 when it won 64. The model had ${f(rows.find(r => r.e === "2022" && r.d === 0).mean)} and a ${Math.round(rows.find(r => r.e === "2022" && r.d === 0).p61 * 100)}% chance.</p>
   <p>Party by party it is no better than the polls: an average miss of ${f(S.final.party_mae)} seats against ${f(S.final.party_mae_raw)}. The worst misses were shared by every pollster: Likud in 2015 (polled about 21, won 30, mostly from Jewish Home voters, so the bloc total was still right), and in April 2019 New Right and Zehut, polled in at about 5–6 seats each, both missed the threshold.</p>`;
   const elections = [...new Set(rows.map(r => r.e))];
@@ -586,7 +588,7 @@ function renderMethod() {
   <p><b>4. Pollster ratings.</b> Each house's error and bloc bias in the final three weeks of six elections, measured against other houses polling the same race, decayed 14% a year and shrunk toward average by n/(n+10). After shrinking, ratings differ little, so weighting by record barely moves the forecast.</p>
   <p><b>5. Error.</b> Polls miss in groups. Each simulation draws a swing between the bloc and the opposition (σ ≈ ${c.sigma_bloc.toFixed(1)} seats on election day, widened by ${c.drift_var_per_day.toFixed(2)} seats² a day for the ${M.days_left} days left), haredi and Arab turnout shocks (σ ≈ ${c.sigma_haredi.toFixed(1)} and ${c.sigma_arab.toFixed(1)} seats), and party noise that grows with size and is 1.5× larger for first-time lists.</p>
   <p><b>6. Turnout.</b> Ballot boxes from 2022 split the electorate into groups; the split is carried to 2026 parties and fitted to today's average. Arab and haredi shocks are turnout changes in those groups, so they also move the Arab and haredi votes that go to other parties. Separately, Shas gets ${(-c.party_bias.shas.mean).toFixed(1)} seats added, its average underpolling since 2015.</p>
-  <p><b>7. Seats.</b> Lists under 3.25% get nothing; the rest are allocated by Bader–Ofer with surplus agreements (${esc(pairs)}; Shas–UTJ assumed). The allocator reproduces the official 2022 result exactly.</p>
+  <p><b>7. Seats.</b> Lists under 3.25% get nothing; the rest are allocated by Bader–Ofer with surplus agreements (${esc(pairs)}${(M.assumed_pairs || []).length ? "; " + esc(M.assumed_pairs.map(([a, b]) => `${L[a]}–${L[b]}`).join(", ")) + " assumed" : ""}). The allocator reproduces the official 2022 result exactly.</p>
   <p><b>Not modelled:</b> coalition bargaining after the vote, late mergers or withdrawals beyond the scenarios above, and events between now and election day beyond ordinary drift.</p>`;
   const rows = D.ratings.filter(r => r.elections >= 3).sort((a, b) => a.pollscore - b.pollscore);
   const be = c.by_election;
