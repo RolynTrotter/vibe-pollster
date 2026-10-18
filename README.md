@@ -15,25 +15,29 @@ whose turnout swings Israeli elections.
 **Interactive results page:** built to `output/knesset_2026.html` (also published as a
 private Claude artifact, "Knesset 2026 Forecast").
 
-## Forecast as of 7 October 2026 (20 days out)
+## Forecast as of 18 October 2026 (9 days out)
 
-20,000 simulated elections from 37 polls by 8 houses published since the lists were set (5 Sep).
+40,000 simulated elections from 46 polls by 8 houses published since the lists were set (5 Sep; latest poll 15 Oct). Surplus agreements are final (deadline 16 Oct).
 
 | Path to 61 seats | Consensus | If Channel 14 & Direct Polls are right |
 |---|---:|---:|
-| Netanyahu bloc (Likud, Otzma, RZP, Shas, UTJ) | 4% | 50% |
-| Bloc + Amcha Yisrael | 9% | 60% |
-| Zionist opposition alone | 11% | <1% |
-| Opposition + Ra'am | 37% | 2% |
-| Opposition + both Arab lists | 87% | 33% |
-| Opposition + Shas | 69% | 14% |
-| Opposition + Shas + UTJ | 98% | 70% |
-| **Neither camp (with Amcha, without Arab lists)** | **73%** | 40% |
+| Netanyahu bloc (Likud, Otzma, RZP, Shas, UTJ) | 3% | 47% |
+| Bloc + Amcha Yisrael | 9% | 61% |
+| Zionist opposition alone | 9% | <1% |
+| Opposition + Ra'am | 33% | 2% |
+| Opposition + both Arab lists | 88% | 31% |
+| Opposition + Shas | 66% | 13% |
+| Opposition + Shas + UTJ | 98% | 71% |
+| **Neither camp (with Amcha, without Arab lists)** | **73%** | 38% |
 
-Median seats (consensus): Yashar 22, Likud 22, Together 12, Democrats 9,
-Yisrael Beytenu 9, Shas 9, UTJ 8, Otzma 8, Joint List 8, RZP 6, Ra'am 5.
-Threshold risk: RZP clears it in 89% of runs, Ra'am 81%, Hendel's Reservists 38%,
-Amcha Yisrael 37%, Blue and White <1%.
+Median seats (consensus, 80% range): Yashar 21 (16–26), Likud 21 (17–25), Together 13 (9–16),
+Shas 9 (7–12), Democrats 9 (7–11), Joint List 8 (6–11), UTJ 8 (6–11), Yisrael Beytenu 8 (6–10),
+Otzma 8 (6–10), RZP 5 (0–7), Ra'am 5 (0–8).
+Threshold risk: RZP clears it in 85% of runs, Ra'am 82%, Hendel's Reservists 50%,
+Amcha Yisrael 47%, Blue and White <1%.
+
+Since 7 Oct: Likud −1 seat, Together +1, Yisrael Beytenu −1; Reservists (38→50%) and Amcha
+(37→47%) likelier to get in, RZP slightly shakier (89→85%). Bloc-path odds barely moved.
 
 ### What moves the result
 
@@ -42,23 +46,23 @@ Each scenario reruns the consensus forecast with the same random draws
 
 | Scenario | Bloc+Amcha ≥61 | Opposition ≥61 |
 |---|---:|---:|
-| Channel 14 & Direct Polls are right | +51 | −11 |
-| Polls miss 3 seats toward the right (2015-style) | +15 | −8 |
-| Polls miss 3 seats toward the opposition | −7 | +17 |
-| 7% of opposition supporters stay home | +7 | −7 |
-| 5% of all right-bloc supporters stay home | −4 | +6 |
-| 10% of Likud supporters stay home | −3 | +4 |
+| Channel 14 & Direct Polls are right | +52 | −8 |
+| Polls miss 3 seats toward the right (2015-style) | +15 | −6 |
+| Polls miss 3 seats toward the opposition | −7 | +16 |
+| 7% of opposition supporters stay home | +7 | −5 |
+| 5% of all right-bloc supporters stay home | −4 | +5 |
+| 10% of Likud supporters stay home | −3 | +3 |
 | Arab turnout falls to 45% (2021 level) | +5 | +5 |
-| Arab turnout 67% (KAS projection for a united Joint List) | −5 | −5 |
-| Haredi turnout ±8% | ±2 | ∓2 |
+| Arab turnout 67% (KAS projection for a united Joint List) | −5 | −4 |
+| Haredi turnout +8% / −8% | +2 / −2 | −1 / +2 |
 | No Shas underpolling correction | −2 | +2 |
-| Gevalt: 30% of RZP + Amcha voters switch to Likud | −2 | +4 |
-| Amcha drops out (70% Likud / 30% Otzma) | +1 | −2 |
+| Gevalt: 30% of RZP + Amcha voters switch to Likud | −3 | +3 |
+| Amcha drops out (70% Likud / 30% Otzma) | 0 | −2 |
 | Fly & Vote expats (25k votes, 75% opposition) | 0 | +1 |
 
 Takeaways:
 1. **Deadlock is the modal outcome.** Neither Jewish camp reaches 61 without Arab lists in ~3 of 4 runs.
-2. **The pollster split dwarfs everything else.** Channel 14 (Filber/Next Data) and Direct Polls put the bloc ~8 seats above the consensus. Track records don't settle it: after shrinkage, no house's 2015–2022 record is clearly better.
+2. **The pollster split dwarfs everything else.** Channel 14 (Filber/Next Data) and Direct Polls put the bloc ~9 seats above the consensus (median 60 vs 51). Track records don't settle it: after shrinkage, no house's 2015–2022 record is clearly better.
 3. **Haredi parties hold the balance.** Opposition + Shas + UTJ clears 61 in 98% of runs.
 4. **Low Arab turnout helps both Jewish camps** by shrinking the Arab lists; high turnout makes any Jewish majority harder.
 5. **Polls keep underrating Shas** (5 of 6 elections, avg 1.1 seats), not haredim generally: UTJ's average was on target. The model corrects Shas by default.
@@ -175,7 +179,7 @@ python -m countries.scorecard && python -m countries.build_scorecard   # -> outp
 node tests/js_parity.js output/knesset_2026.html   # browser simulator matches Python
 ```
 
-To refresh with new polls: `curl -sSL https://israelvote.meforum.org/polls/ -o data/raw/polls/meforum_polls_$(date +%F).html`, scrape that file, then rerun from `israel.forecast` with `--run-date`. Polls can't be published after Friday 23 Oct.
+To refresh with new polls: `curl -sSL https://israelvote.meforum.org/polls/ -o data/raw/polls/meforum_polls_$(date +%F).html`, scrape that file, then rerun `israel.forecast`, `israel.dynamics` (both with `--run-date`) and `israel.build_page`. Polls can't be published after Friday 23 Oct.
 
 ## Using the toolkit for another election
 
@@ -183,7 +187,7 @@ To refresh with new polls: `curl -sSL https://israelvote.meforum.org/polls/ -o d
 
 ## Caveats
 
-Six backtest elections is a small sample; every error parameter is uncertain. The ballot-box segment method is ecological. The surplus agreement list may change until the 16 Oct deadline. A statistical illustration, not a prediction of who will govern.
+Six backtest elections is a small sample; every error parameter is uncertain. The ballot-box segment method is ecological. Surplus agreements are final as of the 16 Oct deadline. A statistical illustration, not a prediction of who will govern.
 
 ## Sources
 
