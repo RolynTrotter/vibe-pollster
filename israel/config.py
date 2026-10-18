@@ -53,12 +53,12 @@ FAMILY.update({p: "O" for p in OPP})
 
 DEBUT = {"yashar", "together", "amcha", "reservists"}  # new lists poll less reliably
 
-# Surplus-vote agreements. Wikipedia lists the first three as signed; Likud-RZP
-# was reported signed on 6 Oct; Shas-UTJ have paired in every recent election.
-# Deadline is 16 Oct.
+# Surplus-vote agreements (final; deadline was 16 Oct). Together-YB and
+# Yashar-Dems signed 10 Sep, Joint List-Ra'am 11 Sep, Likud-RZP 6 Oct,
+# Shas-UTJ 11 Oct. Otzma, Amcha and the Reservists have none.
 SURPLUS_PAIRS = [("together", "yb"), ("yashar", "dems"), ("joint_list", "raam"),
-                 ("likud", "rzp")]
-ASSUMED_PAIRS = [("shas", "utj")]
+                 ("likud", "rzp"), ("shas", "utj")]
+ASSUMED_PAIRS = []
 
 # Unlisted micro-parties: always wasted. 38 lists filed; 2022 non-listed share ~1.5%.
 OTHERS_PCT = 1.5
