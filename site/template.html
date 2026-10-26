@@ -363,6 +363,7 @@ function simulate(anchor, o, n, seed) {
     const m = S.map((g, j) => Math.exp(segMean[j] + sc * segSig[j] * gauss(r) + segAdd[j]));
     const out = new Array(s.length).fill(0);
     for (let j = 0; j < S.length; j++) for (let i = 0; i < s.length; i++) out[i] += s[i] * prof[j][i] * m[j] * pm[i];
+    for (const [a, b, f] of (X.withdrawn || [])) { const ia = names.indexOf(a), ib = names.indexOf(b), mv = out[ia] * f; out[ia] -= mv; out[ib] += mv; }
     const ot = out.reduce((a, b) => a + b, 0);
     seats.push(allocate(out.map(v => v / ot * tot0), names, pairs).slice(0, Pn));
   }
