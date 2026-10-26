@@ -7,6 +7,11 @@ SEATS = 120
 # Ballot structure was fixed once lists were submitted (Unity dropped out 4 Sep,
 # Reservists/Zionist Home split 5 Sep). Polls before this used other line-ups.
 WINDOW_START = "2026-09-05"
+# Lists that withdrew after polling had started. Their polled support is moved
+# in every simulation (baseline and scenarios). Gantz pulled Blue and White
+# out of the race after the N12 poll of 19 Oct; final-week polls no longer
+# list it, but the average still carries ~1% from earlier polls.
+WITHDRAWN = [("blue_white", "yashar", 1.0)]
 
 LABELS = {
     "likud": "Likud",

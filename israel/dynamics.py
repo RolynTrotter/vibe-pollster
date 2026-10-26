@@ -60,8 +60,6 @@ def scenarios(ctx):
         ("strategy", "reservists_out", "Reservists drop out (votes to Yashar/Together)",
          "Hendel's list is polling on the threshold",
          Scenario(transfers=[("reservists", "yashar", 0.5), ("reservists", "together", 0.5)])),
-        ("strategy", "bw_out", "Gantz's Blue and White drops out (votes to Yashar)",
-         "Polling ~1%: a wasted-vote list", Scenario(transfers=[("blue_white", "yashar", 1.0)])),
         ("polls", "shy_right", "Polls miss like 2015: 3 seats toward the right",
          "Largest Netanyahu-bloc miss in the backtest", Scenario(bloc_shift=3.0)),
         ("polls", "miss_left", "Polls miss 3 seats toward the opposition",

@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import argparse
 import json
-from dataclasses import asdict
+from dataclasses import asdict, replace
 
 import numpy as np
 import pandas as pd
@@ -101,6 +101,7 @@ def build_model(run_date: str, n: int = 20000):
 
 
 def run(ctx, anchor="consensus", scenario=Scenario(), n=20000, seed=20261027, err=None):
+    scenario = replace(scenario, transfers=list(C.WITHDRAWN) + list(scenario.transfers))
     out = simulate(C.PARTIES, ctx["mu"][anchor], ctx["se"][anchor], C.FAMILY, debut=C.DEBUT,
                    segments=SEGMENTS, profile=ctx["prof"], err=err or ctx["err"],
                    days_left=ctx["days_left"], others_pct=C.OTHERS_PCT, system=ctx["system"],
@@ -165,7 +166,7 @@ def main():
                  se={k: np.round(v, 4).tolist() for k, v in ctx["se"].items()},
                  sigma_bloc=e.sigma_bloc, drift=e.drift_var_per_day, party_a=e.party_a,
                  party_b=e.party_b, debut_mult=e.debut_mult, seg_sigma=e.seg_sigma,
-                 seg_mean=e.seg_mean, party_shift=e.party_shift, days_left=ctx["days_left"], others_pct=C.OTHERS_PCT,
+                 seg_mean=e.seg_mean, party_shift=e.party_shift, withdrawn=C.WITHDRAWN, days_left=ctx["days_left"], others_pct=C.OTHERS_PCT,
                  threshold=C.THRESHOLD, seats=C.SEATS, pairs=C.SURPLUS_PAIRS,
                  assumed_pairs=C.ASSUMED_PAIRS, arab_turnout_base=0.53)
     json.dump(dict(meta=meta, model=model, results=res, averages=averages_out, curves=curves, days=ctx["days"],
